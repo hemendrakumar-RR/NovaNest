@@ -14,3 +14,6 @@ Chronological master log of all testing and verification activities across the p
 | **TEST-006** | 2026-11-07 | Feature Engineering | Script Execution | `python python/feature_engineering.py` | **PASSED** | 49,971 records enriched to 38 features with anomaly flags |
 | **TEST-007** | 2026-11-07 | Pipeline Orchestrator | End-to-End Workflow | `python python/pipeline_runner.py` | **PASSED** | Full pipeline runs in 4.19s with 100% reproducibility |
 | **TEST-008** | 2026-11-07 | Data Analysis Scripts | Execution Verification | Customer, Financial, Ops, Restaurant analysis scripts | **PASSED** | All 4 analysis scripts output valid business aggregations |
+| **TEST-009** | 2026-11-07 | Referential Integrity Suite | Foreign Key Verification | `python python/pipeline_runner.py` (Step 2) | **PASSED** | 11/11 relations verified; 0 orphans across 304,405 records |
+| **TEST-010** | 2026-11-07 | End-to-End Pipeline Harness | Full Execution Benchmark | `python python/pipeline_runner.py` | **PASSED** | Cleaning, 11 FK checks, feature engineering finished in 6.18s |
+

@@ -20,4 +20,8 @@ This file records every new file introduced into the NovaNest repository, its pu
 | 2026-11-07 | `ROADMAP_STATUS.md` | `NEWCHAGES/ROADMAP_STATUS.md` | Roadmap task tracker | Real-time monitoring of all 10 phases | None | Phase 02 | Verified |
 | 2026-11-07 | `NEWCHAGESTOTALREPORT.md` | `NEWCHAGESTOTALREPORT.md` | Master Change Management Report | Central consolidated change tracking report | None | Master | Verified |
 | 2026-11-07 | `GITHUB_SETUP_AND_PUSH_READINESS.md` | `docs/GITHUB_SETUP_AND_PUSH_READINESS.md` | GitHub setup and push readiness | Audit of credentials, file sizes, and remote setup instructions | Git | Master | Verified |
+| 2026-11-07 | `pipeline_runner.py` | `python/pipeline_runner.py` | Automated pipeline orchestrator | Coordinates cleaning, FK integrity verification, and feature engineering | `pandas`, `pathlib` | Phase 02 | Verified |
+| 2026-11-07 | `data_quality_report.md` | `reports/data_quality_report.md` | Comprehensive data quality audit | Documents null counts, duplicate checks, 11/11 FK checks, and anomaly isolation | None | Phase 02 | Verified |
+| 2026-11-07 | `orders_geo_temporal_enriched.csv` | `datasets/engineered/orders_geo_temporal_enriched.csv` | Geo-temporal enriched dataset | Enriched dataset with `cross_city_flag` and `pre_signup_order_flag` for ML | `pandas` | Phase 02 | Verified |
+
 
