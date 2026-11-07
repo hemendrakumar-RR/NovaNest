@@ -23,5 +23,11 @@ This file records every new file introduced into the NovaNest repository, its pu
 | 2026-11-07 | `pipeline_runner.py` | `python/pipeline_runner.py` | Automated pipeline orchestrator | Coordinates cleaning, FK integrity verification, and feature engineering | `pandas`, `pathlib` | Phase 02 | Verified |
 | 2026-11-07 | `data_quality_report.md` | `reports/data_quality_report.md` | Comprehensive data quality audit | Documents null counts, duplicate checks, 11/11 FK checks, and anomaly isolation | None | Phase 02 | Verified |
 | 2026-11-07 | `orders_geo_temporal_enriched.csv` | `datasets/engineered/orders_geo_temporal_enriched.csv` | Geo-temporal enriched dataset | Enriched dataset with `cross_city_flag` and `pre_signup_order_flag` for ML | `pandas` | Phase 02 | Verified |
+| 2026-11-07 | `FINAL_VERIFICATION.md` | `NEWCHAGES/PHASE_02/FINAL_VERIFICATION.md` | Phase 02 Final Verification Report | Comprehensive programmatic verification of Phase 02 deliverables | None | Phase 02 | Verified |
+| 2026-11-07 | `GITHUB_READINESS_FINAL_CHECK.md` | `NEWCHAGES/GITHUB_READINESS_FINAL_CHECK.md` | Pre-push security & readiness check | Pre-push credential scan, file size audit & governance sign-off | Git | Master | Verified |
+| 2026-11-07 | `08_optimized_views.sql` | `mysql/08_optimized_views.sql` | 7 reusable analytical views | Accelerates RFM, retention, unit economics, rider efficiency queries | MySQL 8.0 | Phase 03 | Verified |
+| 2026-11-07 | `load_mysql.py` | `python/load_mysql.py` | Automated MySQL ingestion pipeline | Batch-ingests 10 CSV datasets into MySQL DW with FK-safe ordering | `mysql.connector`, `pandas` | Phase 03 | Verified |
+| 2026-11-07 | `SQL_VALIDATION_REPORT.md` | `NEWCHAGES/PHASE_03/SQL_VALIDATION_REPORT.md` | SQL validation & readiness report | Verifies all 8 SQL files, 103 statements, and connectivity diagnostics | None | Phase 03 | Verified |
+
 
 

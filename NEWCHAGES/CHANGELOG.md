@@ -6,7 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.3.0] - 2026-11-07 - Phase 03: MySQL & Database Optimization
+
+### Added
+- Created `mysql/08_optimized_views.sql` with 7 production-grade analytical views (`vw_customer_rfm`, `vw_monthly_cohort_retention`, `vw_unit_economics`, `vw_rider_efficiency`, `vw_restaurant_performance`, `vw_monthly_revenue`, `vw_customer_lifetime_value`).
+- Created `python/load_mysql.py` automated CSV-to-MySQL data ingestion pipeline supporting batch loading, FK-safe order, and transaction control.
+- Created `NEWCHAGES/PHASE_02/FINAL_VERIFICATION.md` certifying Phase 02 completion with independent Python calculations.
+- Created `NEWCHAGES/GITHUB_READINESS_FINAL_CHECK.md` auditing pre-push security, file sizes, and push governance.
+- Created `NEWCHAGES/PHASE_03/SQL_VALIDATION_REPORT.md` certifying static syntax validation across 8 SQL files (103 statements).
+
+### Changed
+- Sanitized SQL files `03_level2_business.sql`, `04_level3_intermediate.sql`, `05_level4_advanced.sql`, and `06_level5_executive.sql`, converting all prose headers into standardized SQL comments.
+- Refactored `07_level6_strategy_analytics.sql` Query 2 to use a modern CTE for repeat customer retention calculation (verified at 99.94%).
+
+---
+
 ## [0.2.0] - 2026-11-07 - Phase 02: Data Intelligence & Pipeline Stabilization
+
 
 ### Added
 - Created `python/pipeline_runner.py` automating data cleaning, referential checks, and feature engineering in 6.18 seconds.
