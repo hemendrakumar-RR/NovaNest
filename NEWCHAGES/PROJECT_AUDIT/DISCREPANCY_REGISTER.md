@@ -34,3 +34,4 @@ This register documents every technical limitation, synthetic data generator ano
 3. **Power BI Manual Validation**: Prior to final executive presentations, a 5-minute visual inspection in Power BI Desktop is recommended to confirm that all 5 report pages render cleanly.
 
 *Discrepancy Register Certified by NovaNest Architecture Governance on 2026-11-08.*
+

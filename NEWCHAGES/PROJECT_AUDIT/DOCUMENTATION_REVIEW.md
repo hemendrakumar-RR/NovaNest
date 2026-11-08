@@ -93,3 +93,4 @@ Inspection of `powerbi/NovaNest.pbix` (5.38 MB archive):
 | `reports/kpi_cross_validation_report.md` | Aligned with `validate_kpis.py` | 100% | None |
 
 *Documentation Review Certified by NovaNest Architecture Governance on 2026-11-08.*
+
