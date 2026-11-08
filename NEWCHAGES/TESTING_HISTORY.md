@@ -27,6 +27,14 @@ Chronological master log of all testing and verification activities across the p
 | **TEST-019** | 2026-11-07 | Funnel Engine Completeness | Clickstream Test | `python tests/test_analytics.py` (Test 05) | **PASSED** | 100k events across 6 stages; 4,043 users completed all stages (80.86%) |
 | **TEST-020** | 2026-11-07 | Core KPI Engine Output | Metric Completeness | `python tests/test_analytics.py` (Test 06) | **PASSED** | Exactly 16 KPIs calculated with positive non-null values |
 | **TEST-021** | 2026-11-07 | KPI Cross-Layer Validation | Multi-Layer Audit | `python tests/test_analytics.py` (Test 07) | **PASSED** | 16/16 exact matches across Python, SQL, and DAX within 0.05 tolerance |
+| **TEST-022** | 2026-11-08 | Dual AOV Consistency | Formula Verification | `python -m unittest tests/test_analytics.py` (Test 05) | **PASSED** | Net AOV (₹967.33) and Gross AOV (₹970.75) both validated |
+| **TEST-023** | 2026-11-08 | Margin Filter Parity | Unit Economics Audit | `python -m unittest tests/test_analytics.py` (Test 06) | **PASSED** | Delivered margin (23.59%) reconciled with booking margin (23.60%) |
+| **TEST-024** | 2026-11-08 | Terminology Governance | Metric Renaming Audit | `python -m unittest tests/test_analytics.py` (Test 07) | **PASSED** | Cumulative ARPU (₹9,285.20) and Deliveries/Rider (12.49) confirmed |
+| **TEST-025** | 2026-11-08 | Funnel Reality & Schema Check | Schema & Overlap Audit | `python -m unittest tests/test_analytics.py` (Test 08) | **PASSED** | No timestamps confirmed; 6 stages, 100k events, overlap matrix verified |
+| **TEST-026** | 2026-11-08 | Merchant 5-D Performance | Revenue Multi-Dimension | `python -m unittest tests/test_analytics.py` (Test 09) | **PASSED** | Throughput ₹30,950.66, GMV ₹31,060.08, Payout ₹24,077.85 verified |
+| **TEST-027** | 2026-11-08 | Edge Case Resilience | Empty Dataset Handling | `python -m unittest tests/test_analytics.py` (Test 10) | **PASSED** | Empty DataFrames return 0.0 safely without crashing |
+| **TEST-028** | 2026-11-08 | Pipeline Idempotency | Execution Repeatability | `python -m unittest tests/test_analytics.py` (Test 11) | **PASSED** | Repeated runs produce bit-for-bit identical frames and zero drift |
+| **TEST-029** | 2026-11-08 | 5-Layer Status Matrix | Layer Transparency | `python -m unittest tests/test_analytics.py` (Test 12) | **PASSED** | 16/16 verified with separated Python, SQL, DAX, and Power BI statuses |
 
 
 

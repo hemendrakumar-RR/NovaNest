@@ -63,3 +63,22 @@
   1. Built and executed 7 comprehensive unit and integration tests covering RFM integrity, cohort matrices, funnel tracking, KPI generation, and cross-layer tolerances.
   2. All 7 tests passed in 4.72 seconds with exit code 0.
 - **Status**: Completed & Verified.
+
+---
+
+### Task 7: Final KPI Audit & Comprehensive Certification
+- **Date**: 2026-11-08
+- **Actions Executed**:
+  1. Audited AOV: established formal distinction between Net AOV (₹967.33 = Net Revenue / Completed Orders) and Gross AOV (₹970.75 = GMV / Completed Orders).
+  2. Reconciled Contribution Margin & Operating Profit across order status subsets:
+     - Realized Delivered Operating Profit = ₹10,953,031.58 on Net Revenue of ₹46,425,992.00 -> 23.59%.
+     - Gross Booking Estimated Profit = ₹11,393,907.16 on Total Final Amount of ₹48,281,651.00 -> 23.60%.
+     - Disproved the 24.54% apples-to-oranges ratio (All Orders Profit / Delivered Revenue) and explained the 24.52% row-level arithmetic mean.
+  3. Renamed `Customer Lifetime Value` to `Historical Realized Spend per Customer (Cumulative ARPU)` (₹9,285.20 realized / ₹9,656.33 gross), removing misleading predictive CLV claims.
+  4. Renamed `Rider Utilization` to `Delivered Orders per Active Rider` (12.49 deliveries/rider; 12.00 completed deliveries/rider) due to fleet shift hour limitations.
+  5. Multi-dimensionally segregated restaurant metrics: Gross Customer Throughput (₹30,950.66), Food GMV (₹31,060.08), Merchant Food Payout (₹24,077.85), Platform Commission (₹6,982.23), and Order Volume (32.0 orders/restaurant).
+  6. Re-engineered `python/analytics/funnel_analysis.py` for unique-user stage reach and pairwise event overlap; formally removed chronological funnel sequence claims due to absence of timestamps in `app_events.csv`.
+  7. Formulated 5 distinct status tiers for all 16 KPIs (Python execution, SQL static, SQL live, DAX review, Power BI runtime).
+  8. Expanded `tests/test_analytics.py` from 7 to 12 tests, adding tests for empty datasets, missing values, zero denominators, terminology governance, and idempotency. All 12 tests passed in 2.880s.
+  9. Published `NEWCHAGES/PHASE_04/FINAL_KPI_AUDIT.md`.
+- **Status**: Completed & Certified.

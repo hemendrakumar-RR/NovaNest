@@ -45,6 +45,8 @@ This file records every new file introduced into the NovaNest repository, its pu
 | 2026-11-07 | `kpi_summary.csv` | `datasets/analytics/kpi_summary.csv` | KPI summary table | 16 core business metrics with values, units, and verification status | None | Phase 04 | Verified |
 | 2026-11-07 | `kpi_definitions.json` | `datasets/analytics/kpi_definitions.json` | KPI dictionary JSON | Structured dictionary with mathematical formulas, SQL, and DAX | None | Phase 04 | Verified |
 | 2026-11-07 | `kpi_cross_validation_matrix.csv` | `datasets/analytics/kpi_cross_validation_matrix.csv` | KPI cross-validation matrix | Numerical comparison table for Python, SQL, and DAX values | None | Phase 04 | Verified |
+| 2026-11-08 | `app_event_overlap_matrix.csv` | `datasets/analytics/app_event_overlap_matrix.csv` | User event overlap matrix | Pairwise co-occurrence counts across the 6 app events | None | Phase 04 | Verified |
+| 2026-11-08 | `FINAL_KPI_AUDIT.md` | `NEWCHAGES/PHASE_04/FINAL_KPI_AUDIT.md` | Phase 04 Final KPI Audit & Certification | Exhaustive audit of KPI formulas, funnel reality, and 5 status tiers | None | Phase 04 | Certified |
 
 
 

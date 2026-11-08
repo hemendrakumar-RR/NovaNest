@@ -1,0 +1,7 @@
+event_type,App Open,Restaurant View,Menu View,Add To Cart,Checkout,Order Complete
+App Open,4835,4655,4667,4674,4661,4654
+Restaurant View,4655,4818,4652,4661,4640,4645
+Menu View,4667,4652,4826,4672,4652,4651
+Add To Cart,4674,4661,4672,4836,4660,4660
+Checkout,4661,4640,4652,4660,4819,4647
+Order Complete,4654,4645,4651,4660,4647,4817

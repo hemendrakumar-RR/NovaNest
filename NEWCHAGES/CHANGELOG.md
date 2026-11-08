@@ -6,6 +6,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.1] - 2026-11-08 - Phase 04: Final KPI Audit & Certification
+
+### Added
+- Created `NEWCHAGES/PHASE_04/FINAL_KPI_AUDIT.md`: comprehensive before/after KPI comparison, mathematical proofs, and methodological boundaries.
+- Created `datasets/analytics/app_event_overlap_matrix.csv`: pairwise co-occurrence matrix measuring user presence across the 6 app events.
+
+### Changed
+- Re-engineered `python/analytics/kpi_engine.py`:
+  - Disentangled Net AOV (₹967.33 = Net Revenue / Completed Orders) from Gross AOV (₹970.75 = GMV / Completed Orders).
+  - Reconciled Contribution Margin to Realized Margin on Delivered Orders (23.59% = ₹10.95M profit / ₹46.43M net revenue) and gross booking margin (23.60% = ₹11.39M / ₹48.28M).
+  - Renamed `Customer Lifetime Value` to `Historical Realized Spend per Customer (Cumulative ARPU)` (₹9,285.20 realized / ₹9,656.33 gross).
+  - Renamed `Rider Utilization` to `Delivered Orders per Active Rider` (12.49 deliveries/rider; 12.00 completed deliveries/rider).
+  - Separated `Restaurant Performance` into 5 distinct dimensions (Gross Throughput ₹30,950.66, Food GMV ₹31,060.08, Net Food Payout ₹24,077.85).
+  - Added 5 distinct status tiers for each KPI (Python execution, SQL static, SQL live, DAX review, Power BI runtime).
+- Re-engineered `python/analytics/funnel_analysis.py`:
+  - Documented lack of timestamps in `app_events.csv` and uniform random generator behavior (`random.choice`).
+  - Switched focus to unique-user stage reach and event co-occurrence overlap, disabling chronological drop-off claims.
+- Re-engineered `python/analytics/validate_kpis.py`:
+  - Updated validation logic to reflect audited formulas and generated multi-layer status matrix.
+- Expanded `tests/test_analytics.py`:
+  - Expanded from 7 to 12 automated unit and integration tests (added dual AOV checks, margin filter reconciliation, terminology governance, empty dataset handling, zero denominators, and idempotency).
+  - All 12/12 tests passing in 2.880s.
+
+---
+
 ## [0.4.0] - 2026-11-07 - Phase 04: Advanced Business Analytics & KPI Framework
 
 ### Added
