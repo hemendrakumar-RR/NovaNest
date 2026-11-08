@@ -161,3 +161,4 @@ SELECT
 FROM customers c
 JOIN orders_table o ON c.customer_id = o.customer_id
 GROUP BY c.customer_id, c.customer_name, c.city, c.persona, c.signup_date;
+

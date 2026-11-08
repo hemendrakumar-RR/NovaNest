@@ -6,7 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.4.0] - 2026-11-07 - Phase 04: Advanced Business Analytics & KPI Framework
+
+### Added
+- Created `python/analytics/` modular package with full export conventions.
+- Created `python/analytics/rfm_segmentation.py`: calculates R, F, M scores and segments 5,000 customers into 10 behavioral tiers.
+- Created `python/analytics/cohort_analysis.py`: constructs Month 0 to Month 12 monthly cohort retention matrices.
+- Created `python/analytics/funnel_analysis.py`: evaluates clickstream marketing funnels across 100,000 events and 6 stages.
+- Created `python/analytics/kpi_engine.py`: implements 16 core business metrics with formulas, SQL equivalents, and DAX measures.
+- Created `python/analytics/validate_kpis.py`: automated cross-validation reconciling Python, SQL, and DAX layers within 0.05 tolerance.
+- Created `tests/test_analytics.py`: unit and integration test suite (7/7 tests passed).
+- Created `NEWCHAGES/PHASE_03/FINAL_ACCEPTANCE_REVIEW.md`: diagnostic error review, dataset parity certification, and repeat rate vs cohort retention distinction.
+- Created `reports/kpi_cross_validation_report.md` and 8 analytical data artifacts in `datasets/analytics/`.
+
+---
+
 ## [0.3.0] - 2026-11-07 - Phase 03: MySQL & Database Optimization
+
 
 ### Added
 - Created `mysql/08_optimized_views.sql` with 7 production-grade analytical views (`vw_customer_rfm`, `vw_monthly_cohort_retention`, `vw_unit_economics`, `vw_rider_efficiency`, `vw_restaurant_performance`, `vw_monthly_revenue`, `vw_customer_lifetime_value`).

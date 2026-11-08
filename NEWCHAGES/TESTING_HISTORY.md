@@ -20,5 +20,13 @@ Chronological master log of all testing and verification activities across the p
 | **TEST-012** | 2026-11-07 | Static SQL Validation Suite | Syntax & Structure Analysis | Python AST & delimiter parser on all 8 files | **PASSED** | 8/8 SQL files passed; 103/103 statements valid; 0 prose syntax errors |
 | **TEST-013** | 2026-11-07 | Retention Query Cross-Validation | Math & Logic Cross-Check | Python pandas groupby vs SQL CTE logic | **PASSED** | 4,997 repeat / 5,000 customers = 99.94% repeat retention rate verified |
 | **TEST-014** | 2026-11-07 | MySQL Connectivity Diagnostic | Service & Auth Inspection | `mysql.connector.connect()` test | **BLOCKED** | Service `MySQL80` running; authentication requires password in `.env` |
+| **TEST-015** | 2026-11-07 | RFM Engine Integrity | Unit Test | `python tests/test_analytics.py` (Test 01) | **PASSED** | 5,000 customers evaluated; 0 nulls across R, F, M; 10 segments |
+| **TEST-016** | 2026-11-07 | RFM Monetary Parity | Financial Reconciliation | `python tests/test_analytics.py` (Test 02) | **PASSED** | Sum of customer monetary equals ₹46,425,992.00 (exact match) |
+| **TEST-017** | 2026-11-07 | Cohort Matrix Baseline | Metric Verification | `python tests/test_analytics.py` (Test 03) | **PASSED** | Month 0 retention is exactly 100.0% across all 11 cohorts |
+| **TEST-018** | 2026-11-07 | Repeat Rate vs Cohort Decay | Concept Distinction | `python tests/test_analytics.py` (Test 04) | **PASSED** | Lifetime Repeat Rate (99.94%) strictly distinct from M1 retention (53.36%) |
+| **TEST-019** | 2026-11-07 | Funnel Engine Completeness | Clickstream Test | `python tests/test_analytics.py` (Test 05) | **PASSED** | 100k events across 6 stages; 4,043 users completed all stages (80.86%) |
+| **TEST-020** | 2026-11-07 | Core KPI Engine Output | Metric Completeness | `python tests/test_analytics.py` (Test 06) | **PASSED** | Exactly 16 KPIs calculated with positive non-null values |
+| **TEST-021** | 2026-11-07 | KPI Cross-Layer Validation | Multi-Layer Audit | `python tests/test_analytics.py` (Test 07) | **PASSED** | 16/16 exact matches across Python, SQL, and DAX within 0.05 tolerance |
+
 
 

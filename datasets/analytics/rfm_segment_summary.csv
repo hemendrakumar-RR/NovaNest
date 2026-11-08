@@ -1,0 +1,11 @@
+segment,customer_count,avg_recency,avg_frequency,avg_monetary,total_revenue,customer_pct,revenue_pct
+Loyal Customers,1003,18.6,11.2,11061.09,11094276,20.06,23.9
+Champions,775,8.7,13.2,13417.61,10398648,15.5,22.4
+At Risk,630,56.1,11.3,11314.85,7128358,12.6,15.35
+Hibernating / Lost,1046,80.9,6.4,6143.69,6426304,20.92,13.84
+Potential Loyalists,464,9.4,8.2,7348.78,3409834,9.28,7.34
+Promising,334,25.6,7.0,6704.43,2239279,6.68,4.82
+Cannot Lose Them,158,81.2,12.3,12829.77,2027103,3.16,4.37
+Occasional,244,47.5,10.1,7049.47,1720071,4.88,3.7
+New Customers,281,8.9,5.7,5457.44,1533542,5.62,3.3
+Need Attention,65,25.8,9.4,6901.18,448577,1.3,0.97

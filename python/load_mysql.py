@@ -194,3 +194,4 @@ def run_mysql_ingestion():
 
 if __name__ == "__main__":
     run_mysql_ingestion()
+

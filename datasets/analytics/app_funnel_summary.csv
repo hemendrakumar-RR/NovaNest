@@ -1,0 +1,7 @@
+stage_order,stage_name,total_events,unique_users,event_share_pct,user_reach_pct,event_step_conversion_pct,event_dropoff_volume
+1,App Open,16704,4835,16.7,96.7,100.0,0
+2,Restaurant View,16551,4818,16.55,96.36,99.08,153
+3,Menu View,16777,4826,16.78,96.52,101.37,-226
+4,Add To Cart,16602,4836,16.6,96.72,98.96,175
+5,Checkout,16762,4819,16.76,96.38,100.96,-160
+6,Order Complete,16604,4817,16.6,96.34,99.06,158
