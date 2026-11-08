@@ -1,44 +1,44 @@
-# NOVANEST — MASTER PROJECT AUDIT PLAN
-**Audit Scope: Comprehensive Recursive System & Artifact Discovery**  
-**Audit Execution Date:** 2026-11-08  
-**Audit Authority:** Senior Software Architect, Data Engineer, BI & ML Auditor, QA Lead  
+# NovaNest — Master Technical Audit Plan (Dual-Root Reconciled)
 
----
+## 1. Audit Charter & Scope
+This audit document defines the rigorous, evidence-based technical evaluation protocol across the entire NovaNest enterprise analytics and full-stack decision platform.
 
-## 1. Audit Objectives
-The purpose of this complete repository audit is to perform an exhaustive, evidence-based review of the NovaNest platform across all 10 planned phases, verifying:
-1. **Repository Inventory**: 100% recursive enumeration and classification of all project files, sizes, types, and operational states.
-2. **Documentation Rigor**: Evaluation of all specifications, architectural designs, blueprints, dictionaries, and roadmap claims against actual implementations.
-3. **NEWCHAGES Audit History**: Verification of all historical change records, registers, phase summaries, and audit proofs across Phases 01 through 04.
-4. **Source Code Health**: Deep inspection of Python engineering, data generation, data cleaning, feature engineering, pipeline orchestration, MySQL ingestion, analytics modules, and unit tests.
-5. **Database & SQL Verification**: Structural review of 8 SQL scripts (103 queries/statements), relational schemas, indexes, views, and execution status.
-6. **Power BI Model Profiling**: Deep archive inspection of `powerbi/NovaNest.pbix` (5 report pages, 66 visual containers, 9 data model entities, 43 measures/properties).
-7. **Complete Dataset Audit**: Programmatic row-level profiling of 31 datasets (10 raw, 10 cleaned, 2 engineered, 9 analytics) covering 304,405 core records.
-8. **Security & Git Governance**: Verification of zero secrets, `.gitignore` rules, `.env` protection, commit graph integrity, and push approval restrictions.
-9. **Discrepancy Identification**: Transparent registration of all unresolved blockers, synthetic data generation artifacts, and documentation gaps.
+### Source of Truth Resolution
+- **Active Working Workspace**: `C:\Users\madha\OneDrive\Documents\NovaNest-main`
+  - Certified Data Engineering (ELT pipeline: `clean_data.py`, `feature_engineering.py`, `pipeline_runner.py`).
+  - Mathematical KPI & Analytics Engine (`python/analytics/`, `datasets/analytics/`).
+  - Change Management Control Center (`NEWCHAGES/`, 68 registers, audit records, and history).
+- **Latest Uploaded Project Archive**: `C:\Users\madha\OneDrive\Documents\03.CAPSTONE\NovaNest\NovaNest` (unpacked from `NovaNest.zip`)
+  - Full-Stack Prototype Implementation (FastAPI backend, React 18 frontend, Streamlit platform).
+  - 5 Machine Learning Domain Models (`models/`).
+  - Multi-Agent AI Subsystem & Digital Twins (`python/ai/`, `python/digital_twin/`).
+  - Extended SQL Scripts (`mysql/08_phase3_intelligence.sql`, `mysql/09_phase4_operations.sql`).
+  - 24 Historical Implementation Reports (`reports/`) and 12 Automated Test Suites (`tests/`).
 
----
+## 2. Multi-Disciplinary Audit Domains
+The technical audit encompasses 10 specialized engineering disciplines:
+1. **Repository & Configuration Architecture**: File tree mapping, Git commit histories, dual-root discrepancy analysis.
+2. **Data Engineering & ELT Pipelines**: 10 Raw CSVs vs 10 Cleaned CSVs, engineered datasets, data types, nulls, schema validation.
+3. **Relational Database & SQL Modeling**: MySQL scripts 01–09, Star schema design, indexing, window functions, views.
+4. **Business Analytics & KPI Formulation**: GMV, Net Revenue, AOV, Contribution Margin, CLV, RFM, Cohorts, Funnel.
+5. **Backend REST API**: FastAPI application (`api/main.py`), 13 endpoints, request/response models, caching, MySQL fallback.
+6. **Frontend Web Application**: React 18 + TypeScript + Vite, 9 views, 8 UI components, Three.js shaders, animated top dock.
+7. **Streamlit Analytics Platform**: Multi-page app (`streamlit_app/app.py`, 9 pages), glassmorphism CSS, dual-stack redundancy.
+8. **Machine Learning & Statistical Models**: 5 models (churn, ETA, demand, restaurant, anomaly), feature leakage investigation.
+9. **Artificial Intelligence & Digital Twins**: Gemini 1.5 Pro/Flash integration, MockProvider, NL2SQL, 5 component twins.
+10. **Cybersecurity, Testing & QA**: Secret hygiene (`.env` protection), pytest test suites, PII sanitization.
 
-## 2. Audit Execution Phases & Work Breakdown
+## 3. Strict Operating Rules
+- **Tanglish Communication Rule**: All user-facing interaction strictly in Tanglish (Telugu in English script). Technical identifiers in English.
+- **Git Push Prohibition**: Local commits only (`git commit`). Remote pushes strictly forbidden without explicit instruction.
+- **Asset Protection**: `powerbi/NovaNest.pbix` and historical datasets remain unaltered and preserved.
+- **Secret Protection**: Under no circumstances shall database passwords or API keys from `.env` be printed in output or reports.
+- **No Scope Creep**: Audit and documentation only; no Phase 05 feature code.
 
-| Step | Audit Domain | Target Components | Primary Methods | Output Artifact |
-| :---: | :--- | :--- | :--- | :--- |
-| **1** | Repository Discovery | Root, `python/`, `mysql/`, `datasets/`, `docs/`, `reports/`, `NEWCHAGES/`, `powerbi/`, `tests/` | Recursive filesystem traversal, extension mapping, size analysis | `FILE_INVENTORY.md` |
-| **2** | Documentation Audit | All Markdown files in `docs/`, `reports/`, root `README.md`, `NEWCHAGES/` | Content reading, blueprint review, roadmap tracking | `DOCUMENTATION_REVIEW.md` |
-| **3** | Source Code Audit | 25 Python files, 8 SQL scripts (103 stmts) | Static AST parsing, statement extraction, logic flow review | `SOURCE_CODE_REVIEW.md` |
-| **4** | Dataset Profiling | 10 Raw, 10 Cleaned, 2 Engineered, 9 Analytics datasets | Full-table pandas profiling, null checks, duplicate checks, PK/FK joins | `DATASET_AUDIT.md` |
-| **5** | Power BI Model Review | `powerbi/NovaNest.pbix` (5.38 MB) | Zip archive parsing, `Report/Layout` schema review, entity binding extraction | `DOCUMENTATION_REVIEW.md` |
-| **6** | Phase Status Audit | Phases 01 through 10 | Deliverable verification against documented acceptance criteria | `PHASE_STATUS_REVIEW.md` |
-| **7** | Discrepancy Tracking | Implementation vs claims | Cross-layer reconciliation, gap analysis, limitation logging | `DISCREPANCY_REGISTER.md` |
-| **8** | Testing & Security Audit | `tests/test_analytics.py`, git commit log, `.gitignore`, `.env` | Safe unit test execution, git status inspection, file size checks | `TESTING_AND_SECURITY_REVIEW.md`|
-| **9** | Synthesis & Master Report | Entire audit corpus | Synthesis into primary master evaluation report | `FINAL_AUDIT_SUMMARY.md` & `reports/NOVANEST_COMPLETE_PROJECT_REPORT.md` |
-
----
-
-## 3. Exclusion Boundaries & Rationale
-1. **`.git` Internals (`.git/`)**: Standard git objects, packfiles, and index trees are excluded from line-by-line reading; git health is assessed via standard plumbing/porcelain commands (`git status`, `git log`, `git ls-files`).
-2. **`__pycache__/`**: Compiled Python bytecode (`.pyc`) files are excluded as ephemeral binary caches.
-3. **`datasets.zip` (8.35 MB)**: Archive artifact containing raw datasets; excluded from line-by-line inspection since all datasets are fully unpacked and audited in `datasets/`.
-
-*Audit Plan Authorized by NovaNest Architecture Governance on 2026-11-08.*
-
+## 4. Audit Execution Schedule & Deliverables
+- Step 1: Reconcile Dual-Root Repository and catalog every single file.
+- Step 2: Audit data pipelines, SQL schemas, and mathematical formulas.
+- Step 3: Audit full-stack application layers (FastAPI, React, Streamlit).
+- Step 4: Audit ML models and Multi-Agent AI architecture.
+- Step 5: Deliver 17 deep audit registers in `NEWCHAGES/PROJECT_AUDIT/`.
+- Step 6: Publish the 43-section Master Project Report at `reports/NOVANEST_COMPLETE_PROJECT_REPORT.md`.

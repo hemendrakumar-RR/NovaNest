@@ -45,5 +45,7 @@ wheels/
 # Archives & temporary backups
 *.zip
 *.tar.gz
+scratch/
+
 
 
