@@ -1,0 +1,183 @@
+{
+    "generated_at_utc": "2026-11-11T06:44:57Z",
+    "model_version": "2.0.0-phase05-regularized",
+    "Model_Type": "OLS_LinearRegression",
+    "MAE": 4.3889,
+    "Median_AE": 3.7049,
+    "RMSE": 5.4854,
+    "MAPE_pct": 18.08,
+    "R2_Score": 0.7707,
+    "Baseline_SeasonalNaive_Lag7_MAE": 6.2794,
+    "Baseline_SeasonalNaive_Lag7_RMSE": 7.8891,
+    "Validation_Samples": 340,
+    "Train_Date_Range": "2025-07-15 -> 2026-04-10",
+    "Test_Date_Range": "2026-04-11 -> 2026-06-17",
+    "Per_City_Metrics": {
+        "Bangalore": {
+            "test_samples": 68,
+            "mean_actual": 35.3824,
+            "mae": 5.6597,
+            "median_ae": 5.049,
+            "rmse": 6.5983,
+            "r2_score_within_city": -0.0337,
+            "mape_pct": 16.22,
+            "seasonal_naive_lag7_mae": 8.3235,
+            "seasonal_naive_lag7_rmse": 10.0689
+        },
+        "Chennai": {
+            "test_samples": 68,
+            "mean_actual": 41.3382,
+            "mae": 4.6038,
+            "median_ae": 4.3896,
+            "rmse": 5.6068,
+            "r2_score_within_city": -0.0078,
+            "mape_pct": 11.6,
+            "seasonal_naive_lag7_mae": 6.7059,
+            "seasonal_naive_lag7_rmse": 7.9038
+        },
+        "Coimbatore": {
+            "test_samples": 68,
+            "mean_actual": 20.0,
+            "mae": 3.6203,
+            "median_ae": 3.0664,
+            "rmse": 4.4117,
+            "r2_score_within_city": -0.0042,
+            "mape_pct": 19.88,
+            "seasonal_naive_lag7_mae": 4.9265,
+            "seasonal_naive_lag7_rmse": 6.0549
+        },
+        "Hyderabad": {
+            "test_samples": 68,
+            "mean_actual": 27.7941,
+            "mae": 5.0649,
+            "median_ae": 4.4937,
+            "rmse": 6.4642,
+            "r2_score_within_city": -0.0298,
+            "mape_pct": 18.77,
+            "seasonal_naive_lag7_mae": 6.9706,
+            "seasonal_naive_lag7_rmse": 8.7666
+        },
+        "Vijayawada": {
+            "test_samples": 68,
+            "mean_actual": 13.3971,
+            "mae": 2.996,
+            "median_ae": 2.5199,
+            "rmse": 3.7714,
+            "r2_score_within_city": -0.0157,
+            "mape_pct": 23.92,
+            "seasonal_naive_lag7_mae": 4.4706,
+            "seasonal_naive_lag7_rmse": 5.8158
+        }
+    },
+    "Backtest_3Fold_Expanding": [
+        {
+            "fold": 1,
+            "window": "2026-02-02 -> 2026-03-01",
+            "n_samples": 140,
+            "ridge_mae": 4.0466,
+            "ridge_rmse": 5.1231,
+            "seasonal_naive_lag7_mae": 5.5357,
+            "seasonal_naive_lag7_rmse": 6.8936
+        },
+        {
+            "fold": 2,
+            "window": "2026-03-08 -> 2026-04-04",
+            "n_samples": 140,
+            "ridge_mae": 3.6621,
+            "ridge_rmse": 4.8478,
+            "seasonal_naive_lag7_mae": 5.2929,
+            "seasonal_naive_lag7_rmse": 6.5044
+        },
+        {
+            "fold": 3,
+            "window": "2026-04-11 -> 2026-05-08",
+            "n_samples": 140,
+            "ridge_mae": 4.3164,
+            "ridge_rmse": 5.3969,
+            "seasonal_naive_lag7_mae": 5.9071,
+            "seasonal_naive_lag7_rmse": 7.5654
+        }
+    ],
+    "Pooled_vs_City_Note": "Global pooled R2 (~0.80+) reflects cross-city demand scale separation (e.g., Chennai ~41 vs Vijayawada ~14 orders/day). Within individual cities, synthetic daily series exhibit weak autocorrelation (|acf| < 0.08), yielding near-zero within-city R2 comparable to Rolling 28D / Seasonal Naive baselines.",
+    "candidate_model_comparison": {
+        "Baseline_Naive_Lag1": {
+            "n_samples": 340,
+            "mae": 5.9618,
+            "median_ae": 5.0,
+            "rmse": 7.5039,
+            "r2_score": 0.5709,
+            "mape_pct": 25.38,
+            "mean_bias_error": 0.1265,
+            "max_abs_error": 26.0,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        },
+        "Baseline_SeasonalNaive_Lag7": {
+            "n_samples": 340,
+            "mae": 6.2794,
+            "median_ae": 5.0,
+            "rmse": 7.8891,
+            "r2_score": 0.5257,
+            "mape_pct": 26.34,
+            "mean_bias_error": 0.1735,
+            "max_abs_error": 23.0,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        },
+        "Baseline_Rolling28_Mean": {
+            "n_samples": 340,
+            "mae": 4.4252,
+            "median_ae": 3.7143,
+            "rmse": 5.5577,
+            "r2_score": 0.7646,
+            "mape_pct": 18.8,
+            "mean_bias_error": 0.109,
+            "max_abs_error": 20.8214,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        },
+        "OLS_LinearRegression": {
+            "n_samples": 340,
+            "mae": 4.3889,
+            "median_ae": 3.7049,
+            "rmse": 5.4854,
+            "r2_score": 0.7707,
+            "mape_pct": 18.08,
+            "mean_bias_error": -0.5065,
+            "max_abs_error": 19.5519,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        },
+        "Ridge_L2_Regression": {
+            "n_samples": 340,
+            "mae": 4.4421,
+            "median_ae": 3.9993,
+            "rmse": 5.5405,
+            "r2_score": 0.7661,
+            "mape_pct": 19.17,
+            "mean_bias_error": 0.3076,
+            "max_abs_error": 20.6195,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        },
+        "HistGradientBoosting": {
+            "n_samples": 340,
+            "mae": 4.5185,
+            "median_ae": 3.7188,
+            "rmse": 5.6654,
+            "r2_score": 0.7554,
+            "mape_pct": 18.77,
+            "mean_bias_error": -0.1739,
+            "max_abs_error": 18.604,
+            "target_mean": 27.5824,
+            "target_std": 11.4551
+        }
+    },
+    "historical_v1_comparison": {
+        "v1_preserved_file": "demand_metrics.json",
+        "v1_reported_mae": 4.14,
+        "v1_reported_rmse": 5.26,
+        "v1_reported_r2": 0.8123,
+        "v1_audit_finding": "Legacy v1 claimed 'OLS Ridge' while using unregularized pinv OLS, omitted rolling_std_7 despite computing it, lacked calendar reindexing & baseline comparisons, and reported only pooled cross-city R2 without within-city breakdown."
+    }
+}

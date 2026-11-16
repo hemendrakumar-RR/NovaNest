@@ -1,0 +1,138 @@
+{
+    "generated_at_utc": "2026-11-11T06:43:57Z",
+    "model_version": "2.0.0-phase05-chronological",
+    "selected_model": "HistGradientBoosting",
+    "MAE_minutes": 11.5186,
+    "Median_AE_minutes": 11.4689,
+    "RMSE_minutes": 13.3158,
+    "R2_Score": -0.0002,
+    "MAPE_pct": 38.9,
+    "Baseline_Mean_MAE_minutes": 11.5162,
+    "Baseline_Mean_RMSE_minutes": 13.3146,
+    "TimeSeriesCV_3Fold_Mean_MAE": 11.5103,
+    "TimeSeriesCV_3Fold_Mean_RMSE": 13.2987,
+    "Train_Samples": 39976,
+    "Test_Samples": 9995,
+    "Train_Date_Range": "2025-06-17 15:45:00 -> 2026-04-06 17:50:53",
+    "Test_Date_Range": "2026-04-06 17:57:04 -> 2026-06-17 15:35:20",
+    "Total_Deliveries_Evaluated": 49971,
+    "Holdout_Excellent_PCT": 21.8,
+    "Holdout_Acceptable_PCT": 43.3,
+    "Holdout_Delayed_PCT": 34.9,
+    "Disclaimer": "Live GPS routes, real-time traffic congestion, weather, and kitchen prep durations are absent from the synthetic dataset; cleaned delivery_duration exhibits near-zero bivariate correlation with distance_km (r ~ -0.003), bounding true R2 near 0.",
+    "candidate_model_comparison": {
+        "Baseline_HistoricalMean": {
+            "n_samples": 9995,
+            "mae": 11.5162,
+            "median_ae": 11.3928,
+            "rmse": 13.3146,
+            "r2_score": -0.0,
+            "mape_pct": 38.92,
+            "mean_bias_error": 0.0603,
+            "max_abs_error": 22.6072,
+            "target_mean": 37.3325,
+            "target_std": 13.3144
+        },
+        "OLS_LinearRegression": {
+            "n_samples": 9995,
+            "mae": 11.5208,
+            "median_ae": 11.4596,
+            "rmse": 13.3196,
+            "r2_score": -0.0008,
+            "mape_pct": 38.93,
+            "mean_bias_error": 0.0544,
+            "max_abs_error": 23.5712,
+            "target_mean": 37.3325,
+            "target_std": 13.3144
+        },
+        "Ridge_L2_Regression": {
+            "n_samples": 9995,
+            "mae": 11.5208,
+            "median_ae": 11.4596,
+            "rmse": 13.3196,
+            "r2_score": -0.0008,
+            "mape_pct": 38.93,
+            "mean_bias_error": 0.0544,
+            "max_abs_error": 23.5698,
+            "target_mean": 37.3325,
+            "target_std": 13.3144
+        },
+        "HistGradientBoosting": {
+            "n_samples": 9995,
+            "mae": 11.5186,
+            "median_ae": 11.4689,
+            "rmse": 13.3158,
+            "r2_score": -0.0002,
+            "mape_pct": 38.9,
+            "mean_bias_error": 0.0318,
+            "max_abs_error": 25.1662,
+            "target_mean": 37.3325,
+            "target_std": 13.3144
+        }
+    },
+    "residual_error_analysis": {
+        "by_city": {
+            "Bangalore": {
+                "count": 2565,
+                "mae": 11.751,
+                "med_ae": 11.718
+            },
+            "Chennai": {
+                "count": 2945,
+                "mae": 11.469,
+                "med_ae": 11.423
+            },
+            "Coimbatore": {
+                "count": 1380,
+                "mae": 11.411,
+                "med_ae": 11.376
+            },
+            "Hyderabad": {
+                "count": 2090,
+                "mae": 11.535,
+                "med_ae": 11.57
+            },
+            "Vijayawada": {
+                "count": 1015,
+                "mae": 11.188,
+                "med_ae": 10.76
+            }
+        },
+        "by_vehicle_type": {
+            "Bike": {
+                "count": 4915,
+                "mae": 11.548,
+                "med_ae": 11.581
+            },
+            "Scooter": {
+                "count": 5080,
+                "mae": 11.49,
+                "med_ae": 11.418
+            }
+        },
+        "by_time_period": {
+            "Dinner Peak (19-22h)": {
+                "count": 1675,
+                "mae": 11.36,
+                "med_ae": 11.235
+            },
+            "Lunch Peak (12-15h)": {
+                "count": 1645,
+                "mae": 11.353,
+                "med_ae": 11.144
+            },
+            "Off-Peak": {
+                "count": 6675,
+                "mae": 11.599,
+                "med_ae": 11.622
+            }
+        }
+    },
+    "historical_v1_comparison": {
+        "v1_preserved_file": "eta_metrics.json",
+        "v1_reported_mae_minutes": 10.06,
+        "v1_reported_rmse_minutes": 12.13,
+        "v1_reported_r2": 0.3796,
+        "v1_audit_finding": "Legacy eta_metrics.json (50,000 rows) came from an earlier synthetic snapshot where distance_km correlated linearly with delivery_duration (r=0.61). In the certified Phase 2 cleaned dataset (49,971 rows), distance_km and delivery_duration have r=-0.0029 and unmeasured live traffic/GPS/kitchen-prep drivers dominate variance."
+    }
+}

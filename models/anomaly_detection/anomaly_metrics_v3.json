@@ -1,0 +1,45 @@
+{
+  "model": "Anomaly & Fraud Detection Optimization",
+  "version": "v3",
+  "benchmarks": {
+    "Total_Orders_Audited": 49971,
+    "Total_Platform_GMV": 48451925.0,
+    "Methods_Evaluated": {
+      "Dual_ZScore_TukeyIQR": {
+        "flagged_count": 945,
+        "flagged_rate_pct": 1.89,
+        "type": "Univariate parametric & non-parametric fences"
+      },
+      "Isolation_Forest": {
+        "flagged_count": 1500,
+        "flagged_rate_pct": 3.0,
+        "type": "Multivariate recursive partition depth"
+      },
+      "Local_Outlier_Factor_Sample": {
+        "sample_size": 10000,
+        "flagged_count": 300,
+        "flagged_rate_pct": 3.0,
+        "type": "Local density reachability distance"
+      },
+      "Consensus_Ensemble": {
+        "high_risk_count": 628,
+        "high_risk_rate_pct": 1.26,
+        "high_risk_exposure_inr": 519596.0,
+        "statistical_outliers_only_count": 1189
+      }
+    },
+    "Fraud_Policy_Compliance": {
+      "policy": "Absolute prohibition of labeling unconfirmed transactions as confirmed fraud.",
+      "categories_used": [
+        "NORMAL_OPERATION",
+        "STATISTICAL_OUTLIER",
+        "SUSPECTED_OPERATIONAL_RISK"
+      ],
+      "confirmed_fraud_labels_count": 0,
+      "status": "COMPLIANT"
+    }
+  },
+  "selected_model": "Consensus_Hybrid_IsoForest_ZScore",
+  "confidence_tier": "OPERATIONAL_GATED",
+  "confidence_caveat": "Anomaly scores represent mathematical divergence from normal operational distributions. Must NEVER be labeled as confirmed fraud without definitive empirical corroboration."
+}

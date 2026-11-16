@@ -1,0 +1,32 @@
+{
+    "generated_at_utc": "2026-11-11T06:45:54Z",
+    "numeric_features": [
+        "prev_1m_orders",
+        "prev_2m_orders",
+        "prev_3m_orders",
+        "trailing_3m_avg_orders",
+        "trailing_3m_std_orders",
+        "expanding_avg_monthly_orders",
+        "trailing_3m_avg_revenue",
+        "trailing_3m_aov",
+        "trailing_3m_cancel_rate",
+        "orders_momentum_1m_vs_3m",
+        "avg_rating",
+        "delivery_radius_km",
+        "commission_percentage",
+        "opening_year",
+        "month_sin",
+        "month_cos"
+    ],
+    "categorical_features": [
+        "city",
+        "restaurant_type",
+        "cuisine_type"
+    ],
+    "excluded_leaked_features": [
+        "Total_Orders",
+        "Total_Revenue",
+        "Actual_Next_Month_Orders",
+        "Predicted_Next_Month_Orders"
+    ]
+}

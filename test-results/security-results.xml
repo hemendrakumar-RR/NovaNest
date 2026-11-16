@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="Security CI &amp; Threat Modeling" tests="3" failures="0" errors="0" skipped="0" time="0.004">
+  <testcase classname="SecurityValidation" name="test_sql_ast_injection_defense" time="0.000" />
+  <testcase classname="SecurityValidation" name="test_secret_leak_detection" time="0.004" />
+  <testcase classname="SecurityValidation" name="test_sql_keyword_validator" time="0.000" />
+</testsuite>

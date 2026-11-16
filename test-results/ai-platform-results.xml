@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="AI Platform &amp; Multi-Agent Intelligence CI" tests="87" failures="7" errors="6" skipped="0" time="74.798">
+  <testcase classname="TestCustomerAgent" name="test_valid_customer_intelligence_kpis_and_experimental_churn_caveat" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_2_domain_agents.py", line 304, in test_valid_customer_intelligence_kpis_and_experimental_churn_caveat
+    self.assertEqual(res.caveats[0].validation_status, "NEEDS_MORE_DATA")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PHASE_07_LOW_EMPIRICAL' != 'NEEDS_MORE_DATA'
+- PHASE_07_LOW_EMPIRICAL
++ NEEDS_MORE_DATA
+
+</failure>
+  </testcase>
+  <testcase classname="TestOperationsAgent" name="test_valid_operations_metrics_and_non_production_ml_caveats" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_2_domain_agents.py", line 389, in test_valid_operations_metrics_and_non_production_ml_caveats
+    self.assertFalse(cav.is_production_ready)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+</failure>
+  </testcase>
+  <testcase classname="TestRestaurantAgent" name="test_valid_restaurant_metrics_avg_rating_and_caveat" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_2_domain_agents.py", line 456, in test_valid_restaurant_metrics_avg_rating_and_caveat
+    self.assertEqual(res.caveats[0].validation_status, "NEEDS_MORE_DATA")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'PHASE_07_LOW_EMPIRICAL' != 'NEEDS_MORE_DATA'
+- PHASE_07_LOW_EMPIRICAL
++ NEEDS_MORE_DATA
+
+</failure>
+  </testcase>
+  <testcase classname="MasterOrchestratorPhase063Tests" name="test_03_broad_business_performance_end_to_end" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_3_orchestrator.py", line 195, in test_03_broad_business_performance_end_to_end
+    self.assertTrue(chat["grounding_verified"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+</failure>
+  </testcase>
+  <testcase classname="MasterOrchestratorPhase063Tests" name="test_07_single_agent_failure_partial_recovery" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_3_orchestrator.py", line 495, in test_07_single_agent_failure_partial_recovery
+    self.assertTrue(chat["grounding_verified"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+</failure>
+  </testcase>
+  <testcase classname="MasterOrchestratorPhase063Tests" name="test_11_session_and_trace_isolation" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_3_orchestrator.py", line 628, in test_11_session_and_trace_isolation
+    self.assertIn("3.96%", out_a.to_chat_response()["answer"])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '3.96%' not found in '### Verification Limitation Notice\n\nOutputVerifier blocked part or all of the synthesized narrative to prevent unverified or conflicting business claims from reaching the user:\n\n- [EXPERIMENTAL_ML_OVERCLAIM] Candidate output presents experimental ML predictions/models as production-ready or guaranteed facts (`is_production_ready=False`).\n\nPlease narrow the query or resolve conflicting upstream agent definitions before acting on withheld figures.'
+</failure>
+  </testcase>
+  <testcase classname="MasterOrchestratorPhase063Tests" name="test_12_authenticated_fastapi_endpoints" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_3_orchestrator.py", line 689, in test_12_authenticated_fastapi_endpoints
+    self.assertTrue(body["grounding_verified"])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+</failure>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_01_normal_business_inquiry" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 60, in test_01_normal_business_inquiry
+    res = self.http.post(f"{self.api_base}/api/ai/ask", json={
+        "question": "What is our total revenue and gross GMV?",
+        "session_id": "test_suite_norm"
+    })
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_10_visualization_generation" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 146, in test_10_visualization_generation
+    res = self.http.post(f"{self.api_base}/api/ai/ask", json={
+        "question": "What are the top 5 restaurants by revenue?",
+        "session_id": "test_suite_viz"
+    })
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_11_decision_simulator_integration" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 161, in test_11_decision_simulator_integration
+    res = self.http.post(f"{self.api_base}/api/ai/ask", json={
+        "question": "What happens if commission increases by 2%?",
+        "session_id": "test_suite_sim"
+    })
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_12_follow_up_conversation_context" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 179, in test_12_follow_up_conversation_context
+    r1 = self.http.post(f"{self.api_base}/api/ai/ask", json={
+        "question": "What is our cancellation rate?",
+        "session_id": sess
+    })
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_13_conversation_reset" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/reset (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 199, in test_13_conversation_reset
+    r_reset = self.http.post(
+        f"{self.api_base}/api/ai/reset",
+        json={"session_id": sess},
+        headers=self.admin_headers,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/ai/reset (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+  <testcase classname="TestAskNovaNestAISuite" name="test_14_platform_endpoints_regression" time="0.000">
+    <error message="Test encountered error">Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...&lt;2 lines&gt;...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+        conn,
+    ...&lt;10 lines&gt;...
+        **response_kw,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...&lt;6 lines&gt;...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Program Files\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...&lt;9 lines&gt;...
+        chunked=chunked,
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/health (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_ask_novanest_ai_suite.py", line 220, in test_14_platform_endpoints_regression
+    resp = self.http.get(f"{self.api_base}{ep}")
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\madha\AppData\Roaming\Python\Python314\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/health (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+</error>
+  </testcase>
+</testsuite>

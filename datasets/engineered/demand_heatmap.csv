@@ -1,0 +1,6 @@
+City,Demand_Status,Total_Orders,Recent_30D_Orders,Trend_Pct,Peak_Period,Cancellation_Rate_Pct
+Chennai,🔴 High Demand,15273,1228,0.2,Tuesdays (14:00-15:00),4.0
+Bangalore,🔴 High Demand,12575,1062,0.1,Tuesdays (01:00-02:00),3.9
+Hyderabad,🔴 High Demand,10009,848,5.6,Fridays (23:00-24:00),4.1
+Coimbatore,🟠 Medium Demand,7358,607,5.4,Thursdays (14:00-15:00),3.9
+Vijayawada,🟡 Moderate Demand,4756,412,2.0,Sundays (07:00-08:00),3.6

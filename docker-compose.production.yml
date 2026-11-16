@@ -1,0 +1,328 @@
+# ==============================================================================
+# NovaNest Platform — Complete Standalone Production Cloud Compose
+# DigitalOcean VPS / Public Cloud Deployment Architecture
+# ==============================================================================
+# Usage:
+#   docker compose -f docker-compose.production.yml up -d --build
+# ==============================================================================
+
+name: novanest-production
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. Production MySQL 8.0 Canonical Database (Completely Isolated)
+  # ----------------------------------------------------------------------------
+  db:
+    image: mysql:8.0.46
+    container_name: novanest-production-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME:-novanest_db}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_APP_USER:-novanest_app}
+      MYSQL_PASSWORD: ${DB_APP_PASSWORD}
+    volumes:
+      - novanest_production_mysql_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d:ro
+    # SECURITY ENFORCEMENT: Port 3306 is NOT mapped to the host interface.
+    # Access is strictly limited to the private Docker bridge network.
+    networks:
+      - novanest_internal_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "2.00"
+          memory: 2048M
+        reservations:
+          cpus: "0.50"
+          memory: 512M
+
+  # ----------------------------------------------------------------------------
+  # 2. Production FastAPI Backend & Multi-Agent Intelligence Service
+  # ----------------------------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    container_name: novanest-production-api
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_ENV: production
+      DEBUG: "false"
+      DATA_SOURCE: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-novanest_db}
+      DB_APP_USER: ${DB_APP_USER:-novanest_app}
+      DB_APP_PASSWORD: ${DB_APP_PASSWORD}
+      DB_POOL_SIZE: ${DB_POOL_SIZE:-10}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      NOVANEST_API_KEY: ${NOVANEST_API_KEY}
+      NOVANEST_ADMIN_KEY: ${NOVANEST_ADMIN_KEY}
+      NOVANEST_VIEWER_KEY: ${NOVANEST_VIEWER_KEY}
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-https://novanest.example.com}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ENABLE_PROMETHEUS: "true"
+      PROMETHEUS_METRICS_PATH: /api/metrics
+      RATE_LIMIT_GENERAL_PER_MINUTE: ${RATE_LIMIT_GENERAL_PER_MINUTE:-1200}
+      RATE_LIMIT_AI_PER_MINUTE: ${RATE_LIMIT_AI_PER_MINUTE:-240}
+    # SECURITY ENFORCEMENT: Port 8000 is internal only, proxied by Nginx.
+    networks:
+      - novanest_internal_network
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "2.00"
+          memory: 2048M
+        reservations:
+          cpus: "0.50"
+          memory: 512M
+
+  # ----------------------------------------------------------------------------
+  # 3. Production Streamlit Multipage Executive Dashboard
+  # ----------------------------------------------------------------------------
+  streamlit:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.streamlit
+    container_name: novanest-production-streamlit
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+      api:
+        condition: service_healthy
+    environment:
+      APP_ENV: production
+      NOVANEST_API_URL: http://api:8000
+      DATA_SOURCE: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-novanest_db}
+      DB_APP_USER: ${DB_APP_USER:-novanest_app}
+      DB_APP_PASSWORD: ${DB_APP_PASSWORD}
+      NOVANEST_API_KEY: ${NOVANEST_API_KEY}
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_SERVER_PORT: 8501
+      STREAMLIT_SERVER_ENABLE_CORS: "false"
+      STREAMLIT_SERVER_BASE_URL_PATH: "/analytics"
+    # SECURITY ENFORCEMENT: Port 8501 is internal only, reverse-proxied by Nginx.
+    networks:
+      - novanest_internal_network
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/analytics/_stcore/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 1024M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  # ----------------------------------------------------------------------------
+  # 4. Production React Frontend & Nginx Edge SSL Reverse Proxy
+  # ----------------------------------------------------------------------------
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+      args:
+        VITE_API_BASE: /api
+    container_name: novanest-production-frontend
+    restart: always
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx.production.conf:/etc/nginx/conf.d/default.conf:ro
+      - novanest_production_ssl_certs:/etc/letsencrypt
+      - novanest_production_certbot_www:/var/www/certbot
+    networks:
+      - novanest_internal_network
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1/nginx-health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 512M
+        reservations:
+          cpus: "0.25"
+          memory: 128M
+
+  # ----------------------------------------------------------------------------
+  # 5. Let's Encrypt Certbot Auto-Renewal Agent
+  # ----------------------------------------------------------------------------
+  certbot:
+    image: certbot/certbot:latest
+    container_name: novanest-production-certbot
+    restart: unless-stopped
+    volumes:
+      - novanest_production_ssl_certs:/etc/letsencrypt
+      - novanest_production_certbot_www:/var/www/certbot
+    entrypoint: >
+      /bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot --quiet; sleep 12h & wait $${!}; done;'
+    networks:
+      - novanest_internal_network
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M
+
+  # ----------------------------------------------------------------------------
+  # 6. Production Prometheus Observability & Metrics Scraper (Internal Only)
+  # ----------------------------------------------------------------------------
+  prometheus:
+    image: prom/prometheus:v2.51.0
+    container_name: novanest-production-prometheus
+    restart: always
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--storage.tsdb.retention.time=30d"
+      - "--web.enable-lifecycle"
+    volumes:
+      - ./docker/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./docker/prometheus/alert_rules.yml:/etc/prometheus/alert_rules.yml:ro
+      - novanest_production_prometheus_data:/prometheus
+    # SECURITY ENFORCEMENT: Port 9090 is completely unexposed to the host/internet.
+    networks:
+      - novanest_internal_network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+
+  # ----------------------------------------------------------------------------
+  # 7. Production Grafana Operations Dashboards (Auth Protected via Nginx)
+  # ----------------------------------------------------------------------------
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: novanest-production-grafana
+    restart: always
+    depends_on:
+      prometheus:
+        condition: service_healthy
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_ADMIN_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD}
+      GF_USERS_ALLOW_SIGN_UP: "false"
+      GF_AUTH_ANONYMOUS_ENABLED: "false"
+      GF_SERVER_ROOT_URL: ${GRAFANA_ROOT_URL:-https://novanest.example.com/grafana/}
+      GF_SERVER_SERVE_FROM_SUB_PATH: "true"
+    volumes:
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./docker/grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - novanest_production_grafana_data:/var/lib/grafana
+    # SECURITY ENFORCEMENT: Port 3000 is internal only, proxied by Nginx.
+    networks:
+      - novanest_internal_network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "25m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
+
+# ==============================================================================
+# Persistent Named Volumes (Host Data Preservation Across Lifecycle)
+# ==============================================================================
+volumes:
+  novanest_production_mysql_data:
+    driver: local
+    name: novanest_production_mysql_volume
+  novanest_production_ssl_certs:
+    driver: local
+    name: novanest_production_ssl_certs_volume
+  novanest_production_certbot_www:
+    driver: local
+    name: novanest_production_certbot_www_volume
+  novanest_production_prometheus_data:
+    driver: local
+    name: novanest_production_prometheus_volume
+  novanest_production_grafana_data:
+    driver: local
+    name: novanest_production_grafana_volume
+
+# ==============================================================================
+# Isolated Production Bridge Network
+# ==============================================================================
+networks:
+  novanest_internal_network:
+    name: novanest_production_network
+    driver: bridge

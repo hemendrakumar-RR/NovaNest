@@ -1,0 +1,14 @@
+# NovaNest Streamlit Dashboard Pinned Dependencies
+# Target Python Version: 3.11 / 3.12 (Debian Bookworm)
+
+streamlit>=1.40.0,<2.0.0
+pillow>=11.1.0
+tornado>=6.4.2
+setuptools>=78.1.1
+wheel>=0.46.1
+plotly>=5.20.0,<6.0.0
+pandas>=2.2.0,<3.0.0
+numpy>=1.26.0,<2.3.0
+requests>=2.31.0,<3.0.0
+mysql-connector-python>=8.0.33,<9.0.0
+python-dotenv>=1.0.0,<2.0.0

@@ -1,0 +1,65 @@
+{
+  "tier_10_users": {
+    "concurrency": 10,
+    "total_requests": 100,
+    "wall_time_sec": 1.4,
+    "rps": 71.56,
+    "success_count": 100,
+    "error_count": 0,
+    "error_rate_pct": 0.0,
+    "status_distribution": {
+      "200": 100
+    },
+    "latencies_ms": {
+      "min": 43.09,
+      "mean": 132.27,
+      "p50": 118.46,
+      "p90": 205.91,
+      "p95": 268.21,
+      "p99": 294.97,
+      "max": 318.14
+    }
+  },
+  "tier_25_users": {
+    "concurrency": 25,
+    "total_requests": 200,
+    "wall_time_sec": 2.52,
+    "rps": 79.25,
+    "success_count": 200,
+    "error_count": 0,
+    "error_rate_pct": 0.0,
+    "status_distribution": {
+      "200": 200
+    },
+    "latencies_ms": {
+      "min": 19.2,
+      "mean": 298.93,
+      "p50": 294.66,
+      "p90": 399.91,
+      "p95": 428.46,
+      "p99": 470.5,
+      "max": 499.24
+    }
+  },
+  "tier_50_users": {
+    "concurrency": 50,
+    "total_requests": 300,
+    "wall_time_sec": 3.87,
+    "rps": 77.46,
+    "success_count": 300,
+    "error_count": 0,
+    "error_rate_pct": 0.0,
+    "status_distribution": {
+      "200": 300
+    },
+    "latencies_ms": {
+      "min": 13.79,
+      "mean": 596.42,
+      "p50": 608.59,
+      "p90": 802.19,
+      "p95": 845.43,
+      "p99": 920.58,
+      "max": 993.84
+    }
+  }
+}

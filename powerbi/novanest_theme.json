@@ -1,0 +1,50 @@
+{
+  "name": "NovaNest Official Enterprise",
+  "dataColors": [
+    "#2563EB",
+    "#F97316",
+    "#0EA5E9",
+    "#16A34A",
+    "#F59E0B",
+    "#DC2626",
+    "#8B5CF6",
+    "#64748B"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#1E293B",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "outspacePane": [
+          {
+            "backgroundColor": { "solid": { "color": "#F8FAFC" } },
+            "foregroundColor": { "solid": { "color": "#1E293B" } },
+            "borderColor": { "solid": { "color": "#E2E8F0" } }
+          }
+        ],
+        "background": [
+          {
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "color": { "solid": { "color": "#E2E8F0" } }
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#F8FAFC" } },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

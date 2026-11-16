@@ -1,0 +1,150 @@
+{
+  "name": "NovaNest_Semantic_Model",
+  "version": "2.0.0-phase15",
+  "compatibilityLevel": 1550,
+  "description": "NovaNest Food Delivery Star Schema Enterprise Data Model",
+  "sourceMapping": {
+    "orders": "orders_table",
+    "canonical_view": "orders",
+    "mapping_notes": "The Power BI 'orders' table maps directly to the MySQL 'orders' view (SELECT * FROM orders_table), resolving historical naming variations."
+  },
+  "tables": [
+    {
+      "name": "orders",
+      "type": "Fact",
+      "rowCount": 49971,
+      "source": "novanest_db.orders"
+    },
+    {
+      "name": "deliveries",
+      "type": "Fact/Dimension",
+      "rowCount": 49971,
+      "source": "novanest_db.deliveries"
+    },
+    {
+      "name": "customers",
+      "type": "Dimension",
+      "rowCount": 5000,
+      "source": "novanest_db.customers"
+    },
+    {
+      "name": "restaurants",
+      "type": "Dimension",
+      "rowCount": 1500,
+      "source": "novanest_db.restaurants"
+    },
+    {
+      "name": "menu_items",
+      "type": "Dimension",
+      "rowCount": 15000,
+      "source": "novanest_db.menu_items"
+    },
+    {
+      "name": "riders",
+      "type": "Dimension",
+      "rowCount": 4000,
+      "source": "novanest_db.riders"
+    },
+    {
+      "name": "payments",
+      "type": "Dimension",
+      "rowCount": 49971,
+      "source": "novanest_db.payments"
+    },
+    {
+      "name": "promotions",
+      "type": "Dimension",
+      "rowCount": 200,
+      "source": "novanest_db.promotions"
+    },
+    {
+      "name": "ratings_reviews",
+      "type": "Dimension",
+      "rowCount": 28792,
+      "source": "novanest_db.ratings_reviews"
+    },
+    {
+      "name": "app_events",
+      "type": "Dimension",
+      "rowCount": 100000,
+      "source": "novanest_db.app_events"
+    },
+    {
+      "name": "Date_Table",
+      "type": "Calendar",
+      "rowCount": 730,
+      "source": "Generated Date Table"
+    },
+    {
+      "name": "Measure_table",
+      "type": "Measures Container",
+      "measureCount": 55,
+      "source": "DAX Business Measures"
+    }
+  ],
+  "relationships": [
+    {
+      "fromTable": "orders",
+      "fromColumn": "customer_id",
+      "toTable": "customers",
+      "toColumn": "customer_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "orders",
+      "fromColumn": "restaurant_id",
+      "toTable": "restaurants",
+      "toColumn": "restaurant_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "orders",
+      "fromColumn": "rider_id",
+      "toTable": "riders",
+      "toColumn": "rider_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "orders",
+      "fromColumn": "item_id",
+      "toTable": "menu_items",
+      "toColumn": "item_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "deliveries",
+      "fromColumn": "order_id",
+      "toTable": "orders",
+      "toColumn": "order_id",
+      "cardinality": "OneToOne"
+    },
+    {
+      "fromTable": "payments",
+      "fromColumn": "order_id",
+      "toTable": "orders",
+      "toColumn": "order_id",
+      "cardinality": "OneToOne"
+    },
+    {
+      "fromTable": "ratings_reviews",
+      "fromColumn": "order_id",
+      "toTable": "orders",
+      "toColumn": "order_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "app_events",
+      "fromColumn": "customer_id",
+      "toTable": "customers",
+      "toColumn": "customer_id",
+      "cardinality": "ManyToOne"
+    },
+    {
+      "fromTable": "orders",
+      "fromColumn": "order_datetime",
+      "toTable": "Date_Table",
+      "toColumn": "Date",
+      "cardinality": "ManyToOne"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="Frontend CI &amp; Edge Router" tests="4" failures="0" errors="0" skipped="0" time="17.581">
+  <testcase classname="FrontendValidation" name="test_oxlint_static_analysis" time="2.235" />
+  <testcase classname="FrontendValidation" name="test_typescript_compilation" time="6.941" />
+  <testcase classname="FrontendValidation" name="test_vite_production_build" time="7.774" />
+  <testcase classname="FrontendValidation" name="test_nginx_configuration" time="0.632" />
+</testsuite>

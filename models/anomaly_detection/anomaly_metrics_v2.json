@@ -1,0 +1,159 @@
+{
+    "generated_at_utc": "2026-11-11T06:47:49Z",
+    "model_version": "2.0.0-phase05-statistical-iqr",
+    "Detection_Methodology": "Dual Z-Score & Tukey IQR Statistical Bounds Separated from Business Rule Cost Scoring",
+    "Statistical_Anomaly_Audit": {
+        "total_records_audited": 49971,
+        "total_statistical_anomalies": 2184,
+        "anomaly_rate_pct": 4.371,
+        "duplicate_anomaly_keys": 0,
+        "by_severity": {
+            "Medium": 1107,
+            "Critical": 837,
+            "High": 240
+        },
+        "by_metric": {
+            "Discount Percentage (%)": 1079,
+            "Delivery Speed (km/h)": 774,
+            "Gross Order Amount (INR)": 304,
+            "Cancellation Rate (%)": 27
+        },
+        "statistical_bounds": {
+            "delivery_duration": {
+                "metric": "delivery_duration",
+                "n_samples": 49971,
+                "mean": 37.3807,
+                "std": 13.2728,
+                "q1": 26.0,
+                "median": 37.0,
+                "q3": 49.0,
+                "iqr": 23.0,
+                "iqr_lower_15": -8.5,
+                "iqr_upper_15": 83.5,
+                "iqr_upper_30": 118.0,
+                "z_gt_25_count": 0,
+                "z_gt_30_count": 0,
+                "iqr_15_outlier_count": 0,
+                "iqr_30_extreme_count": 0
+            },
+            "distance_km": {
+                "metric": "distance_km",
+                "n_samples": 49971,
+                "mean": 6.4602,
+                "std": 3.1732,
+                "q1": 3.7,
+                "median": 6.5,
+                "q3": 9.2,
+                "iqr": 5.5,
+                "iqr_lower_15": -4.55,
+                "iqr_upper_15": 17.45,
+                "iqr_upper_30": 25.7,
+                "z_gt_25_count": 0,
+                "z_gt_30_count": 0,
+                "iqr_15_outlier_count": 0,
+                "iqr_30_extreme_count": 0
+            },
+            "discount_percentage": {
+                "metric": "discount_percentage",
+                "n_samples": 49971,
+                "mean": 7.9225,
+                "std": 9.7996,
+                "q1": 2.3994,
+                "median": 4.771,
+                "q3": 9.6639,
+                "iqr": 7.2645,
+                "iqr_lower_15": -8.4973,
+                "iqr_upper_15": 20.5606,
+                "iqr_upper_30": 31.4573,
+                "z_gt_25_count": 1444,
+                "z_gt_30_count": 1079,
+                "iqr_15_outlier_count": 3769,
+                "iqr_30_extreme_count": 1552
+            },
+            "delivery_speed_kph": {
+                "metric": "delivery_speed_kph",
+                "n_samples": 49971,
+                "mean": 12.0861,
+                "std": 8.2678,
+                "q1": 6.0,
+                "median": 10.3125,
+                "q3": 15.871,
+                "iqr": 9.871,
+                "iqr_lower_15": -8.8065,
+                "iqr_upper_15": 30.6774,
+                "iqr_upper_30": 45.4839,
+                "z_gt_25_count": 1482,
+                "z_gt_30_count": 774,
+                "iqr_15_outlier_count": 2018,
+                "iqr_30_extreme_count": 76
+            },
+            "order_amount": {
+                "metric": "order_amount",
+                "n_samples": 49971,
+                "mean": 969.6009,
+                "std": 649.6284,
+                "q1": 452.0,
+                "median": 794.0,
+                "q3": 1365.0,
+                "iqr": 913.0,
+                "iqr_lower_15": -917.5,
+                "iqr_upper_15": 2734.5,
+                "iqr_upper_30": 4104.0,
+                "z_gt_25_count": 987,
+                "z_gt_30_count": 0,
+                "iqr_15_outlier_count": 304,
+                "iqr_30_extreme_count": 0
+            },
+            "restaurant_cancellation_rate_pct": {
+                "metric": "restaurant_cancellation_rate_pct",
+                "n_samples": 1492,
+                "mean": 3.9546,
+                "std": 3.4571,
+                "q1": 0.0,
+                "median": 3.3333,
+                "q3": 6.0606,
+                "iqr": 6.0606,
+                "iqr_lower_15": -9.0909,
+                "iqr_upper_15": 15.1515,
+                "iqr_upper_30": 24.2424,
+                "z_gt_25_count": 27,
+                "z_gt_30_count": 6,
+                "iqr_15_outlier_count": 4,
+                "iqr_30_extreme_count": 0
+            }
+        },
+        "truncated": false,
+        "original_records_deleted": 0
+    },
+    "Revenue_Leakage_KPIs": {
+        "Total_Potential_Leakage": 553946.31,
+        "Flagged_Orders_Count": 4669,
+        "Total_Orders_Audited": 49971,
+        "Leakage_Rate_PCT": 9.34,
+        "Duplicate_Order_Flags": 0,
+        "Critical_Risk_Count": 744,
+        "High_Risk_Count": 3698,
+        "Medium_Risk_Count": 227,
+        "Low_Risk_Count": 0,
+        "By_Detection_Category": {
+            "Business Rule": 3035,
+            "Hybrid (Business Rule + Statistical Anomaly)": 1407,
+            "Statistical Anomaly": 227
+        },
+        "By_False_Positive_Risk": {
+            "Moderate - Negative only if discount is 100% platform-funded": 2542,
+            "Low - Verified cancelled order lost commission": 1874,
+            "High - Likely intentional marketing promo or free-delivery waiver": 227,
+            "Low - Discount meets/exceeds gross order value": 26
+        },
+        "Original_Orders_Preserved": 49971,
+        "Disclaimer": "Distinguishes Statistical Anomalies (Z-score/IQR extremes) from Business Rule cost checks; high false-positive promo subsidies require merchant vs platform funding attribution."
+    },
+    "Active_Alerts_Count": 2,
+    "historical_v1_comparison": {
+        "v1_preserved_file": "anomaly_metrics.json",
+        "v1_anomalies_detected": 10,
+        "v1_flagged_leakage_orders": 14699,
+        "v1_audit_finding": "Legacy v1 claimed 'Z-Score & IQR Statistical Bounds' while computing zero IQR bounds, returning only 10 truncated restaurant cancellation rows, looping via slow row iteration in revenue_leakage.py, using a hardcoded 18% commission assumption, and conflating statistical outliers with promo subsidies."
+    }
+}

@@ -1,0 +1,110 @@
+# ==============================================================================
+# NovaNest Platform — Prometheus Alerting Rules
+# ==============================================================================
+
+groups:
+  - name: novanest_operational_alerts
+    rules:
+      # ------------------------------------------------------------------------
+      # 1. API Availability Alert
+      # ------------------------------------------------------------------------
+      - alert: ApiUnavailable
+        expr: up{job="novanest-api"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          tier: backend
+        annotations:
+          summary: "NovaNest FastAPI Gateway is down"
+          description: "FastAPI healthcheck endpoint has been unreachable for more than 1 minute."
+
+      # ------------------------------------------------------------------------
+      # 2. High HTTP Error Rate Alert
+      # ------------------------------------------------------------------------
+      - alert: HighErrorRate
+        expr: (sum(rate(novanest_api_requests_total{status_code=~"5.."}[5m])) / sum(rate(novanest_api_requests_total[5m]))) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          tier: backend
+        annotations:
+          summary: "High HTTP 5xx error rate detected (>5%)"
+          description: "5xx HTTP error responses exceed 5% of total request volume over the last 5 minutes."
+
+      # ------------------------------------------------------------------------
+      # 3. Excessive API Latency Alert
+      # ------------------------------------------------------------------------
+      - alert: ExcessiveLatency
+        expr: histogram_quantile(0.95, sum(rate(novanest_api_request_duration_seconds_bucket[5m])) by (le)) > 2.0
+        for: 5m
+        labels:
+          severity: warning
+          tier: backend
+        annotations:
+          summary: "API 95th percentile latency exceeds 2.0 seconds"
+          description: "p95 API response duration is above 2.0 seconds over a 5-minute evaluation window."
+
+      # ------------------------------------------------------------------------
+      # 4. MySQL Database Connection Failure Alert
+      # ------------------------------------------------------------------------
+      - alert: MySQLConnectionFailures
+        expr: rate(novanest_db_queries_total{status="failure"}[1m]) > 0
+        for: 1m
+        labels:
+          severity: critical
+          tier: database
+        annotations:
+          summary: "MySQL connection or query failures detected"
+          description: "Database queries are failing. Circuit breaker may engage fallback mechanisms."
+
+      # ------------------------------------------------------------------------
+      # 5. Container Crash / Health Alert
+      # ------------------------------------------------------------------------
+      - alert: ContainerCrashes
+        expr: novanest_container_health_status == 0
+        for: 2m
+        labels:
+          severity: warning
+          tier: infrastructure
+        annotations:
+          summary: "Container unhealthy or restarting: {{ $labels.container_name }}"
+          description: "Docker container {{ $labels.container_name }} reported unhealthy status for over 2 minutes."
+
+      # ------------------------------------------------------------------------
+      # 6. High Memory Utilization Alert
+      # ------------------------------------------------------------------------
+      - alert: HighMemoryUtilization
+        expr: (novanest_system_memory_bytes / 1073741824) > 1.8
+        for: 5m
+        labels:
+          severity: warning
+          tier: system
+        annotations:
+          summary: "Process memory consumption exceeds 1.8 GB"
+          description: "NovaNest process resident memory is nearing container limit bounds (>1.8 GB)."
+
+      # ------------------------------------------------------------------------
+      # 7. Disk Space Exhaustion Alert
+      # ------------------------------------------------------------------------
+      - alert: DiskSpaceExhaustion
+        expr: novanest_system_cpu_percent > 95
+        for: 5m
+        labels:
+          severity: critical
+          tier: infrastructure
+        annotations:
+          summary: "Host storage or CPU approaching capacity exhaustion"
+          description: "System resource utilization is critical (>95%). Automated pruning or scaling required."
+
+      # ------------------------------------------------------------------------
+      # 8. Database Backup Failure Alert
+      # ------------------------------------------------------------------------
+      - alert: BackupFailures
+        expr: novanest_db_queries_total{query_type="backup_failure"} > 0
+        for: 1m
+        labels:
+          severity: critical
+          tier: disaster_recovery
+        annotations:
+          summary: "Automated database backup generation or encryption failed"
+          description: "Scheduled database backup failed. RPO objective is at risk."

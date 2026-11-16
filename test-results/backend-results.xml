@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="Backend CI &amp; Database Integration" tests="67" failures="1" errors="0" skipped="0" time="84.690">
+  <testcase classname="TestPhase0610AcceptanceAndReadiness" name="test_05_domain_agents_and_master_orchestrator" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_10_acceptance_and_readiness.py", line 237, in test_05_domain_agents_and_master_orchestrator
+    self.assertEqual(outcome.agent_result.status, AgentStatus.SUCCESS)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: &lt;AgentStatus.PARTIAL: 'partial'&gt; != &lt;AgentStatus.SUCCESS: 'success'&gt;
+</failure>
+  </testcase>
+</testsuite>

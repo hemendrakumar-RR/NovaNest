@@ -1,0 +1,18 @@
+{
+    "generated_at_utc": "2026-11-11T06:43:57Z",
+    "model_name": "NovaNest Delivery ETA Predictor",
+    "model_version": "2.0.0-phase05-chronological",
+    "random_seed": 42,
+    "selected_algorithm": "HistGradientBoosting",
+    "split_strategy": "Strict chronological 80/20 order_datetime holdout + 3-fold TimeSeriesSplit CV",
+    "data_audit": {
+        "dataset": "eta_features",
+        "row_count": 49971,
+        "column_count": 16,
+        "null_counts": {},
+        "inf_counts": {},
+        "zero_variance_columns": [
+            "cross_city_flag"
+        ]
+    }
+}

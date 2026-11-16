@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="Docker CI, Observability &amp; Container Runtime" tests="34" failures="1" errors="0" skipped="0" time="11.896">
+  <testcase classname="TestPhase06112DockerRuntime" name="test_02_host_services_undisturbed" time="0.000">
+    <failure message="Test failed">Traceback (most recent call last):
+  File "C:\Users\madha\OneDrive\Documents\NovaNest-main\tests\test_phase06_11_2_docker_runtime.py", line 85, in test_02_host_services_undisturbed
+    self.assertTrue(is_port_open("127.0.0.1", 8000), "Host FastAPI on port 8000 must remain active")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Host FastAPI on port 8000 must remain active
+</failure>
+  </testcase>
+</testsuite>

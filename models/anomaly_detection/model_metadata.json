@@ -1,0 +1,10 @@
+{
+    "generated_at_utc": "2026-11-11T06:47:49Z",
+    "model_name": "NovaNest Statistical Anomaly & Financial Risk Auditor",
+    "model_version": "2.0.0-phase05-statistical-iqr",
+    "random_seed": 42,
+    "source_records_audited": 49971,
+    "source_records_preserved": 49971,
+    "duplicate_anomaly_keys": 0,
+    "duplicate_leakage_order_ids": 0
+}

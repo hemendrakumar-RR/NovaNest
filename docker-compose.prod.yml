@@ -1,0 +1,136 @@
+# ==============================================================================
+# NovaNest Platform — Production Docker Compose Override (Security Hardened)
+# Usage: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+# ==============================================================================
+
+name: novanest-production
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. Production Database Security Overrides
+  # ----------------------------------------------------------------------------
+  db:
+    restart: always
+    environment:
+      MYSQL_DATABASE: novanest_db
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+      MYSQL_USER: novanest_app
+      MYSQL_PASSWORD_FILE: /run/secrets/db_app_password
+    secrets:
+      - db_root_password
+      - db_app_password
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    deploy:
+      resources:
+        limits:
+          cpus: "4.00"
+          memory: 4096M
+        reservations:
+          cpus: "1.00"
+          memory: 1024M
+
+  # ----------------------------------------------------------------------------
+  # 2. Production FastAPI Backend Security Overrides
+  # ----------------------------------------------------------------------------
+  api:
+    restart: always
+    environment:
+      APP_ENV: production
+      DEBUG: "false"
+      DATA_SOURCE: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: novanest_db
+      DB_APP_USER: novanest_app
+    secrets:
+      - db_app_password
+      - novanest_api_key
+      - novanest_admin_key
+      - novanest_viewer_key
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "2.00"
+          memory: 2048M
+        reservations:
+          cpus: "0.50"
+          memory: 512M
+
+  # ----------------------------------------------------------------------------
+  # 3. Production Frontend Nginx Security Overrides
+  # ----------------------------------------------------------------------------
+  frontend:
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 512M
+
+  # ----------------------------------------------------------------------------
+  # 4. Production Streamlit Dashboard Security Overrides
+  # ----------------------------------------------------------------------------
+  streamlit:
+    restart: always
+    environment:
+      APP_ENV: production
+      NOVANEST_API_URL: http://api:8000
+      DATA_SOURCE: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: novanest_db
+      DB_APP_USER: novanest_app
+    secrets:
+      - db_app_password
+      - novanest_api_key
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "2.00"
+          memory: 2048M
+        reservations:
+          cpus: "0.50"
+          memory: 512M
+
+# ==============================================================================
+# Docker Secrets Specifications (Production Credentials)
+# ==============================================================================
+secrets:
+  db_root_password:
+    environment: "MYSQL_ROOT_PASSWORD"
+  db_app_password:
+    environment: "DB_APP_PASSWORD"
+  novanest_api_key:
+    environment: "NOVANEST_API_KEY"
+  novanest_admin_key:
+    environment: "NOVANEST_ADMIN_KEY"
+  novanest_viewer_key:
+    environment: "NOVANEST_VIEWER_KEY"

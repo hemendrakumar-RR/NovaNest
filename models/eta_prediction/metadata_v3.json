@@ -1,0 +1,136 @@
+{
+  "model_name": "eta_prediction",
+  "version": "v3",
+  "algorithm": "HistGradientBoosting",
+  "model_type": "regression",
+  "created_at": "2026-11-14T18:12:31.376982+00:00",
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates limited variance capture (R\u00b2=-0.0002, MAE=11.52m). Target is uniformly distributed with low underlying feature correlation. Agents must communicate prediction intervals and operational mean baselines.",
+  "features": [
+    "distance_km",
+    "quantity",
+    "order_amount",
+    "delivery_fee",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_weekend",
+    "is_lunch_peak",
+    "is_dinner_peak",
+    "experience_years",
+    "avg_rating",
+    "delivery_radius_km",
+    "distance_to_radius_ratio",
+    "cross_city_flag",
+    "vehicle_type",
+    "shift_type",
+    "restaurant_city",
+    "restaurant_type",
+    "cuisine_type"
+  ],
+  "feature_count": 21,
+  "hyperparameters": {
+    "algorithm": "HistGradientBoosting",
+    "loss": "squared_error"
+  },
+  "evaluation_metrics": {
+    "benchmark_comparison": {
+      "Baseline_Mean": {
+        "n_samples": 9995,
+        "mae": 11.5123,
+        "median_ae": 11.0,
+        "rmse": 13.3186,
+        "r2_score": -0.0006,
+        "mape_pct": 38.5,
+        "mean_bias_error": -0.3325,
+        "max_abs_error": 23.0,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      },
+      "Ridge_L2": {
+        "n_samples": 9995,
+        "mae": 11.5208,
+        "median_ae": 11.4596,
+        "rmse": 13.3196,
+        "r2_score": -0.0008,
+        "mape_pct": 38.93,
+        "mean_bias_error": 0.0544,
+        "max_abs_error": 23.5698,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      },
+      "RandomForest": {
+        "n_samples": 9995,
+        "mae": 11.5254,
+        "median_ae": 11.4614,
+        "rmse": 13.3245,
+        "r2_score": -0.0015,
+        "mape_pct": 38.93,
+        "mean_bias_error": 0.0435,
+        "max_abs_error": 23.9897,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      },
+      "HistGradientBoosting": {
+        "n_samples": 9995,
+        "mae": 11.5158,
+        "median_ae": 11.493,
+        "rmse": 13.3159,
+        "r2_score": -0.0002,
+        "mape_pct": 38.89,
+        "mean_bias_error": 0.0365,
+        "max_abs_error": 24.6568,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      },
+      "LightGBM": {
+        "n_samples": 9995,
+        "mae": 11.5281,
+        "median_ae": 11.4743,
+        "rmse": 13.3346,
+        "r2_score": -0.003,
+        "mape_pct": 38.95,
+        "mean_bias_error": 0.064,
+        "max_abs_error": 26.2907,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      },
+      "XGBoost": {
+        "n_samples": 9995,
+        "mae": 11.5222,
+        "median_ae": 11.4743,
+        "rmse": 13.3314,
+        "r2_score": -0.0025,
+        "mape_pct": 38.94,
+        "mean_bias_error": 0.0695,
+        "max_abs_error": 26.3553,
+        "target_mean": 37.3325,
+        "target_std": 13.3144
+      }
+    },
+    "best_model_metrics": {
+      "n_samples": 9995,
+      "mae": 11.5158,
+      "median_ae": 11.493,
+      "rmse": 13.3159,
+      "r2_score": -0.0002,
+      "mape_pct": 38.89,
+      "mean_bias_error": 0.0365,
+      "max_abs_error": 24.6568,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "residual_std_minutes": 13.32,
+    "mae": 11.5158,
+    "rmse": 13.3159,
+    "r2_score": -0.0002
+  },
+  "dataset_sha256": {
+    "deliveries.csv": "05baed1f44b8625b78a430e934add8903f16e12c27bcaa39946b579e17901ecd",
+    "orders.csv": "e54c3a9e829bc4620a2a7e6ba90b96db46602da141473c11e18b80272238856e",
+    "riders.csv": "94101687a63a0c8ee99e971d3e769e0f90719ed37de49db015f3ac9defd0149b",
+    "restaurants.csv": "60af2dfa2fe7b51376a36bfbe53f4bf75d9cc0c5e0e43231fe3fd3a290c8a925"
+  },
+  "notes": "Phase 07 dispatch-time Delivery ETA optimization with stratified error breakdowns and prediction intervals."
+}

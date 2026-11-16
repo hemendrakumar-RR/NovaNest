@@ -1,0 +1,257 @@
+{
+    "generated_at_utc": "2026-11-11T06:45:54Z",
+    "model_version": "2.0.0-phase05-real-panel",
+    "selected_model": "Ridge_L2_Regression",
+    "target_definition": "Real observed monthly order count per restaurant in complete calendar month M_t predicted from < M_t features",
+    "chronological_split": {
+        "full_months_observed": [
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05"
+        ],
+        "train_target_months": [
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04"
+        ],
+        "holdout_target_month": "2026-05",
+        "train_samples": 10500,
+        "test_samples": 1500
+    },
+    "holdout_metrics": {
+        "n_samples": 1500,
+        "mae": 1.3248,
+        "median_ae": 1.1069,
+        "rmse": 1.6829,
+        "r2_score": -0.0027,
+        "mape_pct": 52.7,
+        "mean_bias_error": -0.1079,
+        "max_abs_error": 7.1825,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+    },
+    "baseline_comparisons": {
+        "Baseline_GlobalTrainMean": {
+            "n_samples": 1500,
+            "mae": 1.3351,
+            "median_ae": 1.256,
+            "rmse": 1.6894,
+            "r2_score": -0.0106,
+            "mape_pct": 51.99,
+            "mean_bias_error": -0.1727,
+            "max_abs_error": 7.256,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "Baseline_RestaurantExpandingMean": {
+            "n_samples": 1500,
+            "mae": 1.3795,
+            "median_ae": 1.1,
+            "rmse": 1.7541,
+            "r2_score": -0.0894,
+            "mape_pct": 54.25,
+            "mean_bias_error": -0.1553,
+            "max_abs_error": 6.7,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "Baseline_PreviousMonth_Orders": {
+            "n_samples": 1500,
+            "mae": 1.8067,
+            "median_ae": 1.5,
+            "rmse": 2.3321,
+            "r2_score": -0.9256,
+            "mape_pct": 72.24,
+            "mean_bias_error": -0.1907,
+            "max_abs_error": 8.0,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        }
+    },
+    "candidate_model_comparison": {
+        "Baseline_GlobalTrainMean": {
+            "n_samples": 1500,
+            "mae": 1.3351,
+            "median_ae": 1.256,
+            "rmse": 1.6894,
+            "r2_score": -0.0106,
+            "mape_pct": 51.99,
+            "mean_bias_error": -0.1727,
+            "max_abs_error": 7.256,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "Baseline_RestaurantExpandingMean": {
+            "n_samples": 1500,
+            "mae": 1.3795,
+            "median_ae": 1.1,
+            "rmse": 1.7541,
+            "r2_score": -0.0894,
+            "mape_pct": 54.25,
+            "mean_bias_error": -0.1553,
+            "max_abs_error": 6.7,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "Baseline_PreviousMonth_Orders": {
+            "n_samples": 1500,
+            "mae": 1.8067,
+            "median_ae": 1.5,
+            "rmse": 2.3321,
+            "r2_score": -0.9256,
+            "mape_pct": 72.24,
+            "mean_bias_error": -0.1907,
+            "max_abs_error": 8.0,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "Ridge_L2_Regression": {
+            "n_samples": 1500,
+            "mae": 1.3248,
+            "median_ae": 1.1069,
+            "rmse": 1.6829,
+            "r2_score": -0.0027,
+            "mape_pct": 52.7,
+            "mean_bias_error": -0.1079,
+            "max_abs_error": 7.1825,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "RandomForest_Regularized": {
+            "n_samples": 1500,
+            "mae": 1.3317,
+            "median_ae": 1.1759,
+            "rmse": 1.6878,
+            "r2_score": -0.0086,
+            "mape_pct": 52.2,
+            "mean_bias_error": -0.1546,
+            "max_abs_error": 7.1325,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        },
+        "HistGradientBoosting": {
+            "n_samples": 1500,
+            "mae": 1.3312,
+            "median_ae": 1.1535,
+            "rmse": 1.6871,
+            "r2_score": -0.0078,
+            "mape_pct": 52.11,
+            "mean_bias_error": -0.1571,
+            "max_abs_error": 7.2294,
+            "target_mean": 2.9167,
+            "target_std": 1.6806
+        }
+    },
+    "rolling_3month_backtest": [
+        {
+            "target_month": "2026-03",
+            "train_months": 5,
+            "n_restaurants": 1500,
+            "mae": 1.3702,
+            "median_ae": 1.3257,
+            "rmse": 1.7276,
+            "r2_score": -0.0688
+        },
+        {
+            "target_month": "2026-04",
+            "train_months": 6,
+            "n_restaurants": 1500,
+            "mae": 1.3116,
+            "median_ae": 1.139,
+            "rmse": 1.6338,
+            "r2_score": -0.0044
+        },
+        {
+            "target_month": "2026-05",
+            "train_months": 7,
+            "n_restaurants": 1500,
+            "mae": 1.3248,
+            "median_ae": 1.1069,
+            "rmse": 1.6829,
+            "r2_score": -0.0027
+        }
+    ],
+    "error_by_city": {
+        "Bangalore": {
+            "count": 380,
+            "mae": 1.318,
+            "med_ae": 1.14
+        },
+        "Chennai": {
+            "count": 454,
+            "mae": 1.338,
+            "med_ae": 1.13
+        },
+        "Coimbatore": {
+            "count": 216,
+            "mae": 1.345,
+            "med_ae": 0.91
+        },
+        "Hyderabad": {
+            "count": 305,
+            "mae": 1.365,
+            "med_ae": 1.18
+        },
+        "Vijayawada": {
+            "count": 145,
+            "mae": 1.188,
+            "med_ae": 1.02
+        }
+    },
+    "feature_importances": {
+        "city_Vijayawada": 0.1207,
+        "cuisine_type_Burger": 0.0829,
+        "cuisine_type_North Indian": 0.0816,
+        "cuisine_type_Beverages": 0.0738,
+        "cuisine_type_Healthy Foods": 0.0701,
+        "month_sin": 0.0643,
+        "city_Hyderabad": 0.0426,
+        "restaurant_type_Fast Food Chain": 0.0335,
+        "month_cos": 0.0329,
+        "city_Bangalore": 0.0317,
+        "delivery_radius_km": 0.0297,
+        "cuisine_type_Biryani": 0.0295,
+        "commission_percentage": 0.0291,
+        "trailing_3m_aov": 0.0283,
+        "cuisine_type_South Indian": 0.0282,
+        "city_Coimbatore": 0.026,
+        "restaurant_type_Cafe": 0.0231,
+        "trailing_3m_std_orders": 0.0219,
+        "city_Chennai": 0.0203,
+        "prev_2m_orders": 0.02,
+        "cuisine_type_Chinese": 0.0192,
+        "prev_1m_orders": 0.0118,
+        "trailing_3m_cancel_rate": 0.0112,
+        "cuisine_type_Desserts": 0.011,
+        "trailing_3m_avg_orders": 0.0106,
+        "prev_3m_orders": 0.0102,
+        "cuisine_type_Pizza": 0.0093,
+        "opening_year": 0.0081,
+        "restaurant_type_Cloud Kitchen": 0.0071,
+        "orders_momentum_1m_vs_3m": 0.0038,
+        "restaurant_type_Premium Restaurant": 0.0038,
+        "expanding_avg_monthly_orders": 0.0026,
+        "restaurant_type_Budget Restaurant": 0.0005,
+        "avg_rating": 0.0004,
+        "trailing_3m_avg_revenue": 0.0
+    },
+    "historical_v1_comparison": {
+        "v1_preserved_file": "restaurant_metrics.json",
+        "v1_reported_r2": 0.8559,
+        "v1_reported_mae": 2.1534,
+        "v1_leakage_root_cause": "v1 performance_prediction.py synthesized target as Predicted_Next_Month_Orders = Total_Orders * uniform(0.9, 1.15) and passed Total_Orders directly into OLS, fabricating R2 = 0.8559."
+    },
+    "synthetic_data_limitation": "In NovaNest's cleaned transaction data, restaurant order assignments across months have near-zero persistence (adjacent month r ~ -0.02 to +0.02, monthly orders ~ Poisson(2.7)). Eliminating synthetic target leakage reduces out-of-time R2 from fake 0.8559 to ~0.00 (MAE ~1.3 orders/month), honestly reflecting unpersonalized uniform store demand."
+}

@@ -1,0 +1,75 @@
+# ==============================================================================
+# NovaNest FastAPI Backend Service — Production Dockerfile
+# Multi-Stage Build with Non-Root Security Hardening
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Stage 1: Dependency Compilation & Wheel Building
+# ------------------------------------------------------------------------------
+FROM python:3.11-slim-bookworm AS builder
+
+WORKDIR /build
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+COPY docker/requirements-api.txt ./requirements-api.txt
+RUN pip install --default-timeout=120 --retries=5 --upgrade pip setuptools wheel && \
+    pip install --default-timeout=120 --retries=5 -r requirements-api.txt
+
+# ------------------------------------------------------------------------------
+# Stage 2: Minimal Hardened Runtime
+# ------------------------------------------------------------------------------
+FROM python:3.11-slim-bookworm AS runtime
+
+LABEL maintainer="NovaNest Engineering Team" \
+      service="novanest-api" \
+      description="Enterprise REST & Multi-Agent Intelligence API"
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    PATH="/opt/venv/bin:$PATH" \
+    PORT=8000
+
+# Install minimal runtime dependencies and security patches (curl for healthcheck, libgomp1 for ML models)
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
+    curl \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/* /var/tmp/*
+
+# Create unprivileged application user and group
+RUN groupadd -g 10001 novanest && \
+    useradd -u 10001 -g novanest -m -s /bin/bash novanest
+
+WORKDIR /app
+RUN mkdir -p /app/backup/automated /app/scratch && \
+    chown -R novanest:novanest /app
+
+# Copy isolated virtual environment from builder stage
+COPY --from=builder --chown=novanest:novanest /opt/venv /opt/venv
+
+# Copy application code and datasets with non-root ownership
+COPY --chown=novanest:novanest api/ /app/api/
+COPY --chown=novanest:novanest python/ /app/python/
+COPY --chown=novanest:novanest datasets/cleaned/ /app/datasets/cleaned/
+COPY --chown=novanest:novanest datasets/engineered/ /app/datasets/engineered/
+COPY --chown=novanest:novanest models/ /app/models/
+
+# Expose internal API service port
+EXPOSE 8000
+
+# Container health probe
+HEALTHCHECK --interval=15s --timeout=5s --start-period=15s --retries=3 \
+  CMD curl -f http://localhost:8000/api/health || exit 1
+
+# Drop privileges to non-root user
+USER novanest
+
+# Start high-performance Uvicorn ASGI server with proxy header forwarding
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1", "--proxy-headers", "--forwarded-allow-ips", "*"]

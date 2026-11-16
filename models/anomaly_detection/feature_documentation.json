@@ -1,0 +1,23 @@
+{
+    "generated_at_utc": "2026-11-11T06:47:49Z",
+    "statistical_bounds_evaluated": [
+        "delivery_duration",
+        "distance_km",
+        "discount_percentage",
+        "delivery_speed_kph",
+        "order_amount",
+        "restaurant_cancellation_rate_pct"
+    ],
+    "statistical_criteria": [
+        "Z-Score (|z| > 2.5 / > 3.0) & Tukey IQR Fences (1.5x / 3.0x IQR)",
+        "Discount >= 100% of gross order value flagged as Critical statistical + pricing failure",
+        "Delivery speed km/h upper tail > 3.0 std & IQR fence",
+        "Restaurant cancellation rate Z > 2.5 among peer cohorts with n >= 20 orders"
+    ],
+    "business_rule_criteria": [
+        "Post-discount platform net contribution < 0 (using per-restaurant commission_percentage)",
+        "High discount subsidy (>25% and >Rs 150)",
+        "Cancelled order commission & fee opportunity loss",
+        "Small-basket free delivery waiver (delivery_fee == 0 and order_amount < 300)"
+    ]
+}

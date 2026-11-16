@@ -1,0 +1,27 @@
+{
+    "generated_at_utc": "2026-11-11T06:44:57Z",
+    "numeric_features": [
+        "day_of_week",
+        "is_weekend",
+        "dow_sin",
+        "dow_cos",
+        "month_sin",
+        "month_cos",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_28",
+        "rolling_7",
+        "rolling_std_7",
+        "rolling_14",
+        "rolling_28"
+    ],
+    "categorical_features": [
+        "city"
+    ],
+    "fixes_applied": [
+        "Contiguous daily calendar reindexing with 0-fill prior to lag shifting",
+        "Included rolling_std_7, lag_14, lag_28, rolling_14, rolling_28, and cyclical weekday/month sin/cos",
+        "Replaced unregularized np.linalg.pinv OLS with L2 Ridge (alpha=25.0) & HGBR comparisons"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "generated_at_utc": "2026-11-11T06:51:18Z",
+    "numeric_features": [
+        "Pre_Cutoff_Recency_Days",
+        "Orders_Last_30d",
+        "Orders_Last_60d",
+        "Orders_Last_90d",
+        "Lookback_Frequency",
+        "Lookback_Monetary",
+        "Lookback_AOV",
+        "Spend_Last_60d",
+        "Recent_vs_Prior_Order_Ratio",
+        "Cancellation_Rate_Pre",
+        "Discount_Usage_Pct_Pre",
+        "Avg_Inter_Order_Gap_Days",
+        "Lookback_Active_Span_Days",
+        "Avg_Rating_Given_Pre",
+        "Delivered_Rate_Pre"
+    ],
+    "categorical_features": [
+        "persona",
+        "city"
+    ],
+    "excluded_leaked_features": [
+        "Recency",
+        "Is_Churned",
+        "Future_Orders",
+        "Total_Timeline_Recency",
+        "Total_Timeline_Frequency"
+    ],
+    "window_policy": "All behavioral aggregates filtered strictly to order_datetime <= observation_cutoff."
+}

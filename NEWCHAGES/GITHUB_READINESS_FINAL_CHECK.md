@@ -81,3 +81,19 @@ GitHub limits individual files to 100 MB and generates warnings above 50 MB.
 
 *Certified by NovaNest Autonomous Development Agent on 2026-11-07.*
 
+
+
+---
+
+## Phase 06.3 Addendum — Local Working Tree & Credential Hygiene Check (2026-11-12)
+- Verified `.env` preserved unmodified and zero hardcoded API keys or credentials committed in source or tests.
+- Phase 06.3 modifications (`python/ai/agents/{synthesizer.py,master_orchestrator.py,__init__.py}`, `api/main.py`, `frontend/src/{services/api.ts,views/AiIntelligenceView.tsx,components/FloatingChatbot.tsx}`, `tests/test_phase06_3_orchestrator.py`, and `NEWCHAGES/` governance archives) remain local uncommitted working changes per Phase 06.3 non-commit rule; push/commit intentionally withheld.
+- Post-closure git audit confirmed `0` deleted tracked files (`git ls-files --deleted`), `23` modified tracked files (`diff --stat`), `338` untracked working files (`git ls-files --others --exclude-standard`), zero `.env` exposure, and all ephemeral ports (`8000`, `5173`, `9222`) closed (`0` listening sockets).
+
+
+---
+
+## Phase 06.4 Addendum — Local Working Tree & Security Hygiene Check (2026-11-12)
+- Verified `.env` and `datasets/` remain unmodified and zero credentials, tokens, or PII exist in source, tests, or evaluation artifacts.
+- Verified `AgentRegistry.lock()`, prompt-injection sanitization, secret redaction, `/api/ai/ask` input bounds, and React `AbortController`/GET-only retry protections locally (`137/137` regression tests passing, `tsc --noEmit` & `vite build` exit `0`, live API & Chrome CDP verified cleanly with ports `8000/5173/9222` closed).
+- Changes remain local uncommitted workspace edits per Phase 06.4 non-commit/non-push directive; MySQL live parity remains `BLOCKED` locally due to external DB credential denial (`1045 (28000)`).

@@ -1,0 +1,1501 @@
+restaurant_id,restaurant_name,city,restaurant_type,cuisine_type,opening_year,avg_rating,delivery_radius_km,commission_percentage,Total_Orders,Total_Revenue,Cancellations,AOV,Cancellation_Rate,Predicted_Next_Month_Orders,Historical_Monthly_Avg,Model_Version
+R00001,"Reddy, Gulati and Bhardwaj",Hyderabad,Cloud Kitchen,South Indian,2025,4.9,7.2,15,28,24119.0,1,861.39,3.57,3,2.18,2.0.0-phase05-real-panel
+R00002,"Aurora, Dugal and Bahri",Vijayawada,Cafe,Biryani,2024,3.5,2.6,28,33,27648.0,0,837.82,0.0,3,2.64,2.0.0-phase05-real-panel
+R00003,Solanki-Nadkarni,Chennai,Premium Restaurant,North Indian,2016,4.8,6.6,15,35,22487.0,2,642.49,5.71,3,2.64,2.0.0-phase05-real-panel
+R00004,Verma LLC,Coimbatore,Budget Restaurant,North Indian,2021,4.9,7.7,21,35,43367.0,2,1239.06,5.71,3,2.82,2.0.0-phase05-real-panel
+R00005,"Nair, Tank and Merchant",Chennai,Fast Food Chain,North Indian,2018,4.6,7.7,20,27,31429.0,2,1164.04,7.41,3,2.36,2.0.0-phase05-real-panel
+R00006,Kade Group,Chennai,Cafe,Pizza,2017,4.0,9.0,24,41,52807.0,1,1287.98,2.44,3,3.64,2.0.0-phase05-real-panel
+R00007,"Memon, Sandhu and Gulati",Chennai,Budget Restaurant,South Indian,2019,3.6,9.5,18,28,21861.0,4,780.75,14.29,3,2.36,2.0.0-phase05-real-panel
+R00008,Sampath-Muni,Hyderabad,Budget Restaurant,South Indian,2021,3.7,9.7,26,42,48129.0,2,1145.93,4.76,3,3.45,2.0.0-phase05-real-panel
+R00009,Pant-Krishnan,Hyderabad,Cloud Kitchen,North Indian,2025,3.8,2.0,17,41,44689.0,2,1089.98,4.88,3,3.64,2.0.0-phase05-real-panel
+R00010,Rana Group,Hyderabad,Budget Restaurant,North Indian,2023,4.7,4.4,23,35,37909.0,1,1083.11,2.86,3,2.82,2.0.0-phase05-real-panel
+R00011,Iyer-Dhar,Coimbatore,Cloud Kitchen,Desserts,2021,4.3,2.8,25,28,29223.0,3,1043.68,10.71,3,2.36,2.0.0-phase05-real-panel
+R00012,Mital-Bhavsar,Chennai,Premium Restaurant,North Indian,2017,4.6,9.8,29,35,30912.0,2,883.2,5.71,3,3.18,2.0.0-phase05-real-panel
+R00013,Sule LLC,Chennai,Premium Restaurant,Chinese,2017,4.3,7.7,25,40,30701.0,0,767.52,0.0,3,3.36,2.0.0-phase05-real-panel
+R00014,Patel-Ratti,Hyderabad,Premium Restaurant,Biryani,2019,5.0,2.1,20,35,18142.0,1,518.34,2.86,3,2.91,2.0.0-phase05-real-panel
+R00015,Parekh Inc,Coimbatore,Fast Food Chain,South Indian,2019,3.7,3.7,17,35,34795.0,2,994.14,5.71,3,2.73,2.0.0-phase05-real-panel
+R00016,Dugar-Biswas,Hyderabad,Budget Restaurant,South Indian,2022,3.9,9.6,27,30,31923.0,1,1064.1,3.33,3,2.64,2.0.0-phase05-real-panel
+R00017,Dhar-Thaker,Coimbatore,Budget Restaurant,Desserts,2018,4.4,7.5,28,28,31302.0,0,1117.93,0.0,3,2.27,2.0.0-phase05-real-panel
+R00018,Trivedi-Sagar,Coimbatore,Cloud Kitchen,North Indian,2020,4.7,3.4,25,31,35439.0,2,1143.19,6.45,3,2.55,2.0.0-phase05-real-panel
+R00019,Goswami Ltd,Coimbatore,Fast Food Chain,South Indian,2022,4.8,4.0,24,41,47475.0,2,1157.93,4.88,3,3.45,2.0.0-phase05-real-panel
+R00020,Gulati LLC,Chennai,Premium Restaurant,South Indian,2025,4.4,7.9,30,40,34402.0,2,860.05,5.0,3,3.45,2.0.0-phase05-real-panel
+R00021,"Sridhar, Borah and Sibal",Hyderabad,Budget Restaurant,Chinese,2025,4.7,3.7,30,26,22596.0,3,869.08,11.54,3,2.27,2.0.0-phase05-real-panel
+R00022,Varty Group,Chennai,Fast Food Chain,South Indian,2023,4.3,8.0,21,28,25388.0,3,906.71,10.71,3,2.36,2.0.0-phase05-real-panel
+R00023,"Pingle, Mallick and Divan",Chennai,Cafe,Biryani,2022,3.9,2.7,24,40,37343.0,3,933.58,7.5,3,3.18,2.0.0-phase05-real-panel
+R00024,"Shroff, Nanda and Vaidya",Chennai,Budget Restaurant,Desserts,2016,3.5,6.5,21,31,22495.0,0,725.65,0.0,3,2.73,2.0.0-phase05-real-panel
+R00025,Char Ltd,Hyderabad,Budget Restaurant,North Indian,2017,4.9,2.7,20,43,43380.0,2,1008.84,4.65,3,3.64,2.0.0-phase05-real-panel
+R00026,Parekh Inc,Chennai,Budget Restaurant,North Indian,2025,5.0,9.2,30,38,49961.0,2,1314.76,5.26,3,3.18,2.0.0-phase05-real-panel
+R00027,"Aggarwal, Tara and Borra",Chennai,Premium Restaurant,Burger,2018,4.4,9.3,27,33,27498.0,0,833.27,0.0,3,2.82,2.0.0-phase05-real-panel
+R00028,Kadakia-Bhargava,Hyderabad,Fast Food Chain,Burger,2023,4.1,4.5,16,30,37652.0,0,1255.07,0.0,3,2.73,2.0.0-phase05-real-panel
+R00029,"Gopal, Bora and Patla",Bangalore,Premium Restaurant,Biryani,2018,4.7,9.8,25,34,30886.0,2,908.41,5.88,3,2.82,2.0.0-phase05-real-panel
+R00030,"Sandhu, Majumdar and Hegde",Hyderabad,Premium Restaurant,Pizza,2016,3.6,8.3,27,30,37542.0,2,1251.4,6.67,3,2.36,2.0.0-phase05-real-panel
+R00031,"Randhawa, Naik and Setty",Vijayawada,Fast Food Chain,South Indian,2017,4.5,5.9,19,31,27876.0,0,899.23,0.0,3,2.73,2.0.0-phase05-real-panel
+R00032,"Badal, Cherian and Tara",Vijayawada,Cafe,Beverages,2021,4.8,2.7,28,37,33009.0,1,892.14,2.7,3,3.18,2.0.0-phase05-real-panel
+R00033,Aggarwal-Sen,Chennai,Cafe,Burger,2024,4.2,9.2,27,37,28353.0,2,766.3,5.41,3,3.36,2.0.0-phase05-real-panel
+R00034,Babu-Gill,Coimbatore,Budget Restaurant,Pizza,2023,4.0,9.7,17,28,23266.0,0,830.93,0.0,3,2.55,2.0.0-phase05-real-panel
+R00035,Dey-Swaminathan,Chennai,Budget Restaurant,Biryani,2022,3.8,6.6,26,35,38882.0,2,1110.91,5.71,3,2.73,2.0.0-phase05-real-panel
+R00036,Setty-Bhardwaj,Bangalore,Cloud Kitchen,Chinese,2025,4.3,7.5,27,35,32279.0,3,922.26,8.57,3,2.82,2.0.0-phase05-real-panel
+R00037,"Manne, Chaudhry and Rao",Chennai,Fast Food Chain,Beverages,2020,3.7,9.2,24,33,22765.0,3,689.85,9.09,3,2.82,2.0.0-phase05-real-panel
+R00038,"Shah, Sur and Srinivasan",Bangalore,Cloud Kitchen,Burger,2024,3.6,9.2,23,35,42621.0,0,1217.74,0.0,3,2.82,2.0.0-phase05-real-panel
+R00039,"Dhaliwal, Rau and Gopal",Bangalore,Fast Food Chain,South Indian,2023,4.8,2.1,21,43,39581.0,0,920.49,0.0,3,3.64,2.0.0-phase05-real-panel
+R00040,Peri-Lala,Hyderabad,Cafe,South Indian,2021,4.6,5.7,15,39,35301.0,2,905.15,5.13,3,3.0,2.0.0-phase05-real-panel
+R00041,"Balay, Konda and Chahal",Chennai,Budget Restaurant,South Indian,2026,4.8,5.1,28,24,29885.0,3,1245.21,12.5,3,2.0,2.0.0-phase05-real-panel
+R00042,Mitra-Bora,Bangalore,Premium Restaurant,Biryani,2024,3.8,3.2,24,38,39953.0,2,1051.39,5.26,3,3.27,2.0.0-phase05-real-panel
+R00043,"Puri, Choudhary and Bava",Chennai,Premium Restaurant,Pizza,2026,4.2,9.5,22,27,23298.0,1,862.89,3.7,3,2.36,2.0.0-phase05-real-panel
+R00044,Mohanty-Saran,Hyderabad,Cloud Kitchen,Biryani,2016,4.5,8.1,16,44,25234.0,3,573.5,6.82,3,3.64,2.0.0-phase05-real-panel
+R00045,Tata Ltd,Bangalore,Cloud Kitchen,Desserts,2018,4.9,3.2,17,37,30075.0,0,812.84,0.0,3,3.0,2.0.0-phase05-real-panel
+R00046,Bumb PLC,Hyderabad,Budget Restaurant,North Indian,2024,3.7,4.2,25,31,36705.0,1,1184.03,3.23,3,2.55,2.0.0-phase05-real-panel
+R00047,Zacharia Inc,Bangalore,Cloud Kitchen,Biryani,2019,4.7,2.7,21,27,25733.0,0,953.07,0.0,3,2.36,2.0.0-phase05-real-panel
+R00048,"Soni, Suresh and Varkey",Coimbatore,Cloud Kitchen,Pizza,2017,4.8,4.2,24,35,35390.0,1,1011.14,2.86,3,3.0,2.0.0-phase05-real-panel
+R00049,Puri-Badami,Hyderabad,Cloud Kitchen,South Indian,2026,4.0,8.5,26,26,25840.0,0,993.85,0.0,3,2.18,2.0.0-phase05-real-panel
+R00050,"Sur, Prashad and Sundaram",Hyderabad,Premium Restaurant,Chinese,2018,4.4,3.6,24,23,24386.0,0,1060.26,0.0,3,2.0,2.0.0-phase05-real-panel
+R00051,Iyer Group,Hyderabad,Budget Restaurant,Desserts,2025,4.8,7.2,30,35,34387.0,0,982.49,0.0,3,2.82,2.0.0-phase05-real-panel
+R00052,Sampath-Singh,Chennai,Fast Food Chain,Burger,2024,3.8,9.6,20,28,37028.0,3,1322.43,10.71,3,2.36,2.0.0-phase05-real-panel
+R00053,Choudhry Ltd,Coimbatore,Fast Food Chain,South Indian,2025,4.3,8.9,23,42,39048.0,2,929.71,4.76,3,3.55,2.0.0-phase05-real-panel
+R00054,Naidu Ltd,Chennai,Cafe,Healthy Foods,2024,4.1,4.6,22,28,21370.0,0,763.21,0.0,3,2.45,2.0.0-phase05-real-panel
+R00055,Sodhi PLC,Bangalore,Premium Restaurant,Biryani,2022,4.4,6.3,20,24,31172.0,0,1298.83,0.0,3,2.0,2.0.0-phase05-real-panel
+R00056,Handa-Sarkar,Chennai,Premium Restaurant,South Indian,2018,3.8,2.2,27,21,34497.0,1,1642.71,4.76,3,1.91,2.0.0-phase05-real-panel
+R00057,"Dhillon, Bhavsar and Varughese",Bangalore,Cafe,North Indian,2017,4.9,6.1,29,34,36875.0,3,1084.56,8.82,3,2.73,2.0.0-phase05-real-panel
+R00058,Ramesh-Sidhu,Bangalore,Fast Food Chain,Burger,2021,5.0,6.0,30,44,51666.0,0,1174.23,0.0,3,3.55,2.0.0-phase05-real-panel
+R00059,Sandal-Grover,Bangalore,Fast Food Chain,Burger,2020,4.1,8.6,23,40,45682.0,1,1142.05,2.5,3,3.18,2.0.0-phase05-real-panel
+R00060,"Varty, Bajwa and Oommen",Coimbatore,Cloud Kitchen,South Indian,2020,4.2,7.0,15,32,36086.0,1,1127.69,3.12,3,2.82,2.0.0-phase05-real-panel
+R00061,Som LLC,Chennai,Cloud Kitchen,Biryani,2023,4.5,8.5,17,29,32980.0,1,1137.24,3.45,3,2.55,2.0.0-phase05-real-panel
+R00062,"Gandhi, Rajagopal and Dugal",Chennai,Premium Restaurant,North Indian,2019,4.4,7.9,15,34,28465.0,2,837.21,5.88,3,2.91,2.0.0-phase05-real-panel
+R00063,Sankar LLC,Vijayawada,Fast Food Chain,Burger,2026,4.5,2.2,18,36,38655.0,1,1073.75,2.78,3,3.09,2.0.0-phase05-real-panel
+R00064,Sarna-Hayer,Coimbatore,Fast Food Chain,Chinese,2021,4.7,8.9,20,33,42639.0,2,1292.09,6.06,3,2.64,2.0.0-phase05-real-panel
+R00065,"Balay, Rastogi and Bali",Hyderabad,Cafe,South Indian,2023,3.9,8.5,19,33,35178.0,2,1066.0,6.06,3,2.64,2.0.0-phase05-real-panel
+R00066,Golla PLC,Coimbatore,Budget Restaurant,North Indian,2021,4.1,4.1,23,44,53395.0,2,1213.52,4.55,3,4.0,2.0.0-phase05-real-panel
+R00067,Dani-Dhillon,Bangalore,Cafe,Biryani,2021,4.2,6.2,22,27,28806.0,0,1066.89,0.0,3,2.36,2.0.0-phase05-real-panel
+R00068,Gandhi-Mishra,Coimbatore,Cafe,South Indian,2022,4.0,2.4,19,36,46046.0,0,1279.06,0.0,3,2.82,2.0.0-phase05-real-panel
+R00069,Johal and Sons,Bangalore,Budget Restaurant,South Indian,2023,5.0,3.6,20,23,12265.0,3,533.26,13.04,3,2.09,2.0.0-phase05-real-panel
+R00070,Acharya Group,Bangalore,Cafe,Beverages,2022,4.2,8.6,16,39,36622.0,1,939.03,2.56,3,3.09,2.0.0-phase05-real-panel
+R00071,Date and Sons,Chennai,Fast Food Chain,South Indian,2023,4.9,8.2,28,33,33831.0,1,1025.18,3.03,3,2.91,2.0.0-phase05-real-panel
+R00072,"Sama, Boase and Deshpande",Chennai,Cloud Kitchen,South Indian,2022,3.7,3.1,23,31,25617.0,2,826.35,6.45,3,2.55,2.0.0-phase05-real-panel
+R00073,"Divan, Iyengar and Balakrishnan",Chennai,Cloud Kitchen,Biryani,2022,4.5,7.1,26,28,27504.0,0,982.29,0.0,3,2.0,2.0.0-phase05-real-panel
+R00074,"Chandran, Garg and Mangal",Coimbatore,Cafe,North Indian,2025,3.7,4.8,17,34,40100.0,0,1179.41,0.0,3,2.55,2.0.0-phase05-real-panel
+R00075,"Subramaniam, Hari and Rajagopal",Coimbatore,Fast Food Chain,North Indian,2026,4.6,8.9,20,35,26047.0,1,744.2,2.86,3,2.91,2.0.0-phase05-real-panel
+R00076,Cheema Inc,Hyderabad,Cloud Kitchen,Burger,2021,3.9,3.0,18,30,25824.0,3,860.8,10.0,3,2.45,2.0.0-phase05-real-panel
+R00077,"Brahmbhatt, Chokshi and Bose",Hyderabad,Budget Restaurant,Chinese,2021,4.3,5.3,16,35,30512.0,1,871.77,2.86,3,2.91,2.0.0-phase05-real-panel
+R00078,"Banerjee, Chaudry and Iyer",Chennai,Cafe,Chinese,2019,4.0,6.5,16,39,24181.0,3,620.03,7.69,3,3.27,2.0.0-phase05-real-panel
+R00079,Magar-Mahal,Hyderabad,Cafe,Healthy Foods,2017,5.0,5.2,15,43,35088.0,1,816.0,2.33,3,3.73,2.0.0-phase05-real-panel
+R00080,"Char, Kata and Mallick",Chennai,Budget Restaurant,Burger,2018,4.9,8.4,30,42,49262.0,3,1172.9,7.14,3,3.64,2.0.0-phase05-real-panel
+R00081,"Ratta, Seth and Batra",Vijayawada,Budget Restaurant,Biryani,2025,4.1,3.6,23,36,36656.0,2,1018.22,5.56,3,3.0,2.0.0-phase05-real-panel
+R00082,Tella and Sons,Hyderabad,Fast Food Chain,South Indian,2025,4.7,2.2,17,33,35876.0,3,1087.15,9.09,3,2.82,2.0.0-phase05-real-panel
+R00083,"Raja, Pingle and Dara",Hyderabad,Premium Restaurant,North Indian,2016,4.9,8.4,16,36,38245.0,2,1062.36,5.56,3,3.0,2.0.0-phase05-real-panel
+R00084,"Sabharwal, Basu and Mander",Vijayawada,Cloud Kitchen,Biryani,2019,3.8,8.1,21,40,32084.0,0,802.1,0.0,3,3.27,2.0.0-phase05-real-panel
+R00085,"Chana, Choudhury and Karan",Hyderabad,Premium Restaurant,Pizza,2018,4.9,6.7,22,43,37412.0,1,870.05,2.33,3,3.55,2.0.0-phase05-real-panel
+R00086,"Rajagopal, Magar and Bawa",Chennai,Cafe,Chinese,2023,4.9,2.2,24,27,21027.0,1,778.78,3.7,3,2.18,2.0.0-phase05-real-panel
+R00087,"Sahni, Ghosh and Subramanian",Vijayawada,Budget Restaurant,Pizza,2023,4.8,6.0,21,41,33690.0,3,821.71,7.32,3,3.36,2.0.0-phase05-real-panel
+R00088,Bains-Khare,Vijayawada,Cloud Kitchen,Biryani,2016,4.9,5.7,30,49,42929.0,1,876.1,2.04,3,3.82,2.0.0-phase05-real-panel
+R00089,"Pradhan, Varma and Shetty",Vijayawada,Budget Restaurant,Chinese,2016,4.8,2.4,29,39,28078.0,0,719.95,0.0,3,3.45,2.0.0-phase05-real-panel
+R00090,Butala-Patel,Bangalore,Budget Restaurant,Pizza,2024,4.2,3.7,17,35,29384.0,1,839.54,2.86,3,2.82,2.0.0-phase05-real-panel
+R00091,Raman-Yohannan,Vijayawada,Budget Restaurant,Pizza,2025,4.1,8.9,28,43,36018.0,1,837.63,2.33,3,3.18,2.0.0-phase05-real-panel
+R00092,"Nayar, Chatterjee and Bedi",Bangalore,Budget Restaurant,Chinese,2020,4.9,5.4,21,29,35468.0,1,1223.03,3.45,3,2.55,2.0.0-phase05-real-panel
+R00093,Kala Inc,Chennai,Cafe,Biryani,2021,4.9,7.3,28,31,45491.0,0,1467.45,0.0,3,2.73,2.0.0-phase05-real-panel
+R00094,Krishnamurthy LLC,Chennai,Budget Restaurant,Biryani,2022,4.8,4.3,20,36,29583.0,0,821.75,0.0,3,3.09,2.0.0-phase05-real-panel
+R00095,Bobal-Vaidya,Hyderabad,Fast Food Chain,Healthy Foods,2017,4.8,7.2,20,39,33958.0,3,870.72,7.69,3,3.27,2.0.0-phase05-real-panel
+R00096,Buch Inc,Chennai,Cloud Kitchen,Biryani,2018,3.7,4.1,16,27,24538.0,1,908.81,3.7,3,2.18,2.0.0-phase05-real-panel
+R00097,Yogi-Reddy,Chennai,Budget Restaurant,South Indian,2016,3.6,7.9,22,36,35061.0,1,973.92,2.78,3,2.64,2.0.0-phase05-real-panel
+R00098,Dixit-Balasubramanian,Vijayawada,Cloud Kitchen,Biryani,2019,4.2,3.4,24,38,31510.0,1,829.21,2.63,3,3.36,2.0.0-phase05-real-panel
+R00099,Bhavsar-Sagar,Coimbatore,Premium Restaurant,Pizza,2017,4.1,6.3,18,43,38474.0,4,894.74,9.3,3,3.73,2.0.0-phase05-real-panel
+R00100,Soman-Tripathi,Hyderabad,Fast Food Chain,Biryani,2024,5.0,2.1,24,33,28450.0,1,862.12,3.03,3,2.45,2.0.0-phase05-real-panel
+R00101,Singhal-Nadkarni,Bangalore,Premium Restaurant,Chinese,2022,4.6,9.9,18,35,41231.0,0,1178.03,0.0,3,2.91,2.0.0-phase05-real-panel
+R00102,Kaur Ltd,Chennai,Budget Restaurant,Burger,2019,4.3,5.1,19,33,32448.0,2,983.27,6.06,3,2.82,2.0.0-phase05-real-panel
+R00103,Reddy-Brar,Vijayawada,Budget Restaurant,Healthy Foods,2021,3.7,8.7,30,28,29961.0,0,1070.04,0.0,3,2.18,2.0.0-phase05-real-panel
+R00104,"Chad, Wadhwa and Luthra",Bangalore,Cafe,North Indian,2025,4.0,6.6,15,22,25481.0,0,1158.23,0.0,3,1.91,2.0.0-phase05-real-panel
+R00105,Dada-Setty,Chennai,Fast Food Chain,Chinese,2023,3.6,2.9,26,24,35465.0,1,1477.71,4.17,3,2.0,2.0.0-phase05-real-panel
+R00106,Soni Group,Chennai,Budget Restaurant,Healthy Foods,2024,4.1,4.1,21,35,28184.0,3,805.26,8.57,3,2.91,2.0.0-phase05-real-panel
+R00107,Rao Group,Chennai,Premium Restaurant,Chinese,2025,4.8,7.9,23,44,46488.0,2,1056.55,4.55,3,3.73,2.0.0-phase05-real-panel
+R00108,Ghose Ltd,Bangalore,Budget Restaurant,Chinese,2018,4.7,7.4,15,28,28423.0,1,1015.11,3.57,3,2.18,2.0.0-phase05-real-panel
+R00109,Pandit-Shankar,Chennai,Fast Food Chain,Healthy Foods,2022,4.7,6.8,22,34,32146.0,2,945.47,5.88,3,3.0,2.0.0-phase05-real-panel
+R00110,"Das, Gaba and Tak",Chennai,Cloud Kitchen,Biryani,2016,4.3,5.1,24,24,20775.0,2,865.62,8.33,3,2.09,2.0.0-phase05-real-panel
+R00111,Venkatesh-Pillai,Hyderabad,Premium Restaurant,Burger,2017,4.6,7.4,24,27,28574.0,3,1058.3,11.11,3,2.45,2.0.0-phase05-real-panel
+R00112,"Sachar, Loyal and Dasgupta",Hyderabad,Premium Restaurant,Biryani,2023,4.9,9.6,16,26,29166.0,3,1121.77,11.54,3,1.82,2.0.0-phase05-real-panel
+R00113,"Mishra, Bawa and De",Hyderabad,Premium Restaurant,Pizza,2024,4.0,3.8,25,30,30036.0,0,1001.2,0.0,3,2.55,2.0.0-phase05-real-panel
+R00114,Malhotra Ltd,Chennai,Fast Food Chain,Burger,2023,3.6,5.5,18,32,28571.0,1,892.84,3.12,3,2.73,2.0.0-phase05-real-panel
+R00115,Sachdeva LLC,Bangalore,Cloud Kitchen,Pizza,2020,4.7,8.8,19,34,37008.0,4,1088.47,11.76,3,2.82,2.0.0-phase05-real-panel
+R00116,Vohra-Choudhary,Coimbatore,Cafe,Pizza,2018,3.7,3.8,20,28,30329.0,0,1083.18,0.0,3,2.45,2.0.0-phase05-real-panel
+R00117,"Khalsa, Bawa and Karan",Bangalore,Fast Food Chain,South Indian,2016,3.8,6.9,18,50,49909.0,2,998.18,4.0,3,4.18,2.0.0-phase05-real-panel
+R00118,"Nath, Sachdeva and Vig",Coimbatore,Cloud Kitchen,South Indian,2018,4.1,2.2,19,33,20966.0,0,635.33,0.0,3,2.45,2.0.0-phase05-real-panel
+R00119,"Shan, Guha and Keer",Vijayawada,Cloud Kitchen,North Indian,2020,3.8,2.3,18,38,40853.0,1,1075.08,2.63,3,3.09,2.0.0-phase05-real-panel
+R00120,Pathak-Seshadri,Coimbatore,Premium Restaurant,Chinese,2017,3.8,4.4,21,25,15964.0,0,638.56,0.0,3,2.09,2.0.0-phase05-real-panel
+R00121,Kunda and Sons,Bangalore,Cafe,North Indian,2020,4.5,7.0,24,31,31626.0,1,1020.19,3.23,3,2.55,2.0.0-phase05-real-panel
+R00122,Banerjee Group,Hyderabad,Cloud Kitchen,South Indian,2025,4.6,2.6,29,41,36937.0,0,900.9,0.0,3,3.45,2.0.0-phase05-real-panel
+R00123,Luthra and Sons,Coimbatore,Cloud Kitchen,Biryani,2022,4.0,9.7,16,45,53668.0,3,1192.62,6.67,3,4.0,2.0.0-phase05-real-panel
+R00124,Arya-Prabhu,Hyderabad,Cloud Kitchen,Chinese,2016,4.1,3.1,22,36,38402.0,1,1066.72,2.78,3,2.91,2.0.0-phase05-real-panel
+R00125,Solanki PLC,Bangalore,Fast Food Chain,Pizza,2023,3.8,2.1,26,31,20897.0,3,674.1,9.68,3,2.73,2.0.0-phase05-real-panel
+R00126,Natt-Kurian,Coimbatore,Fast Food Chain,Chinese,2016,4.5,6.6,17,34,24922.0,2,733.0,5.88,3,2.82,2.0.0-phase05-real-panel
+R00127,"Narula, Agarwal and Sachdev",Bangalore,Budget Restaurant,Biryani,2022,4.7,2.3,30,31,19028.0,3,613.81,9.68,3,2.55,2.0.0-phase05-real-panel
+R00128,Sha Ltd,Chennai,Cafe,South Indian,2022,4.9,2.0,27,37,42402.0,0,1146.0,0.0,3,3.0,2.0.0-phase05-real-panel
+R00129,Mani PLC,Hyderabad,Fast Food Chain,Burger,2026,5.0,8.6,29,24,22317.0,0,929.88,0.0,3,2.18,2.0.0-phase05-real-panel
+R00130,Randhawa PLC,Bangalore,Cloud Kitchen,South Indian,2020,4.0,3.1,25,45,42043.0,0,934.29,0.0,3,3.91,2.0.0-phase05-real-panel
+R00131,Agrawal-Gara,Chennai,Budget Restaurant,South Indian,2017,4.6,3.2,16,28,31015.0,0,1107.68,0.0,3,2.36,2.0.0-phase05-real-panel
+R00132,"Shroff, Sethi and Kalla",Bangalore,Fast Food Chain,Biryani,2017,4.9,7.7,27,36,42847.0,0,1190.19,0.0,3,3.09,2.0.0-phase05-real-panel
+R00133,Pillay-Chauhan,Hyderabad,Premium Restaurant,Biryani,2019,4.4,7.6,19,39,36310.0,0,931.03,0.0,3,3.27,2.0.0-phase05-real-panel
+R00134,Bera-Joshi,Coimbatore,Cloud Kitchen,Pizza,2020,4.6,3.4,22,28,35318.0,4,1261.36,14.29,3,2.0,2.0.0-phase05-real-panel
+R00135,Bali-Kapoor,Chennai,Budget Restaurant,Chinese,2020,3.9,9.5,29,36,38463.0,3,1068.42,8.33,3,3.09,2.0.0-phase05-real-panel
+R00136,Nigam LLC,Chennai,Budget Restaurant,North Indian,2026,3.7,3.2,16,34,29751.0,2,875.03,5.88,3,2.55,2.0.0-phase05-real-panel
+R00137,Kale-Batra,Bangalore,Cloud Kitchen,North Indian,2024,4.6,2.2,21,39,40974.0,3,1050.62,7.69,3,3.18,2.0.0-phase05-real-panel
+R00138,Kamdar LLC,Hyderabad,Cloud Kitchen,Chinese,2022,4.2,4.0,16,27,30278.0,1,1121.41,3.7,3,2.27,2.0.0-phase05-real-panel
+R00139,Dave-Halder,Hyderabad,Budget Restaurant,Biryani,2026,4.9,8.7,18,34,42359.0,1,1245.85,2.94,3,2.91,2.0.0-phase05-real-panel
+R00140,Gill Inc,Hyderabad,Cafe,Biryani,2019,3.6,8.0,22,42,34185.0,2,813.93,4.76,3,3.36,2.0.0-phase05-real-panel
+R00141,Srinivasan-Dhaliwal,Vijayawada,Cafe,Desserts,2025,3.9,4.1,16,31,29850.0,2,962.9,6.45,3,2.55,2.0.0-phase05-real-panel
+R00142,Chakrabarti-Mutti,Chennai,Cloud Kitchen,Burger,2020,4.6,7.1,23,31,21523.0,2,694.29,6.45,3,2.73,2.0.0-phase05-real-panel
+R00143,Bobal Group,Hyderabad,Cafe,Healthy Foods,2022,4.5,8.8,16,22,24612.0,0,1118.73,0.0,3,1.82,2.0.0-phase05-real-panel
+R00144,Walia-Ghosh,Hyderabad,Premium Restaurant,Biryani,2026,4.6,4.7,16,33,32474.0,0,984.06,0.0,3,2.36,2.0.0-phase05-real-panel
+R00145,Zacharia-Kulkarni,Chennai,Fast Food Chain,South Indian,2019,3.9,4.7,30,29,22528.0,0,776.83,0.0,3,2.36,2.0.0-phase05-real-panel
+R00146,Iyengar Inc,Chennai,Cloud Kitchen,South Indian,2018,4.4,7.2,20,38,26914.0,2,708.26,5.26,3,3.27,2.0.0-phase05-real-panel
+R00147,Swamy-Parmer,Hyderabad,Premium Restaurant,Beverages,2018,4.4,9.6,30,32,35513.0,3,1109.78,9.38,3,2.45,2.0.0-phase05-real-panel
+R00148,Murthy PLC,Coimbatore,Budget Restaurant,Burger,2018,3.8,7.0,19,36,34309.0,1,953.03,2.78,3,3.0,2.0.0-phase05-real-panel
+R00149,Din-Doshi,Hyderabad,Premium Restaurant,North Indian,2025,4.5,9.6,23,39,52381.0,1,1343.1,2.56,3,3.27,2.0.0-phase05-real-panel
+R00150,Dhar Inc,Bangalore,Cloud Kitchen,Biryani,2017,4.6,2.8,25,36,37597.0,0,1044.36,0.0,3,3.09,2.0.0-phase05-real-panel
+R00151,Minhas-Bhatnagar,Bangalore,Fast Food Chain,South Indian,2017,3.8,6.0,17,41,49093.0,0,1197.39,0.0,3,3.27,2.0.0-phase05-real-panel
+R00152,Mangat and Sons,Vijayawada,Budget Restaurant,South Indian,2024,3.5,3.4,20,34,36448.0,2,1072.0,5.88,3,2.45,2.0.0-phase05-real-panel
+R00153,Varty Ltd,Chennai,Premium Restaurant,South Indian,2024,3.8,2.1,29,33,19884.0,2,602.55,6.06,3,2.82,2.0.0-phase05-real-panel
+R00154,Arya PLC,Chennai,Cafe,Desserts,2016,3.9,2.9,23,30,34166.0,0,1138.87,0.0,3,2.64,2.0.0-phase05-real-panel
+R00155,Rao Ltd,Bangalore,Budget Restaurant,South Indian,2018,4.1,3.4,22,32,38499.0,0,1203.09,0.0,3,2.64,2.0.0-phase05-real-panel
+R00156,Sha Ltd,Hyderabad,Premium Restaurant,South Indian,2016,4.9,6.7,25,50,36375.0,1,727.5,2.0,3,4.27,2.0.0-phase05-real-panel
+R00157,"Jayaraman, Bhargava and Andra",Vijayawada,Cloud Kitchen,Chinese,2017,3.7,6.9,19,33,27519.0,1,833.91,3.03,3,2.82,2.0.0-phase05-real-panel
+R00158,"Mann, Apte and Oommen",Bangalore,Cafe,Biryani,2020,4.0,6.3,30,32,26934.0,2,841.69,6.25,3,2.64,2.0.0-phase05-real-panel
+R00159,Dalal-Vig,Vijayawada,Premium Restaurant,Biryani,2026,3.6,4.0,15,34,34010.0,0,1000.29,0.0,3,2.73,2.0.0-phase05-real-panel
+R00160,"Malhotra, Deep and Kibe",Coimbatore,Cloud Kitchen,South Indian,2018,5.0,5.2,21,26,20659.0,2,794.58,7.69,3,2.09,2.0.0-phase05-real-panel
+R00161,Padmanabhan PLC,Chennai,Cafe,Pizza,2025,4.5,7.9,17,35,31948.0,3,912.8,8.57,3,2.73,2.0.0-phase05-real-panel
+R00162,Shanker-Dhillon,Chennai,Budget Restaurant,South Indian,2023,3.9,8.1,23,42,50221.0,1,1195.74,2.38,3,3.27,2.0.0-phase05-real-panel
+R00163,Varma Ltd,Bangalore,Budget Restaurant,Burger,2021,4.9,9.5,22,39,42314.0,0,1084.97,0.0,3,3.36,2.0.0-phase05-real-panel
+R00164,Murthy-Shroff,Chennai,Cloud Kitchen,Biryani,2023,4.9,2.8,20,38,36378.0,4,957.32,10.53,3,3.18,2.0.0-phase05-real-panel
+R00165,Chaudhary-Thaman,Vijayawada,Premium Restaurant,Burger,2016,4.2,6.4,24,38,45692.0,1,1202.42,2.63,3,3.18,2.0.0-phase05-real-panel
+R00166,Krishnamurthy-Padmanabhan,Chennai,Premium Restaurant,Healthy Foods,2025,4.3,9.1,29,41,30898.0,2,753.61,4.88,3,3.64,2.0.0-phase05-real-panel
+R00167,Issac-Palla,Coimbatore,Fast Food Chain,South Indian,2025,4.0,4.5,20,39,36914.0,0,946.51,0.0,3,3.09,2.0.0-phase05-real-panel
+R00168,Dani Inc,Chennai,Premium Restaurant,South Indian,2025,4.0,2.6,18,27,22567.0,2,835.81,7.41,3,2.36,2.0.0-phase05-real-panel
+R00169,Chana Group,Chennai,Premium Restaurant,Burger,2018,4.9,3.6,27,24,19858.0,1,827.42,4.17,3,2.09,2.0.0-phase05-real-panel
+R00170,Jani and Sons,Chennai,Premium Restaurant,North Indian,2016,3.5,9.5,24,39,42812.0,2,1097.74,5.13,3,3.36,2.0.0-phase05-real-panel
+R00171,Dani Ltd,Coimbatore,Premium Restaurant,South Indian,2025,3.8,3.0,28,31,32024.0,1,1033.03,3.23,3,2.64,2.0.0-phase05-real-panel
+R00172,Mahajan Ltd,Bangalore,Premium Restaurant,Chinese,2022,4.7,6.4,27,25,35255.0,1,1410.2,4.0,3,1.82,2.0.0-phase05-real-panel
+R00173,Vasa-Kumar,Chennai,Cafe,South Indian,2018,4.1,5.6,27,43,29583.0,3,687.98,6.98,3,3.55,2.0.0-phase05-real-panel
+R00174,"Dewan, Krishnamurthy and Khalsa",Vijayawada,Fast Food Chain,North Indian,2018,4.5,8.7,27,27,15511.0,1,574.48,3.7,3,2.27,2.0.0-phase05-real-panel
+R00175,"Rajan, Gill and Raghavan",Coimbatore,Cafe,Chinese,2026,4.7,4.3,17,41,26742.0,2,652.24,4.88,3,3.45,2.0.0-phase05-real-panel
+R00176,Jha Inc,Hyderabad,Fast Food Chain,South Indian,2021,4.4,5.7,20,37,36592.0,3,988.97,8.11,3,3.09,2.0.0-phase05-real-panel
+R00177,Sahota PLC,Chennai,Cloud Kitchen,South Indian,2021,4.8,2.7,21,29,38200.0,5,1317.24,17.24,3,2.45,2.0.0-phase05-real-panel
+R00178,Master-Pillai,Chennai,Fast Food Chain,Chinese,2019,3.8,4.6,26,45,48331.0,1,1074.02,2.22,3,4.0,2.0.0-phase05-real-panel
+R00179,Chaudhary-Kala,Chennai,Fast Food Chain,Pizza,2016,4.8,2.5,16,39,36509.0,4,936.13,10.26,3,3.27,2.0.0-phase05-real-panel
+R00180,Bobal-Kunda,Hyderabad,Cloud Kitchen,Healthy Foods,2019,4.3,3.2,17,25,26341.0,1,1053.64,4.0,3,1.91,2.0.0-phase05-real-panel
+R00181,Upadhyay-Shetty,Bangalore,Premium Restaurant,North Indian,2016,4.9,5.6,16,29,26063.0,0,898.72,0.0,3,2.27,2.0.0-phase05-real-panel
+R00182,Jhaveri-Kala,Coimbatore,Premium Restaurant,Biryani,2022,4.3,2.0,30,23,26971.0,1,1172.65,4.35,3,1.82,2.0.0-phase05-real-panel
+R00183,Minhas and Sons,Hyderabad,Premium Restaurant,Healthy Foods,2020,4.5,7.0,19,30,25398.0,1,846.6,3.33,3,2.55,2.0.0-phase05-real-panel
+R00184,Keer PLC,Bangalore,Fast Food Chain,Burger,2021,3.9,4.3,26,38,36712.0,2,966.11,5.26,3,3.27,2.0.0-phase05-real-panel
+R00185,Dugal-Mahajan,Chennai,Fast Food Chain,Biryani,2026,4.0,5.1,29,38,34690.0,0,912.89,0.0,3,3.18,2.0.0-phase05-real-panel
+R00186,Halder-Mane,Bangalore,Cafe,South Indian,2017,3.6,9.6,18,34,33706.0,0,991.35,0.0,3,2.55,2.0.0-phase05-real-panel
+R00187,Desai-Solanki,Bangalore,Budget Restaurant,North Indian,2022,4.8,5.5,28,29,20397.0,0,703.34,0.0,3,2.27,2.0.0-phase05-real-panel
+R00188,"Mitra, Sahota and Gokhale",Vijayawada,Cafe,South Indian,2024,4.5,5.4,16,31,40354.0,0,1301.74,0.0,3,2.73,2.0.0-phase05-real-panel
+R00189,Iyer-Sarkar,Hyderabad,Budget Restaurant,Biryani,2018,3.8,2.7,18,34,41042.0,2,1207.12,5.88,3,2.55,2.0.0-phase05-real-panel
+R00190,"Guha, Rai and Choudhary",Hyderabad,Cafe,Chinese,2016,4.9,7.1,17,29,30565.0,1,1053.97,3.45,3,2.36,2.0.0-phase05-real-panel
+R00191,Magar Group,Chennai,Cloud Kitchen,Pizza,2017,4.3,5.6,18,31,31061.0,1,1001.97,3.23,3,2.73,2.0.0-phase05-real-panel
+R00192,Baria-Bhagat,Chennai,Budget Restaurant,Chinese,2022,4.1,2.8,16,36,31551.0,3,876.42,8.33,3,3.09,2.0.0-phase05-real-panel
+R00193,Garde Ltd,Chennai,Premium Restaurant,North Indian,2021,3.8,2.4,18,34,22563.0,0,663.62,0.0,3,2.91,2.0.0-phase05-real-panel
+R00194,"Hans, Mukherjee and Vasa",Bangalore,Fast Food Chain,Burger,2020,4.5,4.7,26,31,27578.0,1,889.61,3.23,3,2.73,2.0.0-phase05-real-panel
+R00195,"Gopal, Patel and Sibal",Hyderabad,Premium Restaurant,Biryani,2026,4.2,7.1,15,44,41456.0,2,942.18,4.55,3,3.73,2.0.0-phase05-real-panel
+R00196,Ganesh and Sons,Bangalore,Cafe,Chinese,2017,3.5,8.7,21,33,28154.0,2,853.15,6.06,3,2.91,2.0.0-phase05-real-panel
+R00197,Sethi-Kale,Chennai,Cafe,North Indian,2016,4.4,2.0,29,27,29798.0,1,1103.63,3.7,3,2.27,2.0.0-phase05-real-panel
+R00198,Parekh Inc,Vijayawada,Cafe,Biryani,2026,4.8,2.3,16,29,37145.0,0,1280.86,0.0,3,2.18,2.0.0-phase05-real-panel
+R00199,Garg-Nadig,Hyderabad,Cloud Kitchen,North Indian,2018,4.0,9.7,26,40,43030.0,2,1075.75,5.0,3,3.27,2.0.0-phase05-real-panel
+R00200,"Khurana, Parsa and Hans",Chennai,Premium Restaurant,Healthy Foods,2022,4.7,8.9,26,50,40351.0,2,807.02,4.0,3,4.36,2.0.0-phase05-real-panel
+R00201,"Shanker, Agate and Shroff",Bangalore,Premium Restaurant,Biryani,2017,4.6,3.3,26,27,16927.0,1,626.93,3.7,3,2.27,2.0.0-phase05-real-panel
+R00202,Ramesh and Sons,Vijayawada,Premium Restaurant,Biryani,2019,3.6,7.3,15,32,28040.0,0,876.25,0.0,3,2.73,2.0.0-phase05-real-panel
+R00203,Balakrishnan Group,Coimbatore,Budget Restaurant,Biryani,2017,3.9,6.6,19,30,36021.0,1,1200.7,3.33,3,2.45,2.0.0-phase05-real-panel
+R00204,Sen-Halder,Bangalore,Cafe,South Indian,2026,4.6,5.1,22,35,41874.0,1,1196.4,2.86,3,2.91,2.0.0-phase05-real-panel
+R00205,Sur-Om,Bangalore,Premium Restaurant,Desserts,2016,3.5,7.6,24,35,36078.0,0,1030.8,0.0,3,2.91,2.0.0-phase05-real-panel
+R00206,Chanda-Kurian,Bangalore,Fast Food Chain,Biryani,2016,3.9,6.5,20,38,32075.0,2,844.08,5.26,3,2.91,2.0.0-phase05-real-panel
+R00207,Dewan LLC,Chennai,Budget Restaurant,Healthy Foods,2016,4.1,4.9,29,30,22986.0,1,766.2,3.33,3,2.55,2.0.0-phase05-real-panel
+R00208,Vaidya-Chopra,Bangalore,Cafe,South Indian,2024,4.4,3.5,24,33,29710.0,1,900.3,3.03,3,2.55,2.0.0-phase05-real-panel
+R00209,Varty-Dalal,Bangalore,Premium Restaurant,North Indian,2022,3.9,5.1,25,38,27547.0,2,724.92,5.26,3,3.27,2.0.0-phase05-real-panel
+R00210,Purohit and Sons,Coimbatore,Budget Restaurant,Biryani,2016,4.9,7.6,23,28,21570.0,0,770.36,0.0,3,2.18,2.0.0-phase05-real-panel
+R00211,Deo-Patel,Chennai,Cloud Kitchen,Chinese,2024,4.5,4.7,23,31,37991.0,4,1225.52,12.9,3,2.36,2.0.0-phase05-real-panel
+R00212,Pandya-Vala,Hyderabad,Fast Food Chain,Pizza,2017,5.0,9.9,29,37,27266.0,0,736.92,0.0,3,3.0,2.0.0-phase05-real-panel
+R00213,"Kumer, Nagy and Halder",Hyderabad,Cafe,South Indian,2026,3.8,5.6,20,36,35531.0,0,986.97,0.0,3,2.91,2.0.0-phase05-real-panel
+R00214,Dua Inc,Bangalore,Fast Food Chain,North Indian,2022,3.5,8.4,25,29,22131.0,0,763.14,0.0,3,2.45,2.0.0-phase05-real-panel
+R00215,"Suresh, Ganguly and Oza",Chennai,Fast Food Chain,Desserts,2020,4.0,6.4,22,38,39557.0,0,1040.97,0.0,3,3.09,2.0.0-phase05-real-panel
+R00216,Jani Group,Coimbatore,Premium Restaurant,North Indian,2026,4.3,7.1,16,28,27059.0,3,966.39,10.71,3,2.36,2.0.0-phase05-real-panel
+R00217,Magar and Sons,Coimbatore,Cloud Kitchen,Healthy Foods,2023,3.6,7.1,28,28,18195.0,1,649.82,3.57,3,2.45,2.0.0-phase05-real-panel
+R00218,Kale-Murty,Vijayawada,Cloud Kitchen,Biryani,2025,4.2,8.7,22,40,42622.0,0,1065.55,0.0,3,3.36,2.0.0-phase05-real-panel
+R00219,Dey Ltd,Bangalore,Cafe,South Indian,2020,4.3,6.5,25,26,23242.0,0,893.92,0.0,3,2.0,2.0.0-phase05-real-panel
+R00220,Bhatt LLC,Hyderabad,Fast Food Chain,Biryani,2016,4.9,3.8,29,21,19115.0,0,910.24,0.0,3,1.73,2.0.0-phase05-real-panel
+R00221,"Mohanty, Bains and Iyer",Bangalore,Budget Restaurant,North Indian,2022,3.7,4.0,17,32,20831.0,3,650.97,9.38,3,2.64,2.0.0-phase05-real-panel
+R00222,Roy-Pillay,Bangalore,Premium Restaurant,South Indian,2022,3.6,2.7,16,43,37475.0,1,871.51,2.33,3,3.36,2.0.0-phase05-real-panel
+R00223,"Misra, Manne and Behl",Chennai,Budget Restaurant,Beverages,2017,4.1,5.0,20,25,21235.0,0,849.4,0.0,3,1.91,2.0.0-phase05-real-panel
+R00224,Chand LLC,Coimbatore,Budget Restaurant,Biryani,2026,4.5,7.8,16,30,32188.0,2,1072.93,6.67,3,2.45,2.0.0-phase05-real-panel
+R00225,Wagle-Kata,Chennai,Cloud Kitchen,Burger,2026,4.7,2.7,21,34,37249.0,0,1095.56,0.0,3,2.82,2.0.0-phase05-real-panel
+R00226,Suresh PLC,Coimbatore,Budget Restaurant,North Indian,2025,4.9,4.2,25,30,20510.0,0,683.67,0.0,3,2.45,2.0.0-phase05-real-panel
+R00227,Iyer and Sons,Chennai,Cafe,Biryani,2023,4.8,2.1,23,33,25974.0,2,787.09,6.06,3,2.82,2.0.0-phase05-real-panel
+R00228,Tiwari-Kibe,Hyderabad,Premium Restaurant,Biryani,2017,4.0,6.8,19,42,63747.0,0,1517.79,0.0,3,3.73,2.0.0-phase05-real-panel
+R00229,Atwal-Koshy,Chennai,Cafe,North Indian,2021,3.7,8.4,20,33,24586.0,2,745.03,6.06,3,2.91,2.0.0-phase05-real-panel
+R00230,"Mitter, Varughese and Bhardwaj",Hyderabad,Cafe,North Indian,2022,4.9,2.7,26,32,45324.0,1,1416.38,3.12,3,2.55,2.0.0-phase05-real-panel
+R00231,"Saraf, Kar and Deshmukh",Chennai,Cafe,Burger,2024,4.8,6.8,25,35,31331.0,0,895.17,0.0,3,3.0,2.0.0-phase05-real-panel
+R00232,Kohli PLC,Vijayawada,Budget Restaurant,Biryani,2016,4.9,8.7,27,38,36178.0,4,952.05,10.53,3,3.27,2.0.0-phase05-real-panel
+R00233,Narayan-Srivastava,Hyderabad,Fast Food Chain,Pizza,2024,4.6,5.3,29,35,42973.0,2,1227.8,5.71,3,3.09,2.0.0-phase05-real-panel
+R00234,Kashyap-Acharya,Chennai,Cloud Kitchen,Pizza,2023,4.7,6.8,24,41,35495.0,2,865.73,4.88,3,3.09,2.0.0-phase05-real-panel
+R00235,Banerjee Group,Chennai,Fast Food Chain,North Indian,2025,4.0,2.6,19,36,37182.0,1,1032.83,2.78,3,3.0,2.0.0-phase05-real-panel
+R00236,Dubey Group,Bangalore,Cafe,North Indian,2021,4.0,2.1,28,29,25913.0,0,893.55,0.0,3,2.36,2.0.0-phase05-real-panel
+R00237,Sehgal and Sons,Chennai,Cloud Kitchen,Biryani,2023,4.0,2.6,15,32,37987.0,1,1187.09,3.12,3,2.73,2.0.0-phase05-real-panel
+R00238,Walla and Sons,Chennai,Cloud Kitchen,South Indian,2018,4.6,2.8,15,33,29917.0,2,906.58,6.06,3,2.91,2.0.0-phase05-real-panel
+R00239,Oza Inc,Chennai,Budget Restaurant,South Indian,2017,4.3,7.7,29,28,16582.0,1,592.21,3.57,3,2.27,2.0.0-phase05-real-panel
+R00240,"Kala, Bobal and Edwin",Chennai,Premium Restaurant,Desserts,2026,3.5,8.3,23,31,34150.0,3,1101.61,9.68,3,2.73,2.0.0-phase05-real-panel
+R00241,Vora-Sane,Hyderabad,Budget Restaurant,Biryani,2023,4.5,2.8,16,27,30749.0,2,1138.85,7.41,3,2.45,2.0.0-phase05-real-panel
+R00242,Vohra Group,Chennai,Cafe,Healthy Foods,2016,4.4,5.1,22,36,28286.0,0,785.72,0.0,3,2.73,2.0.0-phase05-real-panel
+R00243,Banerjee-Kothari,Hyderabad,Cloud Kitchen,Burger,2017,3.7,3.7,24,27,24241.0,0,897.81,0.0,3,2.36,2.0.0-phase05-real-panel
+R00244,Murty-Garde,Chennai,Fast Food Chain,Chinese,2021,3.9,4.3,22,43,37484.0,3,871.72,6.98,3,3.82,2.0.0-phase05-real-panel
+R00245,Taneja Inc,Chennai,Cafe,Biryani,2026,4.1,2.5,26,31,29417.0,1,948.94,3.23,3,2.36,2.0.0-phase05-real-panel
+R00246,Maharaj PLC,Vijayawada,Cafe,Desserts,2021,3.7,2.1,24,43,38033.0,2,884.49,4.65,3,3.73,2.0.0-phase05-real-panel
+R00247,Lalla Ltd,Vijayawada,Premium Restaurant,South Indian,2023,4.7,4.2,25,30,20655.0,0,688.5,0.0,3,2.27,2.0.0-phase05-real-panel
+R00248,Sanghvi-Sami,Bangalore,Cafe,North Indian,2017,4.1,6.2,29,44,29492.0,0,670.27,0.0,3,3.45,2.0.0-phase05-real-panel
+R00249,Chopra Group,Chennai,Premium Restaurant,North Indian,2026,4.2,8.4,16,26,19005.0,0,730.96,0.0,3,2.27,2.0.0-phase05-real-panel
+R00250,"Bakshi, Palan and Pai",Coimbatore,Fast Food Chain,South Indian,2016,3.8,7.3,15,30,34578.0,2,1152.6,6.67,3,2.64,2.0.0-phase05-real-panel
+R00251,Dalal-Varty,Chennai,Cafe,Biryani,2026,4.7,6.8,18,31,33100.0,0,1067.74,0.0,3,2.64,2.0.0-phase05-real-panel
+R00252,"Wadhwa, Behl and Bava",Hyderabad,Cloud Kitchen,Chinese,2023,4.1,4.6,25,35,40506.0,2,1157.31,5.71,3,3.18,2.0.0-phase05-real-panel
+R00253,"Sehgal, Randhawa and Venkataraman",Hyderabad,Fast Food Chain,Pizza,2022,3.8,9.9,19,41,57163.0,2,1394.22,4.88,3,3.55,2.0.0-phase05-real-panel
+R00254,Varkey-Kohli,Chennai,Cloud Kitchen,Biryani,2019,4.0,3.0,28,29,24769.0,1,854.1,3.45,3,2.36,2.0.0-phase05-real-panel
+R00255,Vaidya-Mutti,Coimbatore,Cafe,South Indian,2024,5.0,5.4,30,33,36440.0,3,1104.24,9.09,3,2.91,2.0.0-phase05-real-panel
+R00256,"Tata, Zacharia and Sodhi",Hyderabad,Cloud Kitchen,Biryani,2025,4.0,6.4,19,42,39317.0,0,936.12,0.0,3,3.09,2.0.0-phase05-real-panel
+R00257,Radhakrishnan Inc,Chennai,Budget Restaurant,North Indian,2017,3.7,4.9,26,37,27242.0,1,736.27,2.7,3,3.18,2.0.0-phase05-real-panel
+R00258,Amble PLC,Vijayawada,Budget Restaurant,Chinese,2021,3.6,2.4,25,42,40169.0,2,956.4,4.76,3,3.73,2.0.0-phase05-real-panel
+R00259,Pandit-Mane,Chennai,Premium Restaurant,South Indian,2023,3.5,6.4,17,39,28320.0,1,726.15,2.56,3,3.27,2.0.0-phase05-real-panel
+R00260,Naik and Sons,Bangalore,Fast Food Chain,South Indian,2019,4.9,4.9,30,34,44466.0,3,1307.82,8.82,3,2.64,2.0.0-phase05-real-panel
+R00261,Dua-Pradhan,Coimbatore,Fast Food Chain,Chinese,2020,3.6,7.5,26,37,31377.0,2,848.03,5.41,3,3.09,2.0.0-phase05-real-panel
+R00262,Chandra-Jhaveri,Chennai,Cloud Kitchen,South Indian,2022,4.4,5.3,18,33,34936.0,2,1058.67,6.06,3,2.64,2.0.0-phase05-real-panel
+R00263,"Mahajan, Bassi and Kata",Hyderabad,Cloud Kitchen,Beverages,2024,4.2,6.9,15,38,34371.0,3,904.5,7.89,3,3.27,2.0.0-phase05-real-panel
+R00264,"Rama, Krishnan and Rajagopalan",Hyderabad,Cafe,Chinese,2023,4.0,3.2,18,35,29915.0,2,854.71,5.71,3,3.18,2.0.0-phase05-real-panel
+R00265,Savant Ltd,Bangalore,Premium Restaurant,North Indian,2020,4.4,2.5,30,33,24776.0,2,750.79,6.06,3,2.73,2.0.0-phase05-real-panel
+R00266,Date Ltd,Bangalore,Cafe,Healthy Foods,2024,4.7,5.8,23,32,32049.0,2,1001.53,6.25,3,2.82,2.0.0-phase05-real-panel
+R00267,"Goda, Raman and Char",Vijayawada,Fast Food Chain,South Indian,2023,3.7,2.7,19,42,46137.0,0,1098.5,0.0,3,3.45,2.0.0-phase05-real-panel
+R00268,Mammen and Sons,Vijayawada,Budget Restaurant,South Indian,2017,5.0,2.4,25,30,18129.0,2,604.3,6.67,3,2.73,2.0.0-phase05-real-panel
+R00269,Parmer LLC,Chennai,Fast Food Chain,South Indian,2021,4.2,6.9,17,28,23132.0,0,826.14,0.0,3,2.55,2.0.0-phase05-real-panel
+R00270,Desai-Prabhakar,Coimbatore,Cloud Kitchen,Burger,2019,4.0,8.2,25,27,21233.0,1,786.41,3.7,3,2.18,2.0.0-phase05-real-panel
+R00271,Sheth LLC,Chennai,Premium Restaurant,Chinese,2022,4.2,5.3,27,36,32659.0,3,907.19,8.33,3,3.0,2.0.0-phase05-real-panel
+R00272,"Bhakta, Swaminathan and Seth",Chennai,Budget Restaurant,Chinese,2018,3.6,8.0,25,40,54885.0,3,1372.12,7.5,3,3.45,2.0.0-phase05-real-panel
+R00273,Sem-Mukhopadhyay,Bangalore,Budget Restaurant,Biryani,2024,4.4,9.1,23,32,30351.0,3,948.47,9.38,3,2.45,2.0.0-phase05-real-panel
+R00274,Rattan Group,Chennai,Fast Food Chain,South Indian,2016,4.4,4.9,29,30,35664.0,0,1188.8,0.0,3,2.55,2.0.0-phase05-real-panel
+R00275,Chowdhury LLC,Bangalore,Cloud Kitchen,North Indian,2021,4.9,4.9,23,32,38754.0,1,1211.06,3.12,3,2.91,2.0.0-phase05-real-panel
+R00276,Gera-Pau,Bangalore,Cloud Kitchen,South Indian,2021,4.8,4.3,23,30,24747.0,2,824.9,6.67,3,2.36,2.0.0-phase05-real-panel
+R00277,Balasubramanian-Venkataraman,Coimbatore,Cafe,South Indian,2020,3.5,2.4,24,35,41419.0,4,1183.4,11.43,3,3.0,2.0.0-phase05-real-panel
+R00278,Mani and Sons,Hyderabad,Premium Restaurant,South Indian,2018,4.0,5.1,21,32,42573.0,0,1330.41,0.0,3,2.73,2.0.0-phase05-real-panel
+R00279,"Sule, Minhas and Deshmukh",Chennai,Premium Restaurant,Biryani,2026,4.0,2.3,19,41,33819.0,1,824.85,2.44,3,3.45,2.0.0-phase05-real-panel
+R00280,"Jani, Raju and Khosla",Chennai,Cafe,Healthy Foods,2021,4.1,4.0,19,32,25318.0,2,791.19,6.25,3,2.55,2.0.0-phase05-real-panel
+R00281,"Korpal, Sathe and Muni",Bangalore,Budget Restaurant,Biryani,2021,3.7,6.6,15,30,27064.0,1,902.13,3.33,3,2.45,2.0.0-phase05-real-panel
+R00282,Borah Ltd,Bangalore,Budget Restaurant,South Indian,2017,4.8,7.5,20,33,30570.0,1,926.36,3.03,3,2.82,2.0.0-phase05-real-panel
+R00283,Rana Group,Vijayawada,Budget Restaurant,Burger,2023,4.9,6.4,27,40,23990.0,2,599.75,5.0,3,3.36,2.0.0-phase05-real-panel
+R00284,Chada-Som,Bangalore,Cloud Kitchen,Biryani,2019,4.4,5.5,28,36,28597.0,1,794.36,2.78,3,3.09,2.0.0-phase05-real-panel
+R00285,Bose-Bhatti,Chennai,Budget Restaurant,North Indian,2016,4.6,6.2,26,27,21243.0,3,786.78,11.11,3,2.09,2.0.0-phase05-real-panel
+R00286,Wagle-Lala,Coimbatore,Cafe,South Indian,2020,4.1,4.8,24,41,40165.0,4,979.63,9.76,3,3.36,2.0.0-phase05-real-panel
+R00287,Subramaniam-Patla,Bangalore,Fast Food Chain,Pizza,2024,4.0,6.7,26,29,29285.0,2,1009.83,6.9,3,2.64,2.0.0-phase05-real-panel
+R00288,"Ghosh, Sule and Krish",Bangalore,Fast Food Chain,North Indian,2019,3.9,3.4,26,34,28942.0,2,851.24,5.88,3,3.0,2.0.0-phase05-real-panel
+R00289,Ray Ltd,Vijayawada,Premium Restaurant,Biryani,2023,4.3,3.0,21,29,27227.0,2,938.86,6.9,3,2.45,2.0.0-phase05-real-panel
+R00290,"Dua, Padmanabhan and Chatterjee",Vijayawada,Fast Food Chain,Healthy Foods,2023,3.9,5.8,18,30,28132.0,1,937.73,3.33,3,2.64,2.0.0-phase05-real-panel
+R00291,Narayan-Kanda,Bangalore,Budget Restaurant,South Indian,2016,3.9,9.3,18,29,44879.0,1,1547.55,3.45,3,2.27,2.0.0-phase05-real-panel
+R00292,"Tank, Sura and Dayal",Coimbatore,Premium Restaurant,Biryani,2016,4.0,2.4,28,37,40835.0,3,1103.65,8.11,3,3.09,2.0.0-phase05-real-panel
+R00293,Jhaveri-Ravi,Hyderabad,Cloud Kitchen,Biryani,2018,5.0,9.7,22,33,26171.0,0,793.06,0.0,3,2.64,2.0.0-phase05-real-panel
+R00294,Patla Inc,Hyderabad,Premium Restaurant,North Indian,2021,4.6,2.8,17,45,70394.0,2,1564.31,4.44,3,3.73,2.0.0-phase05-real-panel
+R00295,Kadakia-Venkatesh,Hyderabad,Cloud Kitchen,South Indian,2025,4.7,3.6,19,38,42314.0,0,1113.53,0.0,3,3.27,2.0.0-phase05-real-panel
+R00296,"Tandon, Sankar and Khalsa",Bangalore,Premium Restaurant,Biryani,2016,4.6,4.2,16,31,31170.0,0,1005.48,0.0,3,2.27,2.0.0-phase05-real-panel
+R00297,"Randhawa, Rajan and Ravi",Bangalore,Fast Food Chain,Burger,2017,4.4,9.8,24,38,43654.0,5,1148.79,13.16,3,3.27,2.0.0-phase05-real-panel
+R00298,"Sankaran, Chaudhuri and Dara",Coimbatore,Cloud Kitchen,South Indian,2017,3.6,3.6,15,28,26480.0,1,945.71,3.57,3,2.55,2.0.0-phase05-real-panel
+R00299,Din-Mani,Bangalore,Premium Restaurant,Pizza,2024,3.5,5.3,18,35,35051.0,0,1001.46,0.0,3,3.09,2.0.0-phase05-real-panel
+R00300,"Shukla, Purohit and Tak",Chennai,Fast Food Chain,Pizza,2019,4.6,9.9,17,23,29466.0,1,1281.13,4.35,3,2.09,2.0.0-phase05-real-panel
+R00301,Devi Inc,Chennai,Fast Food Chain,South Indian,2018,4.0,6.4,29,19,24888.0,0,1309.89,0.0,3,1.55,2.0.0-phase05-real-panel
+R00302,"Sharma, Kapur and Tandon",Chennai,Cloud Kitchen,North Indian,2017,5.0,7.6,23,24,29128.0,1,1213.67,4.17,3,2.09,2.0.0-phase05-real-panel
+R00303,"Sekhon, Mukherjee and Loke",Hyderabad,Fast Food Chain,North Indian,2022,4.1,2.9,25,27,19021.0,2,704.48,7.41,3,2.27,2.0.0-phase05-real-panel
+R00304,Srinivasan PLC,Coimbatore,Cloud Kitchen,South Indian,2024,4.0,2.2,21,34,36709.0,0,1079.68,0.0,3,2.82,2.0.0-phase05-real-panel
+R00305,Bala-Chaudhary,Vijayawada,Fast Food Chain,Pizza,2016,3.5,3.4,26,34,24824.0,1,730.12,2.94,3,2.73,2.0.0-phase05-real-panel
+R00306,"Chhabra, Purohit and Behl",Vijayawada,Cafe,Pizza,2018,3.5,6.8,26,28,22639.0,3,808.54,10.71,3,2.55,2.0.0-phase05-real-panel
+R00307,"Peri, Chauhan and Hari",Coimbatore,Cloud Kitchen,South Indian,2024,3.7,9.6,30,27,17246.0,3,638.74,11.11,3,2.45,2.0.0-phase05-real-panel
+R00308,"Lad, Nagarajan and Kaul",Chennai,Fast Food Chain,North Indian,2021,4.7,9.0,29,38,36342.0,3,956.37,7.89,3,3.27,2.0.0-phase05-real-panel
+R00309,"Baral, Nagy and Chad",Chennai,Cloud Kitchen,Biryani,2026,3.9,8.1,28,37,41024.0,0,1108.76,0.0,3,3.27,2.0.0-phase05-real-panel
+R00310,"Ganesan, Mannan and Shetty",Hyderabad,Fast Food Chain,Pizza,2021,3.7,5.0,22,28,32350.0,3,1155.36,10.71,3,2.27,2.0.0-phase05-real-panel
+R00311,Sarma Ltd,Bangalore,Budget Restaurant,Biryani,2018,3.7,8.2,30,40,35141.0,3,878.52,7.5,3,3.36,2.0.0-phase05-real-panel
+R00312,Bhat Inc,Chennai,Cloud Kitchen,Desserts,2025,4.7,2.5,28,45,62501.0,2,1388.91,4.44,3,3.73,2.0.0-phase05-real-panel
+R00313,Wagle-Shetty,Vijayawada,Cafe,Biryani,2018,4.4,4.0,19,41,30061.0,2,733.2,4.88,3,3.45,2.0.0-phase05-real-panel
+R00314,Seshadri-Morar,Coimbatore,Cafe,Biryani,2019,4.9,8.5,19,34,27409.0,1,806.15,2.94,3,3.0,2.0.0-phase05-real-panel
+R00315,Bawa-Sarkar,Hyderabad,Budget Restaurant,Desserts,2022,4.8,9.8,25,32,33111.0,1,1034.72,3.12,3,2.73,2.0.0-phase05-real-panel
+R00316,Dasgupta-Savant,Coimbatore,Premium Restaurant,South Indian,2024,3.6,2.1,15,39,49354.0,1,1265.49,2.56,3,3.27,2.0.0-phase05-real-panel
+R00317,Goyal-Chaudhary,Bangalore,Cloud Kitchen,Desserts,2025,3.8,4.3,28,43,48790.0,2,1134.65,4.65,3,3.64,2.0.0-phase05-real-panel
+R00318,"Bains, Bera and Choudhury",Coimbatore,Cafe,Burger,2016,4.0,8.7,20,35,42924.0,1,1226.4,2.86,3,2.91,2.0.0-phase05-real-panel
+R00319,"Deol, Jain and Bhasin",Hyderabad,Cloud Kitchen,Chinese,2025,4.3,6.0,23,41,36441.0,1,888.8,2.44,3,3.55,2.0.0-phase05-real-panel
+R00320,Mukhopadhyay-Ben,Bangalore,Cafe,South Indian,2019,4.5,9.5,16,31,28188.0,1,909.29,3.23,3,2.64,2.0.0-phase05-real-panel
+R00321,Dani PLC,Hyderabad,Budget Restaurant,North Indian,2022,3.6,9.0,16,31,33127.0,1,1068.61,3.23,3,2.45,2.0.0-phase05-real-panel
+R00322,Kalita-Dhar,Chennai,Budget Restaurant,Biryani,2020,3.6,3.9,26,26,29316.0,3,1127.54,11.54,3,2.27,2.0.0-phase05-real-panel
+R00323,Sampath Group,Bangalore,Budget Restaurant,Pizza,2026,4.5,5.0,22,32,36759.0,1,1148.72,3.12,3,2.64,2.0.0-phase05-real-panel
+R00324,"Gulati, Morar and Shankar",Bangalore,Cloud Kitchen,North Indian,2023,3.9,8.6,21,48,40449.0,3,842.69,6.25,3,4.09,2.0.0-phase05-real-panel
+R00325,Samra-Bahri,Coimbatore,Fast Food Chain,North Indian,2017,3.8,9.3,20,25,24257.0,1,970.28,4.0,3,2.0,2.0.0-phase05-real-panel
+R00326,"Seshadri, Shanker and Jani",Coimbatore,Cloud Kitchen,Chinese,2026,4.3,10.0,18,28,24197.0,1,864.18,3.57,3,2.45,2.0.0-phase05-real-panel
+R00327,"Krish, Kanda and Peri",Chennai,Cloud Kitchen,Biryani,2018,3.6,8.3,25,34,34950.0,2,1027.94,5.88,3,2.82,2.0.0-phase05-real-panel
+R00328,Boase-Ramakrishnan,Vijayawada,Budget Restaurant,Biryani,2020,4.3,4.9,15,45,38993.0,1,866.51,2.22,3,4.0,2.0.0-phase05-real-panel
+R00329,Rajagopal-Dave,Chennai,Premium Restaurant,Healthy Foods,2019,4.4,6.8,23,28,21079.0,0,752.82,0.0,3,2.36,2.0.0-phase05-real-panel
+R00330,"Gill, Mitter and Jani",Coimbatore,Budget Restaurant,Pizza,2026,4.3,9.8,30,44,45256.0,3,1028.55,6.82,3,3.64,2.0.0-phase05-real-panel
+R00331,"Saxena, Malhotra and Venkatesh",Bangalore,Cafe,Pizza,2026,4.7,4.8,27,35,39312.0,1,1123.2,2.86,3,3.09,2.0.0-phase05-real-panel
+R00332,Pillay and Sons,Coimbatore,Fast Food Chain,Biryani,2017,4.9,6.0,25,37,39344.0,3,1063.35,8.11,3,2.91,2.0.0-phase05-real-panel
+R00333,Dyal PLC,Hyderabad,Fast Food Chain,Beverages,2019,4.9,8.1,22,31,29600.0,1,954.84,3.23,3,2.45,2.0.0-phase05-real-panel
+R00334,"Basu, Biswas and Sura",Hyderabad,Fast Food Chain,Biryani,2024,4.3,3.2,19,28,24739.0,0,883.54,0.0,3,2.18,2.0.0-phase05-real-panel
+R00335,Joshi-Doctor,Hyderabad,Cafe,South Indian,2016,4.6,10.0,24,37,36994.0,3,999.84,8.11,3,2.82,2.0.0-phase05-real-panel
+R00336,Tripathi Ltd,Vijayawada,Premium Restaurant,North Indian,2020,4.4,9.4,28,41,41699.0,2,1017.05,4.88,3,3.36,2.0.0-phase05-real-panel
+R00337,Ratti Ltd,Chennai,Premium Restaurant,South Indian,2020,4.8,3.5,24,21,27718.0,5,1319.9,23.81,3,1.82,2.0.0-phase05-real-panel
+R00338,Chakrabarti Group,Chennai,Cafe,North Indian,2024,4.7,7.4,24,39,33090.0,3,848.46,7.69,3,3.09,2.0.0-phase05-real-panel
+R00339,Dugar-Sawhney,Chennai,Premium Restaurant,Chinese,2025,3.9,3.9,22,42,45066.0,1,1073.0,2.38,3,3.36,2.0.0-phase05-real-panel
+R00340,Krish Inc,Chennai,Budget Restaurant,Beverages,2019,4.1,6.3,18,32,29743.0,1,929.47,3.12,3,2.55,2.0.0-phase05-real-panel
+R00341,Shroff-Mutti,Coimbatore,Fast Food Chain,North Indian,2016,4.0,7.7,30,32,32029.0,2,1000.91,6.25,3,2.55,2.0.0-phase05-real-panel
+R00342,Singhal Ltd,Chennai,Fast Food Chain,Burger,2024,4.6,8.6,23,43,39893.0,1,927.74,2.33,3,3.82,2.0.0-phase05-real-panel
+R00343,Nanda Group,Chennai,Premium Restaurant,South Indian,2026,4.7,8.4,16,34,31860.0,5,937.06,14.71,3,2.91,2.0.0-phase05-real-panel
+R00344,Gandhi-Tandon,Bangalore,Cloud Kitchen,South Indian,2022,4.5,8.3,21,31,29580.0,1,954.19,3.23,3,2.82,2.0.0-phase05-real-panel
+R00345,"Acharya, Randhawa and Bhat",Chennai,Cloud Kitchen,South Indian,2026,3.8,4.0,21,34,30953.0,0,910.38,0.0,3,2.82,2.0.0-phase05-real-panel
+R00346,Sangha-Sharaf,Bangalore,Cloud Kitchen,South Indian,2019,4.0,3.8,29,32,34062.0,1,1064.44,3.12,3,2.82,2.0.0-phase05-real-panel
+R00347,"Gade, Patla and Murthy",Bangalore,Cafe,Healthy Foods,2023,4.6,8.7,22,30,34457.0,1,1148.57,3.33,3,2.45,2.0.0-phase05-real-panel
+R00348,Kapoor-Salvi,Bangalore,Budget Restaurant,South Indian,2022,4.7,2.4,22,26,26608.0,1,1023.38,3.85,3,2.36,2.0.0-phase05-real-panel
+R00349,Bhargava-Chowdhury,Chennai,Fast Food Chain,South Indian,2021,3.6,2.1,22,29,31043.0,1,1070.45,3.45,3,2.45,2.0.0-phase05-real-panel
+R00350,Issac-Kale,Bangalore,Cloud Kitchen,Biryani,2019,4.9,4.7,28,26,22100.0,0,850.0,0.0,3,2.18,2.0.0-phase05-real-panel
+R00351,"Reddy, Jani and Aggarwal",Bangalore,Cafe,South Indian,2019,3.6,8.7,19,26,31278.0,1,1203.0,3.85,3,2.18,2.0.0-phase05-real-panel
+R00352,Nadkarni Inc,Bangalore,Budget Restaurant,Pizza,2020,4.0,3.3,17,35,35344.0,1,1009.83,2.86,3,2.64,2.0.0-phase05-real-panel
+R00353,"Krishnamurthy, Chaudhary and Shah",Bangalore,Cafe,Pizza,2025,3.9,5.4,21,41,45321.0,2,1105.39,4.88,3,3.36,2.0.0-phase05-real-panel
+R00354,"Char, Nayar and Issac",Hyderabad,Fast Food Chain,North Indian,2023,3.8,7.3,26,28,24072.0,2,859.71,7.14,3,2.18,2.0.0-phase05-real-panel
+R00355,"Sanghvi, Sankaran and Uppal",Vijayawada,Fast Food Chain,Burger,2023,4.0,3.3,24,43,33399.0,3,776.72,6.98,3,3.55,2.0.0-phase05-real-panel
+R00356,Pillay-Verma,Coimbatore,Premium Restaurant,South Indian,2017,3.7,3.9,20,28,30885.0,0,1103.04,0.0,3,2.18,2.0.0-phase05-real-panel
+R00357,"Handa, Vig and Sibal",Chennai,Premium Restaurant,Biryani,2019,4.4,6.1,20,31,34501.0,1,1112.94,3.23,3,2.64,2.0.0-phase05-real-panel
+R00358,"Iyer, Doshi and Barman",Chennai,Cloud Kitchen,South Indian,2020,4.7,7.3,15,43,33614.0,1,781.72,2.33,3,3.55,2.0.0-phase05-real-panel
+R00359,"Kibe, Pandya and Balan",Chennai,Premium Restaurant,Biryani,2020,4.9,4.8,21,27,23792.0,2,881.19,7.41,3,2.27,2.0.0-phase05-real-panel
+R00360,Pandit-Ahluwalia,Hyderabad,Premium Restaurant,North Indian,2016,4.0,6.7,24,30,32263.0,2,1075.43,6.67,3,2.64,2.0.0-phase05-real-panel
+R00361,Biswas LLC,Chennai,Cloud Kitchen,North Indian,2024,4.6,2.3,23,26,35301.0,3,1357.73,11.54,3,2.36,2.0.0-phase05-real-panel
+R00362,Natarajan-Sridhar,Coimbatore,Fast Food Chain,South Indian,2024,4.4,8.3,25,34,37346.0,2,1098.41,5.88,3,2.82,2.0.0-phase05-real-panel
+R00363,Kothari Inc,Hyderabad,Cafe,North Indian,2018,4.5,9.0,20,32,39525.0,0,1235.16,0.0,3,2.73,2.0.0-phase05-real-panel
+R00364,Rau LLC,Chennai,Cloud Kitchen,North Indian,2026,4.5,8.3,27,27,27308.0,1,1011.41,3.7,3,2.18,2.0.0-phase05-real-panel
+R00365,Loyal-Sani,Coimbatore,Premium Restaurant,Burger,2020,4.6,9.7,24,27,26166.0,2,969.11,7.41,3,2.09,2.0.0-phase05-real-panel
+R00366,"Chaudry, Mannan and Kakar",Bangalore,Cloud Kitchen,Chinese,2021,4.2,3.4,21,34,25054.0,0,736.88,0.0,3,2.82,2.0.0-phase05-real-panel
+R00367,Palan LLC,Bangalore,Budget Restaurant,Chinese,2026,4.7,9.3,27,36,37011.0,3,1028.08,8.33,3,3.09,2.0.0-phase05-real-panel
+R00368,Rout PLC,Bangalore,Fast Food Chain,South Indian,2016,3.6,7.4,21,36,44733.0,3,1242.58,8.33,3,3.0,2.0.0-phase05-real-panel
+R00369,Mandal Ltd,Bangalore,Budget Restaurant,Chinese,2019,5.0,6.5,23,0,0.0,0,0.0,0.0,3,0.0,2.0.0-phase05-real-panel
+R00370,Sharma LLC,Hyderabad,Premium Restaurant,Healthy Foods,2025,5.0,9.4,24,37,29364.0,0,793.62,0.0,3,2.91,2.0.0-phase05-real-panel
+R00371,Biswas-Tripathi,Coimbatore,Cloud Kitchen,North Indian,2024,3.6,2.5,19,27,28841.0,1,1068.19,3.7,3,2.27,2.0.0-phase05-real-panel
+R00372,Luthra-Chaudhuri,Chennai,Budget Restaurant,Burger,2019,4.3,5.8,18,38,27772.0,1,730.84,2.63,3,3.09,2.0.0-phase05-real-panel
+R00373,"Ghose, Verma and Pillai",Chennai,Cloud Kitchen,Pizza,2018,4.1,3.6,24,35,30989.0,1,885.4,2.86,3,2.82,2.0.0-phase05-real-panel
+R00374,"Buch, Bhandari and Bhavsar",Chennai,Premium Restaurant,Biryani,2020,3.9,2.1,22,33,29107.0,1,882.03,3.03,3,2.82,2.0.0-phase05-real-panel
+R00375,Parmer-Chopra,Bangalore,Premium Restaurant,Healthy Foods,2018,4.6,3.8,21,36,40598.0,0,1127.72,0.0,3,2.82,2.0.0-phase05-real-panel
+R00376,"Ghose, Thaker and Shetty",Chennai,Premium Restaurant,South Indian,2017,3.6,8.4,17,29,24992.0,1,861.79,3.45,3,2.55,2.0.0-phase05-real-panel
+R00377,Murty Group,Coimbatore,Fast Food Chain,Pizza,2024,4.5,8.0,28,37,27995.0,2,756.62,5.41,3,2.82,2.0.0-phase05-real-panel
+R00378,Dube Inc,Chennai,Cafe,Biryani,2024,4.5,2.8,27,35,28687.0,2,819.63,5.71,3,3.18,2.0.0-phase05-real-panel
+R00379,"Banerjee, Choudhary and Atwal",Vijayawada,Fast Food Chain,Biryani,2023,4.0,7.5,15,43,42090.0,0,978.84,0.0,3,3.73,2.0.0-phase05-real-panel
+R00380,"Balasubramanian, Saini and Sama",Chennai,Cloud Kitchen,Healthy Foods,2023,4.7,9.8,30,36,31399.0,0,872.19,0.0,3,2.73,2.0.0-phase05-real-panel
+R00381,"Deep, Murty and Bansal",Chennai,Cloud Kitchen,South Indian,2023,3.9,8.3,20,43,45268.0,1,1052.74,2.33,3,3.64,2.0.0-phase05-real-panel
+R00382,"Lall, Sem and Barman",Chennai,Cafe,South Indian,2022,3.6,9.0,29,34,34439.0,1,1012.91,2.94,3,2.73,2.0.0-phase05-real-panel
+R00383,Wason-Bassi,Vijayawada,Cafe,Biryani,2024,4.8,3.3,18,36,48317.0,2,1342.14,5.56,3,3.09,2.0.0-phase05-real-panel
+R00384,"Amble, Sachdeva and Dixit",Bangalore,Premium Restaurant,North Indian,2024,4.2,6.1,26,36,35210.0,0,978.06,0.0,3,3.27,2.0.0-phase05-real-panel
+R00385,"Wali, Talwar and Vohra",Coimbatore,Cloud Kitchen,South Indian,2019,4.7,9.4,28,27,25366.0,3,939.48,11.11,3,2.27,2.0.0-phase05-real-panel
+R00386,Sunder Inc,Vijayawada,Fast Food Chain,Burger,2016,3.9,6.2,20,37,32888.0,3,888.86,8.11,3,3.18,2.0.0-phase05-real-panel
+R00387,Kapoor-Devi,Bangalore,Fast Food Chain,South Indian,2024,3.6,8.1,24,27,27870.0,1,1032.22,3.7,3,2.27,2.0.0-phase05-real-panel
+R00388,Bora Inc,Bangalore,Cloud Kitchen,North Indian,2016,4.3,2.4,27,32,24198.0,2,756.19,6.25,3,2.82,2.0.0-phase05-real-panel
+R00389,Sachdev-Rai,Chennai,Cafe,North Indian,2022,3.6,6.8,27,37,36479.0,2,985.92,5.41,3,3.09,2.0.0-phase05-real-panel
+R00390,Patla-Mitra,Bangalore,Fast Food Chain,Biryani,2018,4.9,7.4,28,41,31433.0,1,766.66,2.44,3,3.18,2.0.0-phase05-real-panel
+R00391,Chakraborty-Issac,Hyderabad,Cloud Kitchen,South Indian,2019,4.6,3.5,24,37,42360.0,3,1144.86,8.11,3,3.0,2.0.0-phase05-real-panel
+R00392,Chauhan LLC,Bangalore,Cafe,Burger,2022,4.6,9.4,22,34,34361.0,1,1010.62,2.94,3,2.73,2.0.0-phase05-real-panel
+R00393,"Pingle, Shankar and Sanghvi",Chennai,Cloud Kitchen,Chinese,2017,4.1,7.1,15,28,29448.0,1,1051.71,3.57,3,2.27,2.0.0-phase05-real-panel
+R00394,Agate-Palan,Hyderabad,Cafe,Biryani,2018,4.9,9.1,20,30,33169.0,1,1105.63,3.33,3,2.45,2.0.0-phase05-real-panel
+R00395,Zachariah and Sons,Chennai,Cloud Kitchen,North Indian,2026,3.7,7.9,17,34,32016.0,1,941.65,2.94,3,2.45,2.0.0-phase05-real-panel
+R00396,"Seshadri, Sarma and Thakur",Hyderabad,Fast Food Chain,Burger,2022,4.0,8.1,16,29,30319.0,3,1045.48,10.34,3,2.18,2.0.0-phase05-real-panel
+R00397,Lala-Basak,Hyderabad,Cloud Kitchen,North Indian,2025,3.8,6.6,17,30,20822.0,4,694.07,13.33,3,2.73,2.0.0-phase05-real-panel
+R00398,"Naik, Vyas and Desai",Bangalore,Premium Restaurant,Biryani,2019,5.0,5.1,26,26,27327.0,0,1051.04,0.0,3,2.09,2.0.0-phase05-real-panel
+R00399,Sridhar Inc,Chennai,Budget Restaurant,South Indian,2024,4.0,2.6,29,39,40201.0,1,1030.79,2.56,3,3.09,2.0.0-phase05-real-panel
+R00400,Tata Inc,Bangalore,Premium Restaurant,Burger,2021,4.8,7.6,18,28,23520.0,3,840.0,10.71,3,2.36,2.0.0-phase05-real-panel
+R00401,Varma Ltd,Vijayawada,Budget Restaurant,Chinese,2022,4.4,7.5,17,34,35228.0,1,1036.12,2.94,3,2.82,2.0.0-phase05-real-panel
+R00402,"Chakrabarti, Cheema and Sahni",Hyderabad,Cloud Kitchen,Biryani,2026,4.0,6.8,18,31,24340.0,2,785.16,6.45,3,2.45,2.0.0-phase05-real-panel
+R00403,"Sridhar, Grewal and Ravel",Chennai,Budget Restaurant,North Indian,2023,4.0,3.8,27,41,29482.0,4,719.07,9.76,3,3.36,2.0.0-phase05-real-panel
+R00404,Jain Group,Coimbatore,Fast Food Chain,Pizza,2018,4.6,8.5,18,38,30137.0,1,793.08,2.63,3,3.18,2.0.0-phase05-real-panel
+R00405,Sur-Sharaf,Bangalore,Cloud Kitchen,Pizza,2019,3.6,9.9,22,19,19277.0,1,1014.58,5.26,3,1.55,2.0.0-phase05-real-panel
+R00406,"Krishnamurthy, Oommen and Shroff",Bangalore,Premium Restaurant,Biryani,2017,4.4,3.6,20,29,32778.0,1,1130.28,3.45,3,2.45,2.0.0-phase05-real-panel
+R00407,Sabharwal PLC,Bangalore,Budget Restaurant,Biryani,2021,4.9,8.9,27,25,29231.0,3,1169.24,12.0,3,2.18,2.0.0-phase05-real-panel
+R00408,Parekh-Viswanathan,Bangalore,Cloud Kitchen,Chinese,2017,3.8,9.7,26,23,20096.0,1,873.74,4.35,3,2.09,2.0.0-phase05-real-panel
+R00409,"Buch, Banerjee and Salvi",Hyderabad,Budget Restaurant,South Indian,2016,4.3,8.1,19,35,46868.0,0,1339.09,0.0,3,3.18,2.0.0-phase05-real-panel
+R00410,"Modi, Naik and Rajan",Hyderabad,Fast Food Chain,Biryani,2019,4.5,7.1,19,35,32500.0,1,928.57,2.86,3,2.73,2.0.0-phase05-real-panel
+R00411,"Naik, Om and Bhakta",Chennai,Fast Food Chain,Biryani,2025,3.7,7.4,15,34,31344.0,0,921.88,0.0,3,2.45,2.0.0-phase05-real-panel
+R00412,Deol LLC,Coimbatore,Budget Restaurant,North Indian,2018,4.9,3.3,25,44,38512.0,2,875.27,4.55,3,3.73,2.0.0-phase05-real-panel
+R00413,Gala-Chandran,Hyderabad,Budget Restaurant,South Indian,2022,4.3,4.9,17,28,15654.0,1,559.07,3.57,3,2.45,2.0.0-phase05-real-panel
+R00414,"Sha, Sahni and Kashyap",Hyderabad,Premium Restaurant,South Indian,2024,4.0,9.7,20,32,36751.0,0,1148.47,0.0,3,2.36,2.0.0-phase05-real-panel
+R00415,"Pall, Mistry and Wali",Hyderabad,Premium Restaurant,South Indian,2017,3.5,3.5,30,23,21671.0,1,942.22,4.35,3,1.73,2.0.0-phase05-real-panel
+R00416,"Johal, Doctor and Viswanathan",Coimbatore,Fast Food Chain,North Indian,2023,4.9,6.7,20,26,18351.0,1,705.81,3.85,3,1.82,2.0.0-phase05-real-panel
+R00417,Soman-Sidhu,Coimbatore,Cafe,Chinese,2016,4.2,3.3,16,33,28442.0,0,861.88,0.0,3,2.91,2.0.0-phase05-real-panel
+R00418,Kibe Inc,Chennai,Cloud Kitchen,Biryani,2020,4.0,8.9,25,28,37531.0,2,1340.39,7.14,3,2.18,2.0.0-phase05-real-panel
+R00419,Khalsa LLC,Vijayawada,Budget Restaurant,Burger,2021,3.7,6.8,30,36,30079.0,2,835.53,5.56,3,3.09,2.0.0-phase05-real-panel
+R00420,Warrior Group,Chennai,Premium Restaurant,Burger,2022,4.2,5.7,17,34,31242.0,3,918.88,8.82,3,3.09,2.0.0-phase05-real-panel
+R00421,Tella LLC,Chennai,Cloud Kitchen,Biryani,2022,4.6,8.1,19,27,26669.0,2,987.74,7.41,3,2.09,2.0.0-phase05-real-panel
+R00422,Thakur and Sons,Bangalore,Cafe,Chinese,2026,4.5,3.4,19,36,33409.0,1,928.03,2.78,3,3.09,2.0.0-phase05-real-panel
+R00423,"Khurana, Chaudhuri and Bhavsar",Chennai,Cloud Kitchen,Biryani,2021,3.8,5.3,18,42,43293.0,4,1030.79,9.52,3,3.73,2.0.0-phase05-real-panel
+R00424,"Contractor, Butala and Sangha",Bangalore,Premium Restaurant,South Indian,2020,4.6,8.2,23,34,25442.0,1,748.29,2.94,3,2.45,2.0.0-phase05-real-panel
+R00425,"Saran, Bobal and Sami",Hyderabad,Cafe,Pizza,2026,4.6,3.7,26,39,27243.0,3,698.54,7.69,3,3.27,2.0.0-phase05-real-panel
+R00426,"Dora, Mohan and Lata",Chennai,Fast Food Chain,Burger,2025,4.4,3.5,23,35,27225.0,0,777.86,0.0,3,3.0,2.0.0-phase05-real-panel
+R00427,Koshy LLC,Chennai,Cloud Kitchen,Pizza,2016,3.6,2.6,30,32,38522.0,0,1203.81,0.0,3,2.64,2.0.0-phase05-real-panel
+R00428,"Kalita, Chander and Lala",Chennai,Fast Food Chain,Biryani,2024,3.8,9.2,21,29,27491.0,0,947.97,0.0,3,2.55,2.0.0-phase05-real-panel
+R00429,Kala LLC,Chennai,Cloud Kitchen,Biryani,2016,4.8,5.6,25,43,43999.0,6,1023.23,13.95,3,3.82,2.0.0-phase05-real-panel
+R00430,Bhagat-Narula,Bangalore,Premium Restaurant,Biryani,2026,4.9,7.3,30,31,32378.0,0,1044.45,0.0,3,2.64,2.0.0-phase05-real-panel
+R00431,"Sha, Sehgal and Sarraf",Hyderabad,Cloud Kitchen,North Indian,2018,3.9,6.5,16,30,31862.0,3,1062.07,10.0,3,2.36,2.0.0-phase05-real-panel
+R00432,Nagy-Nori,Hyderabad,Fast Food Chain,Burger,2025,4.1,2.3,27,35,25475.0,0,727.86,0.0,3,2.73,2.0.0-phase05-real-panel
+R00433,Mishra-Sharaf,Chennai,Budget Restaurant,Pizza,2026,4.3,6.1,22,30,32753.0,1,1091.77,3.33,3,2.55,2.0.0-phase05-real-panel
+R00434,Ben-Narang,Bangalore,Budget Restaurant,Burger,2023,3.9,6.7,30,32,29880.0,3,933.75,9.38,3,2.73,2.0.0-phase05-real-panel
+R00435,"Randhawa, Seshadri and Chhabra",Coimbatore,Fast Food Chain,Biryani,2023,4.7,8.4,27,34,27255.0,1,801.62,2.94,3,2.73,2.0.0-phase05-real-panel
+R00436,Suresh and Sons,Chennai,Cloud Kitchen,Healthy Foods,2025,4.6,9.8,28,35,26816.0,1,766.17,2.86,3,2.64,2.0.0-phase05-real-panel
+R00437,Swamy-Kapur,Chennai,Premium Restaurant,Biryani,2022,4.4,9.6,21,33,33904.0,3,1027.39,9.09,3,2.91,2.0.0-phase05-real-panel
+R00438,"Gera, Shanker and Gaba",Chennai,Cloud Kitchen,Desserts,2016,3.8,6.1,27,35,33522.0,1,957.77,2.86,3,3.09,2.0.0-phase05-real-panel
+R00439,Mahajan LLC,Chennai,Cafe,North Indian,2019,4.7,3.2,16,29,16586.0,0,571.93,0.0,3,2.55,2.0.0-phase05-real-panel
+R00440,Kunda-Goswami,Hyderabad,Cafe,South Indian,2023,4.0,5.0,25,32,29046.0,2,907.69,6.25,3,2.55,2.0.0-phase05-real-panel
+R00441,Pillai-Kara,Bangalore,Cloud Kitchen,North Indian,2016,3.9,6.6,30,35,25486.0,4,728.17,11.43,3,3.0,2.0.0-phase05-real-panel
+R00442,Wadhwa and Sons,Hyderabad,Budget Restaurant,Healthy Foods,2018,4.0,3.6,28,30,34338.0,1,1144.6,3.33,3,2.64,2.0.0-phase05-real-panel
+R00443,Kothari-Chandra,Bangalore,Premium Restaurant,Pizza,2024,4.3,4.2,15,44,45534.0,2,1034.86,4.55,3,3.45,2.0.0-phase05-real-panel
+R00444,Baria and Sons,Chennai,Cafe,Biryani,2021,4.1,8.4,22,29,36578.0,1,1261.31,3.45,3,2.36,2.0.0-phase05-real-panel
+R00445,Babu PLC,Bangalore,Budget Restaurant,Healthy Foods,2025,4.0,2.6,19,40,32291.0,3,807.28,7.5,3,3.36,2.0.0-phase05-real-panel
+R00446,Pathak Ltd,Bangalore,Cafe,Healthy Foods,2020,4.4,8.0,18,22,20665.0,1,939.32,4.55,3,1.82,2.0.0-phase05-real-panel
+R00447,Kala-Pathak,Bangalore,Cafe,Chinese,2024,3.6,2.8,16,25,19332.0,3,773.28,12.0,3,2.09,2.0.0-phase05-real-panel
+R00448,Nagar-Dutt,Chennai,Budget Restaurant,Burger,2019,4.8,6.2,23,30,36090.0,2,1203.0,6.67,3,2.45,2.0.0-phase05-real-panel
+R00449,Savant Ltd,Hyderabad,Premium Restaurant,Pizza,2018,4.2,7.4,25,39,41513.0,0,1064.44,0.0,3,3.18,2.0.0-phase05-real-panel
+R00450,Nagy-Boase,Chennai,Budget Restaurant,South Indian,2018,4.1,5.8,27,44,41270.0,2,937.95,4.55,3,3.73,2.0.0-phase05-real-panel
+R00451,Dugar-Chokshi,Chennai,Cafe,North Indian,2018,4.3,8.5,28,36,39639.0,1,1101.08,2.78,3,2.73,2.0.0-phase05-real-panel
+R00452,Tara and Sons,Bangalore,Cafe,South Indian,2021,4.8,2.8,29,29,29101.0,1,1003.48,3.45,3,2.55,2.0.0-phase05-real-panel
+R00453,Jhaveri PLC,Bangalore,Cloud Kitchen,Chinese,2020,4.8,2.1,28,33,26219.0,0,794.52,0.0,3,2.82,2.0.0-phase05-real-panel
+R00454,Dugal-Chandran,Bangalore,Premium Restaurant,South Indian,2020,3.6,7.9,22,28,30738.0,2,1097.79,7.14,3,2.36,2.0.0-phase05-real-panel
+R00455,"Bakshi, Edwin and Ramesh",Coimbatore,Fast Food Chain,Biryani,2025,4.5,9.6,27,47,40010.0,2,851.28,4.26,3,3.91,2.0.0-phase05-real-panel
+R00456,Nagarajan-Mandal,Chennai,Premium Restaurant,North Indian,2023,4.3,2.7,23,35,29037.0,1,829.63,2.86,3,2.91,2.0.0-phase05-real-panel
+R00457,"Kala, Pillay and Agate",Hyderabad,Cloud Kitchen,North Indian,2023,4.9,2.5,27,23,12744.0,2,554.09,8.7,3,1.91,2.0.0-phase05-real-panel
+R00458,Mangal Ltd,Chennai,Cafe,Biryani,2019,4.1,9.2,24,41,35807.0,1,873.34,2.44,3,3.45,2.0.0-phase05-real-panel
+R00459,"Bumb, Parsa and Mandal",Chennai,Fast Food Chain,South Indian,2023,4.8,8.1,30,32,29109.0,1,909.66,3.12,3,2.91,2.0.0-phase05-real-panel
+R00460,Ranganathan LLC,Hyderabad,Premium Restaurant,North Indian,2024,3.9,2.2,16,36,34176.0,3,949.33,8.33,3,2.82,2.0.0-phase05-real-panel
+R00461,"Nagi, Bhakta and Kibe",Coimbatore,Budget Restaurant,Biryani,2020,4.2,2.8,18,40,42291.0,4,1057.28,10.0,3,3.09,2.0.0-phase05-real-panel
+R00462,"Dube, Hari and Batra",Chennai,Cloud Kitchen,South Indian,2024,4.3,5.3,25,43,47069.0,0,1094.63,0.0,3,3.73,2.0.0-phase05-real-panel
+R00463,Ghosh PLC,Bangalore,Cafe,South Indian,2025,3.7,4.2,18,40,33365.0,1,834.12,2.5,3,3.45,2.0.0-phase05-real-panel
+R00464,Karnik-Amble,Bangalore,Cafe,Pizza,2018,4.3,2.8,17,38,42961.0,0,1130.55,0.0,3,3.18,2.0.0-phase05-real-panel
+R00465,Sha and Sons,Vijayawada,Cloud Kitchen,Biryani,2025,4.7,3.9,29,26,34206.0,1,1315.62,3.85,3,2.0,2.0.0-phase05-real-panel
+R00466,Prasad-Dave,Chennai,Fast Food Chain,South Indian,2017,4.9,6.1,29,35,34591.0,2,988.31,5.71,3,3.09,2.0.0-phase05-real-panel
+R00467,Master-Hayer,Hyderabad,Cloud Kitchen,South Indian,2021,4.0,7.7,29,33,32426.0,0,982.61,0.0,3,2.82,2.0.0-phase05-real-panel
+R00468,"Tata, Munshi and Shanker",Hyderabad,Fast Food Chain,Healthy Foods,2020,4.6,9.9,19,31,22364.0,2,721.42,6.45,3,2.55,2.0.0-phase05-real-panel
+R00469,"Boase, Ramanathan and Shah",Bangalore,Budget Restaurant,Chinese,2019,4.7,3.5,25,32,32269.0,2,1008.41,6.25,3,2.73,2.0.0-phase05-real-panel
+R00470,Chakraborty-Balasubramanian,Hyderabad,Fast Food Chain,South Indian,2019,3.9,9.1,30,37,47546.0,0,1285.03,0.0,3,3.09,2.0.0-phase05-real-panel
+R00471,Mahajan-Vora,Hyderabad,Fast Food Chain,Chinese,2016,3.8,7.1,25,46,37894.0,0,823.78,0.0,3,3.82,2.0.0-phase05-real-panel
+R00472,Sethi LLC,Bangalore,Fast Food Chain,Burger,2022,4.8,4.7,28,33,33307.0,2,1009.3,6.06,3,2.73,2.0.0-phase05-real-panel
+R00473,Rastogi Group,Bangalore,Fast Food Chain,North Indian,2019,4.7,6.7,20,35,27542.0,0,786.91,0.0,3,2.91,2.0.0-phase05-real-panel
+R00474,"Mitra, Kapadia and Gandhi",Hyderabad,Cloud Kitchen,Chinese,2022,4.3,7.1,25,29,29354.0,0,1012.21,0.0,3,2.45,2.0.0-phase05-real-panel
+R00475,Varty PLC,Chennai,Premium Restaurant,North Indian,2025,4.3,7.0,17,33,45484.0,2,1378.3,6.06,3,2.73,2.0.0-phase05-real-panel
+R00476,"Bains, Dora and Dara",Chennai,Cloud Kitchen,North Indian,2022,4.1,9.1,28,32,37033.0,0,1157.28,0.0,3,2.73,2.0.0-phase05-real-panel
+R00477,Parekh-Sant,Hyderabad,Premium Restaurant,Pizza,2024,3.6,2.6,22,28,31781.0,0,1135.04,0.0,3,2.45,2.0.0-phase05-real-panel
+R00478,"Sankaran, Chakrabarti and Dewan",Chennai,Cloud Kitchen,Biryani,2024,4.3,8.3,25,32,30654.0,0,957.94,0.0,3,2.91,2.0.0-phase05-real-panel
+R00479,Pandit and Sons,Bangalore,Budget Restaurant,South Indian,2024,4.9,5.4,19,43,30776.0,4,715.72,9.3,3,3.55,2.0.0-phase05-real-panel
+R00480,Hayre-Rastogi,Vijayawada,Budget Restaurant,South Indian,2025,4.7,6.0,15,40,40353.0,1,1008.82,2.5,3,3.45,2.0.0-phase05-real-panel
+R00481,"Subramanian, Bali and Kala",Vijayawada,Cafe,North Indian,2020,3.5,6.4,22,40,29382.0,3,734.55,7.5,3,3.36,2.0.0-phase05-real-panel
+R00482,"Swamy, Shroff and Dutta",Coimbatore,Fast Food Chain,Pizza,2024,3.8,3.9,30,41,54471.0,0,1328.56,0.0,3,3.36,2.0.0-phase05-real-panel
+R00483,Mandal-Dhaliwal,Bangalore,Fast Food Chain,Chinese,2020,4.7,3.2,15,32,38634.0,2,1207.31,6.25,3,2.82,2.0.0-phase05-real-panel
+R00484,Sagar Ltd,Bangalore,Cafe,Chinese,2025,4.6,7.7,27,27,26096.0,2,966.52,7.41,3,2.27,2.0.0-phase05-real-panel
+R00485,"Rama, Kant and Cheema",Coimbatore,Cafe,North Indian,2023,4.6,3.3,26,33,35418.0,2,1073.27,6.06,3,2.73,2.0.0-phase05-real-panel
+R00486,Dass Ltd,Bangalore,Fast Food Chain,South Indian,2018,3.9,4.4,22,29,23284.0,0,802.9,0.0,3,2.45,2.0.0-phase05-real-panel
+R00487,"Devan, Raman and Vaidya",Vijayawada,Fast Food Chain,Biryani,2017,3.7,8.3,16,24,21930.0,3,913.75,12.5,3,1.82,2.0.0-phase05-real-panel
+R00488,Char-Mittal,Hyderabad,Cloud Kitchen,South Indian,2016,4.8,9.6,27,33,19435.0,2,588.94,6.06,3,2.73,2.0.0-phase05-real-panel
+R00489,Raju LLC,Chennai,Premium Restaurant,North Indian,2026,4.1,6.1,28,35,23759.0,0,678.83,0.0,3,2.73,2.0.0-phase05-real-panel
+R00490,Badami Ltd,Bangalore,Budget Restaurant,Biryani,2026,4.8,9.2,28,34,33835.0,2,995.15,5.88,3,2.91,2.0.0-phase05-real-panel
+R00491,Jha-Peri,Hyderabad,Cafe,North Indian,2024,3.7,7.3,21,35,23865.0,2,681.86,5.71,3,3.09,2.0.0-phase05-real-panel
+R00492,Mander-Kannan,Bangalore,Cloud Kitchen,Biryani,2023,4.1,2.7,20,29,33504.0,1,1155.31,3.45,3,2.45,2.0.0-phase05-real-panel
+R00493,Solanki-Vora,Coimbatore,Budget Restaurant,North Indian,2016,4.1,8.2,15,28,26885.0,0,960.18,0.0,3,2.27,2.0.0-phase05-real-panel
+R00494,Nadkarni-Deol,Hyderabad,Budget Restaurant,Burger,2019,4.2,7.0,24,34,33516.0,0,985.76,0.0,3,2.82,2.0.0-phase05-real-panel
+R00495,Sarraf-Parsa,Hyderabad,Premium Restaurant,Chinese,2017,4.3,2.2,22,25,28183.0,1,1127.32,4.0,3,2.18,2.0.0-phase05-real-panel
+R00496,"Khatri, Sangha and Dhawan",Hyderabad,Cloud Kitchen,North Indian,2018,4.6,9.1,29,42,31185.0,2,742.5,4.76,3,3.36,2.0.0-phase05-real-panel
+R00497,Solanki-Comar,Coimbatore,Cloud Kitchen,South Indian,2016,4.1,6.3,23,42,50756.0,3,1208.48,7.14,3,3.73,2.0.0-phase05-real-panel
+R00498,Suri-Som,Chennai,Cloud Kitchen,North Indian,2026,4.8,2.2,27,40,35401.0,1,885.02,2.5,3,3.27,2.0.0-phase05-real-panel
+R00499,Dixit Group,Bangalore,Cloud Kitchen,Chinese,2023,3.8,8.2,29,33,33736.0,1,1022.3,3.03,3,2.91,2.0.0-phase05-real-panel
+R00500,"Mukherjee, Verma and Radhakrishnan",Chennai,Budget Restaurant,Pizza,2020,4.2,5.1,25,27,23319.0,0,863.67,0.0,3,2.09,2.0.0-phase05-real-panel
+R00501,Chandran-Reddy,Chennai,Cafe,South Indian,2025,4.9,5.7,23,40,34966.0,0,874.15,0.0,3,3.27,2.0.0-phase05-real-panel
+R00502,"Sanghvi, Ganesan and Sahni",Chennai,Budget Restaurant,Burger,2016,4.6,4.7,15,28,39716.0,0,1418.43,0.0,3,2.36,2.0.0-phase05-real-panel
+R00503,Thakur-Nagarajan,Bangalore,Premium Restaurant,South Indian,2019,4.0,2.9,19,34,33089.0,3,973.21,8.82,3,3.0,2.0.0-phase05-real-panel
+R00504,Dutta-Vohra,Hyderabad,Fast Food Chain,South Indian,2025,4.5,7.2,24,30,26180.0,4,872.67,13.33,3,2.27,2.0.0-phase05-real-panel
+R00505,Pandey LLC,Chennai,Fast Food Chain,Pizza,2022,3.9,9.4,30,22,18985.0,0,862.95,0.0,3,1.91,2.0.0-phase05-real-panel
+R00506,"Chokshi, Pandya and Khosla",Hyderabad,Premium Restaurant,Chinese,2017,4.3,7.8,30,28,29860.0,2,1066.43,7.14,3,2.36,2.0.0-phase05-real-panel
+R00507,"Kamdar, Suresh and Setty",Bangalore,Premium Restaurant,North Indian,2016,4.1,5.7,17,33,33405.0,2,1012.27,6.06,3,2.82,2.0.0-phase05-real-panel
+R00508,Wagle Inc,Hyderabad,Premium Restaurant,South Indian,2018,4.4,9.7,21,24,31365.0,0,1306.88,0.0,3,2.18,2.0.0-phase05-real-panel
+R00509,Banerjee Group,Chennai,Budget Restaurant,Biryani,2020,4.8,9.5,29,38,32768.0,0,862.32,0.0,3,3.36,2.0.0-phase05-real-panel
+R00510,Modi-Char,Hyderabad,Fast Food Chain,South Indian,2017,4.2,9.7,16,32,33829.0,0,1057.16,0.0,3,2.73,2.0.0-phase05-real-panel
+R00511,Kaur-Banik,Chennai,Budget Restaurant,Healthy Foods,2017,4.0,8.3,20,37,44595.0,1,1205.27,2.7,3,3.0,2.0.0-phase05-real-panel
+R00512,"Zachariah, Nagarajan and Borde",Hyderabad,Fast Food Chain,Biryani,2025,4.5,6.6,29,28,29000.0,0,1035.71,0.0,3,2.36,2.0.0-phase05-real-panel
+R00513,"Mannan, Nagarajan and Gola",Hyderabad,Premium Restaurant,Pizza,2017,4.0,3.1,28,29,37031.0,0,1276.93,0.0,3,2.18,2.0.0-phase05-real-panel
+R00514,Bath PLC,Coimbatore,Cloud Kitchen,Burger,2024,4.2,2.7,30,37,49553.0,3,1339.27,8.11,3,3.18,2.0.0-phase05-real-panel
+R00515,"Bal, Goyal and Nagy",Vijayawada,Budget Restaurant,South Indian,2024,4.8,9.6,22,31,28692.0,0,925.55,0.0,3,2.55,2.0.0-phase05-real-panel
+R00516,Bhakta Inc,Hyderabad,Cloud Kitchen,South Indian,2021,4.2,6.6,18,31,25098.0,1,809.61,3.23,3,2.55,2.0.0-phase05-real-panel
+R00517,"Goel, Ray and Chadha",Hyderabad,Cafe,North Indian,2024,4.4,9.4,26,34,31205.0,0,917.79,0.0,3,2.82,2.0.0-phase05-real-panel
+R00518,Divan Inc,Chennai,Budget Restaurant,Pizza,2024,3.5,8.2,15,38,39583.0,2,1041.66,5.26,3,3.0,2.0.0-phase05-real-panel
+R00519,Dara and Sons,Bangalore,Cloud Kitchen,South Indian,2023,4.1,6.2,15,32,37685.0,2,1177.66,6.25,3,2.91,2.0.0-phase05-real-panel
+R00520,Keer Group,Coimbatore,Budget Restaurant,North Indian,2025,4.8,9.6,26,30,23169.0,1,772.3,3.33,3,2.55,2.0.0-phase05-real-panel
+R00521,Gokhale Inc,Hyderabad,Budget Restaurant,Biryani,2017,5.0,9.3,30,35,34200.0,0,977.14,0.0,3,2.82,2.0.0-phase05-real-panel
+R00522,Amble-Raghavan,Bangalore,Budget Restaurant,Biryani,2021,4.4,7.9,18,28,31015.0,1,1107.68,3.57,3,2.36,2.0.0-phase05-real-panel
+R00523,Banik-Sen,Coimbatore,Cafe,Chinese,2026,3.8,6.4,25,32,36639.0,3,1144.97,9.38,3,2.82,2.0.0-phase05-real-panel
+R00524,"Dasgupta, Ahluwalia and Sama",Hyderabad,Fast Food Chain,Biryani,2025,4.2,4.4,23,32,29158.0,1,911.19,3.12,3,2.73,2.0.0-phase05-real-panel
+R00525,Palla Ltd,Bangalore,Premium Restaurant,Biryani,2016,4.8,2.5,17,33,23202.0,0,703.09,0.0,3,2.82,2.0.0-phase05-real-panel
+R00526,Hegde-Saran,Hyderabad,Fast Food Chain,North Indian,2020,4.1,7.6,19,46,40054.0,3,870.74,6.52,3,3.82,2.0.0-phase05-real-panel
+R00527,"Pradhan, Goswami and Shah",Vijayawada,Fast Food Chain,Biryani,2025,3.6,4.3,26,30,35082.0,3,1169.4,10.0,3,2.73,2.0.0-phase05-real-panel
+R00528,"Korpal, Char and Sandal",Bangalore,Fast Food Chain,South Indian,2021,4.6,2.1,20,38,32139.0,4,845.76,10.53,3,3.27,2.0.0-phase05-real-panel
+R00529,Anand-Wadhwa,Chennai,Cafe,North Indian,2021,4.6,8.2,25,36,32708.0,3,908.56,8.33,3,2.91,2.0.0-phase05-real-panel
+R00530,"Chowdhury, Magar and Dubey",Bangalore,Cafe,North Indian,2017,4.9,8.3,28,22,26418.0,3,1200.82,13.64,3,1.82,2.0.0-phase05-real-panel
+R00531,Palan Group,Vijayawada,Cafe,Healthy Foods,2022,3.5,6.8,19,38,38821.0,3,1021.61,7.89,3,3.09,2.0.0-phase05-real-panel
+R00532,Magar PLC,Vijayawada,Premium Restaurant,North Indian,2025,4.6,7.2,26,36,38892.0,0,1080.33,0.0,3,2.91,2.0.0-phase05-real-panel
+R00533,"Bali, Datta and Pingle",Vijayawada,Budget Restaurant,Chinese,2018,4.4,9.8,20,41,20991.0,2,511.98,4.88,3,3.18,2.0.0-phase05-real-panel
+R00534,Pradhan-Sant,Bangalore,Cafe,Chinese,2020,4.9,5.5,24,37,24685.0,2,667.16,5.41,3,3.18,2.0.0-phase05-real-panel
+R00535,Deo Ltd,Chennai,Cloud Kitchen,Chinese,2024,4.1,5.8,19,30,29133.0,0,971.1,0.0,3,2.45,2.0.0-phase05-real-panel
+R00536,Roy-Radhakrishnan,Vijayawada,Cafe,Desserts,2021,3.8,9.5,21,31,30769.0,0,992.55,0.0,3,2.45,2.0.0-phase05-real-panel
+R00537,Sheth-Oommen,Bangalore,Cloud Kitchen,Burger,2023,3.8,8.3,17,30,28601.0,2,953.37,6.67,3,2.73,2.0.0-phase05-real-panel
+R00538,Badal-Sehgal,Bangalore,Budget Restaurant,North Indian,2021,3.6,2.6,20,29,21476.0,0,740.55,0.0,3,2.36,2.0.0-phase05-real-panel
+R00539,Sachdev-Bhargava,Bangalore,Cloud Kitchen,Pizza,2026,4.4,6.2,25,38,37275.0,2,980.92,5.26,3,3.0,2.0.0-phase05-real-panel
+R00540,D’Alia-Mammen,Chennai,Budget Restaurant,Desserts,2020,4.0,9.4,21,39,36754.0,0,942.41,0.0,3,3.18,2.0.0-phase05-real-panel
+R00541,"Kibe, Kannan and Sawhney",Coimbatore,Cafe,South Indian,2017,4.3,3.8,26,30,26479.0,0,882.63,0.0,3,2.55,2.0.0-phase05-real-panel
+R00542,"Peri, Mander and Karnik",Chennai,Cloud Kitchen,Biryani,2020,4.7,6.3,29,42,41559.0,0,989.5,0.0,3,3.73,2.0.0-phase05-real-panel
+R00543,Srinivasan-Devan,Bangalore,Premium Restaurant,North Indian,2017,3.6,6.8,20,40,40365.0,0,1009.12,0.0,3,3.45,2.0.0-phase05-real-panel
+R00544,"Taneja, Kohli and Kala",Chennai,Budget Restaurant,Biryani,2021,3.7,7.7,17,31,31250.0,1,1008.06,3.23,3,2.82,2.0.0-phase05-real-panel
+R00545,Shere-Prabhu,Bangalore,Cafe,South Indian,2016,4.3,4.8,17,23,21142.0,1,919.22,4.35,3,2.0,2.0.0-phase05-real-panel
+R00546,Karpe-Sagar,Coimbatore,Budget Restaurant,North Indian,2020,3.8,5.3,28,39,35134.0,1,900.87,2.56,3,3.18,2.0.0-phase05-real-panel
+R00547,"Nagy, Kapoor and Kashyap",Coimbatore,Premium Restaurant,South Indian,2018,4.5,6.0,20,23,18119.0,3,787.78,13.04,3,1.73,2.0.0-phase05-real-panel
+R00548,Ganguly Inc,Chennai,Fast Food Chain,Burger,2021,4.8,3.2,22,50,49495.0,2,989.9,4.0,3,4.0,2.0.0-phase05-real-panel
+R00549,"Memon, Dhar and Mukherjee",Bangalore,Premium Restaurant,Chinese,2016,4.1,7.5,26,24,20976.0,0,874.0,0.0,3,2.0,2.0.0-phase05-real-panel
+R00550,"Bansal, Dyal and Memon",Coimbatore,Cloud Kitchen,Biryani,2022,4.0,8.8,23,27,26584.0,1,984.59,3.7,3,2.0,2.0.0-phase05-real-panel
+R00551,"Pandya, Raja and Solanki",Coimbatore,Fast Food Chain,South Indian,2024,4.0,3.9,26,29,24828.0,2,856.14,6.9,3,2.55,2.0.0-phase05-real-panel
+R00552,Edwin Inc,Hyderabad,Fast Food Chain,North Indian,2024,3.6,6.5,17,27,29146.0,0,1079.48,0.0,3,2.18,2.0.0-phase05-real-panel
+R00553,Gandhi-Goswami,Hyderabad,Fast Food Chain,Desserts,2024,3.8,4.0,23,32,28590.0,2,893.44,6.25,3,2.27,2.0.0-phase05-real-panel
+R00554,More Inc,Chennai,Cafe,Pizza,2025,4.5,2.7,29,35,31195.0,1,891.29,2.86,3,3.0,2.0.0-phase05-real-panel
+R00555,Pai Ltd,Hyderabad,Fast Food Chain,Healthy Foods,2019,4.2,3.3,22,32,23792.0,1,743.5,3.12,3,2.45,2.0.0-phase05-real-panel
+R00556,Sane-Contractor,Bangalore,Cafe,Biryani,2023,4.5,7.0,29,30,24155.0,0,805.17,0.0,3,2.55,2.0.0-phase05-real-panel
+R00557,"Garg, Grover and Amble",Chennai,Premium Restaurant,Chinese,2019,4.3,9.7,15,37,18036.0,0,487.46,0.0,3,2.73,2.0.0-phase05-real-panel
+R00558,Deshpande-Mitter,Chennai,Budget Restaurant,Pizza,2022,4.9,6.6,21,23,22634.0,1,984.09,4.35,3,2.0,2.0.0-phase05-real-panel
+R00559,Subramaniam-Hari,Vijayawada,Budget Restaurant,North Indian,2026,4.5,5.6,28,36,43778.0,2,1216.06,5.56,3,3.0,2.0.0-phase05-real-panel
+R00560,Mitter-Ganesh,Coimbatore,Fast Food Chain,Pizza,2016,4.7,4.5,24,29,33587.0,0,1158.17,0.0,3,2.45,2.0.0-phase05-real-panel
+R00561,Saxena-Oza,Chennai,Budget Restaurant,Biryani,2024,4.9,7.3,16,32,34514.0,1,1078.56,3.12,3,2.55,2.0.0-phase05-real-panel
+R00562,"Walla, Mohanty and Sem",Hyderabad,Premium Restaurant,Biryani,2020,3.9,4.4,27,44,34331.0,1,780.25,2.27,3,3.82,2.0.0-phase05-real-panel
+R00563,Cheema and Sons,Chennai,Cloud Kitchen,Chinese,2020,3.8,7.8,25,30,30207.0,2,1006.9,6.67,3,2.55,2.0.0-phase05-real-panel
+R00564,"Amble, Kade and Baral",Hyderabad,Budget Restaurant,North Indian,2018,4.8,3.7,23,35,33854.0,1,967.26,2.86,3,3.0,2.0.0-phase05-real-panel
+R00565,"Narayanan, Pandey and Bumb",Coimbatore,Cloud Kitchen,Biryani,2018,4.0,3.3,21,28,28229.0,1,1008.18,3.57,3,2.27,2.0.0-phase05-real-panel
+R00566,Basak-Doshi,Chennai,Cafe,Pizza,2018,4.6,8.6,30,33,27709.0,4,839.67,12.12,3,2.73,2.0.0-phase05-real-panel
+R00567,Nagy Inc,Chennai,Fast Food Chain,Pizza,2021,4.0,9.3,22,31,23037.0,0,743.13,0.0,3,2.73,2.0.0-phase05-real-panel
+R00568,"Iyer, Comar and Kar",Bangalore,Budget Restaurant,Desserts,2016,4.7,2.6,16,29,28120.0,0,969.66,0.0,3,2.27,2.0.0-phase05-real-panel
+R00569,"Pillay, Warrior and Divan",Bangalore,Budget Restaurant,Healthy Foods,2024,3.9,4.5,29,37,37413.0,3,1011.16,8.11,3,3.18,2.0.0-phase05-real-panel
+R00570,Lala and Sons,Hyderabad,Cafe,Pizza,2016,4.5,3.5,26,33,35679.0,3,1081.18,9.09,3,2.91,2.0.0-phase05-real-panel
+R00571,Konda Inc,Coimbatore,Budget Restaurant,Burger,2016,4.9,3.1,27,32,30574.0,0,955.44,0.0,3,2.36,2.0.0-phase05-real-panel
+R00572,Kala-Reddy,Vijayawada,Fast Food Chain,South Indian,2022,4.2,9.5,29,34,31849.0,3,936.74,8.82,3,2.82,2.0.0-phase05-real-panel
+R00573,Dani LLC,Chennai,Fast Food Chain,North Indian,2022,4.7,3.0,21,33,31710.0,2,960.91,6.06,3,2.55,2.0.0-phase05-real-panel
+R00574,Sama-Dubey,Bangalore,Budget Restaurant,South Indian,2021,4.4,5.8,16,28,25217.0,1,900.61,3.57,3,2.18,2.0.0-phase05-real-panel
+R00575,Zacharia-Nagarajan,Coimbatore,Cafe,South Indian,2018,4.8,3.9,27,39,27444.0,5,703.69,12.82,3,3.18,2.0.0-phase05-real-panel
+R00576,"Memon, Din and Agate",Hyderabad,Budget Restaurant,Pizza,2020,4.4,9.8,28,38,46499.0,3,1223.66,7.89,3,2.91,2.0.0-phase05-real-panel
+R00577,Gulati LLC,Coimbatore,Cloud Kitchen,Biryani,2018,3.9,4.4,23,29,33063.0,2,1140.1,6.9,3,2.36,2.0.0-phase05-real-panel
+R00578,Sami-Suresh,Chennai,Cloud Kitchen,Desserts,2023,4.7,5.3,16,34,28256.0,3,831.06,8.82,3,2.82,2.0.0-phase05-real-panel
+R00579,"Mallick, Gole and Vig",Chennai,Cloud Kitchen,Chinese,2021,4.6,8.4,20,45,38953.0,5,865.62,11.11,3,3.73,2.0.0-phase05-real-panel
+R00580,Dave PLC,Chennai,Premium Restaurant,North Indian,2026,5.0,8.2,28,38,42228.0,1,1111.26,2.63,3,3.45,2.0.0-phase05-real-panel
+R00581,Tak-Soni,Vijayawada,Premium Restaurant,South Indian,2025,4.2,3.0,21,35,36586.0,0,1045.31,0.0,3,3.0,2.0.0-phase05-real-panel
+R00582,Wable-Issac,Hyderabad,Fast Food Chain,Pizza,2019,4.9,4.7,16,29,19105.0,2,658.79,6.9,3,2.27,2.0.0-phase05-real-panel
+R00583,Mitra-Bahri,Chennai,Fast Food Chain,Healthy Foods,2020,3.7,4.8,17,36,48094.0,1,1335.94,2.78,3,3.0,2.0.0-phase05-real-panel
+R00584,"Kannan, Saini and Khosla",Chennai,Cafe,North Indian,2018,3.5,8.9,22,45,40864.0,2,908.09,4.44,3,3.64,2.0.0-phase05-real-panel
+R00585,"Palla, Rajagopalan and De",Vijayawada,Premium Restaurant,North Indian,2018,4.3,8.5,17,34,25957.0,0,763.44,0.0,3,2.91,2.0.0-phase05-real-panel
+R00586,"Vaidya, Baria and Batta",Chennai,Fast Food Chain,Biryani,2026,4.6,2.1,20,28,24842.0,1,887.21,3.57,3,2.36,2.0.0-phase05-real-panel
+R00587,Tripathi-Arya,Bangalore,Fast Food Chain,Biryani,2025,3.7,3.7,21,34,24655.0,1,725.15,2.94,3,3.0,2.0.0-phase05-real-panel
+R00588,Guha-Chaudhary,Coimbatore,Budget Restaurant,South Indian,2017,3.9,8.4,20,41,36188.0,0,882.63,0.0,3,3.27,2.0.0-phase05-real-panel
+R00589,"Savant, Chakraborty and More",Coimbatore,Budget Restaurant,Pizza,2021,4.7,2.4,24,29,35496.0,1,1224.0,3.45,3,2.36,2.0.0-phase05-real-panel
+R00590,Mani-Sharma,Hyderabad,Cafe,South Indian,2018,4.8,9.3,27,32,32329.0,0,1010.28,0.0,3,2.64,2.0.0-phase05-real-panel
+R00591,Gola-Pandey,Coimbatore,Premium Restaurant,Chinese,2020,4.2,5.4,17,32,27381.0,2,855.66,6.25,3,2.64,2.0.0-phase05-real-panel
+R00592,Dalal-Mall,Coimbatore,Budget Restaurant,Chinese,2017,4.9,8.0,25,26,27419.0,1,1054.58,3.85,3,2.09,2.0.0-phase05-real-panel
+R00593,Dugar-Venkataraman,Bangalore,Budget Restaurant,South Indian,2024,4.4,3.5,29,38,35498.0,0,934.16,0.0,3,3.0,2.0.0-phase05-real-panel
+R00594,"Bera, Raval and Jayaraman",Chennai,Premium Restaurant,Biryani,2026,4.1,6.2,20,32,35045.0,1,1095.16,3.12,3,2.55,2.0.0-phase05-real-panel
+R00595,"Bhatnagar, Barad and Dey",Coimbatore,Budget Restaurant,North Indian,2017,4.1,2.8,19,28,29824.0,0,1065.14,0.0,3,2.36,2.0.0-phase05-real-panel
+R00596,Vasa-Chad,Vijayawada,Premium Restaurant,Biryani,2024,4.6,5.3,16,21,26258.0,0,1250.38,0.0,3,1.82,2.0.0-phase05-real-panel
+R00597,Manda Group,Bangalore,Cafe,Healthy Foods,2020,3.6,8.3,24,41,57346.0,1,1398.68,2.44,3,3.36,2.0.0-phase05-real-panel
+R00598,"Sura, Manne and Mohan",Vijayawada,Cafe,Biryani,2019,4.7,4.2,23,29,35931.0,0,1239.0,0.0,3,2.27,2.0.0-phase05-real-panel
+R00599,"Gulati, Behl and Deep",Bangalore,Cloud Kitchen,Chinese,2025,4.6,6.1,24,41,37201.0,1,907.34,2.44,3,2.82,2.0.0-phase05-real-panel
+R00600,"Bobal, Thakur and Wable",Bangalore,Premium Restaurant,South Indian,2022,4.5,2.6,26,23,14750.0,1,641.3,4.35,3,2.0,2.0.0-phase05-real-panel
+R00601,Sahni and Sons,Vijayawada,Fast Food Chain,South Indian,2020,4.1,8.6,15,35,31293.0,0,894.09,0.0,3,2.64,2.0.0-phase05-real-panel
+R00602,Dyal Group,Coimbatore,Cafe,Chinese,2020,3.7,6.1,25,30,24513.0,2,817.1,6.67,3,2.55,2.0.0-phase05-real-panel
+R00603,Jaggi-Jha,Hyderabad,Fast Food Chain,South Indian,2026,3.5,2.3,16,20,17921.0,0,896.05,0.0,3,1.64,2.0.0-phase05-real-panel
+R00604,Chad Ltd,Chennai,Fast Food Chain,Pizza,2025,3.8,5.3,28,32,40787.0,2,1274.59,6.25,3,2.82,2.0.0-phase05-real-panel
+R00605,Vyas Inc,Chennai,Fast Food Chain,Pizza,2022,4.8,3.9,18,29,40588.0,2,1399.59,6.9,3,2.55,2.0.0-phase05-real-panel
+R00606,Kumer-Karnik,Chennai,Cafe,South Indian,2017,3.9,5.7,29,31,27218.0,0,878.0,0.0,3,2.73,2.0.0-phase05-real-panel
+R00607,"Kala, Sathe and Banerjee",Bangalore,Fast Food Chain,Healthy Foods,2021,3.6,6.9,25,26,28526.0,3,1097.15,11.54,3,2.27,2.0.0-phase05-real-panel
+R00608,"Madan, Chowdhury and Buch",Bangalore,Premium Restaurant,Chinese,2018,3.7,7.0,20,40,37736.0,2,943.4,5.0,3,3.36,2.0.0-phase05-real-panel
+R00609,Balay-Jayaraman,Bangalore,Budget Restaurant,South Indian,2023,4.7,4.0,15,21,19232.0,0,915.81,0.0,3,1.64,2.0.0-phase05-real-panel
+R00610,Nayak-Narang,Coimbatore,Cloud Kitchen,Pizza,2018,4.0,8.7,28,31,24780.0,2,799.35,6.45,3,2.27,2.0.0-phase05-real-panel
+R00611,"Chaudhuri, Dugal and Sabharwal",Vijayawada,Fast Food Chain,Beverages,2017,4.5,7.1,17,28,24909.0,0,889.61,0.0,3,2.36,2.0.0-phase05-real-panel
+R00612,Pai and Sons,Coimbatore,Fast Food Chain,North Indian,2022,5.0,4.9,27,39,45055.0,1,1155.26,2.56,3,3.36,2.0.0-phase05-real-panel
+R00613,"D’Alia, Yogi and Manda",Chennai,Premium Restaurant,Pizza,2020,3.9,5.2,17,27,31029.0,0,1149.22,0.0,3,2.36,2.0.0-phase05-real-panel
+R00614,Datta-Nayar,Bangalore,Cafe,Biryani,2018,4.6,5.7,21,30,24229.0,1,807.63,3.33,3,2.18,2.0.0-phase05-real-panel
+R00615,"Dutt, Nayar and Sarma",Chennai,Cafe,South Indian,2026,4.3,7.3,22,26,19274.0,0,741.31,0.0,3,2.36,2.0.0-phase05-real-panel
+R00616,"Dyal, Sura and Khurana",Chennai,Premium Restaurant,South Indian,2016,4.5,4.4,25,30,28191.0,1,939.7,3.33,3,2.45,2.0.0-phase05-real-panel
+R00617,"Bhavsar, Merchant and Rajagopal",Chennai,Cloud Kitchen,Biryani,2019,4.4,3.1,20,35,34885.0,4,996.71,11.43,3,3.0,2.0.0-phase05-real-panel
+R00618,Mandal Inc,Coimbatore,Premium Restaurant,South Indian,2020,4.7,8.8,16,27,27126.0,0,1004.67,0.0,3,2.27,2.0.0-phase05-real-panel
+R00619,Parikh Inc,Hyderabad,Fast Food Chain,Biryani,2018,4.8,2.1,17,23,13068.0,0,568.17,0.0,3,1.91,2.0.0-phase05-real-panel
+R00620,Dugar-Korpal,Hyderabad,Cloud Kitchen,North Indian,2026,4.9,3.3,19,27,32414.0,1,1200.52,3.7,3,2.36,2.0.0-phase05-real-panel
+R00621,Ramaswamy Inc,Bangalore,Cafe,Biryani,2026,3.6,7.4,26,45,36629.0,1,813.98,2.22,3,3.82,2.0.0-phase05-real-panel
+R00622,Agrawal-Thaker,Hyderabad,Fast Food Chain,Biryani,2016,3.7,7.7,30,33,35012.0,0,1060.97,0.0,3,2.45,2.0.0-phase05-real-panel
+R00623,"Sanghvi, Anand and Keer",Hyderabad,Cloud Kitchen,South Indian,2023,4.2,4.1,23,34,29331.0,1,862.68,2.94,3,2.45,2.0.0-phase05-real-panel
+R00624,Chad LLC,Bangalore,Budget Restaurant,North Indian,2021,3.5,9.7,19,28,33271.0,2,1188.25,7.14,3,2.18,2.0.0-phase05-real-panel
+R00625,Borra and Sons,Vijayawada,Premium Restaurant,Chinese,2025,4.0,6.3,22,38,40399.0,0,1063.13,0.0,3,3.18,2.0.0-phase05-real-panel
+R00626,Palla-Goswami,Vijayawada,Premium Restaurant,Biryani,2018,3.9,8.9,26,45,41284.0,5,917.42,11.11,3,3.73,2.0.0-phase05-real-panel
+R00627,"Narula, Sachdev and Bora",Bangalore,Fast Food Chain,North Indian,2018,4.8,4.8,19,29,26967.0,2,929.9,6.9,3,2.27,2.0.0-phase05-real-panel
+R00628,"Kumer, Subramaniam and Nagy",Bangalore,Cafe,Desserts,2025,3.8,8.5,21,31,37256.0,0,1201.81,0.0,3,2.55,2.0.0-phase05-real-panel
+R00629,"Kohli, Bains and Pillay",Bangalore,Fast Food Chain,South Indian,2024,3.9,6.1,24,32,28328.0,4,885.25,12.5,3,2.73,2.0.0-phase05-real-panel
+R00630,Dayal-Kamdar,Bangalore,Premium Restaurant,Burger,2017,4.4,3.4,20,28,24356.0,2,869.86,7.14,3,2.27,2.0.0-phase05-real-panel
+R00631,"Chand, Wable and Hora",Chennai,Premium Restaurant,North Indian,2017,4.1,9.8,22,38,37033.0,2,974.55,5.26,3,3.09,2.0.0-phase05-real-panel
+R00632,Din-Jha,Chennai,Budget Restaurant,Biryani,2019,3.7,3.6,20,32,32175.0,1,1005.47,3.12,3,2.91,2.0.0-phase05-real-panel
+R00633,Bedi-Chanda,Hyderabad,Cloud Kitchen,South Indian,2021,4.5,9.7,23,23,28025.0,1,1218.48,4.35,3,2.0,2.0.0-phase05-real-panel
+R00634,Iyer Inc,Coimbatore,Budget Restaurant,Burger,2026,4.1,7.1,22,34,42206.0,2,1241.35,5.88,3,3.0,2.0.0-phase05-real-panel
+R00635,"Dugal, Purohit and Kulkarni",Coimbatore,Budget Restaurant,Biryani,2018,3.8,6.1,21,36,28467.0,0,790.75,0.0,3,3.0,2.0.0-phase05-real-panel
+R00636,Puri PLC,Vijayawada,Cafe,Biryani,2023,4.6,7.7,27,27,27384.0,4,1014.22,14.81,3,2.45,2.0.0-phase05-real-panel
+R00637,"Bumb, Padmanabhan and Sankar",Coimbatore,Cloud Kitchen,South Indian,2023,4.1,5.8,21,31,23754.0,0,766.26,0.0,3,2.64,2.0.0-phase05-real-panel
+R00638,"Padmanabhan, Patil and Shere",Bangalore,Cloud Kitchen,North Indian,2025,4.6,3.2,24,29,22952.0,0,791.45,0.0,3,2.36,2.0.0-phase05-real-panel
+R00639,Dara-Narayanan,Bangalore,Cloud Kitchen,Pizza,2025,4.1,6.9,19,27,20609.0,0,763.3,0.0,3,2.36,2.0.0-phase05-real-panel
+R00640,Ahluwalia Ltd,Coimbatore,Cloud Kitchen,South Indian,2026,4.0,7.5,22,31,18318.0,2,590.9,6.45,3,2.55,2.0.0-phase05-real-panel
+R00641,Kade Inc,Coimbatore,Cloud Kitchen,South Indian,2016,3.5,5.1,19,37,38069.0,2,1028.89,5.41,3,2.82,2.0.0-phase05-real-panel
+R00642,Sarkar-Lal,Hyderabad,Cloud Kitchen,Chinese,2025,4.9,9.7,19,27,16960.0,1,628.15,3.7,3,2.27,2.0.0-phase05-real-panel
+R00643,Pathak-Koshy,Coimbatore,Premium Restaurant,South Indian,2020,4.0,4.6,30,31,28725.0,3,926.61,9.68,3,2.64,2.0.0-phase05-real-panel
+R00644,Patla and Sons,Bangalore,Cafe,North Indian,2022,3.6,7.5,21,36,36569.0,1,1015.81,2.78,3,2.73,2.0.0-phase05-real-panel
+R00645,"Narain, Nagar and Minhas",Hyderabad,Cloud Kitchen,Beverages,2022,4.3,2.2,21,36,23176.0,0,643.78,0.0,3,3.09,2.0.0-phase05-real-panel
+R00646,"Chandran, Rama and Verma",Vijayawada,Cloud Kitchen,Healthy Foods,2016,4.5,3.4,21,47,47845.0,1,1017.98,2.13,3,4.09,2.0.0-phase05-real-panel
+R00647,Tandon-Raman,Chennai,Premium Restaurant,North Indian,2023,3.6,5.4,28,35,46003.0,2,1314.37,5.71,3,2.73,2.0.0-phase05-real-panel
+R00648,Sawhney Group,Vijayawada,Premium Restaurant,Chinese,2023,4.4,4.6,24,30,25839.0,1,861.3,3.33,3,2.45,2.0.0-phase05-real-panel
+R00649,Bansal-Tak,Bangalore,Budget Restaurant,Desserts,2020,5.0,8.3,24,28,27437.0,1,979.89,3.57,3,2.36,2.0.0-phase05-real-panel
+R00650,Deep Inc,Chennai,Cafe,South Indian,2026,3.9,9.9,29,36,34602.0,0,961.17,0.0,3,2.73,2.0.0-phase05-real-panel
+R00651,Saini-Anand,Bangalore,Premium Restaurant,Pizza,2019,4.2,7.2,18,28,22114.0,3,789.79,10.71,3,2.27,2.0.0-phase05-real-panel
+R00652,Naik-Rajan,Bangalore,Premium Restaurant,South Indian,2023,4.8,3.9,26,33,29409.0,1,891.18,3.03,3,2.73,2.0.0-phase05-real-panel
+R00653,Borah-Dora,Bangalore,Fast Food Chain,Biryani,2021,4.9,6.6,22,34,26299.0,0,773.5,0.0,3,2.82,2.0.0-phase05-real-panel
+R00654,Mahajan LLC,Bangalore,Cafe,Biryani,2026,4.9,7.6,27,38,48780.0,2,1283.68,5.26,3,3.0,2.0.0-phase05-real-panel
+R00655,Shenoy-Chokshi,Hyderabad,Budget Restaurant,Healthy Foods,2016,4.3,9.0,22,34,34427.0,2,1012.56,5.88,3,3.09,2.0.0-phase05-real-panel
+R00656,"Dhillon, Bora and Edwin",Chennai,Fast Food Chain,South Indian,2023,3.7,6.8,24,31,25454.0,1,821.1,3.23,3,2.55,2.0.0-phase05-real-panel
+R00657,"Goswami, Bala and Gokhale",Chennai,Cafe,Pizza,2017,3.7,2.1,22,34,32363.0,1,951.85,2.94,3,2.64,2.0.0-phase05-real-panel
+R00658,Desai and Sons,Bangalore,Budget Restaurant,South Indian,2020,3.7,7.2,22,32,29316.0,1,916.12,3.12,3,2.82,2.0.0-phase05-real-panel
+R00659,Arya-Kapoor,Coimbatore,Fast Food Chain,Biryani,2019,4.7,7.2,23,36,24566.0,1,682.39,2.78,3,3.0,2.0.0-phase05-real-panel
+R00660,Kapadia PLC,Bangalore,Fast Food Chain,South Indian,2024,4.2,9.4,19,29,25490.0,1,878.97,3.45,3,2.45,2.0.0-phase05-real-panel
+R00661,Deshmukh-Wadhwa,Coimbatore,Budget Restaurant,Pizza,2018,4.6,3.5,26,33,28520.0,2,864.24,6.06,3,2.64,2.0.0-phase05-real-panel
+R00662,Hayer LLC,Chennai,Fast Food Chain,Biryani,2018,4.4,7.8,21,37,30310.0,1,819.19,2.7,3,3.0,2.0.0-phase05-real-panel
+R00663,Karan LLC,Vijayawada,Fast Food Chain,Chinese,2017,4.4,9.4,24,34,34135.0,0,1003.97,0.0,3,2.64,2.0.0-phase05-real-panel
+R00664,"Magar, Gara and Dewan",Coimbatore,Premium Restaurant,Pizza,2023,4.5,2.6,27,41,38087.0,0,928.95,0.0,3,3.36,2.0.0-phase05-real-panel
+R00665,"Joshi, Vaidya and Kara",Chennai,Fast Food Chain,South Indian,2017,4.1,5.3,29,38,40968.0,0,1078.11,0.0,3,3.09,2.0.0-phase05-real-panel
+R00666,"Bhakta, Nagar and Apte",Coimbatore,Budget Restaurant,Beverages,2019,4.5,8.0,19,35,21395.0,2,611.29,5.71,3,2.82,2.0.0-phase05-real-panel
+R00667,Savant-Srivastava,Bangalore,Cloud Kitchen,Burger,2024,4.7,2.5,22,40,42026.0,1,1050.65,2.5,3,3.36,2.0.0-phase05-real-panel
+R00668,Taneja and Sons,Chennai,Cafe,South Indian,2020,3.8,8.7,30,39,48694.0,1,1248.56,2.56,3,3.09,2.0.0-phase05-real-panel
+R00669,Kumar-Sood,Chennai,Budget Restaurant,Healthy Foods,2023,3.5,6.2,15,35,26238.0,1,749.66,2.86,3,3.0,2.0.0-phase05-real-panel
+R00670,"Lanka, Biswas and Pai",Chennai,Fast Food Chain,Burger,2025,4.7,7.6,21,37,33866.0,1,915.3,2.7,3,2.64,2.0.0-phase05-real-panel
+R00671,Sood-Karan,Hyderabad,Budget Restaurant,Pizza,2023,4.5,3.1,16,34,32249.0,1,948.5,2.94,3,2.91,2.0.0-phase05-real-panel
+R00672,"Bedi, Pau and Mutti",Bangalore,Cloud Kitchen,South Indian,2025,4.4,2.9,24,23,24314.0,0,1057.13,0.0,3,1.91,2.0.0-phase05-real-panel
+R00673,Mukhopadhyay-Arya,Bangalore,Budget Restaurant,Burger,2023,4.6,4.0,23,38,23627.0,2,621.76,5.26,3,3.27,2.0.0-phase05-real-panel
+R00674,"Prashad, Sunder and Behl",Bangalore,Cafe,North Indian,2017,4.7,9.7,19,38,26032.0,1,685.05,2.63,3,3.27,2.0.0-phase05-real-panel
+R00675,Hari Ltd,Chennai,Premium Restaurant,South Indian,2022,4.1,7.3,28,38,27497.0,1,723.61,2.63,3,3.09,2.0.0-phase05-real-panel
+R00676,"Ramanathan, Yohannan and Baral",Vijayawada,Cafe,South Indian,2022,4.7,4.2,16,28,25763.0,0,920.11,0.0,3,2.45,2.0.0-phase05-real-panel
+R00677,"Raghavan, Gill and Parsa",Bangalore,Cloud Kitchen,Chinese,2022,4.9,7.6,20,29,32342.0,1,1115.24,3.45,3,2.45,2.0.0-phase05-real-panel
+R00678,Rajagopal-Prashad,Chennai,Cafe,Biryani,2025,4.2,8.3,15,27,21817.0,0,808.04,0.0,3,2.09,2.0.0-phase05-real-panel
+R00679,Wason and Sons,Vijayawada,Budget Restaurant,South Indian,2026,3.5,9.8,19,34,29194.0,2,858.65,5.88,3,2.73,2.0.0-phase05-real-panel
+R00680,Barman-Chaudhary,Chennai,Budget Restaurant,Chinese,2016,4.3,2.7,22,32,27592.0,1,862.25,3.12,3,2.82,2.0.0-phase05-real-panel
+R00681,Zacharia-Din,Chennai,Premium Restaurant,South Indian,2026,3.8,8.1,24,24,28163.0,0,1173.46,0.0,3,2.09,2.0.0-phase05-real-panel
+R00682,"Subramaniam, Dixit and Varma",Chennai,Cloud Kitchen,North Indian,2019,4.5,8.9,17,36,30659.0,0,851.64,0.0,3,2.91,2.0.0-phase05-real-panel
+R00683,Kashyap-Tak,Hyderabad,Cloud Kitchen,Biryani,2024,4.8,6.2,22,29,12679.0,3,437.21,10.34,3,2.64,2.0.0-phase05-real-panel
+R00684,"Mangal, Kapadia and Sha",Chennai,Premium Restaurant,South Indian,2026,4.1,9.7,22,24,23745.0,0,989.38,0.0,3,2.18,2.0.0-phase05-real-panel
+R00685,Gandhi-Kala,Coimbatore,Premium Restaurant,South Indian,2020,4.6,6.4,22,26,24206.0,2,931.0,7.69,3,2.18,2.0.0-phase05-real-panel
+R00686,Pandit Ltd,Chennai,Fast Food Chain,Chinese,2026,3.5,7.3,23,32,14528.0,0,454.0,0.0,3,2.73,2.0.0-phase05-real-panel
+R00687,Jha Group,Coimbatore,Budget Restaurant,Burger,2016,4.2,5.6,24,32,33153.0,2,1036.03,6.25,3,2.91,2.0.0-phase05-real-panel
+R00688,Amble-Singh,Chennai,Fast Food Chain,Healthy Foods,2019,4.0,5.4,25,23,23666.0,0,1028.96,0.0,3,1.45,2.0.0-phase05-real-panel
+R00689,Talwar-Minhas,Hyderabad,Budget Restaurant,Burger,2020,3.5,4.8,27,37,35810.0,2,967.84,5.41,3,2.91,2.0.0-phase05-real-panel
+R00690,"Suresh, Borah and Sharaf",Hyderabad,Cafe,South Indian,2019,4.4,9.8,17,26,34615.0,1,1331.35,3.85,3,1.82,2.0.0-phase05-real-panel
+R00691,Roy-Rana,Hyderabad,Cafe,South Indian,2021,4.5,3.3,28,30,34648.0,2,1154.93,6.67,3,2.45,2.0.0-phase05-real-panel
+R00692,"Bandi, Agarwal and Dada",Chennai,Cloud Kitchen,Biryani,2025,3.6,6.6,27,24,19590.0,2,816.25,8.33,3,1.91,2.0.0-phase05-real-panel
+R00693,"Pillai, Cherian and Datta",Chennai,Budget Restaurant,South Indian,2019,3.8,7.9,23,32,36317.0,1,1134.91,3.12,3,2.82,2.0.0-phase05-real-panel
+R00694,Rai-Suresh,Coimbatore,Fast Food Chain,North Indian,2016,4.5,6.8,24,30,20754.0,2,691.8,6.67,3,2.27,2.0.0-phase05-real-panel
+R00695,Verma Ltd,Bangalore,Premium Restaurant,South Indian,2021,4.7,4.2,29,30,29380.0,2,979.33,6.67,3,2.64,2.0.0-phase05-real-panel
+R00696,"Viswanathan, Wason and Raja",Bangalore,Fast Food Chain,North Indian,2016,4.3,4.9,29,37,36151.0,2,977.05,5.41,3,3.0,2.0.0-phase05-real-panel
+R00697,"Kapur, Chatterjee and Kari",Bangalore,Premium Restaurant,South Indian,2026,3.8,3.2,28,38,38205.0,2,1005.39,5.26,3,3.27,2.0.0-phase05-real-panel
+R00698,"Lata, Dada and Majumdar",Chennai,Cafe,North Indian,2025,3.6,2.6,23,34,28913.0,3,850.38,8.82,3,2.45,2.0.0-phase05-real-panel
+R00699,Patla Inc,Bangalore,Premium Restaurant,South Indian,2024,4.9,7.7,23,38,34751.0,2,914.5,5.26,3,2.82,2.0.0-phase05-real-panel
+R00700,Sethi Group,Hyderabad,Cafe,Biryani,2026,4.2,5.2,29,36,47216.0,1,1311.56,2.78,3,2.82,2.0.0-phase05-real-panel
+R00701,Hari Group,Bangalore,Premium Restaurant,North Indian,2024,4.0,8.7,16,28,36006.0,1,1285.93,3.57,3,2.36,2.0.0-phase05-real-panel
+R00702,"Behl, Chacko and Sundaram",Hyderabad,Budget Restaurant,South Indian,2023,4.5,3.7,29,39,25615.0,1,656.79,2.56,3,3.36,2.0.0-phase05-real-panel
+R00703,Patil and Sons,Bangalore,Cafe,Chinese,2025,4.3,6.6,17,32,22136.0,1,691.75,3.12,3,2.82,2.0.0-phase05-real-panel
+R00704,"Koshy, Parsa and Bhatia",Bangalore,Budget Restaurant,South Indian,2018,4.8,2.7,18,44,39338.0,1,894.05,2.27,3,3.82,2.0.0-phase05-real-panel
+R00705,Mukherjee Ltd,Hyderabad,Fast Food Chain,Chinese,2026,4.2,4.2,18,27,27699.0,0,1025.89,0.0,3,2.36,2.0.0-phase05-real-panel
+R00706,"Ramesh, Goswami and Mahal",Hyderabad,Budget Restaurant,Pizza,2017,4.2,4.6,28,32,24387.0,2,762.09,6.25,3,2.73,2.0.0-phase05-real-panel
+R00707,"Karpe, Kaur and Dhillon",Coimbatore,Fast Food Chain,South Indian,2025,4.0,3.3,26,36,32380.0,1,899.44,2.78,3,3.18,2.0.0-phase05-real-panel
+R00708,Behl PLC,Coimbatore,Cloud Kitchen,Biryani,2018,4.4,3.3,15,33,28647.0,1,868.09,3.03,3,2.73,2.0.0-phase05-real-panel
+R00709,Pradhan Inc,Coimbatore,Budget Restaurant,Chinese,2024,5.0,6.8,26,25,29459.0,0,1178.36,0.0,3,2.0,2.0.0-phase05-real-panel
+R00710,"Padmanabhan, Tailor and Raghavan",Hyderabad,Fast Food Chain,Biryani,2024,4.0,8.5,19,43,43928.0,2,1021.58,4.65,3,3.82,2.0.0-phase05-real-panel
+R00711,"Kapur, Natarajan and Sarkar",Bangalore,Cafe,North Indian,2026,3.9,9.0,27,43,56857.0,1,1322.26,2.33,3,3.91,2.0.0-phase05-real-panel
+R00712,"Joshi, Kohli and Sahota",Chennai,Fast Food Chain,Desserts,2026,4.7,8.4,26,37,33879.0,4,915.65,10.81,3,3.0,2.0.0-phase05-real-panel
+R00713,Dey PLC,Vijayawada,Premium Restaurant,Healthy Foods,2025,4.5,8.6,21,24,32008.0,0,1333.67,0.0,3,1.91,2.0.0-phase05-real-panel
+R00714,Sundaram PLC,Chennai,Budget Restaurant,North Indian,2017,4.0,6.7,17,37,36974.0,2,999.3,5.41,3,3.36,2.0.0-phase05-real-panel
+R00715,"Chowdhury, Datta and Chad",Bangalore,Cafe,Healthy Foods,2017,3.7,2.0,22,28,20837.0,0,744.18,0.0,3,2.45,2.0.0-phase05-real-panel
+R00716,Vyas-Ray,Vijayawada,Budget Restaurant,Burger,2020,4.6,8.3,24,42,31169.0,1,742.12,2.38,3,3.64,2.0.0-phase05-real-panel
+R00717,"Sankar, Balay and Chaudhari",Hyderabad,Cloud Kitchen,North Indian,2023,4.5,7.1,17,40,33239.0,1,830.98,2.5,3,3.45,2.0.0-phase05-real-panel
+R00718,Dada Ltd,Chennai,Cafe,North Indian,2021,4.9,8.7,20,29,25911.0,1,893.48,3.45,3,2.55,2.0.0-phase05-real-panel
+R00719,Chaudhary-Kala,Hyderabad,Cloud Kitchen,South Indian,2019,3.7,8.4,22,37,37722.0,2,1019.51,5.41,3,3.09,2.0.0-phase05-real-panel
+R00720,Agate Ltd,Hyderabad,Budget Restaurant,Burger,2026,4.0,2.1,20,35,41184.0,1,1176.69,2.86,3,2.91,2.0.0-phase05-real-panel
+R00721,"Desai, Madan and Gaba",Hyderabad,Fast Food Chain,Chinese,2021,3.8,7.0,21,27,40920.0,2,1515.56,7.41,3,2.27,2.0.0-phase05-real-panel
+R00722,Brar-Kanda,Bangalore,Fast Food Chain,North Indian,2019,4.4,8.4,29,30,30220.0,0,1007.33,0.0,3,2.55,2.0.0-phase05-real-panel
+R00723,Nagarajan Group,Bangalore,Premium Restaurant,Healthy Foods,2024,4.5,3.0,21,33,32182.0,1,975.21,3.03,3,2.91,2.0.0-phase05-real-panel
+R00724,Kale PLC,Coimbatore,Budget Restaurant,Healthy Foods,2020,4.1,9.1,20,34,33091.0,1,973.26,2.94,3,2.73,2.0.0-phase05-real-panel
+R00725,Ganguly and Sons,Chennai,Budget Restaurant,Chinese,2020,4.6,3.7,24,32,33074.0,1,1033.56,3.12,3,2.45,2.0.0-phase05-real-panel
+R00726,Das LLC,Coimbatore,Budget Restaurant,Pizza,2021,4.9,2.7,17,29,25731.0,2,887.28,6.9,3,2.27,2.0.0-phase05-real-panel
+R00727,Dalal-Sule,Vijayawada,Cloud Kitchen,Biryani,2022,4.7,10.0,24,30,38937.0,1,1297.9,3.33,3,2.55,2.0.0-phase05-real-panel
+R00728,Chahal-Gala,Hyderabad,Cloud Kitchen,Biryani,2019,4.1,6.3,26,36,24305.0,1,675.14,2.78,3,3.18,2.0.0-phase05-real-panel
+R00729,"Konda, Bhat and Sathe",Chennai,Cafe,North Indian,2017,4.9,6.3,25,35,43400.0,1,1240.0,2.86,3,2.91,2.0.0-phase05-real-panel
+R00730,"Ben, Agarwal and Mukherjee",Bangalore,Cafe,Healthy Foods,2018,4.5,9.3,19,34,28424.0,0,836.0,0.0,3,3.0,2.0.0-phase05-real-panel
+R00731,"Kalla, Sarraf and Khare",Chennai,Fast Food Chain,South Indian,2026,4.5,7.9,28,37,25968.0,1,701.84,2.7,3,2.91,2.0.0-phase05-real-panel
+R00732,Sani LLC,Bangalore,Fast Food Chain,North Indian,2016,4.0,5.5,19,28,22835.0,0,815.54,0.0,3,2.36,2.0.0-phase05-real-panel
+R00733,Dada-Kala,Bangalore,Cloud Kitchen,South Indian,2024,4.2,8.4,27,14,8592.0,0,613.71,0.0,3,1.18,2.0.0-phase05-real-panel
+R00734,Verma Inc,Hyderabad,Premium Restaurant,Desserts,2020,3.9,5.1,18,32,32106.0,1,1003.31,3.12,3,2.73,2.0.0-phase05-real-panel
+R00735,"Mittal, Devan and Malhotra",Bangalore,Budget Restaurant,Burger,2023,3.8,6.2,24,38,33738.0,1,887.84,2.63,3,3.36,2.0.0-phase05-real-panel
+R00736,"Misra, Misra and Balay",Hyderabad,Cloud Kitchen,Pizza,2022,4.4,4.8,24,36,34248.0,2,951.33,5.56,3,2.91,2.0.0-phase05-real-panel
+R00737,Kala Inc,Chennai,Fast Food Chain,Pizza,2018,4.8,5.0,26,36,22375.0,3,621.53,8.33,3,3.18,2.0.0-phase05-real-panel
+R00738,Bhatia-Raman,Hyderabad,Fast Food Chain,South Indian,2024,4.9,6.8,21,30,19782.0,2,659.4,6.67,3,2.64,2.0.0-phase05-real-panel
+R00739,Yohannan-Bir,Vijayawada,Fast Food Chain,South Indian,2025,3.8,9.0,22,40,41236.0,1,1030.9,2.5,3,3.55,2.0.0-phase05-real-panel
+R00740,"Deshpande, Roy and Patla",Coimbatore,Premium Restaurant,Burger,2018,4.6,2.4,29,28,29103.0,1,1039.39,3.57,3,2.27,2.0.0-phase05-real-panel
+R00741,Dixit Ltd,Hyderabad,Fast Food Chain,Burger,2017,4.3,4.2,28,36,31860.0,1,885.0,2.78,3,2.82,2.0.0-phase05-real-panel
+R00742,"Contractor, Sachar and Joshi",Vijayawada,Premium Restaurant,Chinese,2022,4.1,4.1,21,44,52859.0,2,1201.34,4.55,3,3.55,2.0.0-phase05-real-panel
+R00743,Hayre and Sons,Chennai,Cafe,South Indian,2022,4.8,8.0,27,30,27915.0,2,930.5,6.67,3,2.45,2.0.0-phase05-real-panel
+R00744,"Yadav, Lata and Bumb",Bangalore,Cloud Kitchen,North Indian,2025,4.5,7.5,25,39,33384.0,4,856.0,10.26,3,3.18,2.0.0-phase05-real-panel
+R00745,"Chopra, Raj and Rout",Chennai,Budget Restaurant,Healthy Foods,2024,4.4,9.4,15,40,42834.0,4,1070.85,10.0,3,3.09,2.0.0-phase05-real-panel
+R00746,Grewal Group,Bangalore,Cloud Kitchen,Burger,2025,4.5,3.0,17,28,25760.0,1,920.0,3.57,3,2.55,2.0.0-phase05-real-panel
+R00747,"Ratti, Banik and Loke",Coimbatore,Cloud Kitchen,Biryani,2024,4.6,3.0,20,32,40102.0,1,1253.19,3.12,3,2.64,2.0.0-phase05-real-panel
+R00748,"Gill, Dugar and Bandi",Vijayawada,Fast Food Chain,South Indian,2017,3.7,7.7,20,31,26526.0,2,855.68,6.45,3,2.55,2.0.0-phase05-real-panel
+R00749,Munshi PLC,Hyderabad,Premium Restaurant,Pizza,2023,5.0,5.6,29,31,26165.0,0,844.03,0.0,3,2.45,2.0.0-phase05-real-panel
+R00750,"Bhatt, Yadav and Singh",Bangalore,Cafe,Biryani,2025,4.6,9.2,30,27,29052.0,1,1076.0,3.7,3,2.09,2.0.0-phase05-real-panel
+R00751,"Mital, Bassi and Balasubramanian",Chennai,Budget Restaurant,Chinese,2018,4.6,7.7,27,30,25555.0,1,851.83,3.33,3,2.64,2.0.0-phase05-real-panel
+R00752,Badal-Pingle,Vijayawada,Cloud Kitchen,Burger,2016,4.6,8.6,17,38,28517.0,2,750.45,5.26,3,3.27,2.0.0-phase05-real-panel
+R00753,Buch Inc,Bangalore,Cafe,Biryani,2023,3.7,5.2,23,26,29976.0,2,1152.92,7.69,3,2.27,2.0.0-phase05-real-panel
+R00754,Khatri-Sibal,Bangalore,Cafe,Burger,2017,4.3,4.7,18,29,28091.0,1,968.66,3.45,3,2.18,2.0.0-phase05-real-panel
+R00755,Chandra-Lall,Chennai,Premium Restaurant,North Indian,2022,3.7,5.0,22,36,39837.0,0,1106.58,0.0,3,2.82,2.0.0-phase05-real-panel
+R00756,Sawhney-Thaker,Coimbatore,Cafe,Burger,2023,4.9,2.3,18,27,28059.0,1,1039.22,3.7,3,2.27,2.0.0-phase05-real-panel
+R00757,"Khalsa, Sani and Goswami",Chennai,Premium Restaurant,Chinese,2020,4.0,6.5,20,28,18261.0,0,652.18,0.0,3,2.45,2.0.0-phase05-real-panel
+R00758,Pathak Ltd,Hyderabad,Premium Restaurant,South Indian,2022,4.2,3.4,24,32,28864.0,0,902.0,0.0,3,2.82,2.0.0-phase05-real-panel
+R00759,Bava-Deshmukh,Chennai,Premium Restaurant,North Indian,2026,3.7,6.6,29,32,27170.0,3,849.06,9.38,3,2.64,2.0.0-phase05-real-panel
+R00760,Thakur Inc,Chennai,Cloud Kitchen,Healthy Foods,2018,4.7,9.9,16,38,50103.0,0,1318.5,0.0,3,3.36,2.0.0-phase05-real-panel
+R00761,"Saran, Bhasin and Borra",Coimbatore,Cloud Kitchen,Burger,2018,3.7,5.0,26,29,40441.0,3,1394.52,10.34,3,2.27,2.0.0-phase05-real-panel
+R00762,Yadav Ltd,Chennai,Budget Restaurant,Burger,2020,3.7,4.0,29,33,31940.0,1,967.88,3.03,3,2.64,2.0.0-phase05-real-panel
+R00763,Borra-Wagle,Bangalore,Fast Food Chain,Chinese,2021,4.1,4.6,26,38,32421.0,1,853.18,2.63,3,3.0,2.0.0-phase05-real-panel
+R00764,"Bose, Pall and Prakash",Bangalore,Premium Restaurant,Pizza,2018,3.7,4.3,27,28,33454.0,2,1194.79,7.14,3,2.55,2.0.0-phase05-real-panel
+R00765,"Dubey, Venkatesh and Sibal",Chennai,Cafe,Pizza,2022,3.8,2.7,23,30,39958.0,0,1331.93,0.0,3,2.64,2.0.0-phase05-real-panel
+R00766,Hari-Verma,Hyderabad,Budget Restaurant,Pizza,2017,4.0,3.7,15,25,34767.0,1,1390.68,4.0,3,2.18,2.0.0-phase05-real-panel
+R00767,Badal-Varty,Hyderabad,Cafe,South Indian,2026,4.8,6.9,19,28,20534.0,0,733.36,0.0,3,2.27,2.0.0-phase05-real-panel
+R00768,Uppal-Randhawa,Hyderabad,Cafe,North Indian,2024,4.8,6.8,27,32,33685.0,0,1052.66,0.0,3,2.64,2.0.0-phase05-real-panel
+R00769,Johal PLC,Hyderabad,Cafe,Biryani,2018,4.2,5.4,20,37,38169.0,1,1031.59,2.7,3,3.0,2.0.0-phase05-real-panel
+R00770,Baria-Mukhopadhyay,Coimbatore,Premium Restaurant,Biryani,2025,3.8,7.7,26,32,27519.0,1,859.97,3.12,3,2.82,2.0.0-phase05-real-panel
+R00771,Dutta-Gara,Hyderabad,Budget Restaurant,Beverages,2019,4.0,9.1,17,22,26004.0,0,1182.0,0.0,3,2.0,2.0.0-phase05-real-panel
+R00772,Tara-Dugal,Coimbatore,Cloud Kitchen,Pizza,2025,4.4,7.6,24,24,20404.0,0,850.17,0.0,3,2.09,2.0.0-phase05-real-panel
+R00773,Chaudhry and Sons,Bangalore,Fast Food Chain,North Indian,2024,3.9,8.7,25,35,41243.0,0,1178.37,0.0,3,2.82,2.0.0-phase05-real-panel
+R00774,Chanda-Prashad,Chennai,Cafe,Biryani,2016,3.9,3.0,22,29,25135.0,0,866.72,0.0,3,2.55,2.0.0-phase05-real-panel
+R00775,Nagar Group,Bangalore,Premium Restaurant,South Indian,2026,3.5,3.0,19,35,43671.0,1,1247.74,2.86,3,3.18,2.0.0-phase05-real-panel
+R00776,"Vora, Basu and Devan",Chennai,Budget Restaurant,North Indian,2026,4.7,2.7,19,30,24741.0,1,824.7,3.33,3,2.45,2.0.0-phase05-real-panel
+R00777,Gera-Balakrishnan,Chennai,Cloud Kitchen,North Indian,2026,4.5,6.1,20,28,23726.0,0,847.36,0.0,3,2.45,2.0.0-phase05-real-panel
+R00778,Karpe-Kapoor,Coimbatore,Budget Restaurant,Pizza,2021,4.8,2.1,18,37,35874.0,1,969.57,2.7,3,3.36,2.0.0-phase05-real-panel
+R00779,Bains-Contractor,Chennai,Cloud Kitchen,South Indian,2026,4.3,3.4,24,36,27227.0,2,756.31,5.56,3,2.82,2.0.0-phase05-real-panel
+R00780,"Master, Morar and Chadha",Hyderabad,Premium Restaurant,Biryani,2022,3.5,5.4,15,33,24266.0,0,735.33,0.0,3,2.91,2.0.0-phase05-real-panel
+R00781,"Nair, D’Alia and Muni",Chennai,Budget Restaurant,Pizza,2018,4.3,6.3,27,29,25034.0,1,863.24,3.45,3,2.55,2.0.0-phase05-real-panel
+R00782,Kari PLC,Hyderabad,Cafe,Beverages,2024,4.7,6.9,15,37,33291.0,3,899.76,8.11,3,3.36,2.0.0-phase05-real-panel
+R00783,Sengupta-Varkey,Bangalore,Cafe,South Indian,2024,4.7,4.9,28,26,29698.0,1,1142.23,3.85,3,2.36,2.0.0-phase05-real-panel
+R00784,Madan Ltd,Chennai,Budget Restaurant,Burger,2019,4.8,8.9,27,42,34066.0,0,811.1,0.0,3,3.73,2.0.0-phase05-real-panel
+R00785,Parekh Group,Bangalore,Budget Restaurant,South Indian,2023,3.7,4.9,17,36,32245.0,3,895.69,8.33,3,3.0,2.0.0-phase05-real-panel
+R00786,"Sule, Sami and Sampath",Chennai,Cloud Kitchen,South Indian,2021,4.6,8.4,18,30,29551.0,1,985.03,3.33,3,2.64,2.0.0-phase05-real-panel
+R00787,Khatri-Kohli,Chennai,Fast Food Chain,Pizza,2025,4.0,5.9,18,33,36370.0,0,1102.12,0.0,3,2.82,2.0.0-phase05-real-panel
+R00788,Kalita Group,Bangalore,Budget Restaurant,South Indian,2020,4.3,9.6,23,40,34792.0,0,869.8,0.0,3,3.55,2.0.0-phase05-real-panel
+R00789,Palla-Sankar,Chennai,Premium Restaurant,Burger,2016,4.3,2.3,27,41,34576.0,1,843.32,2.44,3,3.55,2.0.0-phase05-real-panel
+R00790,"Chauhan, Mann and Nagarajan",Chennai,Cloud Kitchen,Pizza,2021,4.2,8.9,24,29,26169.0,1,902.38,3.45,3,2.36,2.0.0-phase05-real-panel
+R00791,Chadha-Sahni,Bangalore,Cafe,Biryani,2021,4.9,5.6,17,32,36071.0,1,1127.22,3.12,3,2.55,2.0.0-phase05-real-panel
+R00792,Kant-Bansal,Coimbatore,Budget Restaurant,Burger,2026,3.9,9.5,19,31,26088.0,1,841.55,3.23,3,2.45,2.0.0-phase05-real-panel
+R00793,Puri-Barad,Chennai,Cloud Kitchen,Chinese,2016,4.6,9.9,20,30,28289.0,2,942.97,6.67,3,2.64,2.0.0-phase05-real-panel
+R00794,Kara-Sood,Hyderabad,Premium Restaurant,Biryani,2023,4.3,2.7,16,33,28237.0,1,855.67,3.03,3,2.64,2.0.0-phase05-real-panel
+R00795,Parikh-Saraf,Coimbatore,Premium Restaurant,Pizza,2016,3.6,2.7,24,34,28742.0,3,845.35,8.82,3,2.82,2.0.0-phase05-real-panel
+R00796,"Madan, Varkey and Devan",Hyderabad,Budget Restaurant,Biryani,2017,4.0,4.1,21,28,30278.0,3,1081.36,10.71,3,2.55,2.0.0-phase05-real-panel
+R00797,Grover Ltd,Hyderabad,Cafe,Burger,2020,3.7,3.1,15,40,41371.0,1,1034.28,2.5,3,3.45,2.0.0-phase05-real-panel
+R00798,Mangat-Chopra,Chennai,Premium Restaurant,South Indian,2020,4.6,8.8,28,34,33393.0,1,982.15,2.94,3,2.55,2.0.0-phase05-real-panel
+R00799,"Sama, Salvi and Koshy",Bangalore,Budget Restaurant,Chinese,2016,4.5,8.6,17,35,35617.0,4,1017.63,11.43,3,3.0,2.0.0-phase05-real-panel
+R00800,Kulkarni-Nigam,Coimbatore,Cafe,Healthy Foods,2020,4.1,6.2,23,37,36410.0,2,984.05,5.41,3,3.0,2.0.0-phase05-real-panel
+R00801,Thaman LLC,Hyderabad,Cafe,North Indian,2021,4.9,3.4,15,24,24147.0,0,1006.12,0.0,3,1.82,2.0.0-phase05-real-panel
+R00802,"Thakur, Panchal and Sehgal",Coimbatore,Cloud Kitchen,Biryani,2022,4.1,4.5,22,41,45829.0,1,1117.78,2.44,3,3.27,2.0.0-phase05-real-panel
+R00803,Dara-Pall,Chennai,Budget Restaurant,South Indian,2024,4.3,2.4,29,44,45745.0,1,1039.66,2.27,3,3.64,2.0.0-phase05-real-panel
+R00804,Om Group,Bangalore,Premium Restaurant,Desserts,2018,4.4,2.3,15,38,55030.0,1,1448.16,2.63,3,3.0,2.0.0-phase05-real-panel
+R00805,Aurora-Sehgal,Bangalore,Budget Restaurant,North Indian,2020,5.0,2.5,26,26,28861.0,1,1110.04,3.85,3,2.18,2.0.0-phase05-real-panel
+R00806,"Savant, Nori and Lala",Chennai,Cafe,South Indian,2016,3.5,3.5,15,39,42054.0,3,1078.31,7.69,3,3.36,2.0.0-phase05-real-panel
+R00807,"Bhasin, Arora and Ghosh",Vijayawada,Cafe,Chinese,2020,4.0,5.5,27,34,29721.0,1,874.15,2.94,3,2.82,2.0.0-phase05-real-panel
+R00808,"Tara, Majumdar and Luthra",Bangalore,Cafe,North Indian,2019,4.0,7.8,18,39,30890.0,0,792.05,0.0,3,3.45,2.0.0-phase05-real-panel
+R00809,Dave and Sons,Hyderabad,Premium Restaurant,Chinese,2018,3.7,7.4,30,23,22744.0,1,988.87,4.35,3,1.91,2.0.0-phase05-real-panel
+R00810,Sandhu-Minhas,Chennai,Premium Restaurant,North Indian,2018,4.1,4.9,26,30,30438.0,1,1014.6,3.33,3,2.45,2.0.0-phase05-real-panel
+R00811,Datta Group,Chennai,Fast Food Chain,South Indian,2017,4.2,7.5,20,35,31948.0,1,912.8,2.86,3,2.64,2.0.0-phase05-real-panel
+R00812,Sarma Group,Hyderabad,Budget Restaurant,North Indian,2024,4.4,8.2,28,33,23885.0,0,723.79,0.0,3,2.73,2.0.0-phase05-real-panel
+R00813,Wali and Sons,Chennai,Budget Restaurant,Burger,2019,3.6,5.6,16,41,35643.0,4,869.34,9.76,3,3.18,2.0.0-phase05-real-panel
+R00814,"Varma, Chatterjee and Parmer",Hyderabad,Premium Restaurant,Pizza,2018,4.7,9.5,24,21,21708.0,1,1033.71,4.76,3,1.91,2.0.0-phase05-real-panel
+R00815,"Parmer, Sawhney and Devan",Coimbatore,Budget Restaurant,Biryani,2022,4.4,9.0,20,40,48621.0,1,1215.53,2.5,3,3.0,2.0.0-phase05-real-panel
+R00816,Balan-Subramaniam,Hyderabad,Fast Food Chain,Biryani,2025,4.0,5.0,15,34,36781.0,2,1081.79,5.88,3,3.0,2.0.0-phase05-real-panel
+R00817,"Desai, Shan and Vyas",Chennai,Premium Restaurant,Burger,2021,3.7,5.8,29,25,20618.0,1,824.72,4.0,3,2.18,2.0.0-phase05-real-panel
+R00818,Verma and Sons,Hyderabad,Premium Restaurant,Pizza,2021,3.8,9.0,22,39,45512.0,4,1166.97,10.26,3,3.27,2.0.0-phase05-real-panel
+R00819,Kota and Sons,Bangalore,Premium Restaurant,Chinese,2021,3.6,4.1,18,34,26134.0,1,768.65,2.94,3,2.91,2.0.0-phase05-real-panel
+R00820,Prabhu and Sons,Bangalore,Cloud Kitchen,Biryani,2023,4.9,2.9,18,31,35185.0,1,1135.0,3.23,3,2.36,2.0.0-phase05-real-panel
+R00821,"Arya, Bath and Vohra",Vijayawada,Cafe,North Indian,2020,4.4,3.1,28,38,37748.0,2,993.37,5.26,3,3.0,2.0.0-phase05-real-panel
+R00822,Mohanty LLC,Vijayawada,Cafe,Pizza,2017,3.6,2.4,24,35,28887.0,0,825.34,0.0,3,2.64,2.0.0-phase05-real-panel
+R00823,Suri Group,Bangalore,Budget Restaurant,North Indian,2020,4.4,7.0,15,37,46870.0,0,1266.76,0.0,3,2.91,2.0.0-phase05-real-panel
+R00824,Ganguly-Pandya,Chennai,Cloud Kitchen,Chinese,2016,4.6,8.2,16,26,29100.0,2,1119.23,7.69,3,2.09,2.0.0-phase05-real-panel
+R00825,Goyal PLC,Vijayawada,Cloud Kitchen,North Indian,2016,4.3,5.6,30,37,44792.0,0,1210.59,0.0,3,2.91,2.0.0-phase05-real-panel
+R00826,Khalsa-Issac,Coimbatore,Fast Food Chain,South Indian,2020,4.7,9.1,29,32,39075.0,1,1221.09,3.12,3,2.73,2.0.0-phase05-real-panel
+R00827,Sarin-Peri,Coimbatore,Premium Restaurant,Biryani,2024,4.5,5.4,28,37,32078.0,5,866.97,13.51,3,3.18,2.0.0-phase05-real-panel
+R00828,Pau and Sons,Chennai,Premium Restaurant,South Indian,2023,4.3,3.7,24,24,28608.0,2,1192.0,8.33,3,2.0,2.0.0-phase05-real-panel
+R00829,Chada-Kadakia,Bangalore,Cloud Kitchen,North Indian,2017,4.8,9.3,26,32,36385.0,0,1137.03,0.0,3,2.64,2.0.0-phase05-real-panel
+R00830,"Koshy, Naik and Setty",Chennai,Budget Restaurant,Biryani,2024,4.4,5.4,29,35,30848.0,1,881.37,2.86,3,2.91,2.0.0-phase05-real-panel
+R00831,Som PLC,Chennai,Fast Food Chain,Desserts,2017,4.2,5.1,19,35,23665.0,5,676.14,14.29,3,3.0,2.0.0-phase05-real-panel
+R00832,Devi Group,Bangalore,Budget Restaurant,North Indian,2025,4.6,4.7,18,34,27168.0,0,799.06,0.0,3,2.82,2.0.0-phase05-real-panel
+R00833,Palla Group,Bangalore,Cloud Kitchen,Healthy Foods,2026,3.6,5.7,24,32,23962.0,0,748.81,0.0,3,2.55,2.0.0-phase05-real-panel
+R00834,"Ravel, Iyer and Zacharia",Coimbatore,Fast Food Chain,Healthy Foods,2021,4.5,7.8,28,39,44464.0,3,1140.1,7.69,3,3.36,2.0.0-phase05-real-panel
+R00835,Sodhi Inc,Hyderabad,Cloud Kitchen,Pizza,2026,4.8,7.7,25,34,29684.0,0,873.06,0.0,3,2.91,2.0.0-phase05-real-panel
+R00836,Dani-Bora,Hyderabad,Budget Restaurant,South Indian,2016,3.6,5.7,30,40,42808.0,1,1070.2,2.5,3,3.45,2.0.0-phase05-real-panel
+R00837,Choudhary-Char,Bangalore,Premium Restaurant,Biryani,2024,4.9,3.6,28,38,34119.0,4,897.87,10.53,3,3.27,2.0.0-phase05-real-panel
+R00838,"Srinivas, Bail and Kar",Hyderabad,Cafe,Biryani,2019,3.7,3.8,20,26,21675.0,2,833.65,7.69,3,2.09,2.0.0-phase05-real-panel
+R00839,Brar and Sons,Bangalore,Premium Restaurant,Biryani,2025,4.6,4.2,19,28,31137.0,0,1112.04,0.0,3,2.55,2.0.0-phase05-real-panel
+R00840,Ramesh LLC,Hyderabad,Premium Restaurant,North Indian,2026,4.7,4.1,30,37,34191.0,0,924.08,0.0,3,2.64,2.0.0-phase05-real-panel
+R00841,"Mann, Gera and Rajagopal",Chennai,Budget Restaurant,Pizza,2021,4.2,3.1,30,33,34745.0,0,1052.88,0.0,3,2.73,2.0.0-phase05-real-panel
+R00842,Arora and Sons,Vijayawada,Premium Restaurant,South Indian,2019,4.3,2.4,19,40,30815.0,1,770.38,2.5,3,3.45,2.0.0-phase05-real-panel
+R00843,"Bhasin, Kohli and Bail",Bangalore,Budget Restaurant,Burger,2022,4.4,2.1,18,28,28445.0,0,1015.89,0.0,3,2.36,2.0.0-phase05-real-panel
+R00844,Arora and Sons,Chennai,Budget Restaurant,North Indian,2019,3.8,7.4,25,36,32794.0,2,910.94,5.56,3,3.0,2.0.0-phase05-real-panel
+R00845,Walia LLC,Coimbatore,Cloud Kitchen,South Indian,2022,4.1,2.6,25,35,19634.0,0,560.97,0.0,3,3.0,2.0.0-phase05-real-panel
+R00846,Palla Inc,Chennai,Cloud Kitchen,Chinese,2020,4.5,5.3,16,41,33231.0,1,810.51,2.44,3,3.36,2.0.0-phase05-real-panel
+R00847,Tripathi Group,Vijayawada,Fast Food Chain,South Indian,2024,4.3,9.8,30,34,21758.0,2,639.94,5.88,3,2.82,2.0.0-phase05-real-panel
+R00848,Nagy PLC,Coimbatore,Fast Food Chain,South Indian,2018,3.6,8.1,19,43,35293.0,2,820.77,4.65,3,3.73,2.0.0-phase05-real-panel
+R00849,Sane-Parikh,Bangalore,Fast Food Chain,North Indian,2017,4.4,2.3,18,30,23418.0,1,780.6,3.33,3,2.55,2.0.0-phase05-real-panel
+R00850,"Goyal, Rau and Gara",Hyderabad,Cloud Kitchen,Biryani,2018,3.7,7.8,27,37,29766.0,1,804.49,2.7,3,3.09,2.0.0-phase05-real-panel
+R00851,Sekhon LLC,Vijayawada,Fast Food Chain,Chinese,2021,3.9,6.7,22,36,46463.0,1,1290.64,2.78,3,3.18,2.0.0-phase05-real-panel
+R00852,"Cherian, Pandya and Pandey",Chennai,Cloud Kitchen,Pizza,2017,4.0,6.2,24,33,30721.0,2,930.94,6.06,3,2.64,2.0.0-phase05-real-panel
+R00853,Bhavsar PLC,Bangalore,Budget Restaurant,Chinese,2023,4.8,4.6,27,43,49413.0,1,1149.14,2.33,3,3.55,2.0.0-phase05-real-panel
+R00854,Dave-Natt,Vijayawada,Budget Restaurant,Biryani,2025,4.7,4.3,20,33,26543.0,1,804.33,3.03,3,2.91,2.0.0-phase05-real-panel
+R00855,"Sarkar, Lal and Golla",Hyderabad,Budget Restaurant,Biryani,2025,4.0,3.7,22,34,38623.0,1,1135.97,2.94,3,2.82,2.0.0-phase05-real-panel
+R00856,Atwal PLC,Chennai,Budget Restaurant,North Indian,2025,4.2,5.8,26,27,18462.0,0,683.78,0.0,3,2.18,2.0.0-phase05-real-panel
+R00857,Ganesh Ltd,Coimbatore,Cafe,Biryani,2016,4.2,3.9,22,35,37323.0,1,1066.37,2.86,3,2.91,2.0.0-phase05-real-panel
+R00858,Yohannan and Sons,Hyderabad,Cafe,Burger,2023,4.6,8.6,20,37,37691.0,0,1018.68,0.0,3,2.91,2.0.0-phase05-real-panel
+R00859,"Bora, Palan and Date",Hyderabad,Budget Restaurant,North Indian,2022,4.7,9.0,30,31,28933.0,1,933.32,3.23,3,2.64,2.0.0-phase05-real-panel
+R00860,Issac Inc,Bangalore,Cafe,Pizza,2019,3.8,7.1,15,33,41611.0,2,1260.94,6.06,3,2.91,2.0.0-phase05-real-panel
+R00861,Sharma Group,Coimbatore,Cloud Kitchen,Pizza,2018,3.5,5.2,22,27,23803.0,3,881.59,11.11,3,2.27,2.0.0-phase05-real-panel
+R00862,Kadakia Ltd,Bangalore,Cloud Kitchen,Biryani,2022,4.0,2.4,24,22,18098.0,1,822.64,4.55,3,1.73,2.0.0-phase05-real-panel
+R00863,Oommen-Bobal,Chennai,Premium Restaurant,South Indian,2023,3.7,7.0,19,34,30765.0,2,904.85,5.88,3,3.0,2.0.0-phase05-real-panel
+R00864,Agrawal Inc,Chennai,Cafe,Biryani,2023,4.6,5.1,23,33,34409.0,0,1042.7,0.0,3,2.82,2.0.0-phase05-real-panel
+R00865,Tank PLC,Bangalore,Cafe,North Indian,2016,3.5,2.5,20,40,39794.0,3,994.85,7.5,3,3.64,2.0.0-phase05-real-panel
+R00866,"Acharya, Mahal and Sant",Vijayawada,Cloud Kitchen,North Indian,2021,4.5,4.3,26,29,26809.0,2,924.45,6.9,3,2.45,2.0.0-phase05-real-panel
+R00867,Kalita and Sons,Bangalore,Cafe,Pizza,2026,3.9,3.7,24,40,41571.0,2,1039.28,5.0,3,3.27,2.0.0-phase05-real-panel
+R00868,"Kunda, Talwar and Sama",Coimbatore,Cloud Kitchen,Chinese,2019,4.6,9.2,29,38,38106.0,2,1002.79,5.26,3,3.27,2.0.0-phase05-real-panel
+R00869,"Chander, Oza and Dube",Bangalore,Cafe,North Indian,2025,3.9,7.9,18,28,20861.0,1,745.04,3.57,3,2.27,2.0.0-phase05-real-panel
+R00870,Chacko Inc,Hyderabad,Cloud Kitchen,South Indian,2026,4.9,9.0,29,45,33394.0,3,742.09,6.67,3,3.82,2.0.0-phase05-real-panel
+R00871,"Setty, Buch and Johal",Chennai,Cloud Kitchen,Pizza,2024,4.1,5.6,23,28,24863.0,4,887.96,14.29,3,2.55,2.0.0-phase05-real-panel
+R00872,"Chander, Dutta and Venkataraman",Hyderabad,Budget Restaurant,Biryani,2025,4.7,7.2,15,28,27345.0,0,976.61,0.0,3,2.36,2.0.0-phase05-real-panel
+R00873,Rege-Toor,Chennai,Cafe,South Indian,2020,3.6,7.9,15,30,23800.0,2,793.33,6.67,3,2.36,2.0.0-phase05-real-panel
+R00874,Vasa-Date,Bangalore,Cloud Kitchen,Biryani,2017,4.0,3.6,27,33,26933.0,2,816.15,6.06,3,2.82,2.0.0-phase05-real-panel
+R00875,Sidhu-Shan,Chennai,Cafe,Biryani,2017,4.8,6.8,22,32,22772.0,2,711.62,6.25,3,2.73,2.0.0-phase05-real-panel
+R00876,Palla Inc,Coimbatore,Cafe,Burger,2017,3.7,8.7,21,34,32938.0,1,968.76,2.94,3,2.82,2.0.0-phase05-real-panel
+R00877,Gade Ltd,Chennai,Cafe,South Indian,2023,4.8,4.2,21,32,26509.0,2,828.41,6.25,3,2.64,2.0.0-phase05-real-panel
+R00878,Saran-Khanna,Chennai,Budget Restaurant,Biryani,2025,4.2,4.5,29,35,36994.0,0,1056.97,0.0,3,3.0,2.0.0-phase05-real-panel
+R00879,Bawa-Lanka,Chennai,Cloud Kitchen,South Indian,2023,4.7,4.6,23,37,30737.0,0,830.73,0.0,3,3.09,2.0.0-phase05-real-panel
+R00880,Jain Inc,Chennai,Premium Restaurant,Chinese,2026,3.9,5.9,22,24,27008.0,3,1125.33,12.5,3,2.0,2.0.0-phase05-real-panel
+R00881,"Iyengar, Dyal and Vaidya",Coimbatore,Fast Food Chain,Chinese,2024,3.5,4.5,30,28,20293.0,3,724.75,10.71,3,2.36,2.0.0-phase05-real-panel
+R00882,Narang-Sahota,Bangalore,Cloud Kitchen,Biryani,2023,4.3,2.6,28,50,43362.0,1,867.24,2.0,3,4.36,2.0.0-phase05-real-panel
+R00883,"Sura, Sandhu and Srinivasan",Chennai,Cafe,South Indian,2016,3.8,3.6,30,34,27639.0,3,812.91,8.82,3,2.91,2.0.0-phase05-real-panel
+R00884,Iyengar Inc,Chennai,Cafe,Chinese,2022,3.6,4.0,25,34,34037.0,2,1001.09,5.88,3,3.0,2.0.0-phase05-real-panel
+R00885,"Malhotra, Gokhale and Gade",Bangalore,Cafe,Burger,2021,4.6,6.5,23,35,34818.0,2,994.8,5.71,3,2.82,2.0.0-phase05-real-panel
+R00886,"Kurian, Bir and Parmar",Hyderabad,Budget Restaurant,Pizza,2020,3.5,5.3,21,38,36520.0,2,961.05,5.26,3,3.0,2.0.0-phase05-real-panel
+R00887,"Bal, Raman and Muni",Coimbatore,Premium Restaurant,Biryani,2025,3.8,6.1,25,40,24189.0,0,604.72,0.0,3,3.27,2.0.0-phase05-real-panel
+R00888,"Bansal, Batta and Talwar",Hyderabad,Premium Restaurant,Healthy Foods,2018,4.5,2.8,22,32,32745.0,0,1023.28,0.0,3,2.73,2.0.0-phase05-real-panel
+R00889,Contractor LLC,Coimbatore,Budget Restaurant,South Indian,2019,4.3,5.3,17,28,26527.0,0,947.39,0.0,3,2.55,2.0.0-phase05-real-panel
+R00890,"Johal, Kohli and Devan",Chennai,Cafe,South Indian,2016,4.6,4.5,15,31,35967.0,4,1160.23,12.9,3,2.55,2.0.0-phase05-real-panel
+R00891,Ben-Contractor,Bangalore,Premium Restaurant,North Indian,2024,3.8,8.0,25,39,34921.0,0,895.41,0.0,3,3.18,2.0.0-phase05-real-panel
+R00892,"Din, Mandal and Dani",Hyderabad,Cloud Kitchen,South Indian,2026,4.5,9.1,30,29,30288.0,2,1044.41,6.9,3,2.45,2.0.0-phase05-real-panel
+R00893,Bhattacharyya Inc,Chennai,Cloud Kitchen,Beverages,2026,4.7,3.0,25,29,30282.0,0,1044.21,0.0,3,2.45,2.0.0-phase05-real-panel
+R00894,Pandey-Krishna,Bangalore,Budget Restaurant,North Indian,2024,4.8,3.1,20,30,24857.0,0,828.57,0.0,3,2.73,2.0.0-phase05-real-panel
+R00895,"Doctor, Sawhney and Goyal",Chennai,Cloud Kitchen,Pizza,2019,3.6,9.7,18,33,26420.0,2,800.61,6.06,3,2.82,2.0.0-phase05-real-panel
+R00896,Vasa LLC,Bangalore,Premium Restaurant,Biryani,2022,3.7,5.4,17,29,23347.0,0,805.07,0.0,3,2.27,2.0.0-phase05-real-panel
+R00897,Naik-Parmer,Bangalore,Cafe,Burger,2018,4.1,9.5,25,39,31344.0,0,803.69,0.0,3,3.36,2.0.0-phase05-real-panel
+R00898,Nath-Nadkarni,Hyderabad,Cafe,Beverages,2016,4.9,9.0,20,30,34239.0,1,1141.3,3.33,3,2.55,2.0.0-phase05-real-panel
+R00899,Jani and Sons,Coimbatore,Fast Food Chain,North Indian,2017,4.0,3.0,20,27,21445.0,0,794.26,0.0,3,2.36,2.0.0-phase05-real-panel
+R00900,Seth PLC,Chennai,Cafe,South Indian,2016,3.9,4.5,21,37,46175.0,2,1247.97,5.41,3,3.36,2.0.0-phase05-real-panel
+R00901,Pradhan-Chawla,Chennai,Fast Food Chain,South Indian,2024,4.2,9.0,22,39,48237.0,0,1236.85,0.0,3,3.45,2.0.0-phase05-real-panel
+R00902,Dey LLC,Hyderabad,Premium Restaurant,Biryani,2017,4.8,5.0,22,48,65132.0,3,1356.92,6.25,3,3.82,2.0.0-phase05-real-panel
+R00903,Kurian LLC,Hyderabad,Budget Restaurant,Chinese,2025,4.2,6.1,19,26,17823.0,1,685.5,3.85,3,2.18,2.0.0-phase05-real-panel
+R00904,Banik and Sons,Hyderabad,Cafe,Biryani,2023,4.0,6.0,22,32,43093.0,1,1346.66,3.12,3,2.27,2.0.0-phase05-real-panel
+R00905,Merchant LLC,Coimbatore,Budget Restaurant,Biryani,2026,4.2,2.4,28,44,29945.0,2,680.57,4.55,3,3.64,2.0.0-phase05-real-panel
+R00906,Modi LLC,Bangalore,Cloud Kitchen,South Indian,2020,3.7,7.0,21,33,33050.0,2,1001.52,6.06,3,2.91,2.0.0-phase05-real-panel
+R00907,"Gill, Bahri and Kunda",Chennai,Fast Food Chain,Desserts,2016,4.4,3.9,22,25,19026.0,0,761.04,0.0,3,2.27,2.0.0-phase05-real-panel
+R00908,"Palla, Sheth and Shetty",Hyderabad,Fast Food Chain,North Indian,2016,4.2,5.8,23,41,27897.0,0,680.41,0.0,3,3.73,2.0.0-phase05-real-panel
+R00909,Shenoy Group,Hyderabad,Cafe,North Indian,2018,4.4,6.8,19,37,27415.0,1,740.95,2.7,3,3.27,2.0.0-phase05-real-panel
+R00910,"Swamy, Sahni and Saxena",Hyderabad,Cloud Kitchen,South Indian,2017,4.2,3.5,19,28,35567.0,0,1270.25,0.0,3,2.18,2.0.0-phase05-real-panel
+R00911,Koshy-Muni,Bangalore,Cloud Kitchen,South Indian,2024,4.7,9.5,27,39,30119.0,2,772.28,5.13,3,3.36,2.0.0-phase05-real-panel
+R00912,Konda LLC,Chennai,Premium Restaurant,Chinese,2021,4.0,6.5,15,38,29575.0,2,778.29,5.26,3,3.09,2.0.0-phase05-real-panel
+R00913,Sundaram Group,Bangalore,Budget Restaurant,Biryani,2025,3.8,4.0,15,27,25545.0,1,946.11,3.7,3,1.91,2.0.0-phase05-real-panel
+R00914,Varty PLC,Chennai,Budget Restaurant,Biryani,2026,4.7,9.3,19,37,40613.0,2,1097.65,5.41,3,3.18,2.0.0-phase05-real-panel
+R00915,Barman-Kohli,Bangalore,Budget Restaurant,North Indian,2022,3.7,7.3,29,34,41978.0,1,1234.65,2.94,3,2.82,2.0.0-phase05-real-panel
+R00916,Sahota-Toor,Chennai,Budget Restaurant,South Indian,2024,3.7,5.1,25,38,50783.0,2,1336.39,5.26,3,3.18,2.0.0-phase05-real-panel
+R00917,Hari Group,Bangalore,Fast Food Chain,North Indian,2020,3.6,10.0,22,24,28292.0,0,1178.83,0.0,3,1.91,2.0.0-phase05-real-panel
+R00918,Rau Ltd,Chennai,Cafe,North Indian,2022,4.5,2.9,20,29,24449.0,1,843.07,3.45,3,2.55,2.0.0-phase05-real-panel
+R00919,Kohli Inc,Vijayawada,Cafe,Healthy Foods,2018,3.5,8.6,20,28,30066.0,0,1073.79,0.0,3,2.18,2.0.0-phase05-real-panel
+R00920,Pai Ltd,Chennai,Cafe,Burger,2026,4.6,7.1,15,48,37709.0,4,785.6,8.33,3,4.36,2.0.0-phase05-real-panel
+R00921,"Mody, Chad and Mallick",Hyderabad,Budget Restaurant,North Indian,2019,4.3,4.4,17,33,36911.0,1,1118.52,3.03,3,2.82,2.0.0-phase05-real-panel
+R00922,Iyengar-Nagi,Chennai,Budget Restaurant,Biryani,2016,4.3,4.3,27,36,32444.0,3,901.22,8.33,3,3.09,2.0.0-phase05-real-panel
+R00923,Narasimhan Inc,Hyderabad,Budget Restaurant,Biryani,2023,3.6,3.9,23,25,30305.0,0,1212.2,0.0,3,2.18,2.0.0-phase05-real-panel
+R00924,"Kara, Srinivasan and Ghose",Chennai,Cloud Kitchen,South Indian,2019,5.0,6.6,30,29,28740.0,1,991.03,3.45,3,2.45,2.0.0-phase05-real-panel
+R00925,"Dubey, Walla and Dar",Hyderabad,Budget Restaurant,Biryani,2016,4.6,7.9,30,25,15502.0,1,620.08,4.0,3,2.09,2.0.0-phase05-real-panel
+R00926,Sane Inc,Bangalore,Cloud Kitchen,Chinese,2024,4.1,8.1,21,35,34538.0,2,986.8,5.71,3,2.91,2.0.0-phase05-real-panel
+R00927,Buch-Goel,Bangalore,Fast Food Chain,North Indian,2023,3.6,8.6,28,29,33465.0,1,1153.97,3.45,3,2.45,2.0.0-phase05-real-panel
+R00928,Goel LLC,Bangalore,Premium Restaurant,North Indian,2025,3.6,4.2,22,40,29555.0,3,738.88,7.5,3,3.27,2.0.0-phase05-real-panel
+R00929,Goswami Inc,Bangalore,Premium Restaurant,Pizza,2024,3.9,8.0,20,37,31849.0,1,860.78,2.7,3,2.91,2.0.0-phase05-real-panel
+R00930,"Sunder, Vohra and Vig",Coimbatore,Budget Restaurant,Biryani,2016,3.9,6.2,23,26,25597.0,3,984.5,11.54,3,2.36,2.0.0-phase05-real-panel
+R00931,Korpal Ltd,Bangalore,Premium Restaurant,Desserts,2018,4.1,8.7,21,29,22724.0,0,783.59,0.0,3,2.45,2.0.0-phase05-real-panel
+R00932,Chaudhry Inc,Hyderabad,Premium Restaurant,North Indian,2022,4.0,3.6,17,32,27921.0,0,872.53,0.0,3,2.64,2.0.0-phase05-real-panel
+R00933,Varghese LLC,Hyderabad,Cloud Kitchen,South Indian,2020,4.2,3.5,30,42,26317.0,0,626.6,0.0,3,3.27,2.0.0-phase05-real-panel
+R00934,Behl Ltd,Coimbatore,Premium Restaurant,North Indian,2018,4.3,7.4,15,33,40673.0,3,1232.52,9.09,3,2.82,2.0.0-phase05-real-panel
+R00935,Baria-Rege,Bangalore,Premium Restaurant,North Indian,2021,4.1,9.7,21,30,20549.0,2,684.97,6.67,3,2.36,2.0.0-phase05-real-panel
+R00936,Rajan Group,Bangalore,Fast Food Chain,Biryani,2017,3.8,4.0,23,29,32712.0,3,1128.0,10.34,3,2.36,2.0.0-phase05-real-panel
+R00937,Subramaniam Group,Hyderabad,Premium Restaurant,Healthy Foods,2026,3.6,6.5,20,32,23692.0,0,740.38,0.0,3,2.55,2.0.0-phase05-real-panel
+R00938,"Sarma, Apte and Padmanabhan",Chennai,Premium Restaurant,Biryani,2019,4.0,2.2,18,31,26227.0,2,846.03,6.45,3,2.36,2.0.0-phase05-real-panel
+R00939,Basak Ltd,Bangalore,Budget Restaurant,South Indian,2020,3.7,6.2,27,43,34996.0,2,813.86,4.65,3,3.55,2.0.0-phase05-real-panel
+R00940,Kade Group,Hyderabad,Premium Restaurant,Beverages,2025,4.3,7.6,24,50,62908.0,1,1258.16,2.0,3,4.27,2.0.0-phase05-real-panel
+R00941,Krish PLC,Vijayawada,Budget Restaurant,Pizza,2025,3.5,5.6,23,25,16549.0,0,661.96,0.0,3,1.73,2.0.0-phase05-real-panel
+R00942,"Sathe, Ganesh and Dutt",Bangalore,Premium Restaurant,Burger,2018,4.7,6.3,28,36,30267.0,0,840.75,0.0,3,3.0,2.0.0-phase05-real-panel
+R00943,Soman-Lad,Hyderabad,Cafe,South Indian,2024,4.5,7.1,24,42,47355.0,0,1127.5,0.0,3,3.55,2.0.0-phase05-real-panel
+R00944,"Chana, Nanda and Kashyap",Vijayawada,Cloud Kitchen,Healthy Foods,2019,3.9,8.7,27,37,45419.0,2,1227.54,5.41,3,3.0,2.0.0-phase05-real-panel
+R00945,"Patla, Bandi and Chakrabarti",Chennai,Fast Food Chain,South Indian,2019,4.1,3.7,28,39,42399.0,1,1087.15,2.56,3,3.55,2.0.0-phase05-real-panel
+R00946,"Sandal, Banerjee and Rattan",Hyderabad,Fast Food Chain,Burger,2020,4.7,5.3,22,33,37599.0,2,1139.36,6.06,3,2.73,2.0.0-phase05-real-panel
+R00947,"Ratti, Ghose and Sen",Coimbatore,Premium Restaurant,Biryani,2021,4.3,7.9,19,28,25516.0,0,911.29,0.0,3,2.45,2.0.0-phase05-real-panel
+R00948,"Sengupta, Merchant and Sami",Hyderabad,Fast Food Chain,South Indian,2024,4.1,8.0,26,21,17494.0,0,833.05,0.0,3,1.55,2.0.0-phase05-real-panel
+R00949,Dara-Nagar,Bangalore,Fast Food Chain,Healthy Foods,2024,4.1,2.3,28,32,25667.0,2,802.09,6.25,3,2.55,2.0.0-phase05-real-panel
+R00950,Desai-Banik,Coimbatore,Budget Restaurant,South Indian,2024,3.6,8.1,27,36,32476.0,1,902.11,2.78,3,2.73,2.0.0-phase05-real-panel
+R00951,"Ratta, Samra and Kale",Hyderabad,Premium Restaurant,Burger,2019,4.7,7.8,29,28,26915.0,2,961.25,7.14,3,2.45,2.0.0-phase05-real-panel
+R00952,Hayer Group,Chennai,Fast Food Chain,South Indian,2025,4.9,3.9,22,22,19874.0,0,903.36,0.0,3,1.64,2.0.0-phase05-real-panel
+R00953,Chauhan Inc,Hyderabad,Cloud Kitchen,Pizza,2025,4.4,2.3,27,36,40812.0,1,1133.67,2.78,3,3.09,2.0.0-phase05-real-panel
+R00954,Dhaliwal Group,Vijayawada,Fast Food Chain,Beverages,2020,4.4,7.1,26,35,35353.0,0,1010.09,0.0,3,2.91,2.0.0-phase05-real-panel
+R00955,Jaggi Inc,Vijayawada,Cloud Kitchen,Burger,2016,4.4,5.9,22,34,35648.0,1,1048.47,2.94,3,2.82,2.0.0-phase05-real-panel
+R00956,Kashyap-Jain,Chennai,Premium Restaurant,Healthy Foods,2020,3.8,5.2,23,37,26980.0,0,729.19,0.0,3,3.0,2.0.0-phase05-real-panel
+R00957,"Malhotra, Patla and Suresh",Chennai,Premium Restaurant,Pizza,2017,4.9,7.2,27,35,32599.0,1,931.4,2.86,3,2.64,2.0.0-phase05-real-panel
+R00958,Joshi-Comar,Vijayawada,Cloud Kitchen,North Indian,2023,3.9,4.7,25,34,31739.0,1,933.5,2.94,3,2.73,2.0.0-phase05-real-panel
+R00959,Behl-Cherian,Bangalore,Cafe,Biryani,2020,3.7,3.0,27,32,22190.0,2,693.44,6.25,3,2.36,2.0.0-phase05-real-panel
+R00960,Patel and Sons,Bangalore,Cloud Kitchen,North Indian,2018,3.9,9.0,26,35,32635.0,3,932.43,8.57,3,2.64,2.0.0-phase05-real-panel
+R00961,Madan Ltd,Bangalore,Fast Food Chain,Biryani,2018,4.4,10.0,15,34,21889.0,3,643.79,8.82,3,2.91,2.0.0-phase05-real-panel
+R00962,Sami-Jha,Hyderabad,Cafe,Desserts,2025,3.7,3.7,25,45,40389.0,3,897.53,6.67,3,3.64,2.0.0-phase05-real-panel
+R00963,Kota-Mohanty,Chennai,Premium Restaurant,North Indian,2024,3.8,8.2,18,35,28075.0,2,802.14,5.71,3,3.0,2.0.0-phase05-real-panel
+R00964,Garg and Sons,Chennai,Budget Restaurant,Biryani,2025,4.0,2.7,18,36,28497.0,0,791.58,0.0,3,3.09,2.0.0-phase05-real-panel
+R00965,"Guha, Contractor and Mishra",Bangalore,Budget Restaurant,North Indian,2020,4.6,4.1,30,27,18848.0,0,698.07,0.0,3,2.18,2.0.0-phase05-real-panel
+R00966,Din-Setty,Bangalore,Cafe,South Indian,2022,4.1,7.6,18,38,32467.0,0,854.39,0.0,3,3.0,2.0.0-phase05-real-panel
+R00967,Thakur Inc,Hyderabad,Cafe,South Indian,2024,4.2,6.9,25,39,41791.0,3,1071.56,7.69,3,3.45,2.0.0-phase05-real-panel
+R00968,Suri-Bir,Chennai,Fast Food Chain,Biryani,2023,3.9,8.7,27,28,27971.0,0,998.96,0.0,3,2.36,2.0.0-phase05-real-panel
+R00969,Peri Group,Bangalore,Cafe,North Indian,2019,4.8,3.8,20,38,39063.0,1,1027.97,2.63,3,3.18,2.0.0-phase05-real-panel
+R00970,Edwin Group,Chennai,Fast Food Chain,South Indian,2026,4.4,8.6,19,36,37479.0,2,1041.08,5.56,3,2.82,2.0.0-phase05-real-panel
+R00971,Bhardwaj PLC,Chennai,Cafe,North Indian,2016,3.7,8.7,20,37,43428.0,1,1173.73,2.7,3,2.82,2.0.0-phase05-real-panel
+R00972,Chana-Bath,Vijayawada,Fast Food Chain,North Indian,2018,4.1,5.1,15,29,23375.0,0,806.03,0.0,3,2.45,2.0.0-phase05-real-panel
+R00973,Sarma LLC,Hyderabad,Budget Restaurant,Biryani,2017,3.6,6.3,17,41,51449.0,1,1254.85,2.44,3,3.55,2.0.0-phase05-real-panel
+R00974,"Kapoor, Sule and Raj",Coimbatore,Fast Food Chain,South Indian,2023,3.8,8.9,18,39,43084.0,0,1104.72,0.0,3,3.09,2.0.0-phase05-real-panel
+R00975,Karpe-Chandran,Vijayawada,Fast Food Chain,Desserts,2022,4.3,9.2,20,35,30480.0,3,870.86,8.57,3,2.91,2.0.0-phase05-real-panel
+R00976,Brahmbhatt-Rajan,Chennai,Budget Restaurant,Biryani,2016,4.0,2.2,20,27,22335.0,1,827.22,3.7,3,2.45,2.0.0-phase05-real-panel
+R00977,"Swaminathan, Natarajan and Choudhury",Bangalore,Fast Food Chain,South Indian,2016,4.4,9.2,23,22,16310.0,0,741.36,0.0,3,1.73,2.0.0-phase05-real-panel
+R00978,Dasgupta and Sons,Bangalore,Budget Restaurant,Burger,2016,3.8,2.0,30,37,44050.0,0,1190.54,0.0,3,3.27,2.0.0-phase05-real-panel
+R00979,"Shan, Dua and Iyer",Vijayawada,Cloud Kitchen,Chinese,2025,4.4,2.7,29,35,21377.0,3,610.77,8.57,3,3.09,2.0.0-phase05-real-panel
+R00980,"Chadha, Chander and Kunda",Bangalore,Premium Restaurant,Biryani,2020,4.6,8.1,24,34,28281.0,0,831.79,0.0,3,2.82,2.0.0-phase05-real-panel
+R00981,Bose Inc,Chennai,Cloud Kitchen,Burger,2019,4.4,9.4,16,28,25086.0,2,895.93,7.14,3,2.27,2.0.0-phase05-real-panel
+R00982,"Wali, Kata and Ahuja",Hyderabad,Cafe,Burger,2016,3.9,2.8,28,37,43843.0,2,1184.95,5.41,3,3.18,2.0.0-phase05-real-panel
+R00983,Naik Group,Vijayawada,Budget Restaurant,Healthy Foods,2025,3.8,2.1,19,44,33810.0,1,768.41,2.27,3,3.73,2.0.0-phase05-real-panel
+R00984,Iyengar and Sons,Vijayawada,Budget Restaurant,North Indian,2016,3.7,6.0,24,39,34997.0,2,897.36,5.13,3,3.18,2.0.0-phase05-real-panel
+R00985,Zachariah PLC,Vijayawada,Budget Restaurant,South Indian,2025,4.5,2.7,30,31,36255.0,1,1169.52,3.23,3,2.73,2.0.0-phase05-real-panel
+R00986,Andra Inc,Bangalore,Fast Food Chain,Burger,2017,4.5,9.7,22,31,27789.0,4,896.42,12.9,3,2.55,2.0.0-phase05-real-panel
+R00987,Tata-Nagar,Coimbatore,Premium Restaurant,Chinese,2022,3.5,8.6,24,46,38477.0,3,836.46,6.52,3,3.55,2.0.0-phase05-real-panel
+R00988,Kalita-Karpe,Hyderabad,Cafe,Biryani,2026,3.5,3.3,25,30,36668.0,3,1222.27,10.0,3,2.45,2.0.0-phase05-real-panel
+R00989,"Sangha, Trivedi and Pant",Bangalore,Cafe,Pizza,2023,3.8,3.2,28,48,42732.0,0,890.25,0.0,3,4.0,2.0.0-phase05-real-panel
+R00990,Garg Inc,Chennai,Fast Food Chain,North Indian,2019,4.8,7.1,21,24,31539.0,2,1314.12,8.33,3,1.82,2.0.0-phase05-real-panel
+R00991,Patel and Sons,Bangalore,Cafe,North Indian,2018,3.9,10.0,23,28,25900.0,0,925.0,0.0,3,2.36,2.0.0-phase05-real-panel
+R00992,"Divan, Bobal and Mutti",Hyderabad,Fast Food Chain,Pizza,2022,4.6,5.4,27,34,33626.0,1,989.0,2.94,3,2.73,2.0.0-phase05-real-panel
+R00993,Walla-Bakshi,Chennai,Premium Restaurant,North Indian,2019,3.9,3.5,30,28,30167.0,1,1077.39,3.57,3,2.45,2.0.0-phase05-real-panel
+R00994,Kothari Group,Coimbatore,Cafe,South Indian,2022,3.5,4.0,28,21,18131.0,0,863.38,0.0,3,1.91,2.0.0-phase05-real-panel
+R00995,"Devi, Jayaraman and Palan",Hyderabad,Cloud Kitchen,Beverages,2018,4.0,9.5,26,37,37439.0,2,1011.86,5.41,3,3.0,2.0.0-phase05-real-panel
+R00996,"Narain, Mandal and Taneja",Hyderabad,Budget Restaurant,Biryani,2021,3.9,9.3,22,37,33010.0,0,892.16,0.0,3,3.0,2.0.0-phase05-real-panel
+R00997,Varma-Chada,Vijayawada,Premium Restaurant,North Indian,2022,3.6,7.1,19,31,29444.0,1,949.81,3.23,3,2.73,2.0.0-phase05-real-panel
+R00998,"Gole, Raj and Majumdar",Chennai,Budget Restaurant,Chinese,2020,4.5,4.6,15,30,42013.0,0,1400.43,0.0,3,2.45,2.0.0-phase05-real-panel
+R00999,"Rattan, Mani and Contractor",Chennai,Cloud Kitchen,Chinese,2016,3.9,9.2,21,30,40423.0,1,1347.43,3.33,3,2.45,2.0.0-phase05-real-panel
+R01000,"Shukla, Mallick and Suri",Chennai,Cloud Kitchen,Biryani,2018,5.0,8.0,17,33,27806.0,2,842.61,6.06,3,2.82,2.0.0-phase05-real-panel
+R01001,Ben-Sibal,Bangalore,Premium Restaurant,Biryani,2018,4.2,4.2,23,43,48420.0,2,1126.05,4.65,3,3.45,2.0.0-phase05-real-panel
+R01002,Merchant-Borah,Chennai,Budget Restaurant,Pizza,2023,4.5,3.2,17,40,33296.0,1,832.4,2.5,3,3.45,2.0.0-phase05-real-panel
+R01003,Arya-Swamy,Vijayawada,Fast Food Chain,South Indian,2016,4.6,9.5,22,35,29685.0,2,848.14,5.71,3,3.09,2.0.0-phase05-real-panel
+R01004,Om Group,Chennai,Cloud Kitchen,South Indian,2016,3.9,7.2,22,28,27480.0,1,981.43,3.57,3,2.36,2.0.0-phase05-real-panel
+R01005,Natarajan Inc,Chennai,Premium Restaurant,Beverages,2025,3.8,7.6,18,30,27851.0,2,928.37,6.67,3,2.55,2.0.0-phase05-real-panel
+R01006,Muni-Chandran,Bangalore,Cafe,Burger,2025,3.9,6.0,30,39,53580.0,1,1373.85,2.56,3,3.55,2.0.0-phase05-real-panel
+R01007,Choudhury and Sons,Vijayawada,Fast Food Chain,South Indian,2016,4.1,3.4,29,31,39244.0,2,1265.94,6.45,3,2.45,2.0.0-phase05-real-panel
+R01008,Sathe Inc,Hyderabad,Budget Restaurant,North Indian,2020,3.9,5.4,29,36,25625.0,4,711.81,11.11,3,2.82,2.0.0-phase05-real-panel
+R01009,Garg-Sagar,Chennai,Budget Restaurant,Biryani,2026,4.3,5.7,25,30,32630.0,1,1087.67,3.33,3,2.18,2.0.0-phase05-real-panel
+R01010,Nagarajan Inc,Chennai,Premium Restaurant,North Indian,2023,3.8,6.3,29,27,25996.0,1,962.81,3.7,3,2.36,2.0.0-phase05-real-panel
+R01011,Sundaram Inc,Coimbatore,Budget Restaurant,South Indian,2024,3.7,7.4,17,35,35303.0,3,1008.66,8.57,3,3.09,2.0.0-phase05-real-panel
+R01012,Bhakta LLC,Coimbatore,Cafe,North Indian,2020,4.3,9.8,26,32,34669.0,1,1083.41,3.12,3,2.64,2.0.0-phase05-real-panel
+R01013,"Dutt, Som and Murty",Chennai,Fast Food Chain,Biryani,2022,4.2,8.5,26,29,32433.0,0,1118.38,0.0,3,2.45,2.0.0-phase05-real-panel
+R01014,Chakrabarti-Taneja,Bangalore,Budget Restaurant,Healthy Foods,2024,4.6,8.4,16,30,27715.0,2,923.83,6.67,3,2.64,2.0.0-phase05-real-panel
+R01015,Dhillon Ltd,Hyderabad,Cloud Kitchen,North Indian,2024,4.8,6.6,20,28,22413.0,1,800.46,3.57,3,2.45,2.0.0-phase05-real-panel
+R01016,"Mohan, Reddy and Devan",Hyderabad,Cafe,Burger,2019,3.7,4.4,24,18,14509.0,0,806.06,0.0,3,1.45,2.0.0-phase05-real-panel
+R01017,Sibal Inc,Chennai,Cloud Kitchen,Biryani,2023,4.3,6.3,15,32,31681.0,1,990.03,3.12,3,2.64,2.0.0-phase05-real-panel
+R01018,"Bhatti, Khare and Kashyap",Hyderabad,Cafe,North Indian,2016,4.2,7.1,15,30,28550.0,2,951.67,6.67,3,2.36,2.0.0-phase05-real-panel
+R01019,"Sahni, Bhatt and Badami",Hyderabad,Fast Food Chain,Biryani,2024,4.8,8.9,28,38,39735.0,1,1045.66,2.63,3,3.09,2.0.0-phase05-real-panel
+R01020,Gole-Rajan,Bangalore,Budget Restaurant,Biryani,2020,4.3,4.2,22,34,33561.0,1,987.09,2.94,3,2.82,2.0.0-phase05-real-panel
+R01021,Nadig LLC,Chennai,Premium Restaurant,Burger,2016,3.9,3.4,26,38,38058.0,3,1001.53,7.89,3,3.27,2.0.0-phase05-real-panel
+R01022,Varughese-Rastogi,Hyderabad,Cafe,North Indian,2026,4.3,5.2,22,34,32735.0,1,962.79,2.94,3,2.45,2.0.0-phase05-real-panel
+R01023,Prabhu PLC,Bangalore,Premium Restaurant,Biryani,2026,3.8,2.3,28,39,32403.0,3,830.85,7.69,3,2.82,2.0.0-phase05-real-panel
+R01024,"Madan, Dhawan and Sachdeva",Chennai,Budget Restaurant,Pizza,2017,4.8,3.1,21,31,36034.0,2,1162.39,6.45,3,2.55,2.0.0-phase05-real-panel
+R01025,Nadig-Dugar,Chennai,Budget Restaurant,Burger,2025,4.6,9.2,20,35,25906.0,2,740.17,5.71,3,2.91,2.0.0-phase05-real-panel
+R01026,Kant-Ahuja,Chennai,Premium Restaurant,Pizza,2022,4.9,2.6,21,34,24842.0,0,730.65,0.0,3,2.91,2.0.0-phase05-real-panel
+R01027,"Dhaliwal, Edwin and Choudhary",Bangalore,Cafe,Biryani,2016,3.7,8.2,24,25,26034.0,0,1041.36,0.0,3,2.18,2.0.0-phase05-real-panel
+R01028,Seshadri-Dubey,Chennai,Cafe,North Indian,2024,4.1,7.0,16,31,36437.0,3,1175.39,9.68,3,2.55,2.0.0-phase05-real-panel
+R01029,Manda PLC,Hyderabad,Budget Restaurant,South Indian,2016,4.6,9.4,29,32,24282.0,0,758.81,0.0,3,2.55,2.0.0-phase05-real-panel
+R01030,Wadhwa Inc,Chennai,Cloud Kitchen,Desserts,2020,3.6,4.1,30,33,32838.0,3,995.09,9.09,3,2.91,2.0.0-phase05-real-panel
+R01031,Kibe Inc,Hyderabad,Fast Food Chain,South Indian,2020,4.0,6.1,22,30,19570.0,1,652.33,3.33,3,2.45,2.0.0-phase05-real-panel
+R01032,Badami LLC,Bangalore,Fast Food Chain,North Indian,2018,4.1,8.9,19,40,25657.0,4,641.42,10.0,3,3.0,2.0.0-phase05-real-panel
+R01033,Jani-Varty,Chennai,Cloud Kitchen,Beverages,2019,4.1,2.6,17,28,35802.0,0,1278.64,0.0,3,2.0,2.0.0-phase05-real-panel
+R01034,Wali Inc,Bangalore,Premium Restaurant,Biryani,2021,4.4,2.3,26,33,29523.0,2,894.64,6.06,3,2.64,2.0.0-phase05-real-panel
+R01035,Memon Group,Chennai,Cloud Kitchen,Chinese,2026,4.3,8.5,29,38,63138.0,1,1661.53,2.63,3,3.09,2.0.0-phase05-real-panel
+R01036,Wason-Patla,Coimbatore,Budget Restaurant,Biryani,2019,4.7,8.6,21,29,22044.0,1,760.14,3.45,3,2.64,2.0.0-phase05-real-panel
+R01037,Deol-Seth,Vijayawada,Fast Food Chain,Healthy Foods,2025,4.5,5.9,18,31,31710.0,0,1022.9,0.0,3,2.45,2.0.0-phase05-real-panel
+R01038,"Kamdar, Ganguly and Srinivas",Chennai,Cafe,North Indian,2022,4.6,9.0,22,32,28685.0,1,896.41,3.12,3,2.73,2.0.0-phase05-real-panel
+R01039,"Das, Raman and Kari",Hyderabad,Fast Food Chain,South Indian,2017,3.8,8.1,25,26,17080.0,1,656.92,3.85,3,2.18,2.0.0-phase05-real-panel
+R01040,"Loke, Raj and Kalita",Bangalore,Premium Restaurant,Burger,2021,3.6,8.9,29,32,31244.0,1,976.38,3.12,3,2.64,2.0.0-phase05-real-panel
+R01041,"Shroff, D’Alia and Krishnamurthy",Chennai,Cafe,South Indian,2026,3.5,3.0,16,26,29745.0,1,1144.04,3.85,3,2.18,2.0.0-phase05-real-panel
+R01042,"Kalita, Singhal and Nath",Bangalore,Budget Restaurant,South Indian,2025,4.3,7.6,27,36,36472.0,0,1013.11,0.0,3,2.82,2.0.0-phase05-real-panel
+R01043,Chaudhary and Sons,Chennai,Budget Restaurant,Burger,2025,4.8,7.6,23,33,24425.0,2,740.15,6.06,3,3.0,2.0.0-phase05-real-panel
+R01044,Jain-Mitra,Vijayawada,Cloud Kitchen,South Indian,2021,3.9,2.6,17,24,19298.0,1,804.08,4.17,3,1.91,2.0.0-phase05-real-panel
+R01045,Gill Group,Chennai,Fast Food Chain,Beverages,2020,4.3,6.5,17,25,20893.0,2,835.72,8.0,3,1.91,2.0.0-phase05-real-panel
+R01046,"Ratti, Viswanathan and Sekhon",Chennai,Budget Restaurant,North Indian,2023,4.6,5.0,15,29,33960.0,2,1171.03,6.9,3,2.27,2.0.0-phase05-real-panel
+R01047,"De, Kadakia and Brahmbhatt",Bangalore,Premium Restaurant,Chinese,2026,4.8,5.1,19,36,25993.0,2,722.03,5.56,3,3.09,2.0.0-phase05-real-panel
+R01048,"Swamy, Wadhwa and Mishra",Vijayawada,Budget Restaurant,South Indian,2025,4.0,3.0,15,32,26178.0,1,818.06,3.12,3,2.36,2.0.0-phase05-real-panel
+R01049,"Mahal, Ahluwalia and Dhar",Coimbatore,Cafe,South Indian,2019,4.1,2.2,19,37,43164.0,0,1166.59,0.0,3,3.09,2.0.0-phase05-real-panel
+R01050,Mitra Inc,Chennai,Fast Food Chain,Biryani,2022,4.0,4.4,26,33,30606.0,1,927.45,3.03,3,3.0,2.0.0-phase05-real-panel
+R01051,Kala-Zachariah,Bangalore,Premium Restaurant,Pizza,2017,4.0,4.7,20,40,36544.0,1,913.6,2.5,3,3.45,2.0.0-phase05-real-panel
+R01052,Kothari-Das,Bangalore,Budget Restaurant,Chinese,2021,4.6,4.0,30,32,35153.0,1,1098.53,3.12,3,2.55,2.0.0-phase05-real-panel
+R01053,Jayaraman-Tiwari,Vijayawada,Premium Restaurant,Biryani,2022,3.5,4.2,28,36,40840.0,3,1134.44,8.33,3,3.09,2.0.0-phase05-real-panel
+R01054,Garde-Sarkar,Chennai,Cafe,Pizza,2025,3.7,4.7,22,35,31749.0,1,907.11,2.86,3,2.82,2.0.0-phase05-real-panel
+R01055,Oommen Group,Chennai,Cloud Kitchen,South Indian,2019,4.5,7.0,16,27,23350.0,3,864.81,11.11,3,2.45,2.0.0-phase05-real-panel
+R01056,"Merchant, Sathe and Lata",Bangalore,Premium Restaurant,Burger,2021,4.6,4.5,22,33,31890.0,1,966.36,3.03,3,2.64,2.0.0-phase05-real-panel
+R01057,"Tella, Oza and Rai",Vijayawada,Fast Food Chain,Burger,2026,4.0,5.8,21,32,25296.0,2,790.5,6.25,3,2.91,2.0.0-phase05-real-panel
+R01058,Narayan-Chand,Bangalore,Fast Food Chain,Burger,2019,3.9,9.1,23,33,31607.0,1,957.79,3.03,3,2.55,2.0.0-phase05-real-panel
+R01059,"Behl, Kota and Pai",Hyderabad,Premium Restaurant,South Indian,2017,4.7,2.2,15,25,27892.0,0,1115.68,0.0,3,2.18,2.0.0-phase05-real-panel
+R01060,Gade-Desai,Bangalore,Fast Food Chain,Burger,2019,3.5,3.4,30,43,38604.0,1,897.77,2.33,3,3.09,2.0.0-phase05-real-panel
+R01061,Dutt LLC,Bangalore,Premium Restaurant,Burger,2021,3.5,2.8,23,34,32134.0,1,945.12,2.94,3,2.82,2.0.0-phase05-real-panel
+R01062,"Dewan, Oommen and Lall",Chennai,Fast Food Chain,Chinese,2025,4.8,4.9,23,33,39330.0,1,1191.82,3.03,3,2.91,2.0.0-phase05-real-panel
+R01063,Borde-Sarraf,Bangalore,Fast Food Chain,Beverages,2021,4.0,7.9,17,43,37860.0,2,880.47,4.65,3,3.36,2.0.0-phase05-real-panel
+R01064,Naidu-Gole,Chennai,Cafe,North Indian,2019,3.9,6.2,18,37,38991.0,0,1053.81,0.0,3,2.82,2.0.0-phase05-real-panel
+R01065,"Ahuja, Garde and Sama",Bangalore,Budget Restaurant,South Indian,2025,4.2,3.9,21,46,54740.0,3,1190.0,6.52,3,3.73,2.0.0-phase05-real-panel
+R01066,Barad and Sons,Chennai,Fast Food Chain,Healthy Foods,2017,4.7,9.4,16,36,37109.0,1,1030.81,2.78,3,2.91,2.0.0-phase05-real-panel
+R01067,"Chaudhuri, Bansal and Kapadia",Chennai,Fast Food Chain,North Indian,2023,4.8,4.1,30,29,30434.0,1,1049.45,3.45,3,2.36,2.0.0-phase05-real-panel
+R01068,Sidhu-Gopal,Chennai,Cloud Kitchen,South Indian,2024,4.3,9.9,29,26,24130.0,1,928.08,3.85,3,2.0,2.0.0-phase05-real-panel
+R01069,Chatterjee Group,Hyderabad,Fast Food Chain,North Indian,2020,4.1,9.1,17,39,31172.0,0,799.28,0.0,3,3.18,2.0.0-phase05-real-panel
+R01070,Rege-Biswas,Hyderabad,Premium Restaurant,Burger,2016,4.4,3.1,18,34,28159.0,1,828.21,2.94,3,2.82,2.0.0-phase05-real-panel
+R01071,Venkatesh-Manda,Chennai,Cloud Kitchen,Pizza,2022,4.7,6.8,30,32,38672.0,1,1208.5,3.12,3,2.91,2.0.0-phase05-real-panel
+R01072,Natarajan-Dhingra,Chennai,Budget Restaurant,South Indian,2026,4.7,8.2,22,30,21707.0,0,723.57,0.0,3,2.55,2.0.0-phase05-real-panel
+R01073,"Rege, Bahri and Raja",Hyderabad,Cafe,Pizza,2019,4.6,4.8,27,27,29007.0,1,1074.33,3.7,3,2.36,2.0.0-phase05-real-panel
+R01074,"Kumer, Bir and Bedi",Chennai,Fast Food Chain,Biryani,2026,4.4,7.2,18,30,25327.0,1,844.23,3.33,3,2.64,2.0.0-phase05-real-panel
+R01075,"Baria, Thakkar and Pillai",Vijayawada,Cloud Kitchen,Burger,2025,3.9,4.8,16,36,30190.0,0,838.61,0.0,3,2.82,2.0.0-phase05-real-panel
+R01076,Sarkar and Sons,Bangalore,Cafe,Healthy Foods,2020,4.0,7.8,28,30,35724.0,2,1190.8,6.67,3,2.64,2.0.0-phase05-real-panel
+R01077,"Bhasin, Dash and Warrior",Bangalore,Cloud Kitchen,Burger,2016,4.3,8.4,16,43,38836.0,0,903.16,0.0,3,3.55,2.0.0-phase05-real-panel
+R01078,"Upadhyay, Kakar and Batra",Bangalore,Fast Food Chain,Biryani,2024,4.9,5.0,22,43,23614.0,1,549.16,2.33,3,3.45,2.0.0-phase05-real-panel
+R01079,Dugar-Bajwa,Hyderabad,Cloud Kitchen,Healthy Foods,2017,3.9,9.8,27,47,36043.0,2,766.87,4.26,3,4.0,2.0.0-phase05-real-panel
+R01080,"Rana, Randhawa and Choudhury",Hyderabad,Fast Food Chain,Pizza,2017,3.6,6.4,22,36,37442.0,5,1040.06,13.89,3,3.0,2.0.0-phase05-real-panel
+R01081,"Yadav, Pandya and Kade",Chennai,Budget Restaurant,South Indian,2017,4.7,9.0,27,35,40796.0,2,1165.6,5.71,3,2.73,2.0.0-phase05-real-panel
+R01082,Ghose Ltd,Chennai,Cafe,Biryani,2025,4.0,8.5,20,37,42665.0,1,1153.11,2.7,3,3.36,2.0.0-phase05-real-panel
+R01083,Lad-Mutti,Chennai,Budget Restaurant,Pizza,2025,3.6,2.5,20,27,28711.0,0,1063.37,0.0,3,2.27,2.0.0-phase05-real-panel
+R01084,Bassi-Sekhon,Coimbatore,Fast Food Chain,South Indian,2016,4.7,4.8,17,34,39297.0,1,1155.79,2.94,3,2.82,2.0.0-phase05-real-panel
+R01085,Dhillon PLC,Bangalore,Fast Food Chain,North Indian,2019,4.4,2.2,20,33,21417.0,3,649.0,9.09,3,2.91,2.0.0-phase05-real-panel
+R01086,Bhagat-Rajan,Bangalore,Budget Restaurant,Pizza,2025,4.5,5.7,16,29,33661.0,1,1160.72,3.45,3,2.55,2.0.0-phase05-real-panel
+R01087,Kothari Group,Vijayawada,Budget Restaurant,North Indian,2022,4.0,9.2,15,42,45310.0,0,1078.81,0.0,3,3.55,2.0.0-phase05-real-panel
+R01088,Lad-Pai,Vijayawada,Cloud Kitchen,South Indian,2021,4.2,4.2,25,46,38309.0,3,832.8,6.52,3,3.73,2.0.0-phase05-real-panel
+R01089,Mittal-Rout,Coimbatore,Cafe,South Indian,2025,4.6,9.8,26,33,25450.0,2,771.21,6.06,3,2.55,2.0.0-phase05-real-panel
+R01090,Banik-Walla,Hyderabad,Fast Food Chain,South Indian,2016,4.7,3.4,18,35,45251.0,3,1292.89,8.57,3,2.82,2.0.0-phase05-real-panel
+R01091,Dada-Soman,Chennai,Budget Restaurant,Pizza,2020,4.3,6.2,30,32,20982.0,0,655.69,0.0,3,2.73,2.0.0-phase05-real-panel
+R01092,Rattan-Master,Hyderabad,Fast Food Chain,Chinese,2018,5.0,9.9,23,32,35594.0,1,1112.31,3.12,3,2.73,2.0.0-phase05-real-panel
+R01093,"Walla, Khanna and Thaker",Vijayawada,Cloud Kitchen,Biryani,2021,4.7,6.7,17,38,32255.0,2,848.82,5.26,3,3.36,2.0.0-phase05-real-panel
+R01094,Nazareth PLC,Chennai,Cafe,South Indian,2017,4.7,9.6,17,40,45277.0,1,1131.92,2.5,3,3.36,2.0.0-phase05-real-panel
+R01095,Chawla-Buch,Hyderabad,Budget Restaurant,South Indian,2025,3.7,6.2,25,41,45419.0,1,1107.78,2.44,3,3.45,2.0.0-phase05-real-panel
+R01096,Narayanan Group,Hyderabad,Budget Restaurant,South Indian,2023,4.4,8.4,16,38,31382.0,3,825.84,7.89,3,3.0,2.0.0-phase05-real-panel
+R01097,Dhar and Sons,Hyderabad,Cafe,South Indian,2021,4.8,2.9,23,36,27534.0,0,764.83,0.0,3,3.09,2.0.0-phase05-real-panel
+R01098,Sidhu-Mistry,Chennai,Budget Restaurant,Beverages,2026,4.9,5.8,18,30,32086.0,0,1069.53,0.0,3,2.55,2.0.0-phase05-real-panel
+R01099,Ratta-Badal,Bangalore,Cloud Kitchen,Chinese,2018,4.7,5.4,16,29,29586.0,0,1020.21,0.0,3,2.45,2.0.0-phase05-real-panel
+R01100,Koshy Inc,Chennai,Budget Restaurant,Biryani,2019,4.6,6.9,23,39,44632.0,4,1144.41,10.26,3,3.18,2.0.0-phase05-real-panel
+R01101,Luthra PLC,Hyderabad,Premium Restaurant,Pizza,2023,4.5,7.1,21,41,43694.0,1,1065.71,2.44,3,3.45,2.0.0-phase05-real-panel
+R01102,Bajwa Inc,Chennai,Cafe,Chinese,2016,3.6,9.1,16,35,27571.0,3,787.74,8.57,3,3.0,2.0.0-phase05-real-panel
+R01103,Khurana LLC,Chennai,Cafe,South Indian,2025,3.7,9.0,29,47,40972.0,2,871.74,4.26,3,3.64,2.0.0-phase05-real-panel
+R01104,"Bala, Sahota and Hora",Coimbatore,Cafe,North Indian,2023,3.6,7.1,18,23,18474.0,2,803.22,8.7,3,2.09,2.0.0-phase05-real-panel
+R01105,Virk Inc,Bangalore,Fast Food Chain,South Indian,2024,4.8,4.1,20,26,31083.0,0,1195.5,0.0,3,2.09,2.0.0-phase05-real-panel
+R01106,Nagy Ltd,Bangalore,Premium Restaurant,Burger,2026,4.5,2.6,25,27,26234.0,0,971.63,0.0,3,2.27,2.0.0-phase05-real-panel
+R01107,Savant Ltd,Coimbatore,Fast Food Chain,Biryani,2022,3.8,7.9,24,39,35224.0,1,903.18,2.56,3,3.09,2.0.0-phase05-real-panel
+R01108,De-Varma,Coimbatore,Fast Food Chain,North Indian,2023,4.3,5.9,19,33,41309.0,3,1251.79,9.09,3,2.82,2.0.0-phase05-real-panel
+R01109,"Sathe, Karnik and Balakrishnan",Chennai,Premium Restaurant,North Indian,2016,4.5,2.8,23,36,46194.0,0,1283.17,0.0,3,3.09,2.0.0-phase05-real-panel
+R01110,"Doctor, Bedi and Merchant",Coimbatore,Fast Food Chain,South Indian,2016,4.2,4.8,18,43,37736.0,1,877.58,2.33,3,3.36,2.0.0-phase05-real-panel
+R01111,"Ramaswamy, Ganesan and Bakshi",Bangalore,Cloud Kitchen,South Indian,2016,4.1,8.9,23,33,30276.0,2,917.45,6.06,3,2.91,2.0.0-phase05-real-panel
+R01112,"Saxena, Sehgal and Pillai",Bangalore,Fast Food Chain,Pizza,2021,3.8,2.7,20,42,44024.0,2,1048.19,4.76,3,3.45,2.0.0-phase05-real-panel
+R01113,"Sathe, Mallick and Bera",Bangalore,Cloud Kitchen,South Indian,2018,4.3,6.4,25,41,52766.0,3,1286.98,7.32,3,3.55,2.0.0-phase05-real-panel
+R01114,Dutta-Sagar,Vijayawada,Fast Food Chain,Biryani,2016,3.7,7.4,19,30,36009.0,0,1200.3,0.0,3,2.55,2.0.0-phase05-real-panel
+R01115,"Kashyap, Sibal and Ramesh",Coimbatore,Cloud Kitchen,South Indian,2024,4.6,9.8,17,28,21269.0,1,759.61,3.57,3,2.27,2.0.0-phase05-real-panel
+R01116,"Andra, Iyengar and Dada",Chennai,Budget Restaurant,Biryani,2024,3.8,9.7,27,37,27858.0,0,752.92,0.0,3,3.18,2.0.0-phase05-real-panel
+R01117,Dara-Dara,Coimbatore,Premium Restaurant,Biryani,2017,4.9,6.3,18,28,33210.0,1,1186.07,3.57,3,2.55,2.0.0-phase05-real-panel
+R01118,Gulati LLC,Chennai,Cafe,North Indian,2019,4.8,3.7,30,23,14108.0,0,613.39,0.0,3,2.0,2.0.0-phase05-real-panel
+R01119,Kar-Trivedi,Chennai,Fast Food Chain,Beverages,2024,3.9,4.1,25,30,40557.0,2,1351.9,6.67,3,2.64,2.0.0-phase05-real-panel
+R01120,"Thaman, Jhaveri and Bansal",Chennai,Cafe,South Indian,2024,5.0,2.6,22,32,38197.0,0,1193.66,0.0,3,2.73,2.0.0-phase05-real-panel
+R01121,Sampath Inc,Chennai,Fast Food Chain,South Indian,2016,3.5,9.6,29,32,35714.0,2,1116.06,6.25,3,2.73,2.0.0-phase05-real-panel
+R01122,Subramanian Ltd,Hyderabad,Cloud Kitchen,Chinese,2022,4.1,7.4,15,37,28281.0,1,764.35,2.7,3,3.09,2.0.0-phase05-real-panel
+R01123,Dhar-Sekhon,Bangalore,Premium Restaurant,Biryani,2023,3.9,7.4,22,38,38556.0,1,1014.63,2.63,3,3.0,2.0.0-phase05-real-panel
+R01124,"Ben, Sathe and Lall",Bangalore,Premium Restaurant,North Indian,2020,4.4,3.6,28,29,28780.0,2,992.41,6.9,3,2.64,2.0.0-phase05-real-panel
+R01125,Kothari-Cheema,Coimbatore,Premium Restaurant,North Indian,2018,4.8,8.6,30,41,43094.0,2,1051.07,4.88,3,3.36,2.0.0-phase05-real-panel
+R01126,Kulkarni-Bala,Bangalore,Cloud Kitchen,Burger,2021,4.9,3.9,25,42,44792.0,3,1066.48,7.14,3,3.27,2.0.0-phase05-real-panel
+R01127,Barman-Thakur,Bangalore,Premium Restaurant,North Indian,2019,3.9,4.7,17,25,27653.0,1,1106.12,4.0,3,2.18,2.0.0-phase05-real-panel
+R01128,Vasa Group,Coimbatore,Fast Food Chain,Pizza,2017,3.8,10.0,24,36,33025.0,1,917.36,2.78,3,2.64,2.0.0-phase05-real-panel
+R01129,"Bora, Toor and Narain",Hyderabad,Cafe,Burger,2018,4.3,7.1,16,41,26224.0,0,639.61,0.0,3,3.55,2.0.0-phase05-real-panel
+R01130,Parekh Ltd,Chennai,Cloud Kitchen,North Indian,2019,4.0,4.6,23,37,41697.0,1,1126.95,2.7,3,3.09,2.0.0-phase05-real-panel
+R01131,Goda-Bawa,Hyderabad,Cloud Kitchen,South Indian,2021,4.5,8.4,26,28,24049.0,1,858.89,3.57,3,2.18,2.0.0-phase05-real-panel
+R01132,"Shenoy, Pillai and Saha",Vijayawada,Premium Restaurant,South Indian,2025,4.6,6.2,28,29,21769.0,1,750.66,3.45,3,2.36,2.0.0-phase05-real-panel
+R01133,Sha-Sodhi,Bangalore,Budget Restaurant,Chinese,2021,4.8,7.4,17,32,37802.0,2,1181.31,6.25,3,2.91,2.0.0-phase05-real-panel
+R01134,"Gill, Dhar and Kota",Bangalore,Fast Food Chain,Biryani,2022,4.7,5.7,29,27,19478.0,2,721.41,7.41,3,2.18,2.0.0-phase05-real-panel
+R01135,Kothari-Parsa,Coimbatore,Budget Restaurant,South Indian,2019,4.9,2.1,19,34,33882.0,0,996.53,0.0,3,3.09,2.0.0-phase05-real-panel
+R01136,"Shroff, Naidu and Mani",Hyderabad,Premium Restaurant,Pizza,2019,4.4,7.3,17,35,35320.0,1,1009.14,2.86,3,3.0,2.0.0-phase05-real-panel
+R01137,"Krish, Patla and Patel",Bangalore,Cloud Kitchen,Biryani,2021,4.6,2.4,27,27,26255.0,1,972.41,3.7,3,2.36,2.0.0-phase05-real-panel
+R01138,Varty and Sons,Hyderabad,Cafe,Healthy Foods,2017,3.8,9.7,22,40,35223.0,2,880.58,5.0,3,3.18,2.0.0-phase05-real-panel
+R01139,"Chowdhury, Loke and Palla",Bangalore,Fast Food Chain,Biryani,2021,4.0,3.3,17,32,36750.0,2,1148.44,6.25,3,2.73,2.0.0-phase05-real-panel
+R01140,"Kalla, Raju and Bhatnagar",Chennai,Cafe,Beverages,2020,4.0,6.3,22,23,16224.0,0,705.39,0.0,3,1.91,2.0.0-phase05-real-panel
+R01141,"Kunda, Dixit and Kumar",Vijayawada,Cafe,Biryani,2026,4.6,6.5,16,41,29693.0,2,724.22,4.88,3,3.36,2.0.0-phase05-real-panel
+R01142,Choudhary-Sodhi,Bangalore,Premium Restaurant,Pizza,2024,4.1,8.8,23,33,40477.0,2,1226.58,6.06,3,2.45,2.0.0-phase05-real-panel
+R01143,Datta-Basu,Coimbatore,Premium Restaurant,South Indian,2021,3.7,6.8,29,34,30708.0,2,903.18,5.88,3,2.91,2.0.0-phase05-real-panel
+R01144,Nagar-Loke,Hyderabad,Premium Restaurant,Chinese,2023,3.9,6.7,22,26,16657.0,0,640.65,0.0,3,2.0,2.0.0-phase05-real-panel
+R01145,Lad Group,Bangalore,Budget Restaurant,Burger,2018,3.6,4.4,25,31,26220.0,0,845.81,0.0,3,2.64,2.0.0-phase05-real-panel
+R01146,Batta-Shetty,Chennai,Cafe,South Indian,2017,4.5,7.8,17,24,23241.0,0,968.38,0.0,3,1.82,2.0.0-phase05-real-panel
+R01147,Ben-Bhargava,Hyderabad,Cloud Kitchen,Burger,2024,4.6,6.5,27,41,40705.0,4,992.8,9.76,3,3.64,2.0.0-phase05-real-panel
+R01148,"Bhatnagar, Ram and Bawa",Bangalore,Cloud Kitchen,North Indian,2021,4.7,7.2,15,39,33934.0,3,870.1,7.69,3,3.27,2.0.0-phase05-real-panel
+R01149,"Yogi, Char and Raghavan",Bangalore,Cloud Kitchen,Biryani,2020,3.7,6.0,26,38,43508.0,1,1144.95,2.63,3,3.27,2.0.0-phase05-real-panel
+R01150,Parsa-Cheema,Bangalore,Cloud Kitchen,Pizza,2016,3.8,6.1,15,37,44194.0,2,1194.43,5.41,3,3.0,2.0.0-phase05-real-panel
+R01151,Dash-Bhatti,Bangalore,Budget Restaurant,South Indian,2021,4.4,8.9,26,31,22372.0,0,721.68,0.0,3,2.45,2.0.0-phase05-real-panel
+R01152,Madan-Pandya,Coimbatore,Premium Restaurant,Biryani,2022,4.0,8.4,29,52,45616.0,0,877.23,0.0,3,4.18,2.0.0-phase05-real-panel
+R01153,Randhawa-Chada,Chennai,Premium Restaurant,Biryani,2021,4.2,6.5,24,33,29069.0,3,880.88,9.09,3,2.73,2.0.0-phase05-real-panel
+R01154,"Mammen, Krishna and Balakrishnan",Coimbatore,Fast Food Chain,Biryani,2020,4.3,9.6,22,30,27229.0,0,907.63,0.0,3,2.45,2.0.0-phase05-real-panel
+R01155,Bhandari Group,Bangalore,Budget Restaurant,South Indian,2026,4.7,2.4,24,30,29537.0,1,984.57,3.33,3,2.0,2.0.0-phase05-real-panel
+R01156,Dyal Inc,Hyderabad,Budget Restaurant,South Indian,2016,4.9,8.6,30,31,35813.0,1,1155.26,3.23,3,2.55,2.0.0-phase05-real-panel
+R01157,"Kala, Divan and Rege",Hyderabad,Cafe,North Indian,2021,4.0,4.8,29,36,31587.0,1,877.42,2.78,3,3.09,2.0.0-phase05-real-panel
+R01158,Toor Ltd,Coimbatore,Budget Restaurant,South Indian,2016,4.5,7.9,20,28,25227.0,2,900.96,7.14,3,2.45,2.0.0-phase05-real-panel
+R01159,"Salvi, Chandran and Varty",Hyderabad,Budget Restaurant,Pizza,2016,4.8,8.8,20,31,28791.0,0,928.74,0.0,3,2.73,2.0.0-phase05-real-panel
+R01160,Balay-Bala,Bangalore,Premium Restaurant,Burger,2023,3.9,7.5,19,26,27248.0,2,1048.0,7.69,3,2.27,2.0.0-phase05-real-panel
+R01161,Kata-Naidu,Coimbatore,Fast Food Chain,Biryani,2026,3.9,2.2,21,27,18232.0,0,675.26,0.0,3,2.36,2.0.0-phase05-real-panel
+R01162,"Prabhu, Iyengar and Bose",Hyderabad,Fast Food Chain,Biryani,2023,4.7,9.9,29,39,34466.0,2,883.74,5.13,3,3.18,2.0.0-phase05-real-panel
+R01163,Karnik-Kaur,Hyderabad,Fast Food Chain,Desserts,2023,4.0,5.7,18,35,26798.0,0,765.66,0.0,3,3.18,2.0.0-phase05-real-panel
+R01164,Brahmbhatt-Tata,Coimbatore,Cafe,Desserts,2025,4.2,7.9,25,40,30858.0,1,771.45,2.5,3,3.36,2.0.0-phase05-real-panel
+R01165,Madan-Wadhwa,Bangalore,Premium Restaurant,Burger,2023,4.8,6.4,30,40,41760.0,2,1044.0,5.0,3,3.27,2.0.0-phase05-real-panel
+R01166,"More, Devan and Prabhakar",Bangalore,Cafe,Pizza,2021,3.9,4.1,18,31,39380.0,3,1270.32,9.68,3,2.64,2.0.0-phase05-real-panel
+R01167,"Pillay, Loyal and Kothari",Chennai,Budget Restaurant,Pizza,2018,4.3,7.7,23,34,32218.0,2,947.59,5.88,3,3.0,2.0.0-phase05-real-panel
+R01168,"Sabharwal, Morar and Sarin",Chennai,Cloud Kitchen,Biryani,2022,4.5,3.2,19,29,22951.0,0,791.41,0.0,3,2.27,2.0.0-phase05-real-panel
+R01169,"Varkey, Sastry and Chaudhry",Hyderabad,Cloud Kitchen,North Indian,2023,3.7,8.1,25,41,43931.0,2,1071.49,4.88,3,3.27,2.0.0-phase05-real-panel
+R01170,Dave-Bhatnagar,Hyderabad,Cloud Kitchen,South Indian,2017,3.5,2.4,23,26,30031.0,1,1155.04,3.85,3,2.09,2.0.0-phase05-real-panel
+R01171,Reddy Inc,Chennai,Budget Restaurant,Pizza,2024,4.6,5.9,20,30,20451.0,2,681.7,6.67,3,2.55,2.0.0-phase05-real-panel
+R01172,Kuruvilla-Manne,Coimbatore,Premium Restaurant,Biryani,2018,4.6,9.9,24,20,17753.0,1,887.65,5.0,3,1.73,2.0.0-phase05-real-panel
+R01173,"Shere, Sekhon and Dhingra",Chennai,Premium Restaurant,Healthy Foods,2017,5.0,8.4,30,39,53289.0,1,1366.38,2.56,3,3.0,2.0.0-phase05-real-panel
+R01174,Modi-Subramanian,Bangalore,Cloud Kitchen,South Indian,2016,4.7,5.6,18,31,29613.0,0,955.26,0.0,3,2.36,2.0.0-phase05-real-panel
+R01175,Choudhry-Sodhi,Bangalore,Cloud Kitchen,North Indian,2017,4.4,2.4,24,26,26200.0,3,1007.69,11.54,3,2.18,2.0.0-phase05-real-panel
+R01176,"Wali, Brar and Chacko",Chennai,Budget Restaurant,Healthy Foods,2026,4.6,8.1,30,30,30795.0,1,1026.5,3.33,3,2.36,2.0.0-phase05-real-panel
+R01177,Gera Group,Vijayawada,Fast Food Chain,South Indian,2019,3.8,4.9,19,33,37515.0,0,1136.82,0.0,3,2.82,2.0.0-phase05-real-panel
+R01178,Goda-Oommen,Coimbatore,Premium Restaurant,Biryani,2024,3.8,8.0,16,32,38666.0,1,1208.31,3.12,3,2.55,2.0.0-phase05-real-panel
+R01179,Pau Group,Chennai,Budget Restaurant,Biryani,2019,4.5,7.8,27,43,42290.0,0,983.49,0.0,3,3.45,2.0.0-phase05-real-panel
+R01180,"Buch, Hayre and Shah",Chennai,Fast Food Chain,Biryani,2021,3.8,3.4,20,32,26879.0,1,839.97,3.12,3,2.82,2.0.0-phase05-real-panel
+R01181,"Gole, Ray and Ramaswamy",Coimbatore,Cafe,Pizza,2017,3.6,4.2,16,31,24778.0,0,799.29,0.0,3,2.73,2.0.0-phase05-real-panel
+R01182,Garg-Kanda,Bangalore,Budget Restaurant,South Indian,2020,3.9,6.8,22,39,52735.0,1,1352.18,2.56,3,3.18,2.0.0-phase05-real-panel
+R01183,"Narayanan, Sangha and Muni",Hyderabad,Premium Restaurant,Biryani,2021,4.1,6.3,26,36,44806.0,0,1244.61,0.0,3,3.0,2.0.0-phase05-real-panel
+R01184,Kakar-Roy,Vijayawada,Premium Restaurant,North Indian,2019,4.2,8.0,19,32,27364.0,1,855.12,3.12,3,2.55,2.0.0-phase05-real-panel
+R01185,Thaker-Bhat,Hyderabad,Fast Food Chain,North Indian,2024,3.8,2.4,29,30,23167.0,1,772.23,3.33,3,2.64,2.0.0-phase05-real-panel
+R01186,"Yogi, Dugar and Nath",Coimbatore,Premium Restaurant,Biryani,2023,4.8,4.6,25,28,28305.0,0,1010.89,0.0,3,2.55,2.0.0-phase05-real-panel
+R01187,Gupta-Roy,Chennai,Fast Food Chain,South Indian,2024,3.5,3.1,24,26,31305.0,2,1204.04,7.69,3,2.18,2.0.0-phase05-real-panel
+R01188,Shroff PLC,Chennai,Fast Food Chain,North Indian,2020,4.8,9.1,24,30,27210.0,1,907.0,3.33,3,2.36,2.0.0-phase05-real-panel
+R01189,Nair PLC,Vijayawada,Cafe,North Indian,2018,4.4,5.2,21,41,41608.0,2,1014.83,4.88,3,3.55,2.0.0-phase05-real-panel
+R01190,Bhavsar Inc,Bangalore,Premium Restaurant,Biryani,2026,4.9,8.5,24,34,35326.0,1,1039.0,2.94,3,3.0,2.0.0-phase05-real-panel
+R01191,"Gandhi, Rajagopalan and Parekh",Bangalore,Fast Food Chain,South Indian,2024,4.3,4.1,19,36,32224.0,2,895.11,5.56,3,2.82,2.0.0-phase05-real-panel
+R01192,Dayal-Golla,Chennai,Fast Food Chain,South Indian,2018,4.0,8.2,17,29,23786.0,1,820.21,3.45,3,2.45,2.0.0-phase05-real-panel
+R01193,Chaudhry Ltd,Vijayawada,Cloud Kitchen,Pizza,2023,3.7,4.6,25,33,30328.0,1,919.03,3.03,3,2.91,2.0.0-phase05-real-panel
+R01194,Samra Inc,Chennai,Fast Food Chain,South Indian,2019,3.5,9.7,16,37,36156.0,3,977.19,8.11,3,3.27,2.0.0-phase05-real-panel
+R01195,"Iyer, Seth and Grover",Vijayawada,Cafe,Burger,2019,4.2,9.8,17,45,40890.0,1,908.67,2.22,3,3.82,2.0.0-phase05-real-panel
+R01196,Narula Group,Chennai,Fast Food Chain,Burger,2020,4.5,5.6,15,34,29793.0,1,876.26,2.94,3,2.73,2.0.0-phase05-real-panel
+R01197,"Rajagopal, Sharma and Jaggi",Hyderabad,Budget Restaurant,Biryani,2023,4.5,6.0,26,18,14990.0,1,832.78,5.56,3,1.45,2.0.0-phase05-real-panel
+R01198,"Chakrabarti, Bhardwaj and Boase",Coimbatore,Fast Food Chain,North Indian,2017,4.3,5.4,17,27,24753.0,0,916.78,0.0,3,2.45,2.0.0-phase05-real-panel
+R01199,Sanghvi-Sahota,Bangalore,Cloud Kitchen,Biryani,2022,4.1,6.7,22,38,35488.0,0,933.89,0.0,3,3.09,2.0.0-phase05-real-panel
+R01200,Mohan-Rajagopal,Coimbatore,Premium Restaurant,Biryani,2021,4.2,8.6,18,40,35733.0,0,893.32,0.0,3,3.09,2.0.0-phase05-real-panel
+R01201,Keer Group,Hyderabad,Cloud Kitchen,Biryani,2025,4.6,6.0,27,46,46873.0,1,1018.98,2.17,3,3.55,2.0.0-phase05-real-panel
+R01202,Gade Inc,Chennai,Cloud Kitchen,North Indian,2024,4.9,4.6,27,27,30164.0,3,1117.19,11.11,3,2.45,2.0.0-phase05-real-panel
+R01203,"Mahal, Hora and Virk",Coimbatore,Cloud Kitchen,Burger,2023,4.2,3.4,24,37,28669.0,1,774.84,2.7,3,3.27,2.0.0-phase05-real-panel
+R01204,Mandal Group,Coimbatore,Budget Restaurant,North Indian,2022,4.8,4.1,24,28,41116.0,0,1468.43,0.0,3,2.18,2.0.0-phase05-real-panel
+R01205,"Kapur, Chaudhari and Amble",Chennai,Premium Restaurant,North Indian,2026,3.6,5.1,26,25,17733.0,1,709.32,4.0,3,2.09,2.0.0-phase05-real-panel
+R01206,Khurana-Jain,Coimbatore,Cloud Kitchen,Chinese,2021,4.3,7.0,17,34,24643.0,0,724.79,0.0,3,3.09,2.0.0-phase05-real-panel
+R01207,"Prakash, Nagar and Bhatt",Bangalore,Cloud Kitchen,Desserts,2019,4.9,6.3,23,32,31584.0,1,987.0,3.12,3,2.45,2.0.0-phase05-real-panel
+R01208,"Deshpande, Grewal and Loke",Chennai,Budget Restaurant,South Indian,2022,3.6,3.6,27,36,33004.0,0,916.78,0.0,3,3.0,2.0.0-phase05-real-panel
+R01209,Mandal-Chahal,Chennai,Fast Food Chain,Burger,2018,4.5,2.5,20,30,20917.0,0,697.23,0.0,3,2.64,2.0.0-phase05-real-panel
+R01210,Konda LLC,Bangalore,Premium Restaurant,Biryani,2024,3.9,3.5,17,37,30705.0,3,829.86,8.11,3,3.09,2.0.0-phase05-real-panel
+R01211,"Yohannan, Kara and Bedi",Coimbatore,Cloud Kitchen,Biryani,2020,3.6,3.9,23,31,24556.0,1,792.13,3.23,3,2.64,2.0.0-phase05-real-panel
+R01212,"Dugar, Luthra and Pillai",Hyderabad,Budget Restaurant,South Indian,2024,4.8,5.4,26,29,37178.0,0,1282.0,0.0,3,2.36,2.0.0-phase05-real-panel
+R01213,Pingle and Sons,Coimbatore,Cloud Kitchen,South Indian,2024,3.6,6.3,22,30,42862.0,2,1428.73,6.67,3,2.64,2.0.0-phase05-real-panel
+R01214,Tank LLC,Coimbatore,Cafe,South Indian,2024,3.8,6.7,30,25,26983.0,1,1079.32,4.0,3,2.18,2.0.0-phase05-real-panel
+R01215,"Chatterjee, Butala and Sankaran",Chennai,Budget Restaurant,North Indian,2023,3.7,9.1,27,20,19744.0,0,987.2,0.0,3,1.64,2.0.0-phase05-real-panel
+R01216,"Sethi, Munshi and Jayaraman",Vijayawada,Cloud Kitchen,South Indian,2017,5.0,10.0,18,41,50611.0,2,1234.41,4.88,3,3.36,2.0.0-phase05-real-panel
+R01217,"Merchant, Bhalla and Kaul",Chennai,Budget Restaurant,Burger,2025,4.2,8.0,22,37,40112.0,1,1084.11,2.7,3,3.09,2.0.0-phase05-real-panel
+R01218,"Dayal, Bhagat and Gera",Chennai,Fast Food Chain,Desserts,2018,3.5,9.6,25,23,21671.0,1,942.22,4.35,3,1.91,2.0.0-phase05-real-panel
+R01219,"Narain, Deep and Natarajan",Coimbatore,Cloud Kitchen,Healthy Foods,2019,4.9,6.0,30,33,30361.0,1,920.03,3.03,3,2.82,2.0.0-phase05-real-panel
+R01220,Deep Ltd,Coimbatore,Cloud Kitchen,Healthy Foods,2024,3.6,7.6,24,33,48409.0,4,1466.94,12.12,3,2.82,2.0.0-phase05-real-panel
+R01221,"Dhar, Hayre and Krishnamurthy",Chennai,Cafe,Biryani,2019,4.8,3.8,22,41,27201.0,0,663.44,0.0,3,3.45,2.0.0-phase05-real-panel
+R01222,Zacharia-Pall,Hyderabad,Cloud Kitchen,South Indian,2020,3.8,2.1,19,38,41900.0,2,1102.63,5.26,3,3.27,2.0.0-phase05-real-panel
+R01223,Shenoy LLC,Chennai,Fast Food Chain,Biryani,2021,4.7,3.6,18,28,25421.0,0,907.89,0.0,3,2.18,2.0.0-phase05-real-panel
+R01224,Char-Kaul,Coimbatore,Premium Restaurant,South Indian,2022,4.7,2.4,15,32,32182.0,0,1005.69,0.0,3,2.36,2.0.0-phase05-real-panel
+R01225,"Sood, Venkatesh and Mangal",Coimbatore,Cafe,Biryani,2025,3.6,5.2,30,43,31634.0,4,735.67,9.3,3,3.64,2.0.0-phase05-real-panel
+R01226,"Khosla, Agrawal and Prashad",Chennai,Premium Restaurant,South Indian,2025,3.8,5.8,15,31,30804.0,1,993.68,3.23,3,2.45,2.0.0-phase05-real-panel
+R01227,"Varghese, Rajagopalan and Sathe",Bangalore,Budget Restaurant,South Indian,2017,4.5,7.3,22,43,45124.0,0,1049.4,0.0,3,3.55,2.0.0-phase05-real-panel
+R01228,Randhawa LLC,Hyderabad,Premium Restaurant,Chinese,2018,4.0,2.6,30,43,38329.0,0,891.37,0.0,3,3.45,2.0.0-phase05-real-panel
+R01229,"Shenoy, Saini and Vala",Chennai,Premium Restaurant,Biryani,2024,4.3,2.7,22,35,34626.0,3,989.31,8.57,3,3.0,2.0.0-phase05-real-panel
+R01230,Sekhon-Banerjee,Hyderabad,Fast Food Chain,North Indian,2016,4.8,6.0,27,29,23273.0,1,802.52,3.45,3,2.45,2.0.0-phase05-real-panel
+R01231,"Chand, Oza and Kade",Bangalore,Premium Restaurant,Biryani,2020,3.6,4.6,27,48,40062.0,1,834.62,2.08,3,3.55,2.0.0-phase05-real-panel
+R01232,"Buch, Toor and Mitter",Bangalore,Cloud Kitchen,Chinese,2022,3.7,2.7,20,31,33636.0,1,1085.03,3.23,3,2.64,2.0.0-phase05-real-panel
+R01233,Raj-Dhar,Chennai,Cafe,Biryani,2026,3.5,3.4,20,31,36714.0,1,1184.32,3.23,3,2.36,2.0.0-phase05-real-panel
+R01234,Anand-Ramaswamy,Chennai,Cafe,South Indian,2024,4.4,9.7,26,31,38424.0,2,1239.48,6.45,3,2.82,2.0.0-phase05-real-panel
+R01235,Ratti-Agate,Vijayawada,Cafe,Pizza,2025,4.5,8.4,27,30,21674.0,1,722.47,3.33,3,2.64,2.0.0-phase05-real-panel
+R01236,Devan PLC,Chennai,Fast Food Chain,North Indian,2022,3.7,8.6,28,36,28507.0,1,791.86,2.78,3,3.0,2.0.0-phase05-real-panel
+R01237,"Konda, Randhawa and Narang",Bangalore,Premium Restaurant,North Indian,2017,4.3,7.8,30,31,24351.0,1,785.52,3.23,3,2.55,2.0.0-phase05-real-panel
+R01238,Rege-Bahl,Bangalore,Cloud Kitchen,North Indian,2019,3.8,9.5,21,23,23453.0,2,1019.7,8.7,3,1.91,2.0.0-phase05-real-panel
+R01239,Vyas-Kala,Vijayawada,Fast Food Chain,Chinese,2026,4.6,9.3,15,33,26690.0,1,808.79,3.03,3,3.0,2.0.0-phase05-real-panel
+R01240,"Kibe, Gala and Grewal",Chennai,Budget Restaurant,Chinese,2025,4.3,6.0,26,17,19434.0,1,1143.18,5.88,3,1.27,2.0.0-phase05-real-panel
+R01241,"Date, Gola and Khurana",Vijayawada,Premium Restaurant,North Indian,2017,4.1,9.4,17,31,30464.0,1,982.71,3.23,3,2.64,2.0.0-phase05-real-panel
+R01242,"Doshi, Comar and Halder",Hyderabad,Budget Restaurant,South Indian,2019,3.7,6.2,20,33,31940.0,1,967.88,3.03,3,2.82,2.0.0-phase05-real-panel
+R01243,Kulkarni-Baria,Chennai,Cafe,Chinese,2026,3.6,2.4,20,29,28872.0,1,995.59,3.45,3,2.45,2.0.0-phase05-real-panel
+R01244,Koshy Group,Coimbatore,Budget Restaurant,Chinese,2017,4.5,4.8,17,31,38460.0,1,1240.65,3.23,3,2.64,2.0.0-phase05-real-panel
+R01245,"Bobal, Gera and Sanghvi",Hyderabad,Cloud Kitchen,Pizza,2017,3.6,8.0,24,30,31957.0,1,1065.23,3.33,3,2.73,2.0.0-phase05-real-panel
+R01246,Sura-Gola,Bangalore,Premium Restaurant,South Indian,2021,4.3,4.5,21,44,48273.0,2,1097.11,4.55,3,3.45,2.0.0-phase05-real-panel
+R01247,Talwar-Bhandari,Bangalore,Budget Restaurant,North Indian,2025,3.6,9.0,17,32,31731.0,3,991.59,9.38,3,2.55,2.0.0-phase05-real-panel
+R01248,Arora-Sehgal,Hyderabad,Premium Restaurant,Pizza,2022,3.7,6.3,17,33,25913.0,1,785.24,3.03,3,2.55,2.0.0-phase05-real-panel
+R01249,Munshi-Dayal,Chennai,Cloud Kitchen,Chinese,2017,4.1,9.1,18,27,39619.0,2,1467.37,7.41,3,2.27,2.0.0-phase05-real-panel
+R01250,"Ram, Dhillon and Kaul",Bangalore,Cloud Kitchen,South Indian,2025,3.6,8.8,18,44,51461.0,0,1169.57,0.0,3,3.36,2.0.0-phase05-real-panel
+R01251,Sehgal Group,Chennai,Premium Restaurant,Chinese,2018,4.3,8.8,27,38,31633.0,1,832.45,2.63,3,3.18,2.0.0-phase05-real-panel
+R01252,Kumar-Srinivasan,Vijayawada,Cloud Kitchen,Chinese,2020,4.7,5.6,20,42,45700.0,2,1088.1,4.76,3,3.73,2.0.0-phase05-real-panel
+R01253,Edwin-Doshi,Bangalore,Budget Restaurant,North Indian,2017,4.2,4.4,24,33,40763.0,1,1235.24,3.03,3,2.64,2.0.0-phase05-real-panel
+R01254,Bajaj Inc,Chennai,Cafe,Pizza,2023,4.3,9.9,17,38,48171.0,1,1267.66,2.63,3,3.36,2.0.0-phase05-real-panel
+R01255,Rana Ltd,Bangalore,Cafe,Biryani,2023,4.8,7.2,27,42,55155.0,1,1313.21,2.38,3,3.18,2.0.0-phase05-real-panel
+R01256,Sinha-Bir,Bangalore,Cafe,North Indian,2020,5.0,7.2,15,37,40239.0,1,1087.54,2.7,3,3.09,2.0.0-phase05-real-panel
+R01257,Shukla PLC,Hyderabad,Cafe,South Indian,2016,4.2,8.7,27,27,31400.0,1,1162.96,3.7,3,2.18,2.0.0-phase05-real-panel
+R01258,Solanki-Sheth,Bangalore,Premium Restaurant,Desserts,2017,4.7,9.9,20,37,29549.0,2,798.62,5.41,3,3.0,2.0.0-phase05-real-panel
+R01259,"Mahajan, Bajwa and Baral",Vijayawada,Cloud Kitchen,North Indian,2020,3.5,4.4,19,37,30371.0,2,820.84,5.41,3,3.18,2.0.0-phase05-real-panel
+R01260,Iyer-Basak,Hyderabad,Budget Restaurant,South Indian,2022,4.4,5.5,20,44,39110.0,0,888.86,0.0,3,3.82,2.0.0-phase05-real-panel
+R01261,Wali PLC,Coimbatore,Cloud Kitchen,Chinese,2025,4.6,9.4,29,30,25067.0,2,835.57,6.67,3,2.73,2.0.0-phase05-real-panel
+R01262,Sachdev Group,Coimbatore,Budget Restaurant,South Indian,2022,4.1,8.6,21,26,26776.0,0,1029.85,0.0,3,2.27,2.0.0-phase05-real-panel
+R01263,"Sheth, Kota and Bobal",Coimbatore,Premium Restaurant,South Indian,2019,4.4,3.7,17,39,26180.0,1,671.28,2.56,3,3.45,2.0.0-phase05-real-panel
+R01264,Sankar LLC,Bangalore,Budget Restaurant,Biryani,2021,4.4,9.9,22,44,46307.0,2,1052.43,4.55,3,3.64,2.0.0-phase05-real-panel
+R01265,Majumdar-Atwal,Hyderabad,Cloud Kitchen,Pizza,2024,4.9,2.5,18,35,43708.0,2,1248.8,5.71,3,2.82,2.0.0-phase05-real-panel
+R01266,Sampath-Mand,Chennai,Premium Restaurant,Pizza,2023,4.2,5.7,30,35,33099.0,0,945.69,0.0,3,3.0,2.0.0-phase05-real-panel
+R01267,Pradhan-Warrior,Vijayawada,Cafe,Biryani,2016,4.4,8.5,23,28,29482.0,1,1052.93,3.57,3,2.45,2.0.0-phase05-real-panel
+R01268,Raghavan-Sachdev,Vijayawada,Fast Food Chain,North Indian,2019,4.9,5.6,28,40,41128.0,2,1028.2,5.0,3,3.36,2.0.0-phase05-real-panel
+R01269,"Chander, Kurian and Kala",Hyderabad,Cloud Kitchen,Chinese,2026,4.9,4.2,27,33,29541.0,1,895.18,3.03,3,2.82,2.0.0-phase05-real-panel
+R01270,"Tella, Korpal and Gole",Coimbatore,Premium Restaurant,Biryani,2022,3.6,7.1,28,32,36549.0,1,1142.16,3.12,3,2.64,2.0.0-phase05-real-panel
+R01271,"Kade, Thakkar and Dasgupta",Hyderabad,Cafe,Pizza,2016,3.6,9.1,17,38,35856.0,2,943.58,5.26,3,3.18,2.0.0-phase05-real-panel
+R01272,Sampath-Sekhon,Bangalore,Cafe,Biryani,2026,3.6,8.3,26,36,30369.0,5,843.58,13.89,3,2.91,2.0.0-phase05-real-panel
+R01273,Jaggi PLC,Chennai,Cafe,South Indian,2022,4.0,6.8,22,29,25126.0,1,866.41,3.45,3,2.36,2.0.0-phase05-real-panel
+R01274,Karpe-Rajan,Bangalore,Cafe,Burger,2025,3.6,8.1,18,37,33937.0,0,917.22,0.0,3,3.09,2.0.0-phase05-real-panel
+R01275,Mukherjee LLC,Hyderabad,Premium Restaurant,South Indian,2021,3.8,10.0,19,36,39965.0,0,1110.14,0.0,3,2.91,2.0.0-phase05-real-panel
+R01276,Varty Group,Bangalore,Cloud Kitchen,South Indian,2020,4.5,3.2,29,30,35825.0,1,1194.17,3.33,3,2.45,2.0.0-phase05-real-panel
+R01277,"Ghosh, Hari and Bhagat",Chennai,Budget Restaurant,Biryani,2026,3.9,9.3,16,29,29122.0,4,1004.21,13.79,3,2.55,2.0.0-phase05-real-panel
+R01278,Devi Inc,Chennai,Premium Restaurant,South Indian,2020,4.5,6.4,16,25,21949.0,0,877.96,0.0,3,1.91,2.0.0-phase05-real-panel
+R01279,Venkatesh-Sarkar,Bangalore,Budget Restaurant,North Indian,2024,4.5,6.5,22,32,36074.0,0,1127.31,0.0,3,2.55,2.0.0-phase05-real-panel
+R01280,"Chaudhuri, Iyer and Madan",Bangalore,Budget Restaurant,Biryani,2016,4.4,6.2,18,35,27849.0,3,795.69,8.57,3,2.91,2.0.0-phase05-real-panel
+R01281,Pall-Bala,Chennai,Premium Restaurant,Biryani,2024,4.1,6.6,28,33,29403.0,5,891.0,15.15,3,2.73,2.0.0-phase05-real-panel
+R01282,"Sama, Yohannan and Padmanabhan",Chennai,Fast Food Chain,Biryani,2026,3.5,2.5,26,31,13556.0,1,437.29,3.23,3,2.55,2.0.0-phase05-real-panel
+R01283,"Wali, Raj and Sama",Chennai,Fast Food Chain,North Indian,2022,4.1,5.9,17,24,19452.0,0,810.5,0.0,3,2.0,2.0.0-phase05-real-panel
+R01284,Som-Srinivas,Bangalore,Premium Restaurant,North Indian,2020,3.7,8.5,24,38,35561.0,3,935.82,7.89,3,3.27,2.0.0-phase05-real-panel
+R01285,Baral Ltd,Chennai,Fast Food Chain,Desserts,2017,4.3,8.8,18,35,16506.0,0,471.6,0.0,3,2.82,2.0.0-phase05-real-panel
+R01286,"Narain, Goda and Bajwa",Coimbatore,Premium Restaurant,South Indian,2017,3.9,3.8,17,42,51834.0,2,1234.14,4.76,3,3.36,2.0.0-phase05-real-panel
+R01287,Talwar-Sandhu,Hyderabad,Cloud Kitchen,South Indian,2021,3.7,2.4,28,30,29614.0,2,987.13,6.67,3,2.64,2.0.0-phase05-real-panel
+R01288,Kata-Kanda,Chennai,Premium Restaurant,Biryani,2021,4.3,6.7,21,27,31696.0,1,1173.93,3.7,3,2.18,2.0.0-phase05-real-panel
+R01289,Mohanty-Deo,Chennai,Budget Restaurant,Chinese,2016,5.0,6.5,26,40,32592.0,0,814.8,0.0,3,3.45,2.0.0-phase05-real-panel
+R01290,"Mandal, Pandey and Agarwal",Chennai,Premium Restaurant,Pizza,2026,4.9,6.3,28,49,50238.0,1,1025.27,2.04,3,3.91,2.0.0-phase05-real-panel
+R01291,Mall PLC,Chennai,Cloud Kitchen,Burger,2026,4.7,8.1,20,50,63191.0,0,1263.82,0.0,3,4.09,2.0.0-phase05-real-panel
+R01292,Mani-Grover,Bangalore,Premium Restaurant,South Indian,2016,3.7,5.7,28,23,21823.0,0,948.83,0.0,3,2.0,2.0.0-phase05-real-panel
+R01293,Iyengar Inc,Hyderabad,Premium Restaurant,Chinese,2020,3.5,2.4,25,30,26377.0,2,879.23,6.67,3,2.18,2.0.0-phase05-real-panel
+R01294,Gola-Sane,Vijayawada,Fast Food Chain,South Indian,2025,3.8,5.2,22,19,19916.0,2,1048.21,10.53,3,1.55,2.0.0-phase05-real-panel
+R01295,Nadkarni Ltd,Hyderabad,Fast Food Chain,Pizza,2018,4.9,7.0,29,36,25781.0,2,716.14,5.56,3,3.09,2.0.0-phase05-real-panel
+R01296,"Mammen, Iyer and Tak",Hyderabad,Budget Restaurant,Burger,2017,4.8,2.4,30,31,28641.0,0,923.9,0.0,3,2.45,2.0.0-phase05-real-panel
+R01297,"Saini, Shetty and Keer",Bangalore,Budget Restaurant,Biryani,2017,4.3,6.6,24,35,20955.0,3,598.71,8.57,3,3.18,2.0.0-phase05-real-panel
+R01298,Bobal LLC,Chennai,Cloud Kitchen,Biryani,2023,4.8,3.3,15,35,39415.0,0,1126.14,0.0,3,3.09,2.0.0-phase05-real-panel
+R01299,"Khosla, Nadig and Shan",Bangalore,Cafe,Pizza,2020,3.8,9.5,15,33,24547.0,1,743.85,3.03,3,2.64,2.0.0-phase05-real-panel
+R01300,Bahl-Handa,Bangalore,Cafe,South Indian,2026,3.5,9.1,26,25,19604.0,3,784.16,12.0,3,2.09,2.0.0-phase05-real-panel
+R01301,Sinha Ltd,Coimbatore,Cafe,Burger,2019,3.6,2.0,27,36,39347.0,1,1092.97,2.78,3,3.0,2.0.0-phase05-real-panel
+R01302,"Vora, Sangha and Anne",Coimbatore,Budget Restaurant,South Indian,2026,4.5,9.7,20,21,18386.0,1,875.52,4.76,3,1.82,2.0.0-phase05-real-panel
+R01303,Lata and Sons,Vijayawada,Fast Food Chain,Burger,2021,4.2,4.1,23,39,50459.0,1,1293.82,2.56,3,3.45,2.0.0-phase05-real-panel
+R01304,Mall-Borra,Coimbatore,Fast Food Chain,Healthy Foods,2019,4.2,8.8,26,37,43306.0,2,1170.43,5.41,3,3.09,2.0.0-phase05-real-panel
+R01305,Ramanathan Group,Chennai,Budget Restaurant,Chinese,2020,4.4,9.7,29,35,39817.0,0,1137.63,0.0,3,3.09,2.0.0-phase05-real-panel
+R01306,Dutta-Sama,Coimbatore,Cafe,Healthy Foods,2023,4.1,7.7,17,34,35323.0,2,1038.91,5.88,3,3.09,2.0.0-phase05-real-panel
+R01307,"Kapur, Devi and Prakash",Bangalore,Cafe,Biryani,2025,4.0,4.9,29,30,30283.0,0,1009.43,0.0,3,2.64,2.0.0-phase05-real-panel
+R01308,"Sen, Basak and Kulkarni",Coimbatore,Cafe,North Indian,2018,4.4,3.7,24,38,44313.0,2,1166.13,5.26,3,3.27,2.0.0-phase05-real-panel
+R01309,Bala Ltd,Chennai,Budget Restaurant,Burger,2025,5.0,3.6,27,31,29910.0,0,964.84,0.0,3,2.64,2.0.0-phase05-real-panel
+R01310,Yogi PLC,Bangalore,Cloud Kitchen,Biryani,2016,4.1,8.4,23,32,27873.0,1,871.03,3.12,3,2.45,2.0.0-phase05-real-panel
+R01311,Loke Ltd,Bangalore,Premium Restaurant,South Indian,2019,4.6,8.9,22,37,27637.0,3,746.95,8.11,3,3.09,2.0.0-phase05-real-panel
+R01312,Apte-Bora,Bangalore,Budget Restaurant,Chinese,2026,4.9,7.4,24,30,46910.0,2,1563.67,6.67,3,2.45,2.0.0-phase05-real-panel
+R01313,Borah-Sankar,Bangalore,Cloud Kitchen,North Indian,2024,3.7,6.6,21,30,27230.0,3,907.67,10.0,3,2.64,2.0.0-phase05-real-panel
+R01314,"Solanki, Natarajan and Deshpande",Coimbatore,Fast Food Chain,South Indian,2020,4.4,7.2,19,37,48904.0,3,1321.73,8.11,3,3.09,2.0.0-phase05-real-panel
+R01315,Ganesh-Bail,Chennai,Budget Restaurant,Chinese,2019,3.8,9.0,16,31,21945.0,1,707.9,3.23,3,2.55,2.0.0-phase05-real-panel
+R01316,Sen Ltd,Vijayawada,Cloud Kitchen,Chinese,2017,4.5,3.4,19,23,21938.0,1,953.83,4.35,3,1.64,2.0.0-phase05-real-panel
+R01317,Bahl-Madan,Bangalore,Cafe,Pizza,2025,3.9,2.6,18,28,25738.0,2,919.21,7.14,3,2.36,2.0.0-phase05-real-panel
+R01318,Pall Ltd,Coimbatore,Cloud Kitchen,Pizza,2017,3.7,7.2,22,43,35868.0,1,834.14,2.33,3,3.91,2.0.0-phase05-real-panel
+R01319,Chana PLC,Vijayawada,Premium Restaurant,South Indian,2017,4.1,8.6,25,37,36868.0,1,996.43,2.7,3,3.09,2.0.0-phase05-real-panel
+R01320,Gade-Krish,Chennai,Budget Restaurant,Biryani,2022,4.7,9.9,23,37,36238.0,1,979.41,2.7,3,3.0,2.0.0-phase05-real-panel
+R01321,"Kari, Raghavan and Dewan",Hyderabad,Premium Restaurant,South Indian,2020,4.4,10.0,30,37,39161.0,1,1058.41,2.7,3,3.18,2.0.0-phase05-real-panel
+R01322,"Walla, Kala and Sha",Bangalore,Budget Restaurant,Burger,2022,4.4,5.8,21,37,42375.0,1,1145.27,2.7,3,3.0,2.0.0-phase05-real-panel
+R01323,"Sani, Acharya and Walla",Chennai,Cafe,Beverages,2025,4.1,4.5,17,27,32886.0,1,1218.0,3.7,3,2.27,2.0.0-phase05-real-panel
+R01324,Savant Ltd,Vijayawada,Cloud Kitchen,South Indian,2025,3.9,6.5,19,33,33447.0,5,1013.55,15.15,3,2.55,2.0.0-phase05-real-panel
+R01325,Sibal Inc,Hyderabad,Premium Restaurant,North Indian,2016,3.8,9.2,26,32,35463.0,1,1108.22,3.12,3,2.55,2.0.0-phase05-real-panel
+R01326,"Chahal, Nori and Prabhakar",Hyderabad,Cafe,Burger,2023,4.1,2.1,29,36,27019.0,1,750.53,2.78,3,3.0,2.0.0-phase05-real-panel
+R01327,Peri-Wable,Bangalore,Budget Restaurant,South Indian,2019,4.1,9.9,30,38,28496.0,0,749.89,0.0,3,3.09,2.0.0-phase05-real-panel
+R01328,Trivedi-Dara,Chennai,Fast Food Chain,Chinese,2021,4.8,5.7,25,38,34660.0,2,912.11,5.26,3,3.18,2.0.0-phase05-real-panel
+R01329,"Singh, Saini and Arya",Chennai,Premium Restaurant,South Indian,2026,4.8,6.0,15,28,21394.0,1,764.07,3.57,3,2.45,2.0.0-phase05-real-panel
+R01330,"Dalal, Brahmbhatt and Singh",Vijayawada,Budget Restaurant,Burger,2020,4.9,8.7,27,26,24034.0,3,924.38,11.54,3,2.0,2.0.0-phase05-real-panel
+R01331,Nair Group,Hyderabad,Fast Food Chain,Chinese,2022,3.6,4.9,16,23,26645.0,1,1158.48,4.35,3,2.09,2.0.0-phase05-real-panel
+R01332,"Tailor, Chacko and Bera",Bangalore,Budget Restaurant,Burger,2017,4.5,8.1,29,38,26601.0,2,700.03,5.26,3,3.27,2.0.0-phase05-real-panel
+R01333,Lata-Vaidya,Hyderabad,Cafe,Desserts,2026,4.3,4.3,25,35,46164.0,0,1318.97,0.0,3,2.91,2.0.0-phase05-real-panel
+R01334,Nanda Group,Vijayawada,Budget Restaurant,Healthy Foods,2019,4.8,2.2,27,31,30137.0,2,972.16,6.45,3,2.36,2.0.0-phase05-real-panel
+R01335,Khare PLC,Hyderabad,Budget Restaurant,Pizza,2022,3.5,5.9,29,43,33156.0,1,771.07,2.33,3,3.55,2.0.0-phase05-real-panel
+R01336,"Pandya, Narayan and Jhaveri",Vijayawada,Premium Restaurant,Burger,2017,4.8,2.5,25,27,23791.0,0,881.15,0.0,3,2.18,2.0.0-phase05-real-panel
+R01337,"Agrawal, Bawa and Ben",Hyderabad,Cafe,Burger,2017,3.5,5.9,30,48,57942.0,1,1207.12,2.08,3,3.82,2.0.0-phase05-real-panel
+R01338,Koshy-Bumb,Chennai,Cafe,Biryani,2023,5.0,8.5,22,41,49622.0,0,1210.29,0.0,3,3.45,2.0.0-phase05-real-panel
+R01339,Gole-Sekhon,Chennai,Cafe,South Indian,2026,4.1,2.8,17,32,39453.0,2,1232.91,6.25,3,2.55,2.0.0-phase05-real-panel
+R01340,"Kala, Shah and Sachdev",Chennai,Cloud Kitchen,North Indian,2020,4.3,6.7,24,38,36114.0,2,950.37,5.26,3,3.09,2.0.0-phase05-real-panel
+R01341,"Chakraborty, Chatterjee and Andra",Hyderabad,Fast Food Chain,North Indian,2020,4.9,4.2,19,38,30425.0,1,800.66,2.63,3,3.09,2.0.0-phase05-real-panel
+R01342,Thakkar-Buch,Hyderabad,Fast Food Chain,Biryani,2025,4.0,7.0,21,32,34000.0,2,1062.5,6.25,3,2.73,2.0.0-phase05-real-panel
+R01343,Soni-Bansal,Bangalore,Premium Restaurant,Beverages,2024,4.3,5.9,19,33,24711.0,0,748.82,0.0,3,2.73,2.0.0-phase05-real-panel
+R01344,"Mutti, Keer and Mannan",Coimbatore,Premium Restaurant,Beverages,2021,4.2,5.3,30,25,33184.0,3,1327.36,12.0,3,2.18,2.0.0-phase05-real-panel
+R01345,"Sharaf, Bhatt and Dubey",Hyderabad,Premium Restaurant,North Indian,2020,4.4,4.1,18,34,30489.0,2,896.74,5.88,3,2.73,2.0.0-phase05-real-panel
+R01346,Hegde-Ramanathan,Bangalore,Budget Restaurant,Burger,2016,4.5,7.3,18,33,32685.0,1,990.45,3.03,3,2.91,2.0.0-phase05-real-panel
+R01347,Mane Ltd,Hyderabad,Cafe,North Indian,2026,4.0,5.3,18,29,28460.0,1,981.38,3.45,3,2.18,2.0.0-phase05-real-panel
+R01348,Tailor-Sen,Chennai,Cloud Kitchen,Healthy Foods,2017,4.8,6.8,17,38,30604.0,1,805.37,2.63,3,3.45,2.0.0-phase05-real-panel
+R01349,Borra-Tella,Bangalore,Cloud Kitchen,Biryani,2020,4.8,9.5,21,35,49190.0,1,1405.43,2.86,3,2.91,2.0.0-phase05-real-panel
+R01350,"Dhawan, Vala and Pall",Hyderabad,Budget Restaurant,South Indian,2023,4.3,6.1,29,32,23568.0,4,736.5,12.5,3,2.73,2.0.0-phase05-real-panel
+R01351,"Sanghvi, Balay and Saini",Bangalore,Premium Restaurant,South Indian,2026,3.8,4.0,20,32,28324.0,1,885.12,3.12,3,2.64,2.0.0-phase05-real-panel
+R01352,"Saran, Toor and Loyal",Bangalore,Cloud Kitchen,Biryani,2022,4.3,9.2,18,37,28440.0,0,768.65,0.0,3,3.18,2.0.0-phase05-real-panel
+R01353,Bawa-Behl,Hyderabad,Cafe,South Indian,2022,3.7,9.9,28,42,46385.0,3,1104.4,7.14,3,3.27,2.0.0-phase05-real-panel
+R01354,Padmanabhan-Baria,Bangalore,Cloud Kitchen,Biryani,2021,3.7,7.0,28,30,22639.0,2,754.63,6.67,3,2.55,2.0.0-phase05-real-panel
+R01355,Patel PLC,Coimbatore,Budget Restaurant,Biryani,2023,4.9,4.9,15,35,30814.0,2,880.4,5.71,3,3.0,2.0.0-phase05-real-panel
+R01356,Srivastava Inc,Bangalore,Budget Restaurant,South Indian,2019,3.8,8.9,16,22,26709.0,0,1214.05,0.0,3,1.73,2.0.0-phase05-real-panel
+R01357,Purohit Inc,Chennai,Cloud Kitchen,South Indian,2020,3.9,4.3,26,29,35268.0,1,1216.14,3.45,3,2.36,2.0.0-phase05-real-panel
+R01358,"Bakshi, Dhingra and Hari",Vijayawada,Premium Restaurant,Biryani,2024,4.3,7.3,26,36,37047.0,1,1029.08,2.78,3,2.91,2.0.0-phase05-real-panel
+R01359,Ramachandran Ltd,Bangalore,Fast Food Chain,Healthy Foods,2021,4.7,8.9,16,37,42438.0,2,1146.97,5.41,3,3.18,2.0.0-phase05-real-panel
+R01360,"Bath, Zachariah and Sengupta",Chennai,Budget Restaurant,Biryani,2016,4.4,8.3,20,33,24734.0,1,749.52,3.03,3,2.45,2.0.0-phase05-real-panel
+R01361,Srinivas Inc,Vijayawada,Cloud Kitchen,South Indian,2016,3.7,5.8,15,33,37457.0,1,1135.06,3.03,3,2.64,2.0.0-phase05-real-panel
+R01362,Gour and Sons,Coimbatore,Fast Food Chain,Biryani,2018,4.5,4.3,28,30,20082.0,0,669.4,0.0,3,2.55,2.0.0-phase05-real-panel
+R01363,Borah-Grover,Hyderabad,Budget Restaurant,Biryani,2024,3.6,6.0,30,45,46401.0,3,1031.13,6.67,3,3.73,2.0.0-phase05-real-panel
+R01364,Kannan-Dada,Bangalore,Fast Food Chain,Pizza,2025,3.8,3.9,19,24,22203.0,1,925.12,4.17,3,2.09,2.0.0-phase05-real-panel
+R01365,"Ramakrishnan, Das and Kari",Bangalore,Cafe,North Indian,2016,4.7,9.6,16,29,25341.0,3,873.83,10.34,3,2.64,2.0.0-phase05-real-panel
+R01366,"Garde, Prakash and Madan",Bangalore,Premium Restaurant,South Indian,2018,4.5,7.8,18,35,34822.0,2,994.91,5.71,3,3.18,2.0.0-phase05-real-panel
+R01367,Prasad Ltd,Vijayawada,Fast Food Chain,Desserts,2016,4.5,8.2,19,38,36085.0,0,949.61,0.0,3,3.0,2.0.0-phase05-real-panel
+R01368,Deshmukh Inc,Chennai,Fast Food Chain,South Indian,2019,4.8,9.6,25,36,31964.0,0,887.89,0.0,3,2.64,2.0.0-phase05-real-panel
+R01369,Mannan Group,Bangalore,Fast Food Chain,Burger,2017,4.5,9.4,19,20,19122.0,0,956.1,0.0,3,1.82,2.0.0-phase05-real-panel
+R01370,Sridhar Ltd,Chennai,Cloud Kitchen,North Indian,2025,3.6,9.3,25,39,39677.0,3,1017.36,7.69,3,2.82,2.0.0-phase05-real-panel
+R01371,Reddy LLC,Bangalore,Cafe,Chinese,2020,4.7,5.2,18,38,22681.0,1,596.87,2.63,3,3.45,2.0.0-phase05-real-panel
+R01372,"Madan, Gill and Choudhary",Chennai,Cloud Kitchen,South Indian,2025,3.8,7.5,22,35,30073.0,1,859.23,2.86,3,2.82,2.0.0-phase05-real-panel
+R01373,"Khare, Biswas and Ahluwalia",Chennai,Budget Restaurant,Burger,2019,4.5,8.2,29,34,26230.0,1,771.47,2.94,3,2.82,2.0.0-phase05-real-panel
+R01374,Dugar LLC,Coimbatore,Budget Restaurant,Beverages,2017,4.8,9.2,30,33,36966.0,0,1120.18,0.0,3,2.73,2.0.0-phase05-real-panel
+R01375,Dutta-Karnik,Hyderabad,Fast Food Chain,Burger,2026,4.5,5.0,29,35,43551.0,1,1244.31,2.86,3,3.18,2.0.0-phase05-real-panel
+R01376,Saha-Bail,Chennai,Premium Restaurant,South Indian,2026,4.8,7.2,23,32,30799.0,1,962.47,3.12,3,2.45,2.0.0-phase05-real-panel
+R01377,Chana-Ratta,Vijayawada,Fast Food Chain,South Indian,2024,4.6,5.9,22,35,26261.0,1,750.31,2.86,3,3.0,2.0.0-phase05-real-panel
+R01378,Sehgal-Suresh,Chennai,Budget Restaurant,Pizza,2025,3.6,6.4,18,26,23181.0,0,891.58,0.0,3,2.36,2.0.0-phase05-real-panel
+R01379,Chauhan Ltd,Coimbatore,Fast Food Chain,South Indian,2017,4.3,6.5,22,28,28892.0,1,1031.86,3.57,3,2.36,2.0.0-phase05-real-panel
+R01380,Bhalla-Date,Bangalore,Fast Food Chain,Biryani,2023,5.0,8.5,17,48,50672.0,2,1055.67,4.17,3,4.0,2.0.0-phase05-real-panel
+R01381,Pall-Bal,Chennai,Premium Restaurant,South Indian,2020,3.6,9.4,16,31,24644.0,1,794.97,3.23,3,2.45,2.0.0-phase05-real-panel
+R01382,"Chokshi, Hayer and Sandal",Bangalore,Cloud Kitchen,Pizza,2024,4.4,6.3,25,38,37995.0,2,999.87,5.26,3,3.27,2.0.0-phase05-real-panel
+R01383,"Grover, Deshmukh and Mohan",Bangalore,Budget Restaurant,North Indian,2022,4.3,8.7,15,39,48217.0,1,1236.33,2.56,3,3.18,2.0.0-phase05-real-panel
+R01384,Jaggi-Thaker,Vijayawada,Premium Restaurant,Desserts,2025,4.0,4.5,23,20,22231.0,0,1111.55,0.0,3,1.64,2.0.0-phase05-real-panel
+R01385,"Sheth, Rajagopalan and Gulati",Coimbatore,Budget Restaurant,Chinese,2020,3.7,3.9,29,28,28256.0,0,1009.14,0.0,3,2.55,2.0.0-phase05-real-panel
+R01386,Mane-Pillay,Chennai,Fast Food Chain,Desserts,2025,3.7,7.3,20,35,38168.0,3,1090.51,8.57,3,2.82,2.0.0-phase05-real-panel
+R01387,Vohra LLC,Chennai,Budget Restaurant,South Indian,2022,4.0,8.8,27,29,29240.0,1,1008.28,3.45,3,2.45,2.0.0-phase05-real-panel
+R01388,Bhargava-Varughese,Chennai,Cloud Kitchen,Chinese,2020,4.1,3.1,30,31,29853.0,0,963.0,0.0,3,2.36,2.0.0-phase05-real-panel
+R01389,Mani-Chaudry,Coimbatore,Budget Restaurant,Biryani,2021,4.7,2.5,21,42,42585.0,1,1013.93,2.38,3,3.36,2.0.0-phase05-real-panel
+R01390,Modi-Prakash,Bangalore,Premium Restaurant,Beverages,2019,4.2,9.0,24,35,33590.0,1,959.71,2.86,3,2.73,2.0.0-phase05-real-panel
+R01391,Sawhney-Parikh,Hyderabad,Cafe,South Indian,2017,4.8,4.7,28,26,20805.0,0,800.19,0.0,3,2.36,2.0.0-phase05-real-panel
+R01392,"Kala, Acharya and Yohannan",Bangalore,Budget Restaurant,South Indian,2016,4.2,8.8,24,32,20505.0,1,640.78,3.12,3,2.73,2.0.0-phase05-real-panel
+R01393,Maharaj Group,Bangalore,Cafe,North Indian,2019,5.0,7.3,24,35,31302.0,3,894.34,8.57,3,2.91,2.0.0-phase05-real-panel
+R01394,Devi-Tella,Coimbatore,Budget Restaurant,Pizza,2020,5.0,7.1,30,27,23003.0,0,851.96,0.0,3,2.27,2.0.0-phase05-real-panel
+R01395,Pathak Ltd,Vijayawada,Cafe,South Indian,2017,3.9,8.9,17,35,24796.0,1,708.46,2.86,3,3.09,2.0.0-phase05-real-panel
+R01396,Bajaj-Prasad,Bangalore,Cafe,Chinese,2023,4.8,3.5,17,33,39477.0,0,1196.27,0.0,3,2.82,2.0.0-phase05-real-panel
+R01397,Lala Group,Vijayawada,Fast Food Chain,South Indian,2018,4.8,4.7,21,29,40826.0,1,1407.79,3.45,3,2.27,2.0.0-phase05-real-panel
+R01398,Sankar and Sons,Coimbatore,Fast Food Chain,South Indian,2024,3.8,8.3,28,35,24236.0,2,692.46,5.71,3,2.91,2.0.0-phase05-real-panel
+R01399,Barad-Shan,Bangalore,Premium Restaurant,North Indian,2024,3.8,8.0,23,50,42403.0,6,848.06,12.0,3,4.36,2.0.0-phase05-real-panel
+R01400,Oommen-Reddy,Coimbatore,Budget Restaurant,North Indian,2016,5.0,9.9,23,34,27605.0,2,811.91,5.88,3,2.82,2.0.0-phase05-real-panel
+R01401,Kapoor-Nair,Chennai,Cloud Kitchen,South Indian,2017,4.6,4.0,28,26,13430.0,1,516.54,3.85,3,2.0,2.0.0-phase05-real-panel
+R01402,"Karan, Chandra and Dhingra",Hyderabad,Cloud Kitchen,North Indian,2024,4.1,8.5,17,39,40775.0,1,1045.51,2.56,3,3.27,2.0.0-phase05-real-panel
+R01403,Sane-Shan,Coimbatore,Premium Restaurant,South Indian,2016,5.0,7.4,28,26,29175.0,1,1122.12,3.85,3,2.09,2.0.0-phase05-real-panel
+R01404,Gade-Modi,Chennai,Cloud Kitchen,South Indian,2019,4.7,5.4,20,22,27681.0,0,1258.23,0.0,3,1.91,2.0.0-phase05-real-panel
+R01405,Ratti-Tailor,Coimbatore,Budget Restaurant,Chinese,2017,4.8,2.5,17,34,22949.0,1,674.97,2.94,3,3.0,2.0.0-phase05-real-panel
+R01406,Bhasin-Badami,Hyderabad,Cafe,Burger,2024,4.1,5.7,26,32,37245.0,1,1163.91,3.12,3,2.73,2.0.0-phase05-real-panel
+R01407,"Raman, Savant and Brar",Chennai,Cloud Kitchen,Biryani,2024,3.5,9.9,22,43,35831.0,3,833.28,6.98,3,3.82,2.0.0-phase05-real-panel
+R01408,Dugar-Rajagopal,Hyderabad,Budget Restaurant,North Indian,2018,4.6,7.4,22,36,24588.0,2,683.0,5.56,3,2.73,2.0.0-phase05-real-panel
+R01409,"Khanna, Sachdeva and Nagy",Chennai,Budget Restaurant,South Indian,2018,3.6,7.7,18,38,48135.0,1,1266.71,2.63,3,3.18,2.0.0-phase05-real-panel
+R01410,"Sheth, Yohannan and Mani",Vijayawada,Premium Restaurant,South Indian,2016,3.9,7.5,28,23,24240.0,0,1053.91,0.0,3,2.0,2.0.0-phase05-real-panel
+R01411,"Das, Kata and Pant",Hyderabad,Cafe,Healthy Foods,2026,4.7,8.8,24,31,33929.0,1,1094.48,3.23,3,2.64,2.0.0-phase05-real-panel
+R01412,Sen-Dutt,Chennai,Cloud Kitchen,Pizza,2019,3.8,6.4,18,26,19560.0,1,752.31,3.85,3,2.18,2.0.0-phase05-real-panel
+R01413,Trivedi and Sons,Chennai,Premium Restaurant,Pizza,2017,4.4,9.9,24,37,29834.0,2,806.32,5.41,3,3.0,2.0.0-phase05-real-panel
+R01414,Mall Inc,Hyderabad,Cloud Kitchen,Pizza,2023,5.0,9.6,28,30,32415.0,3,1080.5,10.0,3,2.45,2.0.0-phase05-real-panel
+R01415,"Hayer, Sampath and Khanna",Chennai,Fast Food Chain,South Indian,2019,3.8,7.9,17,34,37286.0,0,1096.65,0.0,3,2.64,2.0.0-phase05-real-panel
+R01416,Bahl-Luthra,Bangalore,Budget Restaurant,North Indian,2025,4.4,8.4,19,31,28214.0,2,910.13,6.45,3,2.82,2.0.0-phase05-real-panel
+R01417,Mohanty-Sharma,Bangalore,Cafe,Chinese,2016,4.4,8.5,18,35,33726.0,0,963.6,0.0,3,2.73,2.0.0-phase05-real-panel
+R01418,"Dara, Barad and Krishnan",Hyderabad,Fast Food Chain,South Indian,2025,3.5,3.4,16,36,29889.0,0,830.25,0.0,3,3.09,2.0.0-phase05-real-panel
+R01419,"Arora, Sahni and Manda",Chennai,Premium Restaurant,Biryani,2026,3.6,2.7,25,29,39020.0,0,1345.52,0.0,3,2.36,2.0.0-phase05-real-panel
+R01420,Vohra-Dhawan,Chennai,Cloud Kitchen,Biryani,2026,3.9,7.0,18,31,33957.0,0,1095.39,0.0,3,2.27,2.0.0-phase05-real-panel
+R01421,Bedi Ltd,Chennai,Cafe,South Indian,2016,3.8,7.9,20,32,26302.0,2,821.94,6.25,3,2.73,2.0.0-phase05-real-panel
+R01422,"Kashyap, Nagi and Saxena",Vijayawada,Cloud Kitchen,South Indian,2020,4.1,3.8,25,28,18277.0,1,652.75,3.57,3,2.09,2.0.0-phase05-real-panel
+R01423,"Wable, Anne and Bahl",Coimbatore,Cafe,North Indian,2024,4.9,7.6,21,29,20303.0,1,700.1,3.45,3,2.27,2.0.0-phase05-real-panel
+R01424,"Gola, Sengupta and Chatterjee",Chennai,Budget Restaurant,Burger,2026,4.0,8.1,15,32,25921.0,0,810.03,0.0,3,2.73,2.0.0-phase05-real-panel
+R01425,"Kumar, Joshi and Sani",Chennai,Budget Restaurant,North Indian,2024,4.3,5.5,25,28,25556.0,2,912.71,7.14,3,2.36,2.0.0-phase05-real-panel
+R01426,Memon Inc,Chennai,Cafe,North Indian,2017,4.1,6.3,27,35,25268.0,2,721.94,5.71,3,3.0,2.0.0-phase05-real-panel
+R01427,Bhatnagar Inc,Chennai,Budget Restaurant,Healthy Foods,2017,4.3,2.4,25,27,18406.0,0,681.7,0.0,3,2.18,2.0.0-phase05-real-panel
+R01428,Ganguly Ltd,Bangalore,Cloud Kitchen,Burger,2019,3.9,6.2,22,38,45776.0,4,1204.63,10.53,3,3.18,2.0.0-phase05-real-panel
+R01429,Thaman Group,Coimbatore,Cafe,Healthy Foods,2023,3.8,7.3,22,35,39635.0,1,1132.43,2.86,3,2.73,2.0.0-phase05-real-panel
+R01430,Parmer-Ghosh,Coimbatore,Fast Food Chain,North Indian,2026,4.2,6.7,24,29,29295.0,0,1010.17,0.0,3,2.55,2.0.0-phase05-real-panel
+R01431,"Ravi, Bhalla and Sarkar",Chennai,Premium Restaurant,North Indian,2020,4.6,2.3,15,20,19030.0,1,951.5,5.0,3,1.55,2.0.0-phase05-real-panel
+R01432,"Mitter, Shroff and Balan",Bangalore,Cloud Kitchen,Beverages,2026,4.1,3.8,30,34,34276.0,1,1008.12,2.94,3,3.0,2.0.0-phase05-real-panel
+R01433,Mitter-Venkatesh,Chennai,Fast Food Chain,Pizza,2020,4.8,7.2,15,35,47570.0,2,1359.14,5.71,3,3.0,2.0.0-phase05-real-panel
+R01434,Varkey-Khatri,Bangalore,Budget Restaurant,South Indian,2026,4.5,7.3,19,34,37297.0,0,1096.97,0.0,3,2.91,2.0.0-phase05-real-panel
+R01435,Salvi Inc,Bangalore,Budget Restaurant,North Indian,2025,4.9,3.3,23,37,32041.0,5,865.97,13.51,3,2.82,2.0.0-phase05-real-panel
+R01436,"Bajaj, Sachdev and Sibal",Bangalore,Premium Restaurant,South Indian,2024,3.6,8.9,21,27,19473.0,0,721.22,0.0,3,2.27,2.0.0-phase05-real-panel
+R01437,"Munshi, Mukherjee and Doshi",Chennai,Cloud Kitchen,Desserts,2020,4.2,6.1,16,34,39705.0,1,1167.79,2.94,3,3.0,2.0.0-phase05-real-panel
+R01438,"Mital, Sen and Lanka",Vijayawada,Premium Restaurant,Biryani,2017,4.9,6.3,28,36,22567.0,0,626.86,0.0,3,3.18,2.0.0-phase05-real-panel
+R01439,Singhal-Rana,Bangalore,Cloud Kitchen,South Indian,2018,4.2,7.8,25,39,55147.0,2,1414.03,5.13,3,3.36,2.0.0-phase05-real-panel
+R01440,Gopal-Kunda,Bangalore,Premium Restaurant,Pizza,2023,4.8,7.8,19,41,30846.0,4,752.34,9.76,3,3.73,2.0.0-phase05-real-panel
+R01441,"Ram, Dhar and Dugar",Vijayawada,Budget Restaurant,Biryani,2026,3.6,7.1,18,32,25806.0,2,806.44,6.25,3,2.91,2.0.0-phase05-real-panel
+R01442,Seth-Khanna,Chennai,Budget Restaurant,South Indian,2018,3.7,6.7,21,35,45300.0,2,1294.29,5.71,3,2.64,2.0.0-phase05-real-panel
+R01443,Mutti-Lata,Chennai,Cafe,South Indian,2016,4.2,3.1,20,33,22593.0,3,684.64,9.09,3,2.91,2.0.0-phase05-real-panel
+R01444,Tripathi-Solanki,Hyderabad,Premium Restaurant,Desserts,2023,4.7,9.8,26,34,31951.0,1,939.74,2.94,3,2.91,2.0.0-phase05-real-panel
+R01445,Sachdev Inc,Bangalore,Premium Restaurant,Biryani,2016,3.9,2.2,18,34,34733.0,1,1021.56,2.94,3,3.09,2.0.0-phase05-real-panel
+R01446,"Solanki, Trivedi and Sridhar",Chennai,Cloud Kitchen,North Indian,2025,4.7,3.6,28,30,25279.0,1,842.63,3.33,3,2.55,2.0.0-phase05-real-panel
+R01447,Narain-Deo,Hyderabad,Fast Food Chain,Chinese,2024,4.9,10.0,21,32,36607.0,1,1143.97,3.12,3,2.64,2.0.0-phase05-real-panel
+R01448,Varghese-Kari,Chennai,Budget Restaurant,Burger,2023,4.7,8.1,30,28,30468.0,2,1088.14,7.14,3,2.36,2.0.0-phase05-real-panel
+R01449,Rajagopalan LLC,Coimbatore,Fast Food Chain,South Indian,2024,3.8,7.6,23,41,29750.0,2,725.61,4.88,3,3.45,2.0.0-phase05-real-panel
+R01450,Narayanan-Date,Bangalore,Cafe,South Indian,2024,4.1,3.3,16,36,45762.0,1,1271.17,2.78,3,3.09,2.0.0-phase05-real-panel
+R01451,Khalsa Inc,Chennai,Budget Restaurant,South Indian,2025,3.8,6.6,25,42,33891.0,3,806.93,7.14,3,3.45,2.0.0-phase05-real-panel
+R01452,Merchant-Chad,Hyderabad,Fast Food Chain,Chinese,2019,4.7,5.7,29,25,32471.0,1,1298.84,4.0,3,2.27,2.0.0-phase05-real-panel
+R01453,"Bumb, Trivedi and Rajan",Coimbatore,Cafe,North Indian,2016,4.3,6.2,25,30,28415.0,1,947.17,3.33,3,2.73,2.0.0-phase05-real-panel
+R01454,Gandhi and Sons,Bangalore,Premium Restaurant,Chinese,2025,4.4,9.3,19,24,20956.0,2,873.17,8.33,3,2.09,2.0.0-phase05-real-panel
+R01455,Choudhary LLC,Hyderabad,Fast Food Chain,South Indian,2022,4.2,2.1,23,26,28722.0,0,1104.69,0.0,3,2.0,2.0.0-phase05-real-panel
+R01456,Bobal and Sons,Hyderabad,Budget Restaurant,Beverages,2025,4.3,8.6,25,36,29048.0,1,806.89,2.78,3,3.18,2.0.0-phase05-real-panel
+R01457,Narula Inc,Hyderabad,Cloud Kitchen,Chinese,2016,4.3,5.2,17,31,24358.0,1,785.74,3.23,3,2.73,2.0.0-phase05-real-panel
+R01458,Kunda PLC,Chennai,Cloud Kitchen,South Indian,2021,4.5,4.0,16,33,29768.0,0,902.06,0.0,3,3.0,2.0.0-phase05-real-panel
+R01459,"Atwal, Ramaswamy and Raj",Chennai,Premium Restaurant,Biryani,2020,4.0,6.2,20,35,28213.0,4,806.09,11.43,3,2.82,2.0.0-phase05-real-panel
+R01460,Uppal Inc,Hyderabad,Cafe,Burger,2017,4.7,5.7,16,26,31551.0,0,1213.5,0.0,3,2.27,2.0.0-phase05-real-panel
+R01461,Devan LLC,Bangalore,Cloud Kitchen,Beverages,2017,4.8,9.4,28,31,37688.0,0,1215.74,0.0,3,2.55,2.0.0-phase05-real-panel
+R01462,Zachariah Inc,Coimbatore,Premium Restaurant,South Indian,2020,3.6,8.3,19,30,32119.0,1,1070.63,3.33,3,2.45,2.0.0-phase05-real-panel
+R01463,Chopra-Vasa,Bangalore,Fast Food Chain,Burger,2018,3.9,2.4,26,27,30221.0,3,1119.3,11.11,3,2.09,2.0.0-phase05-real-panel
+R01464,Lal-Natt,Chennai,Cloud Kitchen,Desserts,2026,3.9,5.3,30,29,28963.0,1,998.72,3.45,3,2.18,2.0.0-phase05-real-panel
+R01465,Kala Inc,Coimbatore,Cafe,Burger,2024,3.7,8.3,28,32,31131.0,3,972.84,9.38,3,2.82,2.0.0-phase05-real-panel
+R01466,Kade Inc,Hyderabad,Cloud Kitchen,Pizza,2017,4.3,5.3,15,36,26704.0,2,741.78,5.56,3,2.82,2.0.0-phase05-real-panel
+R01467,"Dalal, Ganesh and Gole",Chennai,Premium Restaurant,Desserts,2019,4.1,2.1,16,49,35734.0,2,729.27,4.08,3,4.09,2.0.0-phase05-real-panel
+R01468,Guha Ltd,Chennai,Cafe,Beverages,2020,4.6,2.2,23,35,24279.0,2,693.69,5.71,3,2.91,2.0.0-phase05-real-panel
+R01469,Narang LLC,Chennai,Fast Food Chain,North Indian,2025,4.6,5.8,18,28,31578.0,0,1127.79,0.0,3,2.45,2.0.0-phase05-real-panel
+R01470,Narayanan and Sons,Bangalore,Budget Restaurant,Biryani,2019,4.4,2.4,17,39,34352.0,1,880.82,2.56,3,3.36,2.0.0-phase05-real-panel
+R01471,"Gaba, Saran and Bath",Hyderabad,Budget Restaurant,South Indian,2021,4.2,5.8,25,44,33429.0,3,759.75,6.82,3,3.64,2.0.0-phase05-real-panel
+R01472,"Venkataraman, Mittal and Goyal",Bangalore,Premium Restaurant,South Indian,2017,4.6,7.6,30,41,44031.0,0,1073.93,0.0,3,3.55,2.0.0-phase05-real-panel
+R01473,"Vohra, Doctor and Thakur",Hyderabad,Budget Restaurant,South Indian,2026,5.0,4.9,22,29,28725.0,2,990.52,6.9,3,2.45,2.0.0-phase05-real-panel
+R01474,Buch-Chauhan,Chennai,Budget Restaurant,Chinese,2024,3.6,4.0,25,25,24042.0,0,961.68,0.0,3,2.0,2.0.0-phase05-real-panel
+R01475,Chakrabarti-Banerjee,Hyderabad,Cafe,Pizza,2026,4.1,4.6,15,31,30671.0,2,989.39,6.45,3,2.55,2.0.0-phase05-real-panel
+R01476,"Gour, Biswas and Pingle",Hyderabad,Budget Restaurant,Pizza,2024,5.0,4.3,26,34,32709.0,4,962.03,11.76,3,3.09,2.0.0-phase05-real-panel
+R01477,"Swamy, Madan and Gupta",Chennai,Cafe,Biryani,2018,4.3,2.2,26,22,14202.0,1,645.55,4.55,3,1.73,2.0.0-phase05-real-panel
+R01478,Dutta-Sur,Coimbatore,Cafe,Beverages,2020,4.7,8.7,22,30,35928.0,0,1197.6,0.0,3,2.45,2.0.0-phase05-real-panel
+R01479,"Raman, Chhabra and Dutta",Bangalore,Premium Restaurant,Healthy Foods,2024,4.4,5.5,19,40,49440.0,1,1236.0,2.5,3,3.64,2.0.0-phase05-real-panel
+R01480,Choudhry and Sons,Hyderabad,Fast Food Chain,Biryani,2022,4.9,9.0,18,32,29875.0,1,933.59,3.12,3,2.55,2.0.0-phase05-real-panel
+R01481,Bhatnagar-Comar,Coimbatore,Premium Restaurant,North Indian,2016,4.5,9.2,19,33,29495.0,1,893.79,3.03,3,2.91,2.0.0-phase05-real-panel
+R01482,Chowdhury-Chadha,Chennai,Fast Food Chain,Biryani,2018,3.7,5.1,16,28,33123.0,1,1182.96,3.57,3,2.27,2.0.0-phase05-real-panel
+R01483,"Magar, Seth and Varty",Chennai,Cafe,Burger,2025,4.7,9.3,22,37,31524.0,0,852.0,0.0,3,3.18,2.0.0-phase05-real-panel
+R01484,Soni Ltd,Chennai,Cafe,South Indian,2016,4.8,4.1,25,32,37865.0,2,1183.28,6.25,3,2.82,2.0.0-phase05-real-panel
+R01485,Kala-Padmanabhan,Coimbatore,Fast Food Chain,North Indian,2026,3.6,9.6,23,26,23244.0,2,894.0,7.69,3,2.09,2.0.0-phase05-real-panel
+R01486,Oommen Inc,Coimbatore,Cafe,North Indian,2020,4.0,2.3,18,27,28557.0,1,1057.67,3.7,3,2.18,2.0.0-phase05-real-panel
+R01487,Sahni-Bose,Bangalore,Budget Restaurant,Burger,2021,4.1,3.5,30,34,40271.0,2,1184.44,5.88,3,2.91,2.0.0-phase05-real-panel
+R01488,Brar and Sons,Chennai,Premium Restaurant,North Indian,2021,4.6,4.5,21,38,36826.0,1,969.11,2.63,3,3.18,2.0.0-phase05-real-panel
+R01489,Ratta-Bala,Bangalore,Cloud Kitchen,Biryani,2018,4.4,7.0,24,21,20551.0,2,978.62,9.52,3,1.73,2.0.0-phase05-real-panel
+R01490,"Pall, Edwin and Kata",Vijayawada,Cafe,South Indian,2023,4.8,2.6,30,27,30958.0,0,1146.59,0.0,3,2.27,2.0.0-phase05-real-panel
+R01491,"Banerjee, Saha and Basak",Chennai,Cloud Kitchen,Biryani,2023,4.0,5.3,27,29,33745.0,1,1163.62,3.45,3,2.45,2.0.0-phase05-real-panel
+R01492,"Dada, Mistry and Ganguly",Chennai,Premium Restaurant,Chinese,2017,3.8,5.6,22,37,38634.0,3,1044.16,8.11,3,3.0,2.0.0-phase05-real-panel
+R01493,"Kuruvilla, Sastry and Batta",Chennai,Cafe,Pizza,2017,5.0,3.7,16,24,18798.0,0,783.25,0.0,3,1.73,2.0.0-phase05-real-panel
+R01494,Narula-Ram,Bangalore,Cafe,Chinese,2020,4.2,6.9,30,39,40427.0,1,1036.59,2.56,3,3.36,2.0.0-phase05-real-panel
+R01495,"Minhas, Batra and Chaudry",Hyderabad,Cloud Kitchen,North Indian,2023,3.8,4.9,27,26,20455.0,0,786.73,0.0,3,2.18,2.0.0-phase05-real-panel
+R01496,"Kaur, Khosla and Patel",Chennai,Fast Food Chain,North Indian,2026,3.8,5.2,24,37,37475.0,4,1012.84,10.81,3,3.09,2.0.0-phase05-real-panel
+R01497,Arya Group,Hyderabad,Fast Food Chain,Biryani,2023,4.3,9.4,26,26,29039.0,0,1116.88,0.0,3,2.18,2.0.0-phase05-real-panel
+R01498,"Ravel, Dugar and Choudhry",Hyderabad,Premium Restaurant,Pizza,2026,4.4,2.9,26,39,35638.0,4,913.79,10.26,3,3.45,2.0.0-phase05-real-panel
+R01499,"Kanda, Samra and Rajagopal",Bangalore,Premium Restaurant,Desserts,2025,4.7,8.6,23,31,28449.0,0,917.71,0.0,3,2.45,2.0.0-phase05-real-panel
+R01500,Pandey-Srinivasan,Coimbatore,Cloud Kitchen,North Indian,2021,4.3,8.9,20,30,33141.0,4,1104.7,13.33,3,2.64,2.0.0-phase05-real-panel

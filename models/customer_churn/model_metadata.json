@@ -1,0 +1,33 @@
+{
+    "generated_at_utc": "2026-11-11T06:51:18Z",
+    "model_name": "NovaNest Customer Churn Predictor",
+    "model_version": "2.0.0-phase05-leakfree",
+    "random_seed": 42,
+    "selected_algorithm": "RandomForest_Calibrated",
+    "forbidden_leakage_features_excluded": [
+        "Recency",
+        "Is_Churned",
+        "Future_Orders",
+        "Total_Timeline_Recency",
+        "Total_Timeline_Frequency"
+    ],
+    "training_data_source": "datasets/cleaned/orders.csv + customers.csv + ratings_reviews.csv (49,971 orders)",
+    "data_audit": {
+        "train_cohort": {
+            "dataset": "churn_train",
+            "row_count": 4969,
+            "column_count": 17,
+            "null_counts": {},
+            "inf_counts": {},
+            "zero_variance_columns": []
+        },
+        "test_cohort": {
+            "dataset": "churn_test",
+            "row_count": 4999,
+            "column_count": 17,
+            "null_counts": {},
+            "inf_counts": {},
+            "zero_variance_columns": []
+        }
+    }
+}

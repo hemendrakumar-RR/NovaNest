@@ -1,0 +1,21 @@
+{
+    "generated_at_utc": "2026-11-11T06:45:54Z",
+    "model_name": "NovaNest Restaurant Monthly Throughput Predictor",
+    "model_version": "2.0.0-phase05-real-panel",
+    "random_seed": 42,
+    "selected_algorithm": "Ridge_L2_Regression",
+    "forbidden_leakage_features_excluded": [
+        "Total_Orders",
+        "Total_Revenue",
+        "Actual_Next_Month_Orders",
+        "Predicted_Next_Month_Orders"
+    ],
+    "data_audit": {
+        "dataset": "restaurant_panel",
+        "row_count": 12000,
+        "column_count": 16,
+        "null_counts": {},
+        "inf_counts": {},
+        "zero_variance_columns": []
+    }
+}

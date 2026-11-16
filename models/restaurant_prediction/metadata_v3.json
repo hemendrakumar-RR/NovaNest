@@ -1,0 +1,193 @@
+{
+  "model_name": "restaurant_prediction",
+  "version": "v3",
+  "algorithm": "Ridge_L2_MultiTarget",
+  "model_type": "regression",
+  "created_at": "2026-11-14T18:16:21.159482+00:00",
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates limited variance capture (R\u00b2=0.0000, MAE=infm). Target is uniformly distributed with low underlying feature correlation. Agents must communicate prediction intervals and operational mean baselines.",
+  "features": [
+    "prev_1m_orders",
+    "prev_2m_orders",
+    "prev_3m_orders",
+    "trailing_3m_avg_orders",
+    "trailing_3m_std_orders",
+    "expanding_avg_monthly_orders",
+    "trailing_3m_avg_revenue",
+    "trailing_3m_aov",
+    "trailing_3m_cancel_rate",
+    "orders_momentum_1m_vs_3m",
+    "avg_rating",
+    "delivery_radius_km",
+    "commission_percentage",
+    "opening_year",
+    "month_sin",
+    "month_cos",
+    "city",
+    "restaurant_type",
+    "cuisine_type"
+  ],
+  "feature_count": 19,
+  "hyperparameters": {
+    "best_order_algorithm": "Ridge_L2",
+    "targets": [
+      "orders",
+      "revenue",
+      "ratings"
+    ]
+  },
+  "evaluation_metrics": {
+    "benchmark_orders": {
+      "Baseline_GlobalTrainMean": {
+        "n_samples": 1500,
+        "mae": 1.3351,
+        "median_ae": 1.256,
+        "rmse": 1.6894,
+        "r2_score": -0.0106,
+        "mape_pct": 51.99,
+        "mean_bias_error": -0.1727,
+        "max_abs_error": 7.256,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "Baseline_RestaurantExpandingMean": {
+        "n_samples": 1500,
+        "mae": 1.3795,
+        "median_ae": 1.1,
+        "rmse": 1.7541,
+        "r2_score": -0.0894,
+        "mape_pct": 54.25,
+        "mean_bias_error": -0.1553,
+        "max_abs_error": 6.7,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "Baseline_PrevMonthOrders": {
+        "n_samples": 1500,
+        "mae": 1.8067,
+        "median_ae": 1.5,
+        "rmse": 2.3321,
+        "r2_score": -0.9256,
+        "mape_pct": 72.24,
+        "mean_bias_error": -0.1907,
+        "max_abs_error": 8.0,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "Ridge_L2": {
+        "n_samples": 1500,
+        "mae": 1.3248,
+        "median_ae": 1.1069,
+        "rmse": 1.6829,
+        "r2_score": -0.0027,
+        "mape_pct": 52.7,
+        "mean_bias_error": -0.1079,
+        "max_abs_error": 7.1825,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "HistGradientBoosting": {
+        "n_samples": 1500,
+        "mae": 1.3326,
+        "median_ae": 1.1467,
+        "rmse": 1.687,
+        "r2_score": -0.0076,
+        "mape_pct": 52.22,
+        "mean_bias_error": -0.1596,
+        "max_abs_error": 7.1454,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "LightGBM": {
+        "n_samples": 1500,
+        "mae": 1.3342,
+        "median_ae": 1.1072,
+        "rmse": 1.6942,
+        "r2_score": -0.0162,
+        "mape_pct": 52.47,
+        "mean_bias_error": -0.1512,
+        "max_abs_error": 7.002,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      },
+      "XGBoost": {
+        "n_samples": 1500,
+        "mae": 1.3305,
+        "median_ae": 1.1211,
+        "rmse": 1.689,
+        "r2_score": -0.0101,
+        "mape_pct": 52.37,
+        "mean_bias_error": -0.1516,
+        "max_abs_error": 7.1823,
+        "target_mean": 2.9167,
+        "target_std": 1.6806
+      }
+    },
+    "benchmark_revenue": {
+      "Baseline_Mean": {
+        "n_samples": 1500,
+        "mae": 1552.024,
+        "median_ae": 1302.8866,
+        "rmse": 2004.9952,
+        "r2_score": -0.0071,
+        "mape_pct": 101.57,
+        "mean_bias_error": -168.5499,
+        "max_abs_error": 9358.3866,
+        "target_mean": 2817.1633,
+        "target_std": 1997.8981
+      },
+      "Baseline_Trailing3mRevenue": {
+        "n_samples": 1500,
+        "mae": 1734.3553,
+        "median_ae": 1430.8333,
+        "rmse": 2225.9909,
+        "r2_score": -0.2414,
+        "mape_pct": 107.03,
+        "mean_bias_error": -216.522,
+        "max_abs_error": 8541.0,
+        "target_mean": 2817.1633,
+        "target_std": 1997.8981
+      },
+      "Ridge_L2": {
+        "n_samples": 1500,
+        "mae": 1546.9268,
+        "median_ae": 1302.8634,
+        "rmse": 1983.6472,
+        "r2_score": 0.0142,
+        "mape_pct": 103.54,
+        "mean_bias_error": -90.9985,
+        "max_abs_error": 9045.1807,
+        "target_mean": 2817.1633,
+        "target_std": 1997.8981
+      },
+      "XGBoost": {
+        "n_samples": 1500,
+        "mae": 1545.7479,
+        "median_ae": 1299.2938,
+        "rmse": 1994.4275,
+        "r2_score": 0.0035,
+        "mape_pct": 100.44,
+        "mean_bias_error": -172.2459,
+        "max_abs_error": 9090.9736,
+        "target_mean": 2817.1633,
+        "target_std": 1997.8981
+      }
+    },
+    "rating_distribution": {
+      "mean_rating": 4.25,
+      "std_rating": 0.43,
+      "min_rating": 3.5,
+      "max_rating": 5.0
+    },
+    "order_mae": 1.3248,
+    "order_rmse": 1.6829,
+    "order_r2": -0.0027,
+    "revenue_mae": 1546.9268,
+    "residual_std_orders": 1.68
+  },
+  "dataset_sha256": {
+    "restaurants.csv": "60af2dfa2fe7b51376a36bfbe53f4bf75d9cc0c5e0e43231fe3fd3a290c8a925",
+    "orders.csv": "e54c3a9e829bc4620a2a7e6ba90b96db46602da141473c11e18b80272238856e"
+  },
+  "notes": "Phase 07 multi-target restaurant performance optimization with prediction intervals and city breakdowns."
+}

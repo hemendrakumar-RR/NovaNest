@@ -1,0 +1,229 @@
+{
+  "model": "Delivery ETA Optimization",
+  "version": "v3",
+  "benchmarks": {
+    "Baseline_Mean": {
+      "n_samples": 9995,
+      "mae": 11.5123,
+      "median_ae": 11.0,
+      "rmse": 13.3186,
+      "r2_score": -0.0006,
+      "mape_pct": 38.5,
+      "mean_bias_error": -0.3325,
+      "max_abs_error": 23.0,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "Ridge_L2": {
+      "n_samples": 9995,
+      "mae": 11.5208,
+      "median_ae": 11.4596,
+      "rmse": 13.3196,
+      "r2_score": -0.0008,
+      "mape_pct": 38.93,
+      "mean_bias_error": 0.0544,
+      "max_abs_error": 23.5698,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "RandomForest": {
+      "n_samples": 9995,
+      "mae": 11.5254,
+      "median_ae": 11.4614,
+      "rmse": 13.3245,
+      "r2_score": -0.0015,
+      "mape_pct": 38.93,
+      "mean_bias_error": 0.0435,
+      "max_abs_error": 23.9897,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "HistGradientBoosting": {
+      "n_samples": 9995,
+      "mae": 11.5158,
+      "median_ae": 11.493,
+      "rmse": 13.3159,
+      "r2_score": -0.0002,
+      "mape_pct": 38.89,
+      "mean_bias_error": 0.0365,
+      "max_abs_error": 24.6568,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "LightGBM": {
+      "n_samples": 9995,
+      "mae": 11.5281,
+      "median_ae": 11.4743,
+      "rmse": 13.3346,
+      "r2_score": -0.003,
+      "mape_pct": 38.95,
+      "mean_bias_error": 0.064,
+      "max_abs_error": 26.2907,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    },
+    "XGBoost": {
+      "n_samples": 9995,
+      "mae": 11.5222,
+      "median_ae": 11.4743,
+      "rmse": 13.3314,
+      "r2_score": -0.0025,
+      "mape_pct": 38.94,
+      "mean_bias_error": 0.0695,
+      "max_abs_error": 26.3553,
+      "target_mean": 37.3325,
+      "target_std": 13.3144
+    }
+  },
+  "selected_model": "HistGradientBoosting",
+  "residual_std_minutes": 13.32,
+  "stratified_breakdowns": {
+    "by_city": {
+      "Bangalore": {
+        "count": 2565,
+        "mae_minutes": 11.75,
+        "rmse_minutes": 13.56,
+        "mean_actual_minutes": 37.43
+      },
+      "Chennai": {
+        "count": 2945,
+        "mae_minutes": 11.47,
+        "rmse_minutes": 13.3,
+        "mean_actual_minutes": 37.64
+      },
+      "Coimbatore": {
+        "count": 1380,
+        "mae_minutes": 11.41,
+        "rmse_minutes": 13.19,
+        "mean_actual_minutes": 37.53
+      },
+      "Hyderabad": {
+        "count": 2090,
+        "mae_minutes": 11.53,
+        "rmse_minutes": 13.3,
+        "mean_actual_minutes": 36.75
+      },
+      "Vijayawada": {
+        "count": 1015,
+        "mae_minutes": 11.18,
+        "rmse_minutes": 12.95,
+        "mean_actual_minutes": 37.12
+      }
+    },
+    "by_distance_tier": {
+      "0-3km (Hyperlocal)": {
+        "count": 1899,
+        "mae_minutes": 11.35,
+        "rmse_minutes": 13.16,
+        "mean_actual_minutes": 37.28
+      },
+      "3-7km (Mid-range)": {
+        "count": 3666,
+        "mae_minutes": 11.49,
+        "rmse_minutes": 13.29,
+        "mean_actual_minutes": 37.4
+      },
+      "7-15km (Long-range)": {
+        "count": 4430,
+        "mae_minutes": 11.61,
+        "rmse_minutes": 13.4,
+        "mean_actual_minutes": 37.3
+      }
+    },
+    "by_vehicle_type": {
+      "Bike": {
+        "count": 4915,
+        "mae_minutes": 11.55,
+        "rmse_minutes": 13.36,
+        "mean_actual_minutes": 37.41
+      },
+      "Scooter": {
+        "count": 5080,
+        "mae_minutes": 11.48,
+        "rmse_minutes": 13.28,
+        "mean_actual_minutes": 37.26
+      }
+    }
+  },
+  "global_feature_importance": {
+    "delivery_radius_km": 0.2747,
+    "quantity": 0.1099,
+    "vehicle_type_Bike": 0.0931,
+    "dow_sin": 0.0845,
+    "dow_cos": 0.0731,
+    "restaurant_city_Chennai": 0.0727,
+    "hour_cos": 0.0673,
+    "hour_sin": 0.0566,
+    "cuisine_type_North Indian": 0.0454,
+    "shift_type_Morning": 0.0294,
+    "restaurant_city_Hyderabad": 0.0289,
+    "vehicle_type_Scooter": 0.0278,
+    "order_amount": 0.0249,
+    "restaurant_type_Premium Restaurant": 0.0061,
+    "restaurant_city_Vijayawada": 0.0056
+  },
+  "local_explanation_sample": {
+    "predicted_value": 37.7517,
+    "base_value": 37.3927,
+    "top_positive_drivers": {
+      "cuisine_type_Burger": 0.394,
+      "vehicle_type_Bike": 0.149,
+      "delivery_fee": 0.1385,
+      "delivery_radius_km": 0.1264,
+      "restaurant_city_Hyderabad": 0.1221
+    },
+    "top_negative_drivers": {
+      "experience_years": -0.302,
+      "restaurant_type_Budget Restaurant": -0.1307,
+      "restaurant_city_Coimbatore": -0.0415,
+      "dow_sin": -0.024,
+      "restaurant_type_Cafe": -0.014
+    },
+    "full_contributions": {
+      "distance_km": 0.0045,
+      "quantity": 0.0122,
+      "order_amount": 0.0853,
+      "delivery_fee": 0.1385,
+      "hour_sin": 0.0339,
+      "hour_cos": 0.0068,
+      "dow_sin": -0.024,
+      "dow_cos": 0.0493,
+      "is_weekend": 0.0,
+      "is_lunch_peak": -0.0011,
+      "is_dinner_peak": -0.0003,
+      "experience_years": -0.302,
+      "avg_rating": 0.0093,
+      "delivery_radius_km": 0.1264,
+      "distance_to_radius_ratio": 0.1069,
+      "cross_city_flag": 0.0,
+      "vehicle_type_Bike": 0.149,
+      "vehicle_type_Scooter": 0.0,
+      "shift_type_Afternoon": 0.0244,
+      "shift_type_Evening": -0.0005,
+      "shift_type_Morning": -0.0005,
+      "shift_type_Night": 0.0674,
+      "restaurant_city_Bangalore": 0.012,
+      "restaurant_city_Chennai": -0.0119,
+      "restaurant_city_Coimbatore": -0.0415,
+      "restaurant_city_Hyderabad": 0.1221,
+      "restaurant_city_Vijayawada": -0.0012,
+      "restaurant_type_Budget Restaurant": -0.1307,
+      "restaurant_type_Cafe": -0.014,
+      "restaurant_type_Cloud Kitchen": 0.0054,
+      "restaurant_type_Fast Food Chain": -0.0103,
+      "restaurant_type_Premium Restaurant": -0.0,
+      "cuisine_type_Beverages": -0.0068,
+      "cuisine_type_Biryani": 0.0124,
+      "cuisine_type_Burger": 0.394,
+      "cuisine_type_Chinese": -0.0044,
+      "cuisine_type_Desserts": 0.0038,
+      "cuisine_type_Healthy Foods": 0.0009,
+      "cuisine_type_North Indian": -0.0111,
+      "cuisine_type_Pizza": -0.0027,
+      "cuisine_type_South Indian": -0.0061
+    },
+    "narrative": "Primary upward drivers: cuisine_type_Burger (+0.39), vehicle_type_Bike (+0.15), delivery_fee (+0.14); Primary downward dampeners: experience_years (-0.30), restaurant_type_Budget Restaurant (-0.13), restaurant_city_Coimbatore (-0.04)"
+  },
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates limited variance capture (R\u00b2=-0.0002, MAE=11.52m). Target is uniformly distributed with low underlying feature correlation. Agents must communicate prediction intervals and operational mean baselines."
+}

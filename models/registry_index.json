@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-11-15T09:01:43.594250+00:00",
+  "models": {
+    "customer_churn": {
+      "active_version": "v3",
+      "available_versions": [
+        "v1",
+        "v2",
+        "v3"
+      ]
+    },
+    "eta_prediction": {
+      "active_version": "v3",
+      "available_versions": [
+        "v1",
+        "v2",
+        "v3"
+      ]
+    },
+    "demand_forecast": {
+      "active_version": "v3",
+      "available_versions": [
+        "v1",
+        "v2",
+        "v3"
+      ]
+    },
+    "restaurant_prediction": {
+      "active_version": "v3",
+      "available_versions": [
+        "v1",
+        "v2",
+        "v3"
+      ]
+    },
+    "anomaly_detection": {
+      "active_version": "v3",
+      "available_versions": [
+        "v1",
+        "v2",
+        "v3"
+      ]
+    }
+  }
+}

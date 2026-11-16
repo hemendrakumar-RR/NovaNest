@@ -1,0 +1,188 @@
+{
+  "model": "Customer Churn Optimization",
+  "version": "v3",
+  "benchmarks": {
+    "Heuristic_Recency_Baseline": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.8432,
+      "precision": 0.0858,
+      "recall": 0.0867,
+      "f1_score": 0.0862,
+      "roc_auc": 0.5015,
+      "pr_auc": 0.0869,
+      "brier_score": 0.1299,
+      "confusion_matrix": {
+        "TP": 37,
+        "TN": 4178,
+        "FP": 394,
+        "FN": 390
+      }
+    },
+    "LogisticRegression_L2": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.4887,
+      "pr_auc": 0.0842,
+      "brier_score": 0.0782,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    },
+    "RandomForest": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5062,
+      "pr_auc": 0.095,
+      "brier_score": 0.0781,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    },
+    "HistGradientBoosting": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.4911,
+      "pr_auc": 0.0825,
+      "brier_score": 0.0782,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    },
+    "LightGBM": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.4775,
+      "pr_auc": 0.0806,
+      "brier_score": 0.0782,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    },
+    "XGBoost": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.4861,
+      "pr_auc": 0.0832,
+      "brier_score": 0.0781,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    }
+  },
+  "best_model": "RandomForest",
+  "global_feature_importance": {
+    "Pre_Cutoff_Recency_Days": 0.0435,
+    "Orders_Last_30d": 0.0435,
+    "Orders_Last_60d": 0.0435,
+    "Orders_Last_90d": 0.0435,
+    "Lookback_Frequency": 0.0435,
+    "Lookback_Monetary": 0.0435,
+    "Lookback_AOV": 0.0435,
+    "Spend_Last_60d": 0.0435,
+    "Recent_vs_Prior_Order_Ratio": 0.0435,
+    "Cancellation_Rate_Pre": 0.0435,
+    "Discount_Usage_Pct_Pre": 0.0435,
+    "Avg_Inter_Order_Gap_Days": 0.0435,
+    "Lookback_Active_Span_Days": 0.0435,
+    "Avg_Rating_Given_Pre": 0.0435,
+    "Delivered_Rate_Pre": 0.0435
+  },
+  "retention_segments": {
+    "total_active_cohort": 4999,
+    "high_risk_count": 0,
+    "high_risk_pct": 0.0,
+    "segments": {
+      "high_value_at_risk": {
+        "count": 0,
+        "avg_spend": 0.0,
+        "recommended_action": "Dedicated account manager outreach, personalized VIP reactivation credit (\u20b9300+)."
+      },
+      "discount_sensitive_at_risk": {
+        "count": 0,
+        "avg_discount_pct": NaN,
+        "recommended_action": "Dynamic limited-time flash discount (15-20% off next 2 orders)."
+      },
+      "loyal_advocates": {
+        "count": 1000,
+        "avg_spend": 8635.33,
+        "recommended_action": "Early access to new restaurant launches, loyalty milestone perks."
+      }
+    }
+  },
+  "local_explanation_sample": {
+    "predicted_value": 0.1026,
+    "base_value": 0.1026,
+    "top_positive_drivers": {},
+    "top_negative_drivers": {},
+    "full_contributions": {
+      "Pre_Cutoff_Recency_Days": 0.0,
+      "Orders_Last_30d": 0.0,
+      "Orders_Last_60d": 0.0,
+      "Orders_Last_90d": 0.0,
+      "Lookback_Frequency": 0.0,
+      "Lookback_Monetary": 0.0,
+      "Lookback_AOV": 0.0,
+      "Spend_Last_60d": 0.0,
+      "Recent_vs_Prior_Order_Ratio": 0.0,
+      "Cancellation_Rate_Pre": 0.0,
+      "Discount_Usage_Pct_Pre": 0.0,
+      "Avg_Inter_Order_Gap_Days": 0.0,
+      "Lookback_Active_Span_Days": 0.0,
+      "Avg_Rating_Given_Pre": 0.0,
+      "Delivered_Rate_Pre": 0.0,
+      "persona_Family": 0.0,
+      "persona_Student": 0.0,
+      "persona_Working Professional": 0.0,
+      "city_Bangalore": 0.0,
+      "city_Chennai": 0.0,
+      "city_Coimbatore": 0.0,
+      "city_Hyderabad": 0.0,
+      "city_Vijayawada": 0.0
+    },
+    "narrative": "Prediction matches historical baseline average."
+  },
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates near-baseline discriminative ability (ROC-AUC ~ 0.50-0.55). Primary driver is uniform synthetic customer feature distribution. Agents must disclose uncertainty and recommend operational heuristic benchmarks."
+}

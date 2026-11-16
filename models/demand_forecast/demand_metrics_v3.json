@@ -1,0 +1,208 @@
+{
+  "model": "City Demand Forecasting Optimization",
+  "version": "v3",
+  "benchmarks": {
+    "Seasonal_Naive_lag7": {
+      "n_samples": 70,
+      "mae": 7.1714,
+      "median_ae": 6.0,
+      "rmse": 8.5973,
+      "r2_score": 0.373,
+      "mape_pct": 32.02,
+      "mean_bias_error": 0.8286,
+      "max_abs_error": 22.0,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 26.31,
+      "mase": 1.0
+    },
+    "Rolling_Mean_7d": {
+      "n_samples": 70,
+      "mae": 5.0735,
+      "median_ae": 4.2857,
+      "rmse": 6.2318,
+      "r2_score": 0.6705,
+      "mape_pct": 22.68,
+      "mean_bias_error": 0.6122,
+      "max_abs_error": 17.0,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 18.61,
+      "mase": 0.707
+    },
+    "Ridge_L2": {
+      "n_samples": 70,
+      "mae": 4.6943,
+      "median_ae": 4.4243,
+      "rmse": 5.7168,
+      "r2_score": 0.7227,
+      "mape_pct": 21.48,
+      "mean_bias_error": 0.791,
+      "max_abs_error": 13.08,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 17.22,
+      "mase": 0.655
+    },
+    "HistGradientBoosting": {
+      "n_samples": 70,
+      "mae": 4.6878,
+      "median_ae": 4.1245,
+      "rmse": 6.135,
+      "r2_score": 0.6807,
+      "mape_pct": 20.61,
+      "mean_bias_error": 1.1505,
+      "max_abs_error": 17.4581,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 17.2,
+      "mase": 0.654
+    },
+    "LightGBM": {
+      "n_samples": 70,
+      "mae": 4.7447,
+      "median_ae": 4.3969,
+      "rmse": 6.2085,
+      "r2_score": 0.673,
+      "mape_pct": 21.07,
+      "mean_bias_error": 1.0619,
+      "max_abs_error": 17.2457,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 17.41,
+      "mase": 0.662
+    },
+    "XGBoost": {
+      "n_samples": 70,
+      "mae": 4.8654,
+      "median_ae": 4.7444,
+      "rmse": 6.2687,
+      "r2_score": 0.6666,
+      "mape_pct": 21.34,
+      "mean_bias_error": 0.823,
+      "max_abs_error": 17.5454,
+      "target_mean": 27.2571,
+      "target_std": 10.8571,
+      "wape_pct": 17.85,
+      "mase": 0.678
+    }
+  },
+  "selected_model": "HistGradientBoosting",
+  "rolling_origin_backtest": [
+    {
+      "fold": 1,
+      "window_start": "2026-05-07 00:00:00",
+      "window_end": "2026-05-20 00:00:00",
+      "model_mae": 4.51,
+      "model_rmse": 5.64,
+      "seasonal_naive_mae": 6.26
+    },
+    {
+      "fold": 2,
+      "window_start": "2026-05-21 00:00:00",
+      "window_end": "2026-06-03 00:00:00",
+      "model_mae": 4.31,
+      "model_rmse": 5.44,
+      "seasonal_naive_mae": 6.24
+    },
+    {
+      "fold": 3,
+      "window_start": "2026-06-04 00:00:00",
+      "window_end": "2026-06-17 00:00:00",
+      "model_mae": 4.69,
+      "model_rmse": 5.72,
+      "seasonal_naive_mae": 7.17
+    }
+  ],
+  "per_city_breakdown": {
+    "Bangalore": {
+      "mean_daily_actual": 33.1,
+      "mae": 7.73,
+      "rmse": 9.32,
+      "within_city_r2": -1.0031
+    },
+    "Chennai": {
+      "mean_daily_actual": 40.2,
+      "mae": 4.57,
+      "rmse": 5.95,
+      "within_city_r2": 0.052
+    },
+    "Coimbatore": {
+      "mean_daily_actual": 21.3,
+      "mae": 3.4,
+      "rmse": 4.37,
+      "within_city_r2": 0.1451
+    },
+    "Hyderabad": {
+      "mean_daily_actual": 28.7,
+      "mae": 4.44,
+      "rmse": 5.55,
+      "within_city_r2": -0.1444
+    },
+    "Vijayawada": {
+      "mean_daily_actual": 13.0,
+      "mae": 3.3,
+      "rmse": 4.01,
+      "within_city_r2": 0.0384
+    }
+  },
+  "global_feature_importance": {
+    "rolling_28": 0.4284,
+    "rolling_7": 0.2033,
+    "rolling_14": 0.1291,
+    "lag_28": 0.0435,
+    "lag_14": 0.0322,
+    "city_Coimbatore": 0.0301,
+    "city_Chennai": 0.0276,
+    "lag_7": 0.0255,
+    "rolling_std_7": 0.016,
+    "lag_1": 0.0151,
+    "month_cos": 0.0147,
+    "city_Bangalore": 0.0084,
+    "dow_cos": 0.0057,
+    "dow_sin": 0.0054,
+    "day_of_week": 0.0053
+  },
+  "local_explanation_sample": {
+    "predicted_value": 38.6201,
+    "base_value": 27.3302,
+    "top_positive_drivers": {
+      "rolling_28": 8.8798,
+      "rolling_7": 2.1008,
+      "rolling_14": 1.5252,
+      "rolling_std_7": 0.566,
+      "lag_7": 0.2233
+    },
+    "top_negative_drivers": {
+      "city_Chennai": -0.5889,
+      "city_Bangalore": -0.2747,
+      "month_cos": -0.2732,
+      "dow_cos": -0.2123,
+      "day_of_week": -0.1496
+    },
+    "full_contributions": {
+      "day_of_week": -0.1496,
+      "is_weekend": 0.0,
+      "dow_sin": 0.0228,
+      "dow_cos": -0.2123,
+      "month_sin": -0.0231,
+      "month_cos": -0.2732,
+      "lag_1": -0.1218,
+      "lag_7": 0.2233,
+      "lag_14": 0.2156,
+      "lag_28": -0.063,
+      "rolling_7": 2.1008,
+      "rolling_std_7": 0.566,
+      "rolling_14": 1.5252,
+      "rolling_28": 8.8798,
+      "city_Bangalore": -0.2747,
+      "city_Chennai": -0.5889,
+      "city_Coimbatore": 0.2098,
+      "city_Hyderabad": -0.0314,
+      "city_Vijayawada": 0.0
+    },
+    "narrative": "Primary upward drivers: rolling_28 (+8.88), rolling_7 (+2.10), rolling_14 (+1.53); Primary downward dampeners: city_Chennai (-0.59), city_Bangalore (-0.27), month_cos (-0.27)"
+  },
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates limited variance capture (R\u00b2=0.0000, MAE=4.69m). Target is uniformly distributed with low underlying feature correlation. Agents must communicate prediction intervals and operational mean baselines."
+}

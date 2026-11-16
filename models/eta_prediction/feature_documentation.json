@@ -1,0 +1,42 @@
+{
+    "generated_at_utc": "2026-11-11T06:43:57Z",
+    "numeric_features": [
+        "distance_km",
+        "quantity",
+        "order_amount",
+        "delivery_fee",
+        "hour_sin",
+        "hour_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_weekend",
+        "is_lunch_peak",
+        "is_dinner_peak",
+        "experience_years",
+        "avg_rating",
+        "delivery_radius_km",
+        "distance_to_radius_ratio",
+        "cross_city_flag"
+    ],
+    "categorical_features": [
+        "vehicle_type",
+        "shift_type",
+        "restaurant_city",
+        "restaurant_type",
+        "cuisine_type"
+    ],
+    "newly_added_features": [
+        "vehicle_type",
+        "shift_type",
+        "hour_sin / hour_cos",
+        "dow_sin / dow_cos",
+        "is_lunch_peak / is_dinner_peak",
+        "quantity",
+        "order_amount",
+        "delivery_fee",
+        "restaurant_type / cuisine_type / avg_rating / delivery_radius_km",
+        "distance_to_radius_ratio",
+        "cross_city_flag"
+    ],
+    "prohibited_fabricated_features": "Zero fabricated GPS coordinates, live road speeds, or synthetic traffic multipliers."
+}

@@ -1,0 +1,173 @@
+{
+  "model_name": "customer_churn",
+  "version": "v3",
+  "algorithm": "RandomForest_Calibrated",
+  "model_type": "classification",
+  "created_at": "2026-11-14T18:10:18.385057+00:00",
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates near-baseline discriminative ability (ROC-AUC ~ 0.50-0.55). Primary driver is uniform synthetic customer feature distribution. Agents must disclose uncertainty and recommend operational heuristic benchmarks.",
+  "features": [
+    "Pre_Cutoff_Recency_Days",
+    "Orders_Last_30d",
+    "Orders_Last_60d",
+    "Orders_Last_90d",
+    "Lookback_Frequency",
+    "Lookback_Monetary",
+    "Lookback_AOV",
+    "Spend_Last_60d",
+    "Recent_vs_Prior_Order_Ratio",
+    "Cancellation_Rate_Pre",
+    "Discount_Usage_Pct_Pre",
+    "Avg_Inter_Order_Gap_Days",
+    "Lookback_Active_Span_Days",
+    "Avg_Rating_Given_Pre",
+    "Delivered_Rate_Pre",
+    "persona",
+    "city"
+  ],
+  "feature_count": 17,
+  "hyperparameters": {
+    "best_algorithm": "RandomForest",
+    "calibration": "sigmoid"
+  },
+  "evaluation_metrics": {
+    "benchmark_comparison": {
+      "Heuristic_Recency_Baseline": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.8432,
+        "precision": 0.0858,
+        "recall": 0.0867,
+        "f1_score": 0.0862,
+        "roc_auc": 0.5015,
+        "pr_auc": 0.0869,
+        "brier_score": 0.1299,
+        "confusion_matrix": {
+          "TP": 37,
+          "TN": 4178,
+          "FP": 394,
+          "FN": 390
+        }
+      },
+      "LogisticRegression_L2": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.9146,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "roc_auc": 0.4887,
+        "pr_auc": 0.0842,
+        "brier_score": 0.0782,
+        "confusion_matrix": {
+          "TP": 0,
+          "TN": 4572,
+          "FP": 0,
+          "FN": 427
+        }
+      },
+      "RandomForest": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.9146,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "roc_auc": 0.5062,
+        "pr_auc": 0.095,
+        "brier_score": 0.0781,
+        "confusion_matrix": {
+          "TP": 0,
+          "TN": 4572,
+          "FP": 0,
+          "FN": 427
+        }
+      },
+      "HistGradientBoosting": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.9146,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "roc_auc": 0.4911,
+        "pr_auc": 0.0825,
+        "brier_score": 0.0782,
+        "confusion_matrix": {
+          "TP": 0,
+          "TN": 4572,
+          "FP": 0,
+          "FN": 427
+        }
+      },
+      "LightGBM": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.9146,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "roc_auc": 0.4775,
+        "pr_auc": 0.0806,
+        "brier_score": 0.0782,
+        "confusion_matrix": {
+          "TP": 0,
+          "TN": 4572,
+          "FP": 0,
+          "FN": 427
+        }
+      },
+      "XGBoost": {
+        "n_samples": 4999,
+        "positive_count": 427,
+        "positive_rate_pct": 8.54,
+        "accuracy": 0.9146,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "roc_auc": 0.4861,
+        "pr_auc": 0.0832,
+        "brier_score": 0.0781,
+        "confusion_matrix": {
+          "TP": 0,
+          "TN": 4572,
+          "FP": 0,
+          "FN": 427
+        }
+      }
+    },
+    "best_model_metrics": {
+      "n_samples": 4999,
+      "positive_count": 427,
+      "positive_rate_pct": 8.54,
+      "accuracy": 0.9146,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "roc_auc": 0.5062,
+      "pr_auc": 0.095,
+      "brier_score": 0.0781,
+      "confusion_matrix": {
+        "TP": 0,
+        "TN": 4572,
+        "FP": 0,
+        "FN": 427
+      }
+    },
+    "brier_score": 0.0781,
+    "roc_auc": 0.5062,
+    "pr_auc": 0.095,
+    "f1_score": 0.0
+  },
+  "dataset_sha256": {
+    "orders.csv": "e54c3a9e829bc4620a2a7e6ba90b96db46602da141473c11e18b80272238856e",
+    "customers.csv": "8fc7bf00231750c82e5396cf07988006be3a4f7d49c9db6429d6dce66a71cdb4",
+    "ratings_reviews.csv": "6e63d55c5dc780c4b63321ca45dc2686d833f9af25d03bfd3efe3aed052d0416"
+  },
+  "notes": "Phase 07 leak-free customer churn optimization with native TreeSHAP and retention segmentation."
+}

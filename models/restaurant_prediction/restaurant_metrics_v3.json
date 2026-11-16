@@ -1,0 +1,262 @@
+{
+  "model": "Restaurant Performance Optimization",
+  "version": "v3",
+  "targets": {
+    "orders": {
+      "benchmarks": {
+        "Baseline_GlobalTrainMean": {
+          "n_samples": 1500,
+          "mae": 1.3351,
+          "median_ae": 1.256,
+          "rmse": 1.6894,
+          "r2_score": -0.0106,
+          "mape_pct": 51.99,
+          "mean_bias_error": -0.1727,
+          "max_abs_error": 7.256,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "Baseline_RestaurantExpandingMean": {
+          "n_samples": 1500,
+          "mae": 1.3795,
+          "median_ae": 1.1,
+          "rmse": 1.7541,
+          "r2_score": -0.0894,
+          "mape_pct": 54.25,
+          "mean_bias_error": -0.1553,
+          "max_abs_error": 6.7,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "Baseline_PrevMonthOrders": {
+          "n_samples": 1500,
+          "mae": 1.8067,
+          "median_ae": 1.5,
+          "rmse": 2.3321,
+          "r2_score": -0.9256,
+          "mape_pct": 72.24,
+          "mean_bias_error": -0.1907,
+          "max_abs_error": 8.0,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "Ridge_L2": {
+          "n_samples": 1500,
+          "mae": 1.3248,
+          "median_ae": 1.1069,
+          "rmse": 1.6829,
+          "r2_score": -0.0027,
+          "mape_pct": 52.7,
+          "mean_bias_error": -0.1079,
+          "max_abs_error": 7.1825,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "HistGradientBoosting": {
+          "n_samples": 1500,
+          "mae": 1.3326,
+          "median_ae": 1.1467,
+          "rmse": 1.687,
+          "r2_score": -0.0076,
+          "mape_pct": 52.22,
+          "mean_bias_error": -0.1596,
+          "max_abs_error": 7.1454,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "LightGBM": {
+          "n_samples": 1500,
+          "mae": 1.3342,
+          "median_ae": 1.1072,
+          "rmse": 1.6942,
+          "r2_score": -0.0162,
+          "mape_pct": 52.47,
+          "mean_bias_error": -0.1512,
+          "max_abs_error": 7.002,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        },
+        "XGBoost": {
+          "n_samples": 1500,
+          "mae": 1.3305,
+          "median_ae": 1.1211,
+          "rmse": 1.689,
+          "r2_score": -0.0101,
+          "mape_pct": 52.37,
+          "mean_bias_error": -0.1516,
+          "max_abs_error": 7.1823,
+          "target_mean": 2.9167,
+          "target_std": 1.6806
+        }
+      },
+      "selected_model": "Ridge_L2"
+    },
+    "revenue": {
+      "benchmarks": {
+        "Baseline_Mean": {
+          "n_samples": 1500,
+          "mae": 1552.024,
+          "median_ae": 1302.8866,
+          "rmse": 2004.9952,
+          "r2_score": -0.0071,
+          "mape_pct": 101.57,
+          "mean_bias_error": -168.5499,
+          "max_abs_error": 9358.3866,
+          "target_mean": 2817.1633,
+          "target_std": 1997.8981
+        },
+        "Baseline_Trailing3mRevenue": {
+          "n_samples": 1500,
+          "mae": 1734.3553,
+          "median_ae": 1430.8333,
+          "rmse": 2225.9909,
+          "r2_score": -0.2414,
+          "mape_pct": 107.03,
+          "mean_bias_error": -216.522,
+          "max_abs_error": 8541.0,
+          "target_mean": 2817.1633,
+          "target_std": 1997.8981
+        },
+        "Ridge_L2": {
+          "n_samples": 1500,
+          "mae": 1546.9268,
+          "median_ae": 1302.8634,
+          "rmse": 1983.6472,
+          "r2_score": 0.0142,
+          "mape_pct": 103.54,
+          "mean_bias_error": -90.9985,
+          "max_abs_error": 9045.1807,
+          "target_mean": 2817.1633,
+          "target_std": 1997.8981
+        },
+        "XGBoost": {
+          "n_samples": 1500,
+          "mae": 1545.7479,
+          "median_ae": 1299.2938,
+          "rmse": 1994.4275,
+          "r2_score": 0.0035,
+          "mape_pct": 100.44,
+          "mean_bias_error": -172.2459,
+          "max_abs_error": 9090.9736,
+          "target_mean": 2817.1633,
+          "target_std": 1997.8981
+        }
+      },
+      "selected_model": "Ridge_L2"
+    },
+    "ratings": {
+      "mean_rating": 4.25,
+      "std_rating": 0.43,
+      "min_rating": 3.5,
+      "max_rating": 5.0
+    }
+  },
+  "residual_std_orders": 1.68,
+  "city_breakdown": {
+    "Bangalore": {
+      "restaurant_count": 380,
+      "mean_monthly_orders": 3.0,
+      "mae_orders": 1.32,
+      "mean_monthly_revenue": 2928.29
+    },
+    "Chennai": {
+      "restaurant_count": 454,
+      "mean_monthly_orders": 2.85,
+      "mae_orders": 1.34,
+      "mean_monthly_revenue": 2800.12
+    },
+    "Coimbatore": {
+      "restaurant_count": 216,
+      "mean_monthly_orders": 2.87,
+      "mae_orders": 1.34,
+      "mean_monthly_revenue": 2754.36
+    },
+    "Hyderabad": {
+      "restaurant_count": 305,
+      "mean_monthly_orders": 2.94,
+      "mae_orders": 1.36,
+      "mean_monthly_revenue": 2794.82
+    },
+    "Vijayawada": {
+      "restaurant_count": 145,
+      "mean_monthly_orders": 2.92,
+      "mae_orders": 1.19,
+      "mean_monthly_revenue": 2719.86
+    }
+  },
+  "global_feature_importance": {
+    "trailing_3m_aov": 0.1283,
+    "prev_2m_orders": 0.081,
+    "trailing_3m_avg_revenue": 0.0755,
+    "commission_percentage": 0.0686,
+    "delivery_radius_km": 0.0685,
+    "orders_momentum_1m_vs_3m": 0.0656,
+    "city_Vijayawada": 0.0552,
+    "prev_1m_orders": 0.0504,
+    "month_sin": 0.0441,
+    "expanding_avg_monthly_orders": 0.0428,
+    "cuisine_type_North Indian": 0.0422,
+    "opening_year": 0.0321,
+    "month_cos": 0.031,
+    "cuisine_type_Burger": 0.0294,
+    "trailing_3m_cancel_rate": 0.0227
+  },
+  "local_explanation_sample": {
+    "predicted_value": 2.7321,
+    "base_value": 2.7436,
+    "top_positive_drivers": {
+      "orders_momentum_1m_vs_3m": 0.0272,
+      "expanding_avg_monthly_orders": 0.0213,
+      "opening_year": 0.0192,
+      "month_cos": 0.0101,
+      "cuisine_type_North Indian": 0.01
+    },
+    "top_negative_drivers": {
+      "prev_2m_orders": -0.0514,
+      "commission_percentage": -0.0399,
+      "trailing_3m_aov": -0.0371,
+      "prev_1m_orders": -0.0247,
+      "trailing_3m_avg_orders": -0.0208
+    },
+    "full_contributions": {
+      "prev_1m_orders": -0.0247,
+      "prev_2m_orders": -0.0514,
+      "prev_3m_orders": -0.0011,
+      "trailing_3m_avg_orders": -0.0208,
+      "trailing_3m_std_orders": 0.0006,
+      "expanding_avg_monthly_orders": 0.0213,
+      "trailing_3m_avg_revenue": 0.0014,
+      "trailing_3m_aov": -0.0371,
+      "trailing_3m_cancel_rate": 0.0011,
+      "orders_momentum_1m_vs_3m": 0.0272,
+      "avg_rating": 0.0023,
+      "delivery_radius_km": 0.0056,
+      "commission_percentage": -0.0399,
+      "opening_year": 0.0192,
+      "month_sin": 0.0093,
+      "month_cos": 0.0101,
+      "city_Bangalore": -0.0005,
+      "city_Chennai": 0.0002,
+      "city_Coimbatore": 0.0011,
+      "city_Hyderabad": -0.003,
+      "city_Vijayawada": -0.0099,
+      "restaurant_type_Budget Restaurant": -0.0014,
+      "restaurant_type_Cafe": -0.0003,
+      "restaurant_type_Cloud Kitchen": 0.0027,
+      "restaurant_type_Fast Food Chain": -0.0002,
+      "restaurant_type_Premium Restaurant": -0.0006,
+      "cuisine_type_Beverages": -0.001,
+      "cuisine_type_Biryani": -0.0009,
+      "cuisine_type_Burger": -0.0052,
+      "cuisine_type_Chinese": -0.0001,
+      "cuisine_type_Desserts": -0.0003,
+      "cuisine_type_Healthy Foods": -0.0004,
+      "cuisine_type_North Indian": 0.01,
+      "cuisine_type_Pizza": -0.0002,
+      "cuisine_type_South Indian": 0.0009
+    },
+    "narrative": "Primary upward drivers: orders_momentum_1m_vs_3m (+0.03), expanding_avg_monthly_orders (+0.02), opening_year (+0.02); Primary downward dampeners: prev_2m_orders (-0.05), commission_percentage (-0.04), trailing_3m_aov (-0.04)"
+  },
+  "confidence_tier": "LOW_EMPIRICAL",
+  "confidence_caveat": "Empirical validation indicates limited variance capture (R\u00b2=0.0000, MAE=infm). Target is uniformly distributed with low underlying feature correlation. Agents must communicate prediction intervals and operational mean baselines."
+}

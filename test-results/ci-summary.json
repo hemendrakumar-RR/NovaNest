@@ -1,0 +1,71 @@
+{
+  "pipeline": "NovaNest CI/CD Automated Testing (Phase 06.12)",
+  "timestamp": "2026-11-15T13:19:59+0530",
+  "total_duration_seconds": 193.69,
+  "overall_status": "FAILED",
+  "metrics": {
+    "total_tests": 195,
+    "passed": 180,
+    "failed": 9,
+    "errors": 6,
+    "skipped": 0,
+    "pass_rate_pct": 92.31
+  },
+  "stages": [
+    {
+      "name": "Backend CI & Database Integration",
+      "total": 67,
+      "passed": 66,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 84.69,
+      "xml_report": "C:\\Users\\madha\\OneDrive\\Documents\\NovaNest-main\\test-results\\backend-results.xml",
+      "success": false
+    },
+    {
+      "name": "AI Platform & Multi-Agent Intelligence CI",
+      "total": 87,
+      "passed": 74,
+      "failures": 7,
+      "errors": 6,
+      "skipped": 0,
+      "duration": 74.798,
+      "xml_report": "C:\\Users\\madha\\OneDrive\\Documents\\NovaNest-main\\test-results\\ai-platform-results.xml",
+      "success": false
+    },
+    {
+      "name": "Frontend CI & Edge Router",
+      "total": 4,
+      "passed": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 17.581,
+      "xml_report": "C:\\Users\\madha\\OneDrive\\Documents\\NovaNest-main\\test-results\\frontend-results.xml",
+      "success": true
+    },
+    {
+      "name": "Docker CI, Observability & Container Runtime",
+      "total": 34,
+      "passed": 33,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 11.896,
+      "xml_report": "C:\\Users\\madha\\OneDrive\\Documents\\NovaNest-main\\test-results\\docker-results.xml",
+      "success": false
+    },
+    {
+      "name": "Security CI & Threat Modeling",
+      "total": 3,
+      "passed": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration": 0.004,
+      "xml_report": "C:\\Users\\madha\\OneDrive\\Documents\\NovaNest-main\\test-results\\security-results.xml",
+      "success": true
+    }
+  ]
+}

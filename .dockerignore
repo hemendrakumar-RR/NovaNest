@@ -1,0 +1,57 @@
+# ==============================================================================
+# NovaNest Docker Build Context Exclusion Rules (.dockerignore)
+# Prevents secret leakage, build context bloat, and cache invalidation
+# ==============================================================================
+
+# 1. Environment Secrets & Local Configurations
+.env
+.env.*
+!.env.example
+!.env.docker.example
+*.pem
+*.key
+*.crt
+
+# 2. Version Control & CI/CD
+.git/
+.gitignore
+.github/
+
+# 3. Node & Frontend Artifacts
+**/node_modules/
+frontend/dist/
+frontend/coverage/
+
+# 4. Python Cache & Virtual Environments
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 5. IDE & Editor Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 6. Large Data Files & Temporary Backups
+datasets/raw/
+powerbi/
+reports/
+NEWCHAGES/
+backup/
+scratch/
+*.log
+*.zip
+*.tar.gz

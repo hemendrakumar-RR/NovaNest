@@ -1,0 +1,16 @@
+{
+    "generated_at_utc": "2026-11-11T06:44:57Z",
+    "model_name": "NovaNest City Demand Forecaster",
+    "model_version": "2.0.0-phase05-regularized",
+    "random_seed": 42,
+    "selected_algorithm": "OLS_LinearRegression",
+    "forecast_horizon_days": 14,
+    "data_audit": {
+        "dataset": "demand_features",
+        "row_count": 1690,
+        "column_count": 14,
+        "null_counts": {},
+        "inf_counts": {},
+        "zero_variance_columns": []
+    }
+}

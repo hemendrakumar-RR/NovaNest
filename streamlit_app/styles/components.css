@@ -1,0 +1,304 @@
+/* ==========================================================================
+   NovaNest Component Styles — Professional Enterprise Widgets
+   ========================================================================== */
+
+/* Top Page Header */
+.nn-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid var(--nn-border);
+}
+
+.nn-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.nn-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--nn-accent-blue);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    width: fit-content;
+    margin-bottom: 0.25rem;
+}
+
+.nn-header-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--nn-text-primary);
+    margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.nn-header-subtitle {
+    font-size: 0.88rem;
+    color: var(--nn-text-secondary);
+    margin: 0;
+}
+
+/* Telemetry & Connection Pill */
+.nn-telemetry-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--nn-bg-card);
+    border: 1px solid var(--nn-border);
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--nn-radius-md);
+    box-shadow: var(--nn-shadow-card);
+}
+
+.nn-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.nn-pulse-dot.online {
+    background-color: var(--nn-accent-green, #16A34A);
+    box-shadow: 0 0 8px rgba(22, 163, 74, 0.4);
+}
+.nn-pulse-dot.fallback {
+    background-color: var(--nn-accent-blue);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+.nn-pulse-dot.warning {
+    background-color: var(--nn-accent-amber);
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+}
+
+.nn-telemetry-text {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--nn-text-secondary);
+}
+.nn-telemetry-value {
+    color: var(--nn-text-primary);
+    font-weight: 700;
+}
+
+/* KPI Card Component */
+.nn-kpi-card {
+    background-color: var(--nn-bg-card);
+    border: 1px solid var(--nn-border);
+    border-radius: var(--nn-radius-md);
+    padding: 1.15rem 1.25rem;
+    box-shadow: var(--nn-shadow-card);
+    position: relative;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
+}
+.nn-kpi-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--nn-border-light);
+}
+
+.nn-kpi-card.accent-blue { border-top: 3px solid var(--nn-accent-blue); }
+.nn-kpi-card.accent-emerald, .nn-kpi-card.accent-green { border-top: 3px solid var(--nn-accent-green, #16A34A); }
+.nn-kpi-card.accent-amber { border-top: 3px solid var(--nn-accent-amber); }
+.nn-kpi-card.accent-crimson { border-top: 3px solid var(--nn-accent-crimson); }
+.nn-kpi-card.accent-violet { border-top: 3px solid var(--nn-accent-violet); }
+.nn-kpi-card.accent-cyan { border-top: 3px solid var(--nn-accent-cyan); }
+
+.nn-kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+.nn-kpi-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--nn-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.nn-kpi-value {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--nn-text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.35rem;
+}
+.nn-kpi-sub {
+    font-size: 0.78rem;
+    color: var(--nn-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+.nn-kpi-pill {
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.nn-kpi-pill.positive {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34D399;
+}
+.nn-kpi-pill.negative {
+    background: rgba(239, 68, 68, 0.15);
+    color: #F87171;
+}
+.nn-kpi-pill.neutral {
+    background: rgba(148, 163, 184, 0.15);
+    color: #CBD5E1;
+}
+
+/* Section Title */
+.nn-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--nn-border);
+}
+.nn-section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--nn-text-primary);
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+.nn-section-tag {
+    font-size: 0.72rem;
+    color: var(--nn-text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Callout & Alert Banners */
+.nn-callout {
+    background-color: var(--nn-bg-card);
+    border: 1px solid var(--nn-border);
+    border-radius: var(--nn-radius-md);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.nn-callout.info {
+    border-left: 4px solid var(--nn-accent-blue);
+}
+.nn-callout.success {
+    border-left: 4px solid var(--nn-accent-green, #16A34A);
+}
+.nn-callout.warning {
+    border-left: 4px solid var(--nn-accent-amber);
+}
+.nn-callout.danger {
+    border-left: 4px solid var(--nn-accent-crimson);
+}
+.nn-callout-title {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--nn-text-primary);
+    margin-bottom: 0.25rem;
+}
+.nn-callout-body {
+    font-size: 0.82rem;
+    color: var(--nn-text-secondary);
+    line-height: 1.4;
+}
+
+/* Next-Best-Action Cards */
+.nn-action-card {
+    background-color: var(--nn-bg-card);
+    border: 1px solid var(--nn-border);
+    border-radius: var(--nn-radius-md);
+    padding: 1.15rem;
+    margin-bottom: 0.85rem;
+    transition: all 0.2s ease;
+}
+.nn-action-card:hover {
+    border-color: var(--nn-border-accent);
+    background-color: var(--nn-bg-card-elevated);
+}
+.nn-action-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.nn-action-target {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--nn-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.nn-priority-pill {
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.nn-priority-pill.high {
+    background: rgba(239, 68, 68, 0.2);
+    color: #F87171;
+    border: 1px solid rgba(239, 68, 68, 0.35);
+}
+.nn-priority-pill.medium {
+    background: rgba(245, 158, 11, 0.2);
+    color: #FBBF24;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+}
+.nn-priority-pill.low {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34D399;
+    border: 1px solid rgba(16, 185, 129, 0.35);
+}
+.nn-action-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--nn-text-primary);
+    margin-bottom: 0.35rem;
+}
+.nn-action-desc {
+    font-size: 0.82rem;
+    color: var(--nn-text-secondary);
+    margin-bottom: 0.6rem;
+}
+
+/* Chat bubble styling for Ask NovaNest */
+.nn-chat-bubble {
+    border-radius: var(--nn-radius-md);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+.nn-chat-bubble.ai {
+    background: var(--nn-bg-card);
+    border: 1px solid var(--nn-border);
+    border-left: 3px solid var(--nn-accent-blue);
+    color: var(--nn-text-primary);
+}
+.nn-chat-bubble.user {
+    background: var(--nn-bg-card-elevated);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--nn-text-primary);
+    text-align: right;
+}

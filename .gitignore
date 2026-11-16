@@ -1,6 +1,12 @@
-# Environment variables
+# Environment variables & secrets
 .env
+.env.*
+!.env.example
+!.env.docker.example
 *.env.local
+config/environments/.env.production
+config/environments/.env.staging
+config/environments/.env.local
 
 # Python cache & virtual environments
 __pycache__/
@@ -46,6 +52,26 @@ wheels/
 *.zip
 *.tar.gz
 scratch/
+backup/
+bin/
+
+# Streamlit secrets (NEVER commit secrets)
+.streamlit/secrets.toml
+
+# Database dumps, raw SQL scripts, and encrypted backups
+*.sql
+*.sql.enc
+*.sig
+
+# Frontend artifacts
+frontend/dist/
+frontend/build/
+frontend/node_modules/
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
 
 
 

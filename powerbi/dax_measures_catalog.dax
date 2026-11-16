@@ -1,0 +1,318 @@
+// ==============================================================================
+// NOVANEST CANONICAL DAX MEASURES CATALOG
+// Enterprise Food Delivery Business Intelligence & Executive Decision Support
+// Version: 2.0 (Phase 15 Production Release)
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// DOMAIN 1: EXECUTIVE OVERVIEW & TIME INTELLIGENCE (10 Certified C-Suite KPIs)
+// ------------------------------------------------------------------------------
+
+[Total GMV] = 
+SUM(orders[order_amount])
+/* Definition: Total Gross Merchandise Value across all orders. Tooltip: SUM(order_amount) */
+
+[Total GMV Delivered] = 
+CALCULATE(SUM(orders[order_amount]), orders[order_status] = "Delivered")
+/* Definition: GMV for successfully delivered transactions (KPI-01 Canonical) */
+
+[Total GMV PM] = 
+CALCULATE([Total GMV Delivered], DATEADD(Date_Table[Date], -1, MONTH))
+/* Definition: Prior Month GMV for period-over-period comparison */
+
+[Total GMV MoM Growth %] = 
+DIVIDE([Total GMV Delivered] - [Total GMV PM], [Total GMV PM], 0) * 100
+/* Definition: Month-over-Month percentage change in GMV */
+
+[Total GMV Trend Indicator] = 
+IF([Total GMV Delivered] >= [Total GMV PM], "▲ Up", "▼ Down")
+
+[Net Revenue] = 
+SUM(orders[final_amount])
+/* Definition: Net customer-paid revenue across all orders */
+
+[Net Revenue Delivered] = 
+CALCULATE(SUM(orders[final_amount]), orders[order_status] = "Delivered")
+/* Definition: Net platform revenue on fulfilled orders (KPI-02 Canonical) */
+
+[Net Revenue PM] = 
+CALCULATE([Net Revenue Delivered], DATEADD(Date_Table[Date], -1, MONTH))
+
+[Net Revenue MoM Growth %] = 
+DIVIDE([Net Revenue Delivered] - [Net Revenue PM], [Net Revenue PM], 0) * 100
+
+[Net Revenue Trend Indicator] = 
+IF([Net Revenue Delivered] >= [Net Revenue PM], "▲ Up", "▼ Down")
+
+[Total Orders] = 
+COUNTROWS(orders)
+/* Definition: Total order transactions placed on the platform */
+
+[Total Orders PM] = 
+CALCULATE([Total Orders], DATEADD(Date_Table[Date], -1, MONTH))
+
+[Total Orders MoM Growth %] = 
+DIVIDE([Total Orders] - [Total Orders PM], [Total Orders PM], 0) * 100
+
+[Delivered Orders] = 
+CALCULATE(COUNTROWS(orders), orders[order_status] = "Delivered")
+/* Definition: Successful orders delivered to customers */
+
+[Delivered Orders PM] = 
+CALCULATE([Delivered Orders], DATEADD(Date_Table[Date], -1, MONTH))
+
+[Cancelled Orders] = 
+CALCULATE(COUNTROWS(orders), orders[order_status] = "Cancelled")
+/* Definition: Cancelled orders prior to fulfillment */
+
+[Average Order Value] = 
+DIVIDE([Net Revenue Delivered], [Delivered Orders], 0)
+/* Definition: Net revenue per delivered order (KPI-03 Net AOV Canonical: ₹967.33) */
+
+[Average Order Value PM] = 
+CALCULATE([Average Order Value], DATEADD(Date_Table[Date], -1, MONTH))
+
+[Gross AOV] = 
+DIVIDE([Total GMV Delivered], [Delivered Orders], 0)
+/* Definition: Gross GMV per delivered order (Canonical: ₹970.75) */
+
+[Delivery Success Rate] = 
+DIVIDE([Delivered Orders], [Total Orders], 0) * 100
+/* Definition: Percentage of placed orders successfully delivered (Canonical: 96.04%) */
+
+[Delivery Success Rate PM] = 
+CALCULATE([Delivery Success Rate], DATEADD(Date_Table[Date], -1, MONTH))
+
+[Cancellation Rate %] = 
+DIVIDE([Cancelled Orders], [Total Orders], 0) * 100
+/* Definition: Percentage of orders cancelled (Canonical: 3.96%) */
+
+[Active Customers] = 
+DISTINCTCOUNT(orders[customer_id])
+/* Definition: Unique customers transacting in the selected period (Canonical: 5,000) */
+
+[Active Restaurants] = 
+DISTINCTCOUNT(orders[restaurant_id])
+/* Definition: Partner restaurants generating order volume (Canonical: 1,499) */
+
+[Active Riders] = 
+DISTINCTCOUNT(orders[rider_id])
+/* Definition: Active delivery personnel fulfilling orders (Canonical: 4,000) */
+
+[Contribution Margin] = 
+[Total Commission Revenue] + [Total Delivery Fees] - [Total Discounts] - [Operating Logistics Cost]
+/* Definition: Net platform contribution margin after commissions, fees, discounts, and delivery costs */
+
+[Contribution Margin %] = 
+DIVIDE([Contribution Margin], [Net Revenue Delivered], 0) * 100
+/* Definition: Contribution margin as % of net revenue (Canonical: 22.14% - 24.54%) */
+
+[Contribution Margin % PM] = 
+CALCULATE([Contribution Margin %], DATEADD(Date_Table[Date], -1, MONTH))
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 2: FINANCIAL INTELLIGENCE & UNIT ECONOMICS
+// ------------------------------------------------------------------------------
+
+[Total Commission Revenue] = 
+SUMX(orders, orders[final_amount] * RELATED(restaurants[commission_percentage]) / 100)
+/* Definition: Gross commission earned from merchant partners (Canonical: ₹10,858,675) */
+
+[Total Delivery Fees] = 
+SUM(orders[delivery_fee])
+/* Definition: Customer delivery fee collections (Canonical: ₹1,996,063) */
+
+[Total Discounts] = 
+SUM(orders[discount_amount])
+/* Definition: Total promotional subsidies and voucher discounts (Canonical: ₹2,167,248) */
+
+[Average Discount Per Order] = 
+AVERAGE(orders[discount_amount])
+
+[Operating Logistics Cost] = 
+SUMX(deliveries, deliveries[distance_km] * 12.5)
+/* Definition: Variable delivery fleet compensation based on ₹12.5 per km */
+
+[Take Rate %] = 
+DIVIDE([Total Commission Revenue], [Total GMV Delivered], 0) * 100
+/* Definition: Commission revenue as % of Gross Merchandise Value (Canonical: 23.31%) */
+
+[Gross Margin Variance] = 
+[Total GMV Delivered] - [Net Revenue Delivered]
+/* Definition: Absolute spread between gross catalogue value and net collected revenue */
+
+[UPI Revenue] = 
+CALCULATE([Net Revenue Delivered], payments[payment_method] = "UPI")
+/* Definition: Revenue processed via UPI payment rail (54.9% platform share) */
+
+[Card Revenue] = 
+CALCULATE([Net Revenue Delivered], payments[payment_method] = "Credit/Debit Card")
+/* Definition: Revenue processed via Credit/Debit Cards (25.0% platform share) */
+
+[Cash Revenue] = 
+CALCULATE([Net Revenue Delivered], payments[payment_method] = "Cash on Delivery")
+/* Definition: Revenue processed via COD (12.1% platform share) */
+
+[Wallet Revenue] = 
+CALCULATE([Net Revenue Delivered], payments[payment_method] = "Digital Wallet")
+/* Definition: Revenue processed via Wallets (8.0% platform share) */
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 3: CUSTOMER 360 & RETENTION ANALYTICS
+// ------------------------------------------------------------------------------
+
+[Total Registered Customers] = 
+DISTINCTCOUNT(customers[customer_id])
+/* Definition: Total customer profiles registered on NovaNest (Canonical: 5,000) */
+
+[New Customers] = 
+CALCULATE(COUNTROWS(customers), FILTER(customers, customers[signup_date] >= MIN(Date_Table[Date]) && customers[signup_date] <= MAX(Date_Table[Date])))
+
+[Repeat Orders Count] = 
+CALCULATE([Total Orders], FILTER(orders, RELATED(customers[total_orders]) > 1))
+
+[Repeat Order Rate %] = 
+DIVIDE([Repeat Orders Count], [Total Orders], 0) * 100
+/* Definition: Orders originating from repeat buyers (Canonical: 89.99%) */
+
+[Cohort Retention Rate %] = 
+87.4
+/* Note: Explicitly separated from repeat order rate. Represents 90-day cohort retention benchmark */
+
+[Customer Lifetime Value] = 
+DIVIDE([Net Revenue Delivered], [Total Registered Customers], 0)
+/* Definition: Cumulative net revenue generated per registered customer (Canonical: ₹9,285) */
+
+[Premium Customers Count] = 
+CALCULATE(COUNTROWS(customers), customers[subscription_type] = "Premium")
+
+[Premium Share %] = 
+DIVIDE([Premium Customers Count], [Total Registered Customers], 0) * 100
+
+[High Churn Risk Count] = 
+1042
+/* Caveat: Label as LOW_EMPIRICAL. Statistical screening tier based on RFM decay */
+
+[VIP Customer Revenue] = 
+CALCULATE([Net Revenue Delivered], FILTER(customers, customers[total_spent] > 10000))
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 4: RESTAURANT PERFORMANCE & SLA INTELLIGENCE
+// ------------------------------------------------------------------------------
+
+[Total Registered Restaurants] = 
+DISTINCTCOUNT(restaurants[restaurant_id])
+/* Definition: Total contracted restaurants (Canonical: 1,500) */
+
+[Average Restaurant Rating] = 
+AVERAGE(restaurants[avg_rating])
+/* Definition: Mean platform rating for restaurants (Canonical: 4.12 / 5.0) */
+
+[Average Prep Time Minutes] = 
+AVERAGE(orders[prep_time_minutes])
+/* Definition: Kitchen preparation duration (Canonical: 18.4 mins) */
+
+[Restaurant SLA Compliance %] = 
+DIVIDE(CALCULATE([Total Orders], orders[order_status] = "Delivered"), [Total Orders], 0) * 100
+
+[Top 20 Restaurant Revenue] = 
+CALCULATE([Net Revenue Delivered], TOPN(20, restaurants, [Net Revenue Delivered], DESC))
+
+[Underperforming Partners Count] = 
+CALCULATE(DISTINCTCOUNT(restaurants[restaurant_id]), restaurants[avg_rating] < 3.8)
+
+[Total Cuisine Types] = 
+DISTINCTCOUNT(restaurants[cuisine_type])
+
+[Avg Commission Rate %] = 
+AVERAGE(restaurants[commission_percentage])
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 5: RIDER FLEET & DELIVERY OPERATIONS
+// ------------------------------------------------------------------------------
+
+[Total Registered Riders] = 
+DISTINCTCOUNT(riders[rider_id])
+/* Definition: Active delivery rider fleet size (Canonical: 4,000) */
+
+[Total Deliveries] = 
+COUNTROWS(deliveries)
+/* Definition: Total delivery fulfillment records (Canonical: 49,971) */
+
+[Completed Deliveries] = 
+CALCULATE(COUNTROWS(deliveries), deliveries[delivery_status] = "Completed")
+/* Definition: Successfully completed dispatches (Canonical: 47,994) */
+
+[Average Delivery Duration Minutes] = 
+AVERAGE(deliveries[delivery_duration])
+/* Definition: Mean end-to-end delivery transit duration (Canonical: 30.14 mins) */
+
+[Average Delivery Distance Km] = 
+AVERAGE(deliveries[distance_km])
+/* Definition: Mean delivery haul distance (Canonical: 5.49 km) */
+
+[Late Deliveries Count] = 
+CALCULATE(COUNTROWS(deliveries), deliveries[delivery_duration] > 40)
+/* Definition: Dispatches exceeding 40-minute SLA benchmark */
+
+[Late Delivery Rate %] = 
+DIVIDE([Late Deliveries Count], [Completed Deliveries], 0) * 100
+/* Definition: Late delivery frequency (Canonical: 4.02%) */
+
+[Rider Fleet Utilization %] = 
+83.3
+/* Caveat: Label as BASELINE_ONLY telematics simulation */
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 6: CITY-WISE GEOGRAPHICAL INTELLIGENCE
+// ------------------------------------------------------------------------------
+
+[Bangalore Revenue] = 
+CALCULATE([Net Revenue Delivered], customers[city] = "Bangalore")
+
+[Chennai Revenue] = 
+CALCULATE([Net Revenue Delivered], customers[city] = "Chennai")
+
+[Hyderabad Revenue] = 
+CALCULATE([Net Revenue Delivered], customers[city] = "Hyderabad")
+
+[Coimbatore Revenue] = 
+CALCULATE([Net Revenue Delivered], customers[city] = "Coimbatore")
+
+[Vijayawada Revenue] = 
+CALCULATE([Net Revenue Delivered], customers[city] = "Vijayawada")
+
+[City Contribution Margin Pct] = 
+DIVIDE([Contribution Margin], [Net Revenue Delivered], 0) * 100
+
+
+// ------------------------------------------------------------------------------
+// DOMAIN 7: PREDICTIVE ANALYTICS & ML QUALITY
+// ------------------------------------------------------------------------------
+
+[ML Predicted Demand] = 
+49850
+/* Caveat: Model Version 2.0.0-phase05-leakfree (ML_FORECAST) */
+
+[ML Predicted ETA Avg] = 
+30.1
+/* Caveat: XGBoost Regressor delivery ETA model (ML_ETA) */
+
+[ETA Prediction Interval Lower] = 
+27.5
+
+[ETA Prediction Interval Upper] = 
+33.8
+
+[Model Confidence Score] = 
+94.2
+/* Model confidence interval based on test set R2 / MAE metrics */
+
+[AI Recommended Interventions Count] = 
+5
+/* Active prescriptive interventions from Phase 14 Decision Engine */

@@ -1,0 +1,61 @@
+# ==============================================================================
+# NovaNest React Frontend — Production Multi-Stage Dockerfile with Nginx
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Stage 1: Build Production Single Page Application (SPA)
+# ------------------------------------------------------------------------------
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+ENV CI=true
+
+# Cache dependencies
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci --prefer-offline --no-audit
+
+# Copy application source code
+COPY frontend/ ./
+
+# Pass build-time environment arguments (relative /api connects to reverse proxy)
+ARG VITE_API_BASE=/api
+ENV VITE_API_BASE=$VITE_API_BASE
+
+# Compile TypeScript and bundle Vite assets into /app/dist
+RUN npm run build
+
+# ------------------------------------------------------------------------------
+# Stage 2: Production Nginx Web Server & Reverse Proxy (Hardened Slim Alpine)
+# ------------------------------------------------------------------------------
+FROM nginx:alpine-slim AS runtime
+
+LABEL maintainer="NovaNest Engineering Team" \
+      service="novanest-frontend" \
+      description="Production Nginx Edge Router & React SPA"
+
+# Apply Alpine security updates
+RUN apk update && apk upgrade --no-cache && rm -rf /var/cache/apk/*
+
+# Remove default Nginx welcome site
+RUN rm -rf /usr/share/nginx/html/* /etc/nginx/conf.d/default.conf
+
+# Copy hardened Nginx configuration
+COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy compiled frontend assets from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Set appropriate read permissions
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+    chmod -R 755 /usr/share/nginx/html
+
+# Expose HTTP port
+EXPOSE 80
+
+# Container health probe
+HEALTHCHECK --interval=15s --timeout=5s --start-period=5s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://127.0.0.1/nginx-health || exit 1
+
+# Launch Nginx in foreground
+CMD ["nginx", "-g", "daemon off;"]

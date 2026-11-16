@@ -1,0 +1,76 @@
+# ==============================================================================
+# NovaNest Streamlit Dashboard — Production Dockerfile
+# Multi-Stage Build with Non-Root Security Hardening
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Stage 1: Dependency Compilation & Wheel Building
+# ------------------------------------------------------------------------------
+FROM python:3.11-slim-bookworm AS builder
+
+WORKDIR /build
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+COPY docker/requirements-streamlit.txt ./requirements-streamlit.txt
+RUN pip install --default-timeout=120 --retries=5 --upgrade pip setuptools wheel && \
+    pip install --default-timeout=120 --retries=5 -r requirements-streamlit.txt
+
+# ------------------------------------------------------------------------------
+# Stage 2: Minimal Hardened Runtime
+# ------------------------------------------------------------------------------
+FROM python:3.11-slim-bookworm AS runtime
+
+LABEL maintainer="NovaNest Engineering Team" \
+      service="novanest-streamlit" \
+      description="Executive Multipage Analytics Dashboard"
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    PATH="/opt/venv/bin:$PATH" \
+    STREAMLIT_SERVER_PORT=8501 \
+    STREAMLIT_SERVER_ADDRESS=0.0.0.0 \
+    STREAMLIT_SERVER_HEADLESS=true \
+    STREAMLIT_SERVER_ENABLE_CORS=false \
+    STREAMLIT_BROWSER_GATHER_USAGE_STATS=false \
+    STREAMLIT_THEME_BASE=dark
+
+# Install minimal runtime dependencies and security patches (curl for healthcheck)
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/* /var/tmp/*
+
+# Create unprivileged application user and group
+RUN groupadd -g 10001 novanest && \
+    useradd -u 10001 -g novanest -m -s /bin/bash novanest
+
+WORKDIR /app
+
+# Copy isolated virtual environment from builder stage
+COPY --from=builder --chown=novanest:novanest /opt/venv /opt/venv
+
+# Copy Streamlit application code and datasets with non-root ownership
+COPY --chown=novanest:novanest streamlit_app/ /app/streamlit_app/
+COPY --chown=novanest:novanest python/ /app/python/
+COPY --chown=novanest:novanest datasets/cleaned/ /app/datasets/cleaned/
+COPY --chown=novanest:novanest datasets/engineered/ /app/datasets/engineered/
+
+# Expose internal Streamlit port
+EXPOSE 8501
+
+# Container health probe
+HEALTHCHECK --interval=15s --timeout=5s --start-period=15s --retries=3 \
+  CMD curl -f http://localhost:8501/_stcore/health || exit 1
+
+# Drop privileges to non-root user
+USER novanest
+
+# Start Streamlit application
+CMD ["streamlit", "run", "streamlit_app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
