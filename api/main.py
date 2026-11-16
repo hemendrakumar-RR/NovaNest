@@ -29,6 +29,10 @@ load_dotenv(PROJECT_ROOT / ".env")
 PYTHON_DIR = PROJECT_ROOT / "python"
 STREAMLIT_DIR = PROJECT_ROOT / "streamlit_app"
 
+for p in (str(PROJECT_ROOT), str(PYTHON_DIR), str(STREAMLIT_DIR)):
+    if p not in sys.path:
+        sys.path.insert(0, p)
+
 from python.operations.metrics import (
     API_ACTIVE_REQUESTS,
     export_metrics_text,
